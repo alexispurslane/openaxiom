@@ -29,19 +29,19 @@ A skill represents anything a character can do or be. This includes physical abi
 
 *** Skill Naming and Hierarchy
 
-Skills are named to reflect their scope and specialization. Skills can be organized into a hierarchical tree. A general skill can have more specific versions. The naming format for specific skills uses parentheses. For example, a general skill like *Piloting* can have a more specific version like *Piloting (Starship)*. This can extend further, such as *Piloting (Starship) (Freighter)*. The game master determines the specific skills that exist in a game world.
+Skills are named to reflect their scope and specialization. Skills can be organized into a hierarchical tree. A general skill can have more specific versions. The naming format for specific skills uses parentheses. For example, a general skill like *Piloting* can have a more specific version like *Piloting (Starship)*. This can extend further, such as *Piloting (Starship) (Freighter)*. The game master determines the specific skills that exist in a game world, although players can suggest new skills, or new specializations of skills, as long as the GM agrees.
 
-When a character attempts a task requiring a specific skill the character does not possess, the character can use a more general skill from the same hierarchy. However, using a general skill for a more specific task incurs a disadvantage. A character using a general skill for a direct child skill suffers a -2 disadvantage. For example, using *Piloting* for a *Piloting (Starship)* task incurs a -2 disadvantage. Using a general skill for a grandchild skill incurs a -3 disadvantage. For example, using *Piloting* for a *Piloting (Starship) (Freighter)* task incurs a -3 disadvantage.
+When a character attempts a task requiring a specific skill the character does not possess, the character can use a more general skill from the same hierarchy. However, using a general skill for a more specific task incurs a disadvantage. A character using a general skill for a more specific skill suffers a -1 disadvantage for each level of specialization their more general skill is missing. For example, using *Piloting* for a *Piloting (Starship)* task incurs a -1 disadvantage, while using *Piloting* for a *Piloting (Starship) (Freighter)* task incurs a -2 disadvantage. Rule of thumb: count the number of parenthesized expressions to see what the disadvantage should be.
 
 *** Skill Proficiency Value
 
-Each skill has a numerical value from 3 upwards. The skill's numerical value indicates the character's level of proficiency. A higher number signifies greater ability. The default value for any skill is 9. The default skill value provides a 37.50 percent chance of rolling equal to or under the default skill value with three six-sided dice (since there are 216 possible outcomes when rolling 3d6, and 81 of them are 9 or less). Increasing a skill's proficiency requires exponentially more story points as the skill's value increases. The exponential increase in story points prevents characters from becoming overpowered.
+Each skill has a numerical value that indicates the character's level of proficiency. A higher number signifies greater ability. The default value for any general, non-specific skill (such as *Strength* or *Piloting*) is 9, which provides a 37.50% chance of rolling equal to or under the default skill value with three six-sided dice. The default value for a more specific skill (such as *Strength (Disc-Throwing)*) is undefined; to determine what happens when trying to perform actions that require those more specific skills, please refer to the previous section.
+
+This means that by default, any player character has at least some chance at being able to do something they haven't trained for if it isn't too specialized, but tasks become much more difficult to do for the untrained if they're something specific.
 
 *** Initial Skill Selection
 
-Players can choose five skills. Each chosen skill receives a +1 bonus to the skill's proficiency value. Each chosen skill must have a one-sentence justification. The justification must be based on the character's History section. The Game Master must approve each justification.
-
-Players can choose more than five skills for a +1 bonus. For each additional skill, the player must sacrifice one point from a different skill. The sacrificed point must come from a skill not already chosen for a bonus. The new bonus skill cannot be a skill already chosen for a bonus.
+Since Dreamforge does not use a point pool, and does not requiring trading some skills off against others. Instead, players can choose different five skills to add a +1 bonus to, each. These are their main, or "activated" skills --- the skills unique to their character. To be clear: players can not add multiple bonuses to a single skill.
 
 *** Skill Examples
 
@@ -68,18 +68,43 @@ A trait is a passive effect. Traits modify a character's skills. Traits represen
 
 Each trait is inherently either positive (a boost) or negative (a hindrance). During character creation, the player chooses a numerical value for the trait, which determines the trait's effect on skills.
 
-For positive traits, the player chooses a positive value (e.g., from +1 to +18). This value is the bonus applied to affected skills.
-For negative traits, the player chooses a negative value (e.g., from -1 to -18). This value is the penalty applied to affected skills.
+For positive traits, the player chooses a positive value (e.g., from +1 to +5). This value is the bonus applied to affected skills.
+
+For negative traits, the player chooses a negative value (e.g., from -1 to -5). This value is the penalty applied to affected skills.
+
+*** How Traits Apply
+
+Each trait is associated with a specific list of skills that it effects. When a trait affects a skill, its effect applies to all skills hierarchically subordinate to that skill.
+
+Traits are categorized based on how they affect skills. Understanding these categories helps players and Game Masters determine when and how traits apply during gameplay, and *these categories should be noted in any trait definition*, alongside the skills the category requires the trait to effect.
+
+**** Broad Traits
+
+Broad traits affect one or more top-level general skill categories. These traits have wide-ranging effects across many related skills. For example, a *Natural Leader* trait might affect the entire *Social* skill category, providing bonuses to *Social (Diplomacy)*, *Social (Command)*, *Social (Intimidation)*, and any other skills that fall under the *Social* umbrella.
+
+**** Narrow Traits
+
+Narrow traits affect one or more first-level specialized skills. These traits have more focused effects on specific areas of expertise. For example, *Perfect Pitch* affects *Art (Music)* specifically, rather than all *Art* skills. Similarly, *Keen Eyesight* might affect *Perception (Visual)* but not other perception skills.
+
+**** Situational Traits
+
+Situational traits can be either broad or narrow but only activate under specific conditions defined by the trait. For example, *Night Vision* is a narrow situational trait that only applies to perception skills when in low-light conditions. *Cold Tolerance* might be a broad situational trait that affects all physical skills but only in freezing environments. The Game Master determines when situational traits activate based on the narrative circumstances.
+
+**** Special Traits
+
+Traits can also be designated as "Special" traits. These traits introduce simple new rules that layer on top of, but do not replace, core game mechanics. Like the way cards in some deck-building games introduce custom rules, Special traits add unique mechanical effects to a character that go beyond simple skill bonuses or penalties. For example, a *Second Wind* trait might allow a character to recover some health once per session, or a *Lucky Charm* trait might allow rerolling a failed skill check once per game session.
+
+IMPORTANT: Even Game Masters should refrain from introducing custom Special traits, and should strongly discourage players from doing so. Generally, the community-provided trait packs should be relied upon for such things, to avoid hashing out game balance at the gaming table. Custom Special traits can unintentionally break game balance or create mechanical complications that are difficult to resolve during play. When in doubt, stick to the official trait packs provided by the Dreamforge community.
 
 *** Trait Selection
 
-During character creation, players may choose up to three positive traits and up to three negative traits. The total value of all chosen positive traits must equal the absolute value of all chosen negative traits, ensuring the character is balanced. For example, if a player chooses positive traits with values of +3 and +2, they must also choose negative traits with values that sum to -5 (such as -5, or -3 and -2).
+During character creation, players may choose up to three positive traits and up to three negative traits. The total value of all chosen positive traits must equal the absolute value of all chosen negative traits, ensuring the character is balanced and interesting. For example, if a player chooses positive traits with values of +3 and +2, they must also choose negative traits with values that sum to -5 (such as -5, or -3 and -2).
 
 Each chosen trait must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification.
 
-*** Trait Naming and Scope
+*** Trait Naming
 
-Traits are identified by a descriptive name. An example is *Perfect Pitch*. Each trait is associated with a specific list of skills. When a trait affects a skill, its effect applies to all skills hierarchically subordinate to that skill.
+Traits are identified by a descriptive name. An example is *Perfect Pitch*.
 
 *** Trait Permanence and Overcoming
 
@@ -89,17 +114,24 @@ A trait's effect is permanent. However, skills can increase without limit. The i
 
 Here are some examples of traits. These examples illustrate diverse effects as boosts or hindrances. The Game Master and player should agree on the specific skills a trait affects.
 
-- *Perfect Pitch*: This trait would apply its bonus to any skill related to music, such as *Art (Music Performance)* or *Art (Composition)*.
-- *Colorblindness*: This trait would apply its penalty to skills where color perception is important, such as *Art (Painting)*, *Survival (Wilderness)* for identifying plants, or *Perception (Visual)* in certain situations.
-- *Photographic Memory*: This trait would provide a bonus to skills that rely on recalling information, such as *Languages*, *Engineering*, *Medicine*, or *Computers (Hacking)*.
-- *Claustrophobia*: This trait imposes a penalty on all skill checks when the character is in a confined space, as determined by the Game Master.
+**** Broad Traits
+
 - *Natural Leader*: This trait would grant a bonus to social skills used for leadership, such as *Social (Diplomacy)*, *Social (Command)*, or *Social (Intimidation)*.
+- *Photographic Memory*: This trait would provide a bonus to skills that rely on recalling information, such as *Languages*, *Engineering*, *Medicine*, or *Computers*.
+- *Absent-Minded*: This trait would impose a penalty on skills that require sustained attention and memory, such as *Perception*, *Investigation*, or *Computers*.
 - *Slow Learner*: This trait increases the story point cost for the character to learn new skills. The exact increase in cost is equal to the absolute value of the trait.
-  Justification: "The character is highly specialized and struggles to learn new skills outside of their established expertise."
+
+**** Narrow Traits
+
+- *Perfect Pitch*: This trait would apply its bonus to any skill related to music, such as *Art (Music Performance)* or *Art (Composition)*.
 - *Ambidextrous*: This trait would provide a bonus to skills requiring fine motor skills with either hand, such as *Combat (Melee)*, *Physical (Sleight of Hand)*, or certain *Art* skills.
-- *Night Blindness*: This trait would apply a penalty to all perception and combat skills when in low-light conditions.
 - *Iron Stomach*: This trait would grant a bonus to any skill checks made to resist the effects of poison, disease, or other ingested maladies, likely falling under the *Physical (Constitution)* skill.
-- *Absent-Minded*: This trait would impose a penalty on skills that require sustained attention and memory, such as *Perception*, *Investigation*, or *Computers (Hacking)*.
+
+**** Situational Traits
+
+- *Colorblindness*: This trait would apply its penalty to skills where color perception is important, such as *Art (Painting)*, *Survival (Wilderness)* for identifying plants, or *Perception (Visual)* in certain situations.
+- *Claustrophobia*: This trait imposes a penalty on all skill checks when the character is in a confined space, as determined by the Game Master.
+- *Night Blindness*: This trait would apply a penalty to all perception and combat skills when in low-light conditions.
 
 ** Character Creation Examples
 :PROPERTIES:
@@ -121,9 +153,9 @@ Next, the player chooses five skills, giving each a +1 bonus. The default for al
 - *Physical (Acrobatics)*: Justification: "She is naturally agile and trained to move swiftly through the dense forest canopy."
 
 Finally, the player selects traits. The player chooses up to three positive traits and up to three negative traits, ensuring the total value of positive traits equals the absolute value of negative traits.
-- The player chooses the positive trait *Night Vision* and decides to give it a value of +4.
+- The player chooses the positive trait *Night Vision* and decides to give it a value of +3.
 
-  This trait will grant a +4 bonus to perception-based skills like *Physical (Tracking)* in low-light conditions, making its effective value 14 in those situations.
+  This trait will grant a +3 bonus to perception-based skills like *Physical (Tracking)* in low-light conditions, making its effective value 14 in those situations.
 
   Justification: "Her elven heritage and life in the dim forest have given her excellent sight in low light."
 - The player adds another positive trait, *Ambidextrous*, with a value = +2.
@@ -131,13 +163,13 @@ Finally, the player selects traits. The player chooses up to three positive trai
   This trait will grant a +2 bonus to skills requiring manual dexterity, such as *Combat (Ranged) (Bow)*, making that skill's effective value 12.
 
   Justification: "Her combat training emphasized versatility, making her adept with either hand."
-- To maintain balance, the player chooses the negative trait *Claustrophobia* and gives it a value of -6.
+- To maintain balance, the player chooses the negative trait *Claustrophobia* and gives it a value of -5.
 
-  This trait will impose a -6 penalty on all skill checks when Elara is in a confined space.
+  This trait will impose a -5 penalty on all skill checks when Elara is in a confined space.
 
   Justification: "Having spent her life in the open wilderness, she is unnerved and distracted in confined spaces."
 
-The positive traits sum to +6 (+4 + +2) and the negative trait sums to -6, creating a balanced character. She has two positive traits and one negative trait, which is within the allowed limits. The Game Master approves the justifications, and Elara is ready to play.
+The positive traits sum to +5 (+3 + +2) and the negative trait sums to -5, creating a balanced character. She has two positive traits and one negative trait, which is within the allowed limits. The Game Master approves the justifications, and Elara is ready to play.
 #+END_QUOTE
 
 *** Science Fiction Example: Jax, the Freelance Engineer
@@ -155,25 +187,25 @@ With the biography established, the player selects five skills for a +1 bonus, b
 - *Combat (Ranged) (Pistol)*: Justification: "Living in the underbelly requires the ability to defend oneself."
 
 Now, the player moves to traits, selecting up to three positive traits and up to three negative traits with a balanced total value.
-- The player chooses the positive trait *Photographic Memory* and gives it a value of +8.
+- The player chooses the positive trait *Photographic Memory* and gives it a value of +5.
 
-  This will grant a +8 bonus to his knowledge-based skills like *Engineering (Robotics)* and *Computers (Hacking)*, making their effective value 18 for tasks involving memory.
+  This will grant a +5 bonus to his knowledge-based skills like *Engineering (Robotics)* and *Computers (Hacking)*, making their effective value 15 for tasks involving memory.
 
   Justification: "His cybernetic eye implant allows him to perfectly recall technical schematics and information."
-- The player chooses the negative trait *Absent-Minded* and gives it a value of -5.
+- The player chooses the negative trait *Absent-Minded* and gives it a value of -3.
 
-  This will impose a -5 penalty on perception and attention-based skills.
+  This will impose a -3 penalty on perception and attention-based skills.
 
-  For example, when trying to spot a detail in a system he is hacking, his *Computers (Hacking)* skill would have an effective value of 5 (10 - 5). Note that this penalty applies to all skills affected by *Absent-Minded*, not just *Computers (Hacking)*.
+  For example, when trying to spot a detail in a system he is hacking, his *Computers (Hacking)* skill would have an effective value of 7 (10 - 3). Note that this penalty applies to all skills affected by *Absent-Minded*, not just *Computers (Hacking)*.
 
   Justification: "The constant stream of data from his implant sometimes causes him to forget mundane details."
-- The player adds another negative trait, *Slow Learner*, with a value of -3.
+- The player adds another negative trait, *Slow Learner*, with a value of -2.
 
   This will increase the story point cost for him to learn new skills.
 
   Justification: "He is highly specialized and struggles to learn new skills outside of his established expertise."
 
-The positive traits sum to +8 and the negative traits sum to -8 (-5 + -3), creating a balanced character. He has one positive trait and two negative traits. The Game Master reviews the justifications and approves them. Jax is now ready for the game.
+The positive traits sum to +5 and the negative traits sum to -5 (-3 + -2), creating a balanced character. He has one positive trait and two negative traits. The Game Master reviews the justifications and approves them. Jax is now ready for the game.
 #+END_QUOTE
 
 * Character Advancement
@@ -248,7 +280,7 @@ After a successful mission to recover a stolen prototype, Elara's player is awar
 2. 1 story point to unlock the *Perception (Visual)* skill, immediately granting it a +1 bonus (default 9 + 1 = 10)
 3. 1 story points to unlock *Combat (Melee) (Dagger)*, because ealier in the campaign she was caught in a fight where it was too close range to use a bow, and she almost died.
 
-Later, after overcoming her claustrophobia during a cave rescue mission, Elara's player is awarded 6 story points by the Game Master, so that she can spend all of them to remove the *Claustrophobia* trait entirely, which costs exactly 6 story points.
+Later, after overcoming her claustrophobia during a cave rescue mission, Elara's player is awarded 5 story points by the Game Master, so that she can spend all of them to remove the *Claustrophobia* trait entirely, which costs exactly 5 story points.
 #+END_QUOTE
 
 #+ATTR_HTML: :class gameplay-example
@@ -258,5 +290,5 @@ Jax's player is awarded 3 story points after successfully hacking a corporate ma
 1. Spend 1 story point to unlock the *Social (Deception)* skill, immediately granting it a +1 bonus (default 9 + 1 = 10)
 2. Spend 2 story points to improve his *Computers (Hacking)* skill from 10 to 11 (second improvement)
 
-In a much later session, Jax's player earns 8 story points for helping to prevent a global corporate conspiracy. The player chooses to spend all 8 story points to add a new positive trait, *Quick Reflexes*, with a value of +8, which will apply to initiative rolls and reaction-based skills.
+In a much later session, Jax's player earns 8 story points for helping to prevent a global corporate conspiracy. The player chooses to spend all 8 story points to add a new positive trait, *Quick Reflexes*, with a value of +5, which will apply to initiative rolls and reaction-based skills.
 #+END_QUOTE
