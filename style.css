@@ -2,37 +2,40 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #1e1e1e;
-    color: #d4d4d4;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
     line-height: 1.6;
     margin: 0;
     padding: 2em;
     text-align: justify;
     hyphens: auto;
     overflow-wrap: break-word;
-}
-
-main {
-    max-width: 800px;
+    max-width: 65ch;
     margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-    main {
-        column-count: 2;
-        column-gap: 2em;
-    }
+main {
+    max-width: 65ch;
+    margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
     font-family: 'Lora', serif;
-    color: #a8a8a8;
-    border-bottom: 1px solid #444;
+    color: #c0c0c0;
+    border-bottom: 1px solid #555;
     padding-bottom: 0.3em;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    color: #c0c0c0;
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
 }
 
 a {
-    color: #61afef;
+    color: #70c0f0;
     text-decoration: none;
 }
 
@@ -42,7 +45,7 @@ a:hover {
 
 code, pre {
     font-family: 'Fira Code', monospace;
-    background-color: #282c34;
+    background-color: #303030;
     padding: 0.2em 0.4em;
     border-radius: 3px;
 }
@@ -54,14 +57,17 @@ pre {
 }
 
 blockquote {
-    border-left: 4px solid #555;
-    padding-left: 1em;
-    margin-left: 0;
-    color: #999;
+    border-left: 4px solid #70c0f0;
+    padding: 1em;
+    margin: 1em 0;
+    color: #e0e0e0;
+    background-color: #353535;
+    border-radius: 5px;
+    font-style: italic;
 }
 
 .file-list {
-    background-color: #282c34;
+    background-color: #303030;
     padding: 1em;
     margin-bottom: 2em;
     border-radius: 5px;
@@ -76,4 +82,37 @@ blockquote {
 .file-list li {
     display: inline-block;
     margin-right: 1em;
+}
+
+#TOC ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#TOC li {
+    margin-bottom: 0.5em;
+}
+
+#TOC li li {
+    margin-bottom: 0.2em;
+    padding-left: 1.5em;
+    font-size: 0.9em;
+}
+
+/* Table styling for better clarity */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    color: #e0e0e0;
+}
+
+table th, table td {
+    border: 1px solid #555;
+    padding: 0.5em;
+    text-align: left;
+}
+
+table th {
+    font-weight: bold;
 }

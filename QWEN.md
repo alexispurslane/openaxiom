@@ -25,3 +25,7 @@ Rule sections will employ a simple heading hierarchy. This hierarchy will be lim
 ## Lists
 
 Bullet points and numbered lists will be used sparingly. The rule text will primarily rely on continuous prose for explanations. Lists are to be avoided unless absolutely necessary for presenting distinct, short items.
+
+## Gameplay Examples
+
+Gameplay examples will be enclosed in quote blocks.

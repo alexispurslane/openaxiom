@@ -1,35 +1,35 @@
-* README
+#+TITLE: Dreamforge
+
+* Dreamforge
 :PROPERTIES:
-:ID:       46A0C7DC-6916-46DB-93CC-0C3AF8A5D3E9
+:ID:       6FFBCBC5-20EA-44B1-88E6-50BE3FC3CACA
 :END:
 
-This document outlines the core goals for Dreamforge, the tabletop RPG project.
+*An engine for your imagination.*
 
-** Project Goals
+Welcome to Dreamforge, a tabletop roleplaying game designed for ultimate creative freedom.
+
+Have you ever had a story you wanted to tell, a world you wanted to explore, but couldn't find the right system? Dreamforge is your answer. It is a universal toolkit for crafting adventures in any genre and any setting. From the lowest fantasy to the hardest science fiction, from sprawling space operas to intimate historical dramas, the rules get out of your way and let you tell the story you want to tell.
+
+** Your World, Your Rules
 :PROPERTIES:
-:ID:       E6661E40-33B1-4568-BD0D-FCF48C31B93A
+:ID:       3A4167FA-630D-4807-922E-30B25EA81EA8
 :END:
 
-*** Setting and Genre
+Dreamforge is built on a foundation of simple, intuitive mechanics that are both flexible and robust.
 
-Dreamforge will be settingless and genreless. The design aims for broad applicability, similar to systems like GURPS. The rules will support diverse imaginative worlds without inherent thematic restrictions.
+*** Limitless Worlds
+Dreamforge is not tied to a single setting. The game is setting-agnostic. This provides a canvas for players to create their own unique universe. While the core system is genre-neutral, Dreamforge will offer setting and genre packs. These packs provide libraries of locations, traits, and skills for storytellers to draw upon.
 
-*** Simulationism and Abstraction
+*** Fluid Characters
+Dreamforge characters are not defined by restrictive classes or a predefined list of relatively fixed attributes. Instead, characters possess inherent abilities and disabilities, called traits, which correspond directly to skills, providing passive bonuses or disadvantages. This allows for maximum creativity in character creation, and the possibility of adapting and overcoming a character's traits by increasing their skills.
 
-The TTRPG embraces American wargame and TTRPG-style simulationism. Rules will directly simulate aspects of the game world. Mechanics will correspond 1:1 with in-game realities, avoiding arbitrary or purely abstract elements. The design prioritizes logical consistency between rules and the simulated world.
+*** Simple, Not Simplistic
+The rules are easy to learn. The game uses only basic arithmetic. But beneath the surface lies a powerful simulation engine. The game's mechanics are abstract. The engine does not know about the game world. However, the mechanics rely on words, not math, and the players know what these words correspond to in the world, every action has a specific reference in the game world. And because the mechanics are designed for simulation, the game feels specifically simulated, even though it doesn't have to be mechanically complicated.
 
-Despite its simulationist approach, the rules will remain fairly abstract. The primary goal is to provide a framework for simulating a player's imaginative ideas. The rules will facilitate creative expression rather than restrict it. This balance allows for detailed simulation within a flexible structure.
+*** A Toolkit, Not a Straitjacket
+The core rules are a starting point. Dreamforge is designed to be modular and adaptable. The game does not have rules for laser blasters or magic spells. Instead, the game provides the tools to create those things and more. Players can add, remove, and modify rules. This allows players to perfectly match the story they want to create together.
 
-Crucially, the rules will not attempt to encode specific semantic meanings for game terms such as "skill," "health," "gravity," or "speed" into their mechanics or mathematics. The semantic meaning of these terms is left entirely to the human players. For the game system, a "skill" is simply a numerical value to be compared, added, or subtracted. No skill is inherently different from any other in the game's mechanics, regardless of whether it represents "swimming" or "social persuasion." This approach maintains simulationism while effectively evading unnecessary complexity.
+**What will you forge?**
 
-*** Mathematical Simplicity
-
-Mathematics within the rules will be minimal. Operations are limited to addition, subtraction, and number comparison. Chains of calculations for a single rule will not exceed three or four steps. This design ensures accessibility for all players, including those who are tired or prefer less numerical complexity.
-
-*** Character Structure
-
-The TTRPG will feature no character classes. Character definition and progression will occur through other means, promoting flexible and organic character development.
-
-*** Composable Toolkit
-
-The rules will form a composable toolkit built upon a solid, simple core. This modular design, akin to the relationship between GURPS Lite and full GURPS, allows for the construction of new rules. Players and game masters can adapt and extend the system to address novel situations not explicitly covered by the core rules.
+This document is your guide to the core mechanics of Dreamforge. Read on, and start building your dream.

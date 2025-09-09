@@ -26,7 +26,7 @@ PORT = 8000
 WEBSOCKET_PORT = 8765
 
 
-class OrgFileHandler(FileSystemEventHandler):
+class FileChangeHandler(FileSystemEventHandler):
     def __init__(self, websocket_server):
         self.websocket_server = websocket_server
 
@@ -34,6 +34,10 @@ class OrgFileHandler(FileSystemEventHandler):
         if event.src_path.endswith(".org"):
             print(f"{event.src_path} has been modified. Rebuilding...")
             self.process_file(event.src_path)
+        elif event.src_path.endswith("style.css"):
+            print(f"{event.src_path} has been modified. Reloading...")
+            if self.websocket_server:
+                asyncio.run(self.websocket_server.reload())
 
     def on_created(self, event):
         if event.src_path.endswith(".org"):
@@ -147,7 +151,7 @@ def main():
         # Initial build
         print("Performing initial build of all .org files...")
         for org_file in Path(".").glob("*.org"):
-            OrgFileHandler(None).process_file(str(org_file)) # Don't need websocket server for initial build
+            FileChangeHandler(None).process_file(str(org_file)) # Don't need websocket server for initial build
 
         # Start WebSocket server
         websocket_server = WebSocketServer()
@@ -155,7 +159,7 @@ def main():
         websocket_thread.start()
 
         # Start file watcher
-        event_handler = OrgFileHandler(websocket_server)
+        event_handler = FileChangeHandler(websocket_server)
         observer = Observer()
         observer.schedule(event_handler, ".", recursive=False)
         observer.start()
