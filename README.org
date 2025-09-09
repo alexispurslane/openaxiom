@@ -1,0 +1,35 @@
+* README
+:PROPERTIES:
+:ID:       46A0C7DC-6916-46DB-93CC-0C3AF8A5D3E9
+:END:
+
+This document outlines the core goals for Dreamforge, the tabletop RPG project.
+
+** Project Goals
+:PROPERTIES:
+:ID:       E6661E40-33B1-4568-BD0D-FCF48C31B93A
+:END:
+
+*** Setting and Genre
+
+Dreamforge will be settingless and genreless. The design aims for broad applicability, similar to systems like GURPS. The rules will support diverse imaginative worlds without inherent thematic restrictions.
+
+*** Simulationism and Abstraction
+
+The TTRPG embraces American wargame and TTRPG-style simulationism. Rules will directly simulate aspects of the game world. Mechanics will correspond 1:1 with in-game realities, avoiding arbitrary or purely abstract elements. The design prioritizes logical consistency between rules and the simulated world.
+
+Despite its simulationist approach, the rules will remain fairly abstract. The primary goal is to provide a framework for simulating a player's imaginative ideas. The rules will facilitate creative expression rather than restrict it. This balance allows for detailed simulation within a flexible structure.
+
+Crucially, the rules will not attempt to encode specific semantic meanings for game terms such as "skill," "health," "gravity," or "speed" into their mechanics or mathematics. The semantic meaning of these terms is left entirely to the human players. For the game system, a "skill" is simply a numerical value to be compared, added, or subtracted. No skill is inherently different from any other in the game's mechanics, regardless of whether it represents "swimming" or "social persuasion." This approach maintains simulationism while effectively evading unnecessary complexity.
+
+*** Mathematical Simplicity
+
+Mathematics within the rules will be minimal. Operations are limited to addition, subtraction, and number comparison. Chains of calculations for a single rule will not exceed three or four steps. This design ensures accessibility for all players, including those who are tired or prefer less numerical complexity.
+
+*** Character Structure
+
+The TTRPG will feature no character classes. Character definition and progression will occur through other means, promoting flexible and organic character development.
+
+*** Composable Toolkit
+
+The rules will form a composable toolkit built upon a solid, simple core. This modular design, akin to the relationship between GURPS Lite and full GURPS, allows for the construction of new rules. Players and game masters can adapt and extend the system to address novel situations not explicitly covered by the core rules.

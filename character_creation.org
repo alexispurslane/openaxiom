@@ -1,0 +1,145 @@
+* Character Creation
+:PROPERTIES:
+:ID:       5EA62D54-FED1-4F02-B17A-39FE70DD75DF
+:END:
+
+This section outlines the process for creating a player character. Dreamforge characters are defined by skills and traits. There are no character classes or traditional attributes. This approach allows for flexible and organic character development, enabling players to build unique individuals. The rules presented here guide the player through each step of character definition.
+
+** Skills
+:PROPERTIES:
+:ID:       E3FCEF0A-7B8E-4D04-91C6-C102596609E9
+:END:
+
+A skill represents anything a character can do or be. This includes physical abilities like strength or swimming, and mental aptitudes such as various forms of intelligence. Skills are trainable, meaning a character's proficiency can improve over time. Any skill not explicitly listed on a character's sheet has the default value. Skills have a name and a numerical value, indicating proficiency.
+
+*** Skill Naming and Hierarchy
+
+Skills are named to reflect their scope and specialization. Skills can be organized into a hierarchical tree. A general skill can have more specific versions. The naming format for specific skills uses parentheses. For example, a general skill like *Piloting* can have a more specific version like *Piloting (Starship)*. This can extend further, such as *Piloting (Starship) (Freighter)*. The game master determines the specific skills that exist in a game world.
+
+When a character attempts a task requiring a specific skill they do not possess, they can use a more general skill from the same hierarchy. However, using a general skill for a more specific task incurs a disadvantage. A character using a general skill for a direct child skill suffers a -2 disadvantage. For example, using *Piloting* for a *Piloting (Starship)* task incurs a -2 disadvantage. Using a general skill for a grandchild skill incurs a -3 disadvantage. For example, using *Piloting* for a *Piloting (Starship) (Freighter)* task incurs a -3 disadvantage.
+
+*** Skill Proficiency Value
+
+Each skill has a numerical value from 3 upwards. This value indicates the character's level of proficiency. A higher number signifies greater ability. The default value for any skill is 9. This value provides a 37.50 percent chance of rolling equal to or under it with three six-sided dice. Increasing a skill's proficiency requires exponentially more story points as the skill's value increases. This design prevents characters from becoming overpowered.
+
+*** Initial Skill Selection
+
+Players can choose five skills. Each chosen skill receives a +1 bonus to its proficiency value. Each of these five skills must have a one-sentence justification. This justification must be based on the character's History section. The Game Master must approve each justification.
+
+Players can choose more than five skills for a +1 bonus. For each additional skill, the player must sacrifice one point from a different skill. The sacrificed point must come from a skill not already chosen for a bonus. The new bonus skill cannot be one already chosen for a bonus.
+
+*** Skill Examples
+
+Here are some examples of skills, demonstrating their breadth across various activities and genres:
+- *Piloting (Starship)*
+- *Languages (Ancient) (Hieroglyphs)*
+- *Combat (Melee) (Sword)*
+- *Computers (Hacking)*
+- *Social (Diplomacy) (Negotiation)*
+- *Survival (Wilderness) (Forest)*
+- *Engineering (Robotics)*
+- *Medicine (First Aid)*
+- *Art (Painting)*
+- *Physical (Strength) (Lifting)*
+
+** Traits
+:PROPERTIES:
+:ID:       D68D646F-2540-4F24-BDCA-843E04C814B9
+:END:
+
+A trait is a passive effect. Traits modify a character's skills. Traits represent inherent advantages or disadvantages a character possesses. Traits are established during character creation. Traits cannot be trained or improved. A trait's effect is permanent. Traits serve as a starting point for a character's inherent abilities.
+
+*** Trait Value, Cost, and Selection
+
+Each trait is inherently either positive (a boost) or negative (a hindrance). During character creation, the player chooses a numerical value for the trait, which determines its effect on skills. For positive traits, the player chooses a positive value (e.g., from +1 to +18). For negative traits, the player chooses a negative value (e.g., from -1 to -18).
+
+The sum of the values of all chosen traits must equal zero. Players can choose up to three positive traits and up to three negative traits to achieve this balance.
+
+For example, a player could choose the positive trait *Ambidextrous* with a value of +3, and the negative trait *Colorblindness* with a value of -3. The sum is +3 - 3 = 0.
+Alternatively, a player could choose two positive traits, *Natural Leader* (+5) and *Iron Stomach* (+2), and one negative trait, *Night Blindness* (-7). The sum is +5 + 2 - 7 = 0.
+
+Each chosen trait must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification.
+
+*** Trait Naming and Scope
+
+Traits are identified by a descriptive name. An example is *Perfect Pitch*. Each trait is associated with a specific list of skills. When a trait affects a skill, its effect applies to all skills hierarchically subordinate to that skill.
+
+*** Trait Permanence and Overcoming
+
+A trait's effect is permanent. However, skills can increase without limit. The influence of a trait can eventually be outweighed by a character's skill development. Traits can represent inherent virtuosity, savant abilities, or disabilities. A character can strive to overcome a trait's hindrance. Overcoming a trait is not guaranteed for every character.
+
+*** Trait Examples
+
+Here are some examples of traits. These examples illustrate diverse effects as boosts or hindrances. The Game Master and player should agree on the specific skills a trait affects.
+
+- *Perfect Pitch*: This trait would apply its bonus to any skill related to music, such as *Art (Music Performance)* or *Art (Composition)*.
+- *Colorblindness*: This trait would apply its penalty to skills where color perception is important, such as *Art (Painting)*, *Survival (Wilderness)* for identifying plants, or *Perception (Visual)* in certain situations.
+- *Photographic Memory*: This trait would provide a bonus to skills that rely on recalling information, such as *Languages*, *Engineering*, *Medicine*, or *Computers (Hacking)*.
+- *Claustrophobia*: This trait imposes a penalty on all skill checks when the character is in a confined space, as determined by the Game Master.
+- *Natural Leader*: This trait would grant a bonus to social skills used for leadership, such as *Social (Diplomacy)*, *Social (Command)*, or *Social (Intimidation)*.
+- *Slow Learner*: This trait does not directly affect a skill's value, but instead increases the story point cost to improve existing skills or learn new ones.
+- *Ambidextrous*: This trait would provide a bonus to skills requiring fine motor skills with either hand, such as *Combat (Melee)*, *Physical (Sleight of Hand)*, or certain *Art* skills.
+- *Night Blindness*: This trait would apply a penalty to all perception and combat skills when in low-light conditions.
+- *Iron Stomach*: This trait would grant a bonus to any skill checks made to resist the effects of poison, disease, or other ingested maladies, likely falling under the *Physical (Constitution)* skill.
+- *Absent-Minded*: This trait would impose a penalty on skills that require sustained attention and memory, such as *Perception*, *Investigation*, or *Computers (Hacking)*.
+
+
+** Bio
+:PROPERTIES:
+:ID:       7E638FC9-096D-4AF5-AE5C-7C5B9219D898
+:END:
+
+Every character has a biography. This biography consists of two freeform fields: Appearance and History. These descriptions are crucial for defining a character's identity. Players should carefully consider their character's appearance and history when selecting skills and traits. The biography helps to ensure a character's mechanical representation aligns with their narrative concept.
+
+*** Appearance
+
+This field describes what a character looks like. It covers physical features, clothing, and any other visual characteristics. An appearance description can suggest certain skills or traits. For example, a character described as "exceptionally tall and gaunt" might have a high skill in *Stealth* or a trait representing *Frail Constitution*. A "heavily muscled individual with calloused hands" might have high *Strength* or a trait for *Powerful Build*.
+
+*** History
+
+This field outlines a character's past experiences and background. It can include significant life events, training, or personal struggles. A character's history directly informs their skill and trait selection. For example, a "former deep-space miner" might have high *Piloting (Mining Vessels)* or a trait for *Claustrophobia*. A "childhood spent studying ancient languages" could lead to high *Linguistics* or a trait for *Bookish*.
+
+** Character Creation Examples
+:PROPERTIES:
+:ID:       BC1D075E-1940-4E0F-8974-7FD8669FFB28
+:END:
+
+*** Fantasy Example: Elara, the Forest Hunter and Tracker
+
+A player wants to create a fantasy character named Elara. The player envisions Elara as a nimble hunter and tracker from a secluded forest village.
+
+First, the player writes Elara's biography. For Appearance, the player describes Elara as "lithe and quick, with sharp eyes and practical leather clothing suited for the forest." For History, the player writes, "Elara grew up in a reclusive elven community in a deep forest. She was trained as a hunter and tracker, protecting her village from woodland dangers. She has recently left her home to explore the wider world."
+
+Next, the player chooses five skills, giving each a +1 bonus. The default for all skills is 9, so each of these skills will have a value of 10.
+- *Combat (Ranged) (Bow)*: Justification: "Elara was trained with the bow to hunt and to defend her village."
+- *Survival (Wilderness) (Forest)*: Justification: "Her entire life has been spent living and hunting in the forest."
+- *Physical (Tracking)*: Justification: "As a hunter and tracker, she learned to follow trails and find her quarry."
+- *Languages (Elven)*: Justification: "This is her native tongue from her reclusive community."
+- *Physical (Acrobatics)*: Justification: "She is naturally agile and trained to move swiftly through the dense forest canopy."
+
+Finally, the player selects traits. The sum of the chosen traits' values must equal zero.
+- The player chooses the positive trait *Night Vision* and decides to give it a value of +4. This trait will grant a +4 bonus to perception-based skills like *Physical (Tracking)* in low-light conditions, making its effective value 14 in those situations. Justification: "Her elven heritage and life in the dim forest have given her excellent sight in low light."
+- The player adds another positive trait, *Ambidextrous*, with a value of +2. This trait will grant a +2 bonus to skills requiring manual dexterity, such as *Combat (Ranged) (Bow)*, making its effective value 12. Justification: "Her combat training emphasized versatility, making her adept with either hand."
+- To balance the positive traits, the player chooses the negative trait *Claustrophobia* and gives it a value of -6. This trait will impose a -6 penalty on all skill checks when Elara is in a confined space. The sum of her traits is +4 + 2 - 6 = 0. Justification: "Having spent her life in the open wilderness, she is unnerved and distracted in confined spaces."
+
+Elara has two positive traits and one negative trait, which is within the allowed limits. The Game Master approves the justifications, and Elara is ready to play.
+
+*** Science Fiction Example: Jax, the Freelance Engineer
+
+Another player decides to create a science fiction character, a street-smart engineer named Jax.
+
+The player starts with the biography. For Appearance, Jax is "a tall, wiry man with a cybernetic implant replacing his left eye. He wears a worn, grease-stained mechanic's jumpsuit." For History, the player writes, "Jax is a former corporate engineer who grew disillusioned with the megacorporations. He now lives in the underbelly of a sprawling metropolis, working as a freelance mechanic and information broker."
+
+With the biography established, the player selects five skills for a +1 bonus, bringing their value to 10.
+- *Engineering (Robotics)*: Justification: "He was a robotics engineer for a major corporation."
+- *Computers (Hacking)*: Justification: "As an information broker, he often needs to access secure systems."
+- *Social (Streetwise)*: Justification: "He has learned to navigate the complex social landscape of the city's underworld."
+- *Piloting (Starship) (Freighter)*: Justification: "He owns and operates a small, customized freighter for various jobs."
+- *Combat (Ranged) (Pistol)*: Justification: "Living in the underbelly requires the ability to defend oneself."
+
+Now, the player moves to traits. The sum of the chosen traits' values must equal zero.
+- The player chooses the positive trait *Photographic Memory* and gives it a value of +8. This will grant a +8 bonus to his knowledge-based skills like *Engineering (Robotics)* and *Computers (Hacking)*, making their effective value 18 for tasks involving memory. Justification: "His cybernetic eye implant allows him to perfectly recall technical schematics and information."
+- To balance this, the player chooses the negative trait *Absent-Minded* and gives it a value of -5. This will impose a -5 penalty on perception and attention-based skills. For example, when trying to spot a detail in a system he is hacking, his *Computers (Hacking)* skill would have an effective value of 5 (10 - 5). Justification: "The constant stream of data from his implant sometimes causes him to forget mundane details."
+- The player also chooses the negative trait *Slow Learner*, with a value of -3. This will increase the story point cost for him to learn new skills. The sum of his traits is +8 - 5 - 3 = 0. Justification: "He is highly specialized and struggles to learn new skills outside of his established expertise."
+
+Jax has one positive trait and two negative traits. The Game Master reviews the justifications and approves them. Jax is now ready for the game.
