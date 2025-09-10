@@ -6,17 +6,16 @@ body {
     color: #333333; /* Dark text for readability */
     line-height: 1.6;
     margin: 0;
-    padding: 2em;
+    padding: 0;
     text-align: justify;
     hyphens: auto;
     overflow-wrap: break-word;
-    max-width: 65ch;
-    margin: 0 auto;
 }
 
 main {
     max-width: 65ch;
     margin: 0 auto;
+    padding: 2em;
 }
 
 /* Image styling - scale to body width while maintaining aspect ratio */
@@ -187,29 +186,23 @@ blockquote.warning {
 
 /* Side TOC for wider screens */
 @media (min-width: 1200px) {
-    body {
-        display: flex;
-        max-width: 100%;
-        padding: 0;
-    }
-    
-    main {
-        max-width: 65ch;
-        margin: 0 auto;
-        padding: 2em;
-        flex: 1;
-    }
-    
     #TOC {
-        position: sticky;
+        position: fixed;
         top: 0;
+        left: 0;
         height: 100vh;
         overflow-y: auto;
         width: 300px;
-        flex-shrink: 0;
         margin: 0;
         border-radius: 0;
         border-right: 1px solid #ddd;
+        z-index: 1000;
+    }
+    
+    main {
+        margin-left: 300px;
+        max-width: none;
+        padding: 2em;
     }
     
     #TOC.collapsed {
