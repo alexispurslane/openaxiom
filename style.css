@@ -75,6 +75,24 @@ h3 {
     border-radius: 3px;
 }
 
+/* Spiced up bold text */
+strong, b {
+    color: #d63031; /* Red accent color */
+    font-weight: 700;
+    position: relative;
+}
+
+strong::after, b::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b6b, #d63031);
+    border-radius: 1px;
+}
+
 a {
     color: #d63031; /* Red accent color */
     text-decoration: none;
@@ -112,22 +130,44 @@ blockquote.warning {
     font-style: normal;
 }
 
+/* Server-generated file list navigation bar */
 .file-list {
     background-color: #eeeeee;
     padding: 1em;
     margin-bottom: 2em;
     border-radius: 5px;
+    text-align: right; /* Right align the file list */
 }
 
 .file-list ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: inline-block;
 }
 
 .file-list li {
     display: inline-block;
-    margin-right: 1em;
+    margin-left: 1em; /* Space between items */
+}
+
+#TOC ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left; /* Ensure TOC text is always left aligned */
+}
+
+#TOC li {
+    margin-bottom: 0.5em;
+    text-align: left; /* Ensure TOC items are left aligned */
+}
+
+#TOC li li {
+    margin-bottom: 0.2em;
+    padding-left: 1.5em;
+    font-size: 0.9em;
+    text-align: left; /* Ensure nested TOC items are left aligned */
 }
 
 /* Table of Contents styling */
@@ -168,22 +208,6 @@ blockquote.warning {
     display: none;
 }
 
-#TOC ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-#TOC li {
-    margin-bottom: 0.5em;
-}
-
-#TOC li li {
-    margin-bottom: 0.2em;
-    padding-left: 1.5em;
-    font-size: 0.9em;
-}
-
 /* Side TOC for wider screens */
 @media (min-width: 1200px) {
     #TOC {
@@ -197,6 +221,7 @@ blockquote.warning {
         border-radius: 0;
         border-right: 1px solid #ddd;
         z-index: 1000;
+        text-align: left; /* Ensure TOC container is left aligned */
     }
     
     main {
