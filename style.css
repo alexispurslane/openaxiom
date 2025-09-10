@@ -200,8 +200,9 @@ blockquote.warning {
     }
     
     main {
+        max-width: 65ch;
+        margin: 0 auto;
         margin-left: 300px;
-        max-width: none;
         padding: 2em;
     }
     
