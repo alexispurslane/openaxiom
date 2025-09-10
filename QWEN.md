@@ -1,6 +1,6 @@
-# Project Guidelines for Dreamforge TTRPG Rules
+# Project Guidelines for OpenAxiom TTRPG Rules
 
-This document outlines the meta-rules for writing the Dreamforge tabletop RPG rules.
+This document outlines the meta-rules for writing the OpenAxiom tabletop RPG rules.
 
 ## Formatting
 

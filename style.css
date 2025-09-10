@@ -19,6 +19,14 @@ main {
     margin: 0 auto;
 }
 
+/* Image styling - scale to body width while maintaining aspect ratio */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
+
 h1, h2 {
     font-family: 'Lora', serif;
     color: #c0c0c0;
@@ -64,6 +72,11 @@ blockquote {
     background-color: #353535;
     border-radius: 5px;
     font-style: italic;
+}
+
+blockquote.warning {
+    border-left: 4px solid #f05050;
+    font-style: normal;
 }
 
 .file-list {
@@ -115,4 +128,51 @@ table th, table td {
 
 table th {
     font-weight: bold;
+}
+
+/* Trait definition table styling */
+table.trait-definition {
+    background-color: #353535;
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+    border-collapse: separate;
+}
+
+table.trait-definition thead tr {
+    background-color: #3a3a3a;
+    font-family: 'Lora', serif;
+    color: #c0c0c0;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+}
+
+table.trait-definition thead th {
+    border: none;
+    padding: 0.5em;
+    text-align: center;
+}
+
+table.trait-definition tbody td:first-child {
+    font-weight: bold;
+    width: 25%;
+}
+
+table.trait-definition td {
+    border: none;
+    padding: 0.3em 0.5em;
+}
+
+/* Trait definition table styling */
+table.trait-definition {
+    background-color: #353535;
+    border: 1px solid #555;
+    margin: 1em 0;
+}
+
+table.trait-definition thead tr {
+    background-color: #3a3a3a;
+    color: #c0c0c0;
 }

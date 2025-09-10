@@ -1,35 +1,51 @@
-#+TITLE: Dreamforge
+#+TITLE: OpenAxiom
+#+SUBTITLE: An open source universal TTRPG engine
 
-* Dreamforge
+OpenAxiom is a free and open source tabletop roleplaying game (TTRPG) engine inspired by GURPS. OpenAxiom has a few features:
+
+* A universal engine
 :PROPERTIES:
-:ID:       6FFBCBC5-20EA-44B1-88E6-50BE3FC3CACA
+:ID:       76E78AEA-D47E-4E09-8D73-F2EAF0FB1D32
 :END:
 
-*An engine for your imagination.*
+OpenAxiom is called a TTRPG "engine," instead of just a TTRPG, because it doesn't come with many of the features you'd expect from a fully-fledged TTRPG, such as lists of predefined gear, monsters, locations, lore, races, classes, skills, traits, and so on. Instead, it's /just/ the chore mechanics, designed to be setting and genre agnostic.
 
-Welcome to Dreamforge, a tabletop roleplaying game designed for ultimate creative freedom.
+Eventually, modular free and open source "packs" will provide the various other components you need to play, which you can mix and match as needed, although a core pack of sensible skills, traits, and NPCs almost any setting needs is recommended.
 
-Have you ever had a story you wanted to tell, a world you wanted to explore, but couldn't find the right system? Dreamforge is your answer. It is a universal toolkit for crafting adventures in any genre and any setting. From the lowest fantasy to the hardest science fiction, from sprawling space operas to intimate historical dramas, the rules get out of your way and let you tell the story you want to tell.
+OpenAxiom is also explicitly designed to be extremely easy to write packs for, and easy to adapt material from other games for. This should mean that things like GURPS sourcebooks will serve nicely with this system! (Seriously, Steve Jackson Games rocks, give them some love.)
 
-** Your World, Your Rules
+* Simulationist
 :PROPERTIES:
-:ID:       3A4167FA-630D-4807-922E-30B25EA81EA8
+:ID:       F0D882B2-371F-4B46-81D3-E46777EAE3C0
 :END:
 
-Dreamforge is built on a foundation of simple, intuitive mechanics that are both flexible and robust.
+OpenAxiom also attempts to be simulationist: there are no mechanics for the same of mechanics, seemingly hastily themed after the fact like in a European boardgame. Instead, everything in the game's system should feel like it directly corresponds to, and simulates, something in the game world, in a satisfying and specific way, with real payoffs and consequences mechanically determined and mechanically enforced, because the best stories are born from that kind of surprising story generation that can't just be smoothed away.
 
-*** Limitless Worlds
-Dreamforge is not tied to a single setting. The game is setting-agnostic. This provides a canvas for players to create their own unique universe. While the core system is genre-neutral, Dreamforge will offer setting and genre packs. These packs provide libraries of locations, traits, and skills for storytellers to draw upon.
+Importantly, howver, to avoid overly baroque complexity while trying to be genreless, OpenAxiom provides an engine for a /logic of action and consequences/, of /means and ends/, and that's it. It doesn't know, or have to know, about magic or laser blasters. All it knows is how to simulate an attempt to act, and the results of that action in the abstract. Players assign names to the actions and the outcomes, and the game processes them as it would any other set of actions and outcomes, producing a result. There's still a direct, one to one correspondence, but it's made in the space between the game and the player, as they assign words to things. It's like a logic programming language: it doesn't know what the words actually mean, but it can still simulate things anyway.
 
-*** Fluid Characters
-Dreamforge characters are not defined by restrictive classes or a predefined list of relatively fixed attributes. Instead, characters possess inherent abilities and disabilities, called traits, which correspond directly to skills, providing passive bonuses or disadvantages. This allows for maximum creativity in character creation, and the possibility of adapting and overcoming a character's traits by increasing their skills.
+* Chrunchy across the board
+:PROPERTIES:
+:ID:       C53291DF-5C13-4572-8D92-EF9ACD66B6F7
+:END:
 
-*** Simple, Not Simplistic
-The rules are easy to learn. The game uses only basic arithmetic. But beneath the surface lies a powerful simulation engine. The game's mechanics are abstract. The engine does not know about the game world. However, the mechanics rely on words, not math, and the players know what these words correspond to in the world, every action has a specific reference in the game world. And because the mechanics are designed for simulation, the game feels specifically simulated, even though it doesn't have to be mechanically complicated.
+A lot of TTRPGs, even universal ones, spend a lot more time developing combat mechanics than they do social and story mechanics. This is understandable, because developing the former is much easier and more well-understood, but also unfortunate, and undermines the supposed universality of the system. OpenAxiom seeks to provide mechanical crunch for everything, across the board, whether it's character development, story beats, social interactions, politics, or combat.
 
-*** A Toolkit, Not a Straitjacket
-The core rules are a starting point. Dreamforge is designed to be modular and adaptable. The game does not have rules for laser blasters or magic spells. Instead, the game provides the tools to create those things and more. Players can add, remove, and modify rules. This allows players to perfectly match the story they want to create together.
+This means that OpenAxiom respects your story, characters, and their social interactions just as much as their combat prowess. This is not just a game for wargamers and murder hobos, it is also a game for those who want to explore the politics of taking state power through long political intrigue, or toppling a rogue nation, or resolving a harem situation.
 
-**What will you forge?**
+* Harsh but fair
+:PROPERTIES:
+:ID:       94392421-E198-441E-9E15-71A4073D2A8E
+:END:
 
-This document is your guide to the core mechanics of Dreamforge. Read on, and start building your dream.
+Stories only matter when they have stakes. OpenAxiom is designed to ensure you have those stakes. This is a game that will rough you up, that intends to chew you up and spit you out if you aren't careful. However, nothing is overly random: every risk is a choice, every outcome preventable or something you can prepare for, and every bad outcome this side of death is recoverable, even if the road is long and hard. Learn to roll with the punches, embrace the Dwarf Fortress definition of fun, and grin and laugh in the face of death.
+
+* Easy to understand
+:PROPERTIES:
+:ID:       7D06EB31-DDBB-46F1-A48D-44200FAECFF7
+:END:
+
+Despite its depth, a primary goal for OpenAxiom is to be small, easy to read, and easy to understand.
+
+For this reason, OpenAxiom attempts to avoid being overly complex by eschewing complex calculations and multidimensional tables. Everything can and should be able to be resolved, no matter how complex the situation, by under five additions or subtractions, and one linear table lookup. Not even any multiplication needed!
+
+Similarly, OpenAxiom is exclusively written in a special simple prose designed to be easy for anyone to comprehend --- to never trip you up with an unexpected subclause.
