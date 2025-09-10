@@ -41,6 +41,16 @@ The Game Master may adjust this target number based on situational factors. Thes
 
 Not all successes and failures are equal. OpenAxiom distinguishes between different degrees of success and failure based on how much the roll deviates from the target number.
 
+#+ATTR_HTML: :class degrees-of-success-table
+| Degree of Success/Failure | Roll Result                            | Description                                                                 |
+|---------------------------|----------------------------------------|-----------------------------------------------------------------------------|
+| Critical Success          | 3 or 4                                 | Exceptional performance that exceeds normal capabilities.                  |
+| Exceptional Success       | 5 or more below target number          | Above-average performance with potential minor additional benefits.        |
+| Marginal Success          | Equal to target or 1-4 below target    | Competent performance that achieves the goal without additional benefits.  |
+| Marginal Failure          | 1-4 above target number                | Near-success with some positive outcomes despite overall failure.          |
+| Exceptional Failure       | 5 or more above target number          | Particularly poor performance with additional negative consequences.       |
+| Critical Failure          | 17 or 18                               | Catastrophic performance with significant negative effects.                |
+
 ** Critical Successes
 :PROPERTIES:
 :ID:       9A1B5C4D-7E2F-6A0B-3C5D-8E2F7A0B4C6D
