@@ -1,14 +1,11 @@
-* Player Characters
-:PROPERTIES:
-:ID:       5EA62D54-FED1-4F02-B17A-39FE70DD75DF
-:END:
-
+#+TITLE: Player Characters: Properties, Creation, Inventory, Statuses, and Advancement
+#+OPTIONS: H:6
 #+ATTR_HTML: :class section-icon
 [[file:player_characters.svg]]
 
 This section describes what player characters are in OpenAxiom and how to create them. Player characters are defined by skills and traits rather than character classes or traditional attributes. This approach allows for flexible and organic character development, enabling players to build unique individuals. The rules presented here guide the player through each step of character definition, from initial concept to fully-realized character.
 
-** Biography
+* Biography
 :PROPERTIES:
 :ID:       7E638FC9-096D-4AF5-AE5C-7C5B9219D898
 :END:
@@ -18,15 +15,21 @@ This section describes what player characters are in OpenAxiom and how to create
 
 Every character has a biography. This biography consists of two freeform fields: Appearance and History. These descriptions are crucial for defining a character's identity. Players should carefully consider their character's appearance and history when selecting skills and traits. The biography helps to ensure a character's mechanical representation aligns with their narrative concept.
 
-*** Appearance
+** Appearance
+:PROPERTIES:
+:ID:       0B9A64E3-7CA9-40A6-9E0F-F9898CC59707
+:END:
 
 This field describes what a character looks like. It covers physical features, clothing, and any other visual characteristics. An appearance description can suggest certain skills or traits. For example, a character described as "exceptionally tall and gaunt" might have a high skill in *Stealth* or a trait representing *Frail Constitution*. A "heavily muscled individual with calloused hands" might have high *Strength* or a trait for *Powerful Build*.
 
-*** History
+** History
+:PROPERTIES:
+:ID:       3D684FED-E0D2-45A6-A12E-062778E76CD0
+:END:
 
 This field outlines a character's past experiences and background. It can include significant life events, training, or personal struggles. A character's history directly informs their skill and trait selection. For example, a "former deep-space miner" might have high *Piloting (Mining Vessels)* or a trait for *Claustrophobia*. A "childhood spent studying ancient languages" could lead to high *Linguistics* or a trait for *Bookish*.
 
-** Skills
+* Skills
 :PROPERTIES:
 :ID:       E3FCEF0A-7B8E-4D04-91C6-C102596609E9
 :END:
@@ -36,13 +39,19 @@ This field outlines a character's past experiences and background. It can includ
 
 A skill represents anything a character can do or be. This includes physical abilities like strength or swimming, and mental aptitudes such as various forms of intelligence. Skills are trainable, meaning a character's proficiency can improve over time. Any skill not explicitly listed on a character's sheet has the default value. Skills have a name and a numerical value, indicating proficiency.
 
-*** Skill Naming and Hierarchy
+** Skill Naming and Hierarchy
+:PROPERTIES:
+:ID:       331342AE-8DFA-4E8E-9C65-D94047C640E4
+:END:
 
 Skills are named to reflect their scope and specialization. Skills can be organized into a hierarchical tree. A general skill can have more specific versions. The naming format for specific skills uses parentheses. For example, a general skill like *Piloting* can have a more specific version like *Piloting (Starship)*. This can extend further, such as *Piloting (Starship) (Freighter)*. The game master determines the specific skills that exist in a game world, although players can suggest new skills, or new specializations of skills, as long as the GM agrees.
 
 When a character attempts a task requiring a specific skill the character does not possess, the character can use a more general skill from the same hierarchy. However, using a general skill for a more specific task incurs a disadvantage. A character using a general skill for a more specific skill suffers a -1 disadvantage for each level of specialization their more general skill is missing. For example, using *Piloting* for a *Piloting (Starship)* task incurs a -1 disadvantage, while using *Piloting* for a *Piloting (Starship) (Freighter)* task incurs a -2 disadvantage. Rule of thumb: count the number of parenthesized expressions to see what the disadvantage should be.
 
-*** Skill Proficiency Value
+** Skill Proficiency Value
+:PROPERTIES:
+:ID:       41334204-2F08-4273-B7FA-FDC34DE4A68F
+:END:
 
 Each skill has a numerical value that indicates the character's level of proficiency. A higher number signifies greater ability. The default value for any general, non-specific skill (such as *Strength* or *Piloting*) is 9.
 
@@ -72,13 +81,19 @@ The following table provides a qualitative evaluation of skill levels based on t
 
 Note that these probabilities and qualitative levels apply to tasks of average difficulty. Tasks that are easier or harder than average will have correspondingly higher or lower success probabilities. A skill of 18 still represents the pinnacle of human capability rather than supernatural power.
 
-*** Initial Skill Selection
+** Initial Skill Selection
+:PROPERTIES:
+:ID:       EA58C73B-5613-40B4-BB9E-70A1207743A1
+:END:
 
 Since OpenAxiom does not use a point pool, and does not requiring trading some skills off against others. Instead, players can choose different five skills to add a +1 bonus to, each. These are their main, or "activated" skills, the skills unique to their character. To be clear: players can not add multiple bonuses to a single skill.
 
 Players may choose specific skills without choosing the more general version. For example, a character can have *Piloting (Starship)* without having *Piloting*. When a character has a specific skill but not its more general version, they can only use that specific skill for tasks that match it exactly. They cannot use it as a substitute for other specializations of the same general skill.
 
-*** Skill Examples
+** Skill Examples
+:PROPERTIES:
+:ID:       BB8F9C54-4E34-4B80-9705-607D67F5FC0B
+:END:
 
 Here are some examples of skills, demonstrating their breadth across various activities and genres:
 - *Piloting (Starship)*
@@ -92,7 +107,7 @@ Here are some examples of skills, demonstrating their breadth across various act
 - *Art (Painting)*
 - *Physical (Strength) (Lifting)*
 
-** Traits
+* Traits
 :PROPERTIES:
 :ID:       D68D646F-2540-4F24-BDCA-843E04C814B9
 :END:
@@ -102,7 +117,10 @@ Here are some examples of skills, demonstrating their breadth across various act
 
 A trait is a passive effect. Traits modify a character's skills. Traits represent inherent advantages or disadvantages a character possesses. Traits are established during character creation. Traits cannot be trained or improved. Traits serve as a starting point for a character's inherent abilities.
 
-*** Trait Value
+** Trait Value
+:PROPERTIES:
+:ID:       A93E7E8F-9A0D-40DA-AAF2-D23E80AFAEFE
+:END:
 
 Each trait is inherently either positive (a boost) or negative (a hindrance). During character creation, the player chooses a numerical value for the trait, which determines the trait's effect on skills.
 
@@ -112,7 +130,10 @@ For negative traits, the player chooses a negative value (e.g., from -1 to -5). 
 
 *Warning:* Game Masters should be aware that extreme trait values like +5 or -5 represent a 50% swing in success rates, which can have a massive effect on characters. Players are strongly encouraged to talk to their GMs before taking any such extreme traits to ensure they fit the campaign and won't unbalance the game.
 
-*** How Traits Apply
+** How Traits Apply
+:PROPERTIES:
+:ID:       ABFA5B7F-EF09-4341-994C-5318B55AA172
+:END:
 
 Each trait is associated with a specific list of skills that it effects. When a trait affects a skill, its effect applies to all skills hierarchically subordinate to that skill.
 
@@ -120,29 +141,35 @@ If multiple traits affect the same skill, only the highest bonus and the highest
 
 Traits are categorized based on how they affect skills. Understanding these categories helps players and Game Masters determine when and how traits apply during gameplay, and *these categories should be noted in any trait definition*, alongside the skills the category requires the trait to effect.
 
-**** Broad Traits
+*** Broad Traits
 
 Broad traits affect one or more top-level general skill categories. These traits have wide-ranging effects across many related skills. For example, a *Natural Leader* trait might affect the entire *Social* skill category, providing bonuses to *Social (Diplomacy)*, *Social (Command)*, *Social (Intimidation)*, and any other skills that fall under the *Social* umbrella.
 
-**** Narrow Traits
+*** Narrow Traits
 
 Narrow traits affect one or more first-level specialized skills. These traits have more focused effects on specific areas of expertise. For example, *Perfect Pitch* affects *Art (Music)* specifically, rather than all *Art* skills. Similarly, *Keen Eyesight* might affect *Perception (Visual)* but not other perception skills.
 
-**** Situational Traits
+*** Situational Traits
 
 Situational traits can be either broad or narrow but only activate under specific conditions defined by the trait. For example, *Night Vision* is a narrow situational trait that only applies to perception skills when in low-light conditions. *Cold Tolerance* might be a broad situational trait that affects all physical skills but only in freezing environments. The Game Master determines when situational traits activate based on the narrative circumstances.
 
-**** Special Traits
+*** Special Traits
 
 Traits can also be designated as "Special" traits. These traits introduce simple new rules that layer on top of, but do not replace, core game mechanics. Like the way cards in some deck-building games introduce custom rules, Special traits add unique mechanical effects to a character that go beyond simple skill bonuses or penalties. For example, a *Second Wind* trait might allow a character to recover some health once per session, or a *Lucky Charm* trait might allow rerolling a failed skill check once per game session.
 
 IMPORTANT: Even Game Masters should refrain from introducing custom Special traits, and should strongly discourage players from doing so. Generally, the community-provided trait packs should be relied upon for such things, to avoid hashing out game balance at the gaming table. Custom Special traits can unintentionally break game balance or create mechanical complications that are difficult to resolve during play. When in doubt, stick to the official trait packs provided by the OpenAxiom community.
 
-*** Trait Naming
+** Trait Naming
+:PROPERTIES:
+:ID:       F0B9DBBD-92C5-4927-910F-D435DC595E3F
+:END:
 
 Traits are identified by a descriptive name. An example is *Perfect Pitch*.
 
-*** Standard Trait Definition Format
+** Standard Trait Definition Format
+:PROPERTIES:
+:ID:       7394B52A-CF34-4512-BEC4-1FFC4AB7E730
+:END:
 
 When defining traits, use the following standardized format to ensure clarity and consistency. This format should be used for all traits, whether they are from official trait packs or custom creations.
 
@@ -168,19 +195,28 @@ Special traits that modify the core rules may have multiple categories:
 | Skills Affected              | All skills |
 | Effect                       | Once per session, the character may reroll any failed skill check. |
 
-*** Trait Selection
+** Trait Selection
+:PROPERTIES:
+:ID:       F18E6B88-ACAD-45C5-8232-D7C7237CD7E6
+:END:
 
 During character creation, players may choose up to three positive traits and up to three negative traits. The total value of all chosen positive traits must equal the absolute value of all chosen negative traits, ensuring the character is balanced and interesting. For example, if a player chooses positive traits with values of +3 and +2, they must also choose negative traits with values that sum to -5 (such as -5, or -3 and -2).
 
 Each chosen trait must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification.
 
-*** Traits and Lore Items
+** Traits and Lore Items
+:PROPERTIES:
+:ID:       B67FDE9E-C707-4900-B05D-328421028608
+:END:
 
 Some traits may come with associated lore items that a character must carry with them as a result of having that trait. These items are typically Small or Medium in size and don't confer mechanical advantages beyond what the trait itself provides. For example, a character with the *Photographic Memory* trait might carry a cybernetic implant, or a character with *Night Vision* might have special eye drops or wear tinted glasses. These items are considered part of the character's backstory and serve to reinforce the narrative justification for the trait.
 
 Lore items associated with traits are automatically provided to characters during character creation and do not count against their inventory slot limits. However, they can be lost or damaged during play, potentially affecting the character's ability to use their trait effectively until the item is replaced.
 
-*** Trait Evolution and Modification
+** Trait Evolution and Modification
+:PROPERTIES:
+:ID:       3F9E1A73-0CD5-4D31-8281-E1CF1341AA40
+:END:
 
 Traits represent a character's inherent nature and are generally stable over time. However, they are not completely immutable. Through dedicated effort and significant personal growth, characters can modify their traits over time.
 
@@ -190,24 +226,27 @@ Positive traits, once established, remain fixed and cannot be modified through s
 
 Note that while skills can be improved without limit, traits can only be modified through specific advancement rules, emphasizing that traits represent deeper, more fundamental aspects of character identity compared to learned skills.
 
-*** Trait Examples
+** Trait Examples
+:PROPERTIES:
+:ID:       B26A7CEE-BE73-4ADF-870C-0858B6FC1795
+:END:
 
 Here are some examples of traits. These examples illustrate diverse effects as boosts or hindrances. The Game Master and player should agree on the specific skills a trait affects.
 
-**** Broad Traits
+*** Broad Traits
 
 - *Natural Leader*: This trait would grant a bonus to social skills used for leadership, such as *Social (Diplomacy)*, *Social (Command)*, or *Social (Intimidation)*.
 - *Photographic Memory*: This trait would provide a bonus to skills that rely on recalling information, such as *Languages*, *Engineering*, *Medicine*, or *Computers*.
 - *Absent-Minded*: This trait would impose a penalty on skills that require sustained attention and memory, such as *Perception*, *Investigation*, or *Computers*.
 - *Slow Learner*: This trait increases the story point cost for the character to learn new skills. The exact increase in cost is equal to the absolute value of the trait.
 
-**** Narrow Traits
+*** Narrow Traits
 
 - *Perfect Pitch*: This trait would apply its bonus to any skill related to music, such as *Art (Music Performance)* or *Art (Composition)*.
 - *Ambidextrous*: This trait would provide a bonus to skills requiring fine motor skills with either hand, such as *Combat (Melee)*, *Physical (Sleight of Hand)*, or certain *Art* skills.
 - *Iron Stomach*: This trait would grant a bonus to any skill checks made to resist the effects of poison, disease, or other ingested maladies, likely falling under the *Physical (Constitution)* skill.
 
-**** Situational Traits
+*** Situational Traits
 
 - *Colorblindness*: This trait would apply its penalty to skills where color perception is important, such as *Art (Painting)*, *Survival (Wilderness)* for identifying plants, or *Perception (Visual)* in certain situations.
 - *Claustrophobia*: This trait imposes a penalty on all skill checks when the character is in a confined space, as determined by the Game Master.

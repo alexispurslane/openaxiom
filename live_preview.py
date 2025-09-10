@@ -49,7 +49,7 @@ class FileChangeHandler(FileSystemEventHandler):
         html_file = org_file.with_suffix(".html")
 
         try:
-            subprocess.run(["pandoc", str(org_file), "-s", "--css=style.css", "--toc", "--section-divs", "--metadata=lang:en", "-o", str(html_file)], check=True)
+            subprocess.run(["pandoc", str(org_file), "-s", "--css=style.css", "--toc", "--section-divs", "--metadata=lang:en", "--number-sections", "-o", str(html_file)], check=True)
             self.inject_livereload_script(html_file)
             if self.websocket_server:
                 asyncio.run(self.websocket_server.reload())
