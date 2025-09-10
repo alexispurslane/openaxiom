@@ -6,7 +6,13 @@
 :ID:       1A2B3C4D-5E6F-7A8B-9C0D-1E2F3A4B5C6D
 :END:
 
-Welcome to OpenAxiom, an open source universal TTRPG engine. This manual contains all the rules you need to play OpenAxiom.
+OpenAxiom is a free and open source tabletop roleplaying game (TTRPG) engine. Rather than providing a complete game with predefined settings, characters, or monsters, OpenAxiom focuses purely on the core mechanics needed for any TTRPG. It's designed to be setting and genre agnostic, with modular "packs" that can be mixed and matched to create the specific game you want to play.
+
+The system is simulationist at its core, meaning that mechanics exist to directly represent actions and consequences in the game world. The rules avoid unnecessary complexity, ensuring that any situation can be resolved with simple arithmetic and a single table lookup.
+
+OpenAxiom provides mechanical crunch for all aspects of gameplay, from combat to social interactions to character development. The system emphasizes meaningful stakes where every risk is a choice and every outcome has weight, but nothing is unrecoverable with effort and preparation.
+
+The core mechanic is based on a /logic of action and consequences/. Rather than having specific rules for magic or technology, OpenAxiom provides a framework for simulating any action. Players and Game Masters assign names to actions and outcomes, and the system processes them consistently regardless of the specific fictional context.
 
 * Table of Contents
 :PROPERTIES:
