@@ -27,6 +27,14 @@ img {
     margin: 1em 0;
 }
 
+/* SVG section icons */
+.section-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 1em auto;
+}
+
 h1, h2 {
     font-family: 'Lora', serif;
     color: #c0c0c0;

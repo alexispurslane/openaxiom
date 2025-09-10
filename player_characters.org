@@ -3,7 +3,7 @@
 :ID:       5EA62D54-FED1-4F02-B17A-39FE70DD75DF
 :END:
 
-#+ATTR_HTML: :style display: block; margin: 1em auto;
+#+ATTR_HTML: :class section-icon
 [[file:player_characters.svg]]
 
 This section describes what player characters are in OpenAxiom and how to create them. Player characters are defined by skills and traits rather than character classes or traditional attributes. This approach allows for flexible and organic character development, enabling players to build unique individuals. The rules presented here guide the player through each step of character definition, from initial concept to fully-realized character.
@@ -13,7 +13,7 @@ This section describes what player characters are in OpenAxiom and how to create
 :ID:       7E638FC9-096D-4AF5-AE5C-7C5B9219D898
 :END:
 
-#+ATTR_HTML: :style display: block; margin: 1em auto;
+#+ATTR_HTML: :class section-icon
 [[file:biography.svg]]
 
 Every character has a biography. This biography consists of two freeform fields: Appearance and History. These descriptions are crucial for defining a character's identity. Players should carefully consider their character's appearance and history when selecting skills and traits. The biography helps to ensure a character's mechanical representation aligns with their narrative concept.
@@ -31,7 +31,7 @@ This field outlines a character's past experiences and background. It can includ
 :ID:       E3FCEF0A-7B8E-4D04-91C6-C102596609E9
 :END:
 
-#+ATTR_HTML: :style display: block; margin: 1em auto;
+#+ATTR_HTML: :class section-icon
 [[file:skills.svg]]
 
 A skill represents anything a character can do or be. This includes physical abilities like strength or swimming, and mental aptitudes such as various forms of intelligence. Skills are trainable, meaning a character's proficiency can improve over time. Any skill not explicitly listed on a character's sheet has the default value. Skills have a name and a numerical value, indicating proficiency.
@@ -97,7 +97,7 @@ Here are some examples of skills, demonstrating their breadth across various act
 :ID:       D68D646F-2540-4F24-BDCA-843E04C814B9
 :END:
 
-#+ATTR_HTML: :style display: block; margin: 1em auto;
+#+ATTR_HTML: :class section-icon
 [[file:traits.svg]]
 
 A trait is a passive effect. Traits modify a character's skills. Traits represent inherent advantages or disadvantages a character possesses. Traits are established during character creation. Traits cannot be trained or improved. Traits serve as a starting point for a character's inherent abilities.
@@ -217,7 +217,7 @@ Here are some examples of traits. These examples illustrate diverse effects as b
 :ID:       7D4E1F2A-8C3B-4D1E-9A2B-5C8D7E3F9A1B
 :END:
 
-#+ATTR_HTML: :style display: block; margin: 1em auto;
+#+ATTR_HTML: :class section-icon
 [[file:items.svg]]
 
 ** Character Inventory
@@ -225,7 +225,7 @@ Here are some examples of traits. These examples illustrate diverse effects as b
 :ID:       290B9FE6-7BE7-4FBE-814C-CE965C3D5E07
 :END:
 
-#+ATTR_HTML: :style display: block; margin: 1em auto;
+#+ATTR_HTML: :class section-icon
 [[file:inventory.svg]]
 
 Characters in OpenAxiom have a simple inventory system. Your best strength-related skill determines the number of inventory slots you have available to carry items. Strength-related skills include *Physical (Strength)*, *Physical (Endurance)*, and any other skills that the Game Master deems appropriate for determining carrying capacity.
@@ -400,7 +400,7 @@ The positive traits sum to +5 and the negative traits sum to -5 (-3 + -2), creat
 :ID:       3F2D8E7A-2B4C-4D6E-8A1B-C5E7F9A0B2D5
 :END:
 
-#+ATTR_HTML: :style display: block; margin: 1em auto;
+#+ATTR_HTML: :class section-icon
 [[file:status_effects.svg]]
 
 Characters in OpenAxiom face various forms of harm during their adventures. To track this, every character has three separate harm trackers that represent different aspects of a character's well-being.
@@ -483,7 +483,7 @@ Harm is typically inflicted by the Game Master as a result of failed rolls, envi
 :ID:       3E8F0950-E9F7-446D-8CE0-6D46180FE97A
 :END:
 
-#+ATTR_HTML: :style display: block; margin: 1em auto;
+#+ATTR_HTML: :class section-icon
 [[file:advancement.svg]]
 
 As characters face trials and adventures, they grow and change. OpenAxiom represents this evolution through Story Points. These points are earned through narrative milestones and can be spent to improve skills, overcome flaws, or even gain new innate talents. This system ensures that character growth is tied directly to the story, rewarding players for engaging with the game world and their character's journey.
