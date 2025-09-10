@@ -202,13 +202,17 @@ blockquote.warning {
     main {
         max-width: 65ch;
         margin: 0 auto;
-        margin-left: 300px;
+        margin-left: 340px; /* 300px sidebar + 40px margin */
         padding: 2em;
     }
     
     #TOC.collapsed {
         width: 40px;
         overflow: hidden;
+    }
+    
+    #TOC.collapsed + main {
+        margin-left: 80px; /* 40px collapsed sidebar + 40px margin */
     }
     
     #TOC.collapsed #toc-toggle {
