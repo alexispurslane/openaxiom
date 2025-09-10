@@ -24,15 +24,15 @@ The base target number for any skill check is the character's skill value. A cha
 The Game Master may adjust this target number based on situational factors. These adjustments typically range from -3 to +3, representing extremely easy to extremely difficult circumstances. The following table provides guidelines for determining appropriate modifiers:
 
 #+ATTR_HTML: :class difficulty-modifier-table
-| Difficulty        | Modifier |
-|-------------------|----------|
-| Very Easy         | +3       |
-| Easy              | +2       |
-| Moderate          | +1       |
-| Default           | 0        |
-| Hard              | -1       |
-| Very Hard         | -2       |
-| Nearly Impossible | -3       |
+| Difficulty        | Modifier | Description                                              |
+|-------------------|----------|----------------------------------------------------------|
+| Very Easy         | +3       | Tasks that should almost always succeed for competent characters. |
+| Easy              | +2       | Tasks that are straightforward for characters with relevant skills. |
+| Moderate          | +1       | Tasks of average difficulty for characters with relevant skills. |
+| Default           | 0        | No modifier for tasks of standard difficulty.            |
+| Hard              | -1       | Tasks that challenge even skilled characters.            |
+| Very Hard         | -2       | Tasks that are difficult even for experts.               |
+| Nearly Impossible | -3       | Tasks that border on the impossible.                     |
 
 * Degrees of Success and Failure
 :PROPERTIES:
