@@ -1,0 +1,52 @@
+#+TITLE: OpenAxiom Manual
+#+OPTIONS: H:6 toc:3
+
+* Introduction
+:PROPERTIES:
+:ID:       1A2B3C4D-5E6F-7A8B-9C0D-1E2F3A4B5C6D
+:END:
+
+Welcome to OpenAxiom, an open source universal TTRPG engine. This manual contains all the rules you need to play OpenAxiom.
+
+* Table of Contents
+:PROPERTIES:
+:ID:       2B3C4D5E-6F7A-8B9C-0D1E-2F3A4B5C6D7E
+:END:
+
+1. [[file:player_characters.org][Player Characters: Properties, Creation, Inventory, Statuses, and Advancement]]
+2. [[file:logic_of_action.org][Logic of Action: Core Decision Resolution Mechanism]]
+
+* Gameplay
+:PROPERTIES:
+:ID:       3C4D5E6F-7A8B-9C0D-1E2F-3A4B5C6D7E8F
+:END:
+
+This section covers the core rules for playing OpenAxiom games.
+
+* Character Creation
+:PROPERTIES:
+:ID:       4D5E6F7A-8B9C-0D1E-2F3A-4B5C6D7E8F9A
+:END:
+
+Creating a character in OpenAxiom is covered in detail in the [[file:player_characters.org][Player Characters]] section.
+
+* Resolution Mechanics
+:PROPERTIES:
+:ID:       5E6F7A8B-9C0D-1E2F-3A4B-5C6D7E8F9A0B
+:END:
+
+The core decision resolution mechanism is covered in detail in the [[file:logic_of_action.org][Logic of Action]] section.
+
+* Advanced Rules
+:PROPERTIES:
+:ID:       6F7A8B9C-0D1E-2F3A-4B5C-6D7E8F9A0B1C
+:END:
+
+Advanced rules and optional mechanics for experienced players and Game Masters.
+
+* Appendices
+:PROPERTIES:
+:ID:       7A8B9C0D-1E2F-3A4B-5C6D-7E8F9A0B1C2D
+:END:
+
+Additional reference materials and tables.

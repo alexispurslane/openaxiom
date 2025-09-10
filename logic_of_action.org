@@ -1,0 +1,120 @@
+#+TITLE: Logic of Action: Core Decision Resolution Mechanism
+#+OPTIONS: H:6
+#+ATTR_HTML: :class section-icon
+[[file:logic_of_action.svg]]
+
+This section describes the core decision resolution mechanism in OpenAxiom. When a character attempts an action with a meaningful chance of failure, the player and Game Master use the logic of action to determine the outcome. This system provides a consistent framework for resolving uncertainty while maintaining narrative flow.
+
+* Core Mechanic
+:PROPERTIES:
+:ID:       5D8E2F1A-4B9C-3D7E-2F1A-4B9C3D7E2F1A
+:END:
+
+The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the result to a target number. The player rolls 3d6 and sums the results. If the total is less than or equal to the target number, the action succeeds. If the total is greater than the target number, the action fails.
+
+This simple mechanic underlies all character actions in the game. The target number is determined by the character's relevant skill value, modified by situational factors as determined by the Game Master.
+
+* Determining Target Numbers
+:PROPERTIES:
+:ID:       7E9F3A2B-5C0D-4E8F-9A3B-6C0D5E9F2A4B
+:END:
+
+The base target number for any skill check is the character's skill value. A character with *Piloting (Starship)* at 12 would have a target number of 12 for starship piloting checks.
+
+The Game Master may adjust this target number based on situational factors. These adjustments typically range from -3 to +3, representing extremely easy to extremely difficult circumstances. The following guidelines help determine appropriate modifiers:
+
+- *Very Easy* (+3): Tasks that should almost always succeed for competent characters.
+- *Easy* (+2): Tasks that are straightforward for characters with relevant skills.
+- *Moderate* (+1): Tasks of average difficulty for characters with relevant skills.
+- *Default* (0): No modifier for tasks of standard difficulty.
+- *Hard* (-1): Tasks that challenge even skilled characters.
+- *Very Hard* (-2): Tasks that are difficult even for experts.
+- *Nearly Impossible* (-3): Tasks that border on the impossible.
+
+* Degrees of Success and Failure
+:PROPERTIES:
+:ID:       8F0A4B3C-6D1E-5F9A-0B4C-7D2E6F0A5C8D
+:END:
+
+Not all successes and failures are equal. OpenAxiom distinguishes between different degrees of success and failure based on how much the roll deviates from the target number.
+
+** Critical Successes
+:PROPERTIES:
+:ID:       9A1B5C4D-7E2F-6A0B-3C5D-8E2F7A0B4C6D
+:END:
+
+A roll of 3 or 4 on 3d6 is always a critical success, regardless of the target number. Critical successes represent exceptional performance that exceeds normal capabilities. The Game Master should narrate these moments as particularly impressive or fortunate outcomes that may have additional beneficial effects beyond simply succeeding at the task.
+
+** Exceptional Successes
+:PROPERTIES:
+:ID:       0B2C6D5E-8F3A-7B1C-4D6E-9F3A8B1C5D7E
+:END:
+
+When a roll is 5 or more below the target number, the action succeeds exceptionally well. For example, with a target number of 12, a roll of 7 or less would be an exceptional success. These represent above-average performance that may provide minor additional benefits as determined by the Game Master.
+
+** Marginal Successes
+:PROPERTIES:
+:ID:       1C3D7E6F-9A4B-8C2D-5E7F-0A4B9C2D6E8F
+:END:
+
+When a roll exactly equals the target number, or is 1-4 below the target number, the action succeeds but just barely. For example, with a target number of 12, a roll of 8-12 would be a marginal success. These represent competent performance that achieves the goal but without any additional benefits.
+
+** Marginal Failures
+:PROPERTIES:
+:ID:       2D4E8F7A-0B5C-9D3E-6F8A-1B5C0D3E7F9A
+:END:
+
+When a roll is 1-4 above the target number, the action fails but only just. For example, with a target number of 12, a roll of 13-16 would be a marginal failure. These represent near-successes that may have some positive outcomes despite the overall failure, as determined by the Game Master.
+
+** Exceptional Failures
+:PROPERTIES:
+:ID:       3E5F9A8B-1C6D-0E4F-7A9B-2C6D1E4F8A0B
+:END:
+
+When a roll is 5 or more above the target number, the action fails exceptionally badly. For example, with a target number of 12, a roll of 17 or more would be an exceptional failure. These represent particularly poor performance that may have additional negative consequences beyond simply failing at the task.
+
+** Critical Failures
+:PROPERTIES:
+:ID:       4F6A0B9C-2D7E-1F5A-8B0C-3D7E2F5A9B1C
+:END:
+
+A roll of 17 or 18 on 3d6 is always a critical failure, regardless of the target number. Critical failures represent catastrophic performance that goes beyond simple failure. The Game Master should narrate these moments as particularly disastrous or unfortunate outcomes that may have significant negative effects beyond simply failing at the task.
+
+* Opposed Actions
+:PROPERTIES:
+:ID:       6A8B1C0D-3E9F-2A6B-9C1D-4E8F3A7B0C2D
+:END:
+
+When two characters directly oppose each other in an action, such as in a contest of strength or a race, both characters make skill checks. The character with the higher degree of success wins. If both characters have the same degree of success, the character with the higher skill value wins. If both characters have the same skill value and degree of success, the Game Master may call for additional rolls or determine the outcome narratively.
+
+* Group Actions
+:PROPERTIES:
+:ID:       7B9C2D1E-4F0A-3B7C-0D2E-5F9A4B8C1D3E
+:END:
+
+When a group of characters works together on a task, the Game Master determines which character has the highest relevant skill. That character makes the primary skill check. Other characters may provide assistance, granting a +1 bonus to the primary character's roll for each assisting character, up to a maximum bonus of +3.
+
+Characters can also work independently on the same task. In this case, each character makes their own skill check. The Game Master determines how the individual results combine to affect the overall outcome.
+
+* Extended Actions
+:PROPERTIES:
+:ID:       8C0D3E2F-5A1B-4C8D-1E3F-6A0B5C9D2E4F
+:END:
+
+Some tasks require sustained effort over time rather than a single roll. For these extended actions, the Game Master sets a total difficulty value based on the complexity and duration of the task. Characters make repeated skill checks, accumulating successes until they reach the required total. The time between checks and the consequences of failures are determined by the Game Master based on the narrative circumstances.
+
+* Logic of Action Examples
+:PROPERTIES:
+:ID:       9D1E4F3A-6B2C-5D9E-2F4A-7B1C6D0E3F5A
+:END:
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+Elara attempts to pick a lock on a secure door. Her *Physical (Lockpicking)* skill is 11. The Game Master judges the lock to be of average difficulty, so no modifier is applied. Elara's target number is 11.
+
+She rolls 3d6 and gets a 2, 4, and 5 for a total of 11. This is a marginal success. The lock clicks open after a few moments of careful work.
+
+In another situation, Jax needs to hack a corporate security system. His *Computers (Hacking)* skill is 13, but the system is particularly advanced, giving it a -2 difficulty modifier. His target number is 11.
+
+Jax rolls 3d6 and gets a 1, 2, and 2 for a total of 5. This is an exceptional success (6 below his target number). The system is not only hacked but Jax gains additional information about the network that could prove useful later.
+#+END_QUOTE
