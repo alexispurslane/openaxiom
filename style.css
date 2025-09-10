@@ -41,22 +41,39 @@ h1, h2 {
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;
     text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.2em 1em;
+    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Half-highlight h1 with red accent */
-h1 {
-    background: linear-gradient(to right, #ff6b6b 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+h1:after, h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #d63031);
+    border-radius: 2px;
 }
 
 h3 {
     font-family: 'Lora', serif;
-    color: #333333;
+    color: #d63031; /* Red accent color for h3 */
     margin-top: 1.5em;
     margin-bottom: 0.3em;
+    position: relative;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    background: rgba(214, 48, 49, 0.1); /* Light red background */
+    border-radius: 3px;
 }
 
 a {
