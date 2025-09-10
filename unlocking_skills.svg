@@ -1,5 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="40" r="20" fill="#7ed321"/>
-  <path d="M40,65 L60,65 L55,75 L45,75 Z" fill="#7ed321"/>
-  <line x1="50" y1="20" x2="50" y2="10" stroke="#7ed321" stroke-width="3"/>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A list with a new item being added, symbolizing unlocking a new skill. -->
+  <rect x="20" y="20" width="40" height="12" rx="6" fill="#A8DAB5"/>
+  <rect x="20" y="44" width="40" height="12" rx="6" fill="#A8DAB5"/>
+  <rect x="20" y="68" width="40" height="12" rx="6" fill="#E6F4EA"/>
+  <line x1="75" y1="68" x2="75" y2="80" stroke="#34A853" stroke-width="8" stroke-linecap="round"/>
+  <line x1="69" y1="74" x2="81" y2="74" stroke="#34A853" stroke-width="8" stroke-linecap="round"/>
 </svg>

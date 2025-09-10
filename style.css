@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #2a2a2a;
-    color: #e0e0e0;
+    background-color: #f8f8f8; /* Off-white background */
+    color: #333333; /* Dark text for readability */
     line-height: 1.6;
     margin: 0;
     padding: 2em;
@@ -37,21 +37,30 @@ img {
 
 h1, h2 {
     font-family: 'Lora', serif;
-    color: #c0c0c0;
-    border-bottom: 1px solid #555;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;
     text-align: center;
 }
 
+/* Half-highlight h1 with red accent */
+h1 {
+    background: linear-gradient(to right, #ff6b6b 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
 h3 {
     font-family: 'Lora', serif;
-    color: #c0c0c0;
+    color: #333333;
     margin-top: 1.5em;
     margin-bottom: 0.3em;
 }
 
 a {
-    color: #70c0f0;
+    color: #d63031; /* Red accent color */
     text-decoration: none;
 }
 
@@ -61,7 +70,7 @@ a:hover {
 
 code, pre {
     font-family: 'Fira Code', monospace;
-    background-color: #303030;
+    background-color: #eeeeee;
     padding: 0.2em 0.4em;
     border-radius: 3px;
 }
@@ -73,22 +82,22 @@ pre {
 }
 
 blockquote {
-    border-left: 4px solid #70c0f0;
+    border-left: 4px solid #d63031; /* Red accent color */
     padding: 1em;
     margin: 1em 0;
-    color: #e0e0e0;
-    background-color: #353535;
+    color: #333333;
+    background-color: #f0f0f0;
     border-radius: 5px;
     font-style: italic;
 }
 
 blockquote.warning {
-    border-left: 4px solid #f05050;
+    border-left: 4px solid #e17055; /* Different red for warnings */
     font-style: normal;
 }
 
 .file-list {
-    background-color: #303030;
+    background-color: #eeeeee;
     padding: 1em;
     margin-bottom: 2em;
     border-radius: 5px;
@@ -125,23 +134,24 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin: 1em 0;
-    color: #e0e0e0;
+    color: #333333;
 }
 
 table th, table td {
-    border: 1px solid #555;
+    border: 1px solid #dddddd;
     padding: 0.5em;
     text-align: left;
 }
 
 table th {
     font-weight: bold;
+    background-color: #f0f0f0;
 }
 
 /* Trait definition table styling */
 table.trait-definition {
-    background-color: #353535;
-    border: 1px solid #555;
+    background-color: #f0f0f0;
+    border: 1px solid #dddddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 1em 0;
@@ -149,12 +159,12 @@ table.trait-definition {
 }
 
 table.trait-definition thead tr {
-    background-color: #3a3a3a;
+    background-color: #e0e0e0;
     font-family: 'Lora', serif;
-    color: #c0c0c0;
+    color: #333333;
     font-size: 1.2em;
     font-weight: bold;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #dddddd;
 }
 
 table.trait-definition thead th {
@@ -171,16 +181,4 @@ table.trait-definition tbody td:first-child {
 table.trait-definition td {
     border: none;
     padding: 0.3em 0.5em;
-}
-
-/* Trait definition table styling */
-table.trait-definition {
-    background-color: #353535;
-    border: 1px solid #555;
-    margin: 1em 0;
-}
-
-table.trait-definition thead tr {
-    background-color: #3a3a3a;
-    color: #c0c0c0;
 }

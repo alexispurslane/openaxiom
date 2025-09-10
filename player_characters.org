@@ -163,7 +163,7 @@ Example:
 Special traits that modify the core rules may have multiple categories:
 
 #+ATTR_HTML: :class trait-definition
-| Lucky Charm | Narrow, Special |
+| Lucky Charm | Broad, Special |
 |-------------|-----------------|
 | Skills Affected              | All skills |
 | Effect                       | Once per session, the character may reroll any failed skill check. |

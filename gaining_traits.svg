@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <polygon points="50,20 70,40 60,65 40,65 30,40" fill="#bd10e0"/>
-  <circle cx="50" cy="45" r="8" fill="#fff"/>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- A star representing the special achievement of gaining a new positive trait. -->
+    <path d="M50 15 L61.2 38.8 L87.5 42.5 L68.8 60.7 L73.7 86.2 L50 73.8 L26.3 86.2 L31.2 60.7 L12.5 42.5 L38.8 38.8 Z" 
+          fill="#FBBC05" stroke="#F9AB00" stroke-width="5" stroke-linejoin="round"/>
 </svg>

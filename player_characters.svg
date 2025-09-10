@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <circle cx="50" cy="35" r="20" fill="#4a90e2"/>
-  <rect x="25" y="55" width="50" height="30" rx="5" fill="#4a90e2"/>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A simple, abstract representation of a player character. -->
+  <defs>
+    <style>
+      .pc-body { fill: #4285F4; }
+      .pc-head { fill: #AECBFA; }
+    </style>
+  </defs>
+  <rect x="25" y="45" width="50" height="40" rx="15" class="pc-body"/>
+  <circle cx="50" cy="30" r="15" class="pc-head"/>
 </svg>
