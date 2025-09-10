@@ -42,56 +42,14 @@ The Game Master may adjust this target number based on situational factors. Thes
 Not all successes and failures are equal. OpenAxiom distinguishes between different degrees of success and failure based on how much the roll deviates from the target number.
 
 #+ATTR_HTML: :class degrees-of-success-table
-| Degree of Success/Failure | Roll Result                            | Description                                                                 |
-|---------------------------|----------------------------------------|-----------------------------------------------------------------------------|
-| Critical Success          | 3 or 4                                 | Exceptional performance that exceeds normal capabilities.                  |
-| Exceptional Success       | 5 or more below target number          | Above-average performance with potential minor additional benefits.        |
-| Marginal Success          | Equal to target or 1-4 below target    | Competent performance that achieves the goal without additional benefits.  |
-| Marginal Failure          | 1-4 above target number                | Near-success with some positive outcomes despite overall failure.          |
-| Exceptional Failure       | 5 or more above target number          | Particularly poor performance with additional negative consequences.       |
-| Critical Failure          | 17 or 18                               | Catastrophic performance with significant negative effects.                |
-
-** Critical Successes
-:PROPERTIES:
-:ID:       9A1B5C4D-7E2F-6A0B-3C5D-8E2F7A0B4C6D
-:END:
-
-A roll of 3 or 4 on 3d6 is always a critical success, regardless of the target number. Critical successes represent exceptional performance that exceeds normal capabilities. The Game Master should narrate these moments as particularly impressive or fortunate outcomes that may have additional beneficial effects beyond simply succeeding at the task.
-
-** Exceptional Successes
-:PROPERTIES:
-:ID:       0B2C6D5E-8F3A-7B1C-4D6E-9F3A8B1C5D7E
-:END:
-
-When a roll is 5 or more below the target number, the action succeeds exceptionally well. For example, with a target number of 12, a roll of 7 or less would be an exceptional success. These represent above-average performance that may provide minor additional benefits as determined by the Game Master.
-
-** Marginal Successes
-:PROPERTIES:
-:ID:       1C3D7E6F-9A4B-8C2D-5E7F-0A4B9C2D6E8F
-:END:
-
-When a roll exactly equals the target number, or is 1-4 below the target number, the action succeeds but just barely. For example, with a target number of 12, a roll of 8-12 would be a marginal success. These represent competent performance that achieves the goal but without any additional benefits.
-
-** Marginal Failures
-:PROPERTIES:
-:ID:       2D4E8F7A-0B5C-9D3E-6F8A-1B5C0D3E7F9A
-:END:
-
-When a roll is 1-4 above the target number, the action fails but only just. For example, with a target number of 12, a roll of 13-16 would be a marginal failure. These represent near-successes that may have some positive outcomes despite the overall failure, as determined by the Game Master.
-
-** Exceptional Failures
-:PROPERTIES:
-:ID:       3E5F9A8B-1C6D-0E4F-7A9B-2C6D1E4F8A0B
-:END:
-
-When a roll is 5 or more above the target number, the action fails exceptionally badly. For example, with a target number of 12, a roll of 17 or more would be an exceptional failure. These represent particularly poor performance that may have additional negative consequences beyond simply failing at the task.
-
-** Critical Failures
-:PROPERTIES:
-:ID:       4F6A0B9C-2D7E-1F5A-8B0C-3D7E2F5A9B1C
-:END:
-
-A roll of 17 or 18 on 3d6 is always a critical failure, regardless of the target number. Critical failures represent catastrophic performance that goes beyond simple failure. The Game Master should narrate these moments as particularly disastrous or unfortunate outcomes that may have significant negative effects beyond simply failing at the task.
+| Degree of Success/Failure | Roll Result                            | Description                                                                 | GM Guidance |
+|---------------------------|----------------------------------------|-----------------------------------------------------------------------------|-------------|
+| Critical Success          | 3 or 4                                 | Exceptional performance that exceeds normal capabilities.                  | Narrate as particularly impressive or fortunate outcomes with additional beneficial effects. |
+| Exceptional Success       | 5 or more below target number          | Above-average performance with potential minor additional benefits.        | May provide minor additional benefits as determined by the Game Master. |
+| Marginal Success          | Equal to target or 1-4 below target    | Competent performance that achieves the goal without additional benefits.  | Standard success with no additional benefits. |
+| Marginal Failure          | 1-4 above target number                | Near-success with some positive outcomes despite overall failure.          | May have some positive outcomes despite the overall failure, as determined by the Game Master. |
+| Exceptional Failure       | 5 or more above target number          | Particularly poor performance with additional negative consequences.       | May have additional negative consequences beyond simply failing at the task. |
+| Critical Failure          | 17 or 18                               | Catastrophic performance with significant negative effects.                | Narrate as particularly disastrous or unfortunate outcomes with significant negative effects. |
 
 * Opposed Actions
 :PROPERTIES:
