@@ -51,6 +51,43 @@ Not all successes and failures are equal. OpenAxiom distinguishes between differ
 | Exceptional Failure       | 5 or more above target number          | Particularly poor performance.                                             | May have additional negative consequences. |
 | Critical Failure          | 17 or 18                               | Catastrophic performance with significant negative effects.                | Narrate as particularly disastrous or unfortunate outcomes. |
 
+** 3d6 Probability Distribution
+:PROPERTIES:
+:ID:       6D7E8F9A-0B1C-2D3E-4F5A-6B7C8D9E0F1A
+:END:
+
+The 3d6 roll follows a bell curve distribution, with results near the middle (10-11) being most common and results at the extremes (3 and 18) being rare. The table below shows the probability of each possible roll, along with how rolls are categorized relative to a target number of 9:
+
+#+ATTR_HTML: :class probability-table
+| Roll | Count | Probability | Category for Target 9   |
+|------|-------|-------------|-------------------------|
+| 3    | 1     | 0.46%       | Critical Success        |
+| 4    | 3     | 1.39%       | Critical Success        |
+| 5    | 6     | 2.78%       | Marginal Success        |
+| 6    | 10    | 4.63%       | Marginal Success        |
+| 7    | 15    | 6.94%       | Marginal Success        |
+| 8    | 21    | 9.72%       | Marginal Success        |
+| 9    | 25    | 11.57%      | Marginal Success        |
+| 10   | 27    | 12.50%      | Marginal Failure        |
+| 11   | 27    | 12.50%      | Marginal Failure        |
+| 12   | 25    | 11.57%      | Marginal Failure        |
+| 13   | 21    | 9.72%       | Exceptional Failure     |
+| 14   | 15    | 6.94%       | Exceptional Failure     |
+| 15   | 10    | 4.63%       | Exceptional Failure     |
+| 16   | 6     | 2.78%       | Exceptional Failure     |
+| 17   | 3     | 1.39%       | Critical Failure        |
+| 18   | 1     | 0.46%       | Critical Failure        |
+
+With a target number of 9, the probabilities for each degree of success/failure are:
+- Critical Success: 1.85%
+- Exceptional Success: 0% (for target 9, exceptional successes overlap with critical successes)
+- Marginal Success: 35.65%
+- Marginal Failure: 36.57%
+- Exceptional Failure: 24.07%
+- Critical Failure: 1.85%
+
+This distribution shows that for an average skill (target 9), characters will succeed slightly less often than they fail, which creates a good balance of challenge and achievability.
+
 * Opposed Actions
 :PROPERTIES:
 :ID:       6A8B1C0D-3E9F-2A6B-9C1D-4E8F3A7B0C2D
