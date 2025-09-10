@@ -225,9 +225,6 @@ Here are some examples of traits. These examples illustrate diverse effects as b
 :ID:       290B9FE6-7BE7-4FBE-814C-CE965C3D5E07
 :END:
 
-#+ATTR_HTML: :class section-icon
-[[file:inventory.svg]]
-
 Characters in OpenAxiom have a simple inventory system. Your best strength-related skill determines the number of inventory slots you have available to carry items. Strength-related skills include *Physical (Strength)*, *Physical (Endurance)*, and any other skills that the Game Master deems appropriate for determining carrying capacity.
 
 Items are categorized into four size classes that determine how they consume inventory slots:
@@ -515,6 +512,9 @@ Story points can be saved and accumulated over multiple sessions. They do not ne
 
 *** Improving Existing Skills
 
+#+ATTR_HTML: :class section-icon
+[[file:improving_skills.svg]]
+
 Any amount of story points can be applied to skills the character already has. Increasing a skill's value requires more story points as the skill becomes more proficient. Each improvement follows a simple step progression: the first time a skill is improved (when it's initially unlocked) costs 1 story point, the second improvement costs 2 story points, the third costs 3 story points, and so on.
 
 The formula for determining the cost to improve a skill to the next level is: next level cost = new value - 9
@@ -543,6 +543,9 @@ The graph below shows how a character's success rate increases over time when sp
 
 *** Unlocking New Skills
 
+#+ATTR_HTML: :class section-icon
+[[file:unlocking_skills.svg]]
+
 One story point can be spent to unlock a new skill. This immediately grants the skill a +1 bonus to its proficiency value, just like during character creation. Any remaining story points from that award cannot be spent on the same skill - they must be used on other options. This represents the character learning a new area of expertise, similar to how skills are chosen during character creation.
 
 Characters can have specific skills without having the more general version. For example, a character can unlock *Piloting (Starship)* without having *Piloting*. When a character has a specific skill but not its more general version, they can only use that specific skill for tasks that match it exactly. They cannot use it as a substitute for other specializations of the same general skill.
@@ -550,6 +553,9 @@ Characters can have specific skills without having the more general version. For
 If a player wants to unlock a more specific skill for a more general skill they already have, that specific skill starts at a +2 advantage, because knowledge is transferrable. For example, a character with *Piloting* at +1 who wants to unlock *Piloting (Starship)* would start with a +3 bonus (+1 from the unlock +2 from the transferable knowledge).
 
 *** Overcoming Negative Traits
+
+#+ATTR_HTML: :class section-icon
+[[file:overcoming_traits.svg]]
 
 Traits represent a character's inherent nature and are fundamentally different from trained skills. Altering them is a rare and monumental process tied directly to the character's story.
 
@@ -562,6 +568,9 @@ This system represents gradual character growth as players work to overcome thei
 Note that existing positive traits are fixed and cannot be modified through story point expenditure. Only negative traits can be reduced or overcome.
 
 *** Gaining Positive Traits
+
+#+ATTR_HTML: :class section-icon
+[[file:gaining_traits.svg]]
 
 Gaining a new innate positive trait is a profound and permanent change to a character. This transformation requires extraordinary performance and calculated risk.
 
