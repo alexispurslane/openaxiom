@@ -1,117 +1,105 @@
-#+TITLE: Logic of Action: Core Decision Resolution Mechanism
-#+OPTIONS: H:6
+#+TITLE: Actions: Decision Resolution Mechanism
+#+OPTIONS: H:7
 #+ATTR_HTML: :class section-icon
 [[file:logic_of_action.svg]]
 
-This section describes the core decision resolution mechanism in OpenAxiom. When a character attempts an action with a meaningful chance of failure, the player and Game Master use the logic of action to determine the outcome. This system provides a consistent framework for resolving uncertainty while maintaining narrative flow.
+This section describes the decision resolution mechanism for actions in OpenAxiom. When a character attempts an action with a meaningful chance of failure, the player and Game Master use the logic of action to determine the outcome. This system provides a consistent framework for resolving uncertainty while maintaining narrative flow.
 
-* Core Mechanic
+The following sections detail how actions are resolved in various circumstances:
+
+* Actions
 :PROPERTIES:
 :ID:       5D8E2F1A-4B9C-3D7E-2F1A-4B9C3D7E2F1A
 :END:
 
 The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the result to a target number. The player rolls 3d6 and sums the results. If the total is less than or equal to the target number, the action succeeds. If the total is greater than the target number, the action fails.
 
-This simple mechanic underlies all character actions in the game. The target number is determined by the character's relevant skill value, modified by situational factors as determined by the Game Master.
+**Restriction on Repeating Skill Checks**: Players cannot make the same skill check twice in a row without at least 3 turns between them or a change in circumstance (as determined by the Game Master). This prevents characters from simply retrying the same action indefinitely until they succeed, encouraging creative problem-solving and narrative progression.
 
-* Determining Target Numbers
+This simple mechanic underlies all character actions in the game. The target number is determined by the character's relevant skill value, modified by applicable traits and situational factors as determined by the Game Master. Characters may also receive temporary modifiers from systems like *Momentum*, which can provide a +1 bonus to the character's skill value for the purpose of determining the target number for any action in the same scene.
+
+** Determining Target Numbers
 :PROPERTIES:
 :ID:       7E9F3A2B-5C0D-4E8F-9A3B-6C0D5E9F2A4B
 :END:
 
 The base target number for any skill check is the character's skill value. A character with *Piloting (Starship)* at 12 would have a target number of 12 for starship piloting checks.
 
-The Game Master may adjust this target number based on situational factors. These adjustments typically range from -3 to +3, representing extremely easy to extremely difficult circumstances. The following table provides guidelines for determining appropriate modifiers:
+The target number is then modified by applicable character traits and situational factors as determined by the Game Master. Applicable traits always modify the target number, while situational adjustments typically range from -3 to +3, representing extremely easy to extremely difficult circumstances. Trait modifiers will vary based on the specific traits the character possesses and how they apply to the situation. The following table provides guidelines for determining appropriate modifiers, showing what the resulting target number would be for a character with the default skill level of 9:
 
 #+ATTR_HTML: :class difficulty-modifier-table
-| Difficulty        | Modifier | Description                                              |
-|-------------------|----------|----------------------------------------------------------|
-| Very Easy         | +3       | Tasks that should almost always succeed for competent characters. |
-| Easy              | +2       | Tasks that are straightforward for characters with relevant skills. |
-| Moderate          | +1       | Tasks of average difficulty for characters with relevant skills. |
-| Default           | 0        | No modifier for tasks of standard difficulty.            |
-| Hard              | -1       | Tasks that challenge even skilled characters.            |
-| Very Hard         | -2       | Tasks that are difficult even for experts.               |
-| Nearly Impossible | -3       | Tasks that border on the impossible.                     |
+| Difficulty        | Modifier | Target Number (Skill 9) | Description                                                         |
+|-------------------+----------+-------------------------+---------------------------------------------------------------------|
+| Very Easy         |       +3 |                      12 | Tasks that should almost always succeed for competent characters.   |
+| Easy              |       +2 |                      11 | Tasks that are straightforward for characters with relevant skills. |
+| Moderate          |       +1 |                      10 | Tasks of average difficulty for characters with relevant skills.    |
+| Medium            |        0 |                       9 | No modifier for tasks of standard difficulty.                       |
+| Hard              |       -1 |                       8 | Tasks that challenge even skilled characters.                       |
+| Very Hard         |       -2 |                       7 | Tasks that are difficult even for experts.                          |
+| Nearly Impossible |       -3 |                       6 | Tasks that border on the impossible.                                |
 
-* Degrees of Success and Failure
+
+** Momentum
 :PROPERTIES:
-:ID:       8F0A4B3C-6D1E-5F9A-0B4C-7D2E6F0A5C8D
+:ID:       3B4C5D6E-7F8G-9H0I-1J2K-3L4M5N6O7P8Q
 :END:
 
-Not all successes and failures are equal. OpenAxiom distinguishes between different degrees of success and failure based on how much the roll deviates from the target number.
+Additional modifiers may come from temporary conditions such as *Momentum*, which can provide a +1 bonus to the character's skill value for the purpose of determining the target number for any subsequent action in the same scene.
 
-#+ATTR_HTML: :class degrees-of-success-table
-| Degree of Success/Failure | Roll Result                            | Description                                                                 |
-|---------------------------|----------------------------------------|-----------------------------------------------------------------------------|
-| Critical Success          | 3 or 4                                 | Exceptional performance that exceeds normal capabilities.                  |
-| Exceptional Success       | 5 or more below target number          | Above-average performance that may provide minor additional benefits.        |
-| Marginal Success          | Equal to target or 1-4 below target    | Competent performance that achieves the goal but without any additional benefits.  |
-| Marginal Failure          | 1-4 above target number                | Near-successes that may have some positive outcomes despite the overall failure.          |
-| Exceptional Failure       | 5 or more above target number          | Particularly poor performance that may have additional negative consequences.       |
-| Critical Failure          | 17 or 18                               | Catastrophic performance that goes beyond simple failure.                |
+*Momentum* is a simple resource that characters either have or don't have. When a character has *Momentum*, they /must/ spend it to gain the +1 bonus within the same scene.
 
-** 3d6 Probability Distribution
+** Contested Actions
 :PROPERTIES:
-:ID:       6D7E8F9A-0B1C-2D3E-4F5A-6B7C8D9E0F1A
+:ID:       DEC600FD-E945-4A3B-A9CB-06F392804B33
 :END:
 
-The 3d6 roll follows a bell curve distribution, with results near the middle (10-11) being most common and results at the extremes (3 and 18) being rare. The table below shows the probability of each possible roll, along with how rolls are categorized relative to a target number of 9:
+When two characters directly oppose each other in an action, such as in a contest of strength or a race, both characters make skill checks. The winner is determined by comparing the degree of success each character achieves, not by comparing the numerical results of their dice rolls.
 
-#+ATTR_HTML: :class probability-table
-| Roll | Count | Probability | Category for Target 9   |
-|------|-------|-------------|-------------------------|
-| 3    | 1     | 0.46%       | Critical Success        |
-| 4    | 3     | 1.39%       | Critical Success        |
-| 5    | 6     | 2.78%       | Marginal Success        |
-| 6    | 10    | 4.63%       | Marginal Success        |
-| 7    | 15    | 6.94%       | Marginal Success        |
-| 8    | 21    | 9.72%       | Marginal Success        |
-| 9    | 25    | 11.57%      | Marginal Success        |
-| 10   | 27    | 12.50%      | Marginal Failure        |
-| 11   | 27    | 12.50%      | Marginal Failure        |
-| 12   | 25    | 11.57%      | Marginal Failure        |
-| 13   | 21    | 9.72%       | Exceptional Failure     |
-| 14   | 15    | 6.94%       | Exceptional Failure     |
-| 15   | 10    | 4.63%       | Exceptional Failure     |
-| 16   | 6     | 2.78%       | Exceptional Failure     |
-| 17   | 3     | 1.39%       | Critical Failure        |
-| 18   | 1     | 0.46%       | Critical Failure        |
+The resolution follows this cascading logic:
+1. Each character independently determines their degree of success by consulting the Degrees of Success and Failure table based on their roll result and target number
+2. Compare the qualitative outcomes: Critical Success > Exceptional Success > Standard Success > Marginal Failure > Exceptional Failure > Critical Failure
+3. The character with the higher degree of success wins the opposed action
+4. If both characters achieve the same degree of success, the character with the higher skill value wins
+5. If both characters have the same skill value and achieve the same degree of success, the Game Master may call for additional rolls or determine the outcome narratively
 
-With a target number of 9, the probabilities for each degree of success/failure are:
-- Critical Success: 1.85%
-- Exceptional Success: 0% (for target 9, exceptional successes overlap with critical successes)
-- Marginal Success: 35.65%
-- Marginal Failure: 36.57%
-- Exceptional Failure: 24.07%
-- Critical Failure: 1.85%
+This approach ensures that characters with higher skills have a better chance of success while still allowing for dramatic upsets when a lower-skilled character achieves a better degree of success.
 
-This distribution shows that for an average skill (target 9), characters will succeed slightly less often than they fail, which creates a good balance of challenge and achievability.
-
-* Opposed Actions
-:PROPERTIES:
-:ID:       6A8B1C0D-3E9F-2A6B-9C1D-4E8F3A7B0C2D
-:END:
-
-When two characters directly oppose each other in an action, such as in a contest of strength or a race, both characters make skill checks. The character with the higher degree of success wins. If both characters have the same degree of success, the character with the higher skill value wins. If both characters have the same skill value and degree of success, the Game Master may call for additional rolls or determine the outcome narratively.
-
-* Group Actions
+** Group Actions
 :PROPERTIES:
 :ID:       7B9C2D1E-4F0A-3B7C-0D2E-5F9A4B8C1D3E
 :END:
 
 When a group of characters works together on a task, the Game Master determines which character has the highest relevant skill. That character makes the primary skill check. Other characters may provide assistance, granting a +1 bonus to the primary character's roll for each assisting character, up to a maximum bonus of +3.
 
+If two or more characters have the same value in a skill relevant to the action (even if the skills themselves are not identical), and the first attempt does not go well, the group may attempt the action again in the same turn using a different character with the same value in a skill relevant to the action as the primary actor. The same bonuses for additional helpers still apply to this second attempt. This allows for a rapid second attempt by a different character, serving as an exception to the general restriction on repeating skill checks.
+
 Characters can also work independently on the same task. In this case, each character makes their own skill check. The Game Master determines how the individual results combine to affect the overall outcome.
 
-* Extended Actions
+** Extended Actions
 :PROPERTIES:
 :ID:       8C0D3E2F-5A1B-4C8D-1E3F-6A0B5C9D2E4F
 :END:
 
-Some tasks require sustained effort over time rather than a single roll. For these extended actions, the Game Master sets a total difficulty value based on the complexity and duration of the task. Characters make repeated skill checks, accumulating successes until they reach the required total. The time between checks and the consequences of failures are determined by the Game Master based on the narrative circumstances.
+Some tasks require sustained effort over time rather than a single roll. For these extended actions, the Game Master sets a required number of turns based on the complexity and duration of the task. Characters must make skill checks on each turn until they have successfully completed the required number of turns.
 
-* Logic of Action Examples
+Extended actions can occur in two contexts:
+
+1. *Planned Extended Actions*: Tasks that are inherently complex or time-consuming, such as crafting items, conducting research, or performing complex repairs.
+
+2. *Gritted Retries*: Tasks that were previously failed with a marginal failure and are being retried with renewed determination. In this case, the action requires two turns to succeed as the character pushes themselves harder, and the player must accept a consequence (taking harm, damaging an item, or granting an enemy *Momentum* for their next action, of any kind) as the cost of this extra effort.
+
+The outcome of each turn's check determines the progress:
+
+- Standard Success or Exceptional Success: The character completes the turn's work and counts it toward the total required turns
+- Critical Success: The character finishes the rest of the task all in that one turn, immediately completing the entire extended action
+- Marginal Failure: The character doesn't make progress on this turn but can continue the task on subsequent turns without penalty
+- Exceptional Failure or Critical Failure: The character fails catastrophically and must attempt the task all over again (if the Game Master will allow a retry)
+
+This system allows for dramatic moments where a character can suddenly overcome a long task with a single amazing roll, while also providing meaningful consequences for poor performance that don't necessarily end the action immediately.
+
+The time between checks and other consequences of failures are determined by the Game Master based on the narrative circumstances.
+
+** Logic of Action Examples
 :PROPERTIES:
 :ID:       9D1E4F3A-6B2C-5D9E-2F4A-7B1C6D0E3F5A
 :END:
@@ -120,9 +108,176 @@ Some tasks require sustained effort over time rather than a single roll. For the
 #+BEGIN_QUOTE
 Elara attempts to pick a lock on a secure door. Her *Physical (Lockpicking)* skill is 11. The Game Master judges the lock to be of average difficulty, so no modifier is applied. Elara's target number is 11.
 
-She rolls 3d6 and gets a 2, 4, and 5 for a total of 11. This is a marginal success. The lock clicks open after a few moments of careful work.
+She rolls 3d6 and gets a 2, 4, and 5 for a total of 11. This is a standard success. The lock clicks open after a few moments of careful work.
 
 In another situation, Jax needs to hack a corporate security system. His *Computers (Hacking)* skill is 13, but the system is particularly advanced, giving it a -2 difficulty modifier. His target number is 11.
 
 Jax rolls 3d6 and gets a 1, 2, and 2 for a total of 5. This is an exceptional success (6 below his target number). The system is not only hacked but Jax gains additional information about the network that could prove useful later.
 #+END_QUOTE
+
+* Consequences
+:PROPERTIES:
+:ID:       2A3B4C5D-6E7F-8G9H-0I1J-2K3L4M5N6O7P
+:END:
+
+The qualitative degree of success or failure achieved on an action roll has direct consequences for how the game simulation unfolds. These consequences are not just narrative, but inform the mechanics of the game directly. Understanding these consequences helps both players and Game Masters create more engaging and consistent narratives.
+
+** Degrees of Success and Failure
+:PROPERTIES:
+:ID:       8F0A4B3C-6D1E-5F9A-0B4C-7D2E6F0A5C8D
+:END:
+
+Not all successes and failures are equal. OpenAxiom distinguishes between different degrees of success and failure based on how much the roll deviates from the target number.
+
+#+ATTR_HTML: :class degrees-of-success-table
+| Degree of Success/Failure | Roll Result                            | Description                                                                 | GM Guidance |
+|---------------------------|----------------------------------------|-----------------------------------------------------------------------------|-------------|
+| Critical Success          | 3 or 4                                 | Exceptional performance that exceeds normal capabilities.                  | Narrate as particularly impressive or fortunate outcomes. |
+| Exceptional Success       | 5 or more below target number          | Above-average performance.                                                 | May provide minor additional benefits. |
+| Standard Success          | Equal to target or 1-4 below target    | Competent performance.                             | Standard success with no additional benefits. |
+| Marginal Failure          | 1-4 above target number                | Near-success.         | May have some positive outcomes despite the overall failure. |
+| Exceptional Failure       | 5 or more above target number          | Particularly poor performance.                                             | May have additional negative consequences besides simple failure |
+| Critical Failure          | 17 or 18                               | Catastrophic performance.               | Narrate as particularly disastrous or unfortunate outcomes. |
+
+** Probability of Degrees of Success and Failure at Different Difficulty Levels
+:PROPERTIES:
+:ID:       6D7E8F9A-0B1C-2D3E-4F5A-6B7C8D9E0F1A
+:END:
+
+The 3d6 roll follows a bell curve distribution, with results near the middle (10-11) being most common and results at the extremes (3 and 18) being rare. The graph below shows the probability of achieving each degree of success or failure for a character with a skill of 9 at different difficulty levels:
+
+#+ATTR_HTML: :class probability-distribution-graph
+[[file:probability_distribution.svg]]
+
+This visualization shows how the probabilities shift as the difficulty of a task changes. At easier difficulties (higher target numbers), success becomes more likely, while at harder difficulties (lower target numbers), failure becomes more likely. The graph makes it clear that characters with average skills (target 9) on medium difficulty tasks will most commonly experience either a standard success or a marginal failure.
+
+** Critical Success
+:PROPERTIES:
+:ID:       DC9B4AAC-6412-4FAB-97F9-1D36D80C3FF6
+:END:
+A critical success represents an exceptional performance that exceeds normal capabilities. When a character achieves a critical success, they not only accomplish their intended goal but often gain additional benefits or insights that weren't anticipated. These might include:
+
+- Gaining extra information beyond what was sought
+- Completing the task with time to spare
+- Creating an advantageous situation for future actions
+- Impressing observers or gaining reputation benefits
+- Avoiding potential complications or hazards
+
+In terms of character advancement, critical successes have special significance:
+
+1. When a critical success occurs at a pivotal story moment, it opens the possibility for the player to spend story points to gain new positive traits through the Crucible Roll process, as detailed in the [[./player_characters.html#gaining-positive-traits][Character Advancement section on Gaining Positive Traits]]. This represents the character having a transformative experience that could fundamentally change who they are.
+
+2. Even if the critical success did not occur at a pivotal story moment, the player is granted one story point that they can bank for future use. This reward recognizes that exceptional performance, even in routine circumstances, demonstrates the character's growing capabilities and potential.
+
+Critical successes should be celebrated as significant moments in a character's development, representing times when they exceed their normal limits and potentially glimpse new possibilities for growth.
+
+** Exceptional Success
+:PROPERTIES:
+:ID:       1C983119-14C2-443E-A387-4DDBF57E490E
+:END:
+An exceptional success indicates above-average performance that goes beyond what was expected. Characters who achieve exceptional successes:
+
+- Accomplish their goals with notable skill
+- May gain minor additional benefits
+- Create positive ripple effects in the narrative
+- Demonstrate expertise that might influence NPC reactions
+
+Exceptional successes represent the character operating at peak performance and can be used by the Game Master to highlight a character's expertise or specialties.
+
+In addition to these narrative benefits, exceptional successes grants characters *Momentum*, which provides a mechanical benefit for subsequent actions. The rules for how Momentum applies to future skill checks are detailed in the [[./logic_of_action.html#momentum][Momentum section]] under Actions. The logic for how it is gained is as follows:
+
+- If the player didn't already have Momentum, then they gain it.
+- If the player had Momentum for the skill check that resulted in the current exceptional success, they gain Momentum again.
+- If the player already had Momentum, and gained it again, even without using it, they keep it.
+
+This represents characters "getting into the flow" or "getting high on success," encouraging players to keep the actual momentum of play going, and giving them an interesting tatical advantage to play with, as they can act in more risky ways.
+
+** Standard Success
+:PROPERTIES:
+:ID:       2CFD9C05-FEAE-40B2-BEB7-B5A8A6F6C330
+:END:
+A standard success represents competent performance - the character achieves their intended goal without complications but also without additional benefits. This is the most common outcome for characters with average skills attempting moderate difficulty tasks. Standard successes:
+
+- Achieve the intended goal directly
+- Proceed without narrative embellishment
+- Represent reliable, everyday competence
+- Form the backbone of routine character activities
+
+Standard successes are important because they keep the game moving forward without bogging it down in constant exceptional outcomes. They represent the baseline of competent performance that players should expect from their characters.
+
+** Marginal Failure
+:PROPERTIES:
+:ID:       0D5DEAFF-5B59-4C4E-85C6-6E026E33ABEE
+:END:
+A marginal failure indicates a near-success where the character almost achieved their goal. When a character suffers a marginal failure, the player has two options:
+
+*Let It Fail*: The action fails completely, creating a dead end. The character can try a different approach or attempt the action again under different circumstances without any immediate consequences.
+
+*Retry with Grit*: The character can retry the action with renewed determination, putting more effort and grit into the attempt. This approach requires two turns to succeed as the character pushes themselves harder, but it also comes with a cost. The player must choose one of the following negative consequences that represent the toll of this extra effort:
+
+1. *Take Harm*: The character takes one level of harm on a relevant tracker, but it can't push the tracker past level 1. The physical or mental strain of pushing themselves takes its toll.
+
+2. *Item Damage*: A relevant item (skill prerequisite or skill check in a box) becomes damaged and temporarily unusable, but can be repaired. The intense effort damages their equipment or resources.
+
+3. *Enemy Momentum*: An enemy gains *Momentum* for their next action, of any kind.
+
+While the retry takes longer for the player, the increased effort makes it more likely to succeed. The character can continue to reroll for a critical or standard success on each attempt, as long as they don't get an exceptional or critical failure. This approach represents the character refusing to give up and pushing through the challenge with sheer determination, but such grit comes at a price.
+
+This choice gives players agency in determining how their character responds to near-success. They can either accept the failure and move on, or invest additional time and accept a consequence to guarantee eventual success through sheer determination. Game Masters should work with players to determine which option makes the most narrative sense in the given situation.
+
+** Exceptional Failure
+:PROPERTIES:
+:ID:       712E7D1B-6AB3-4D69-A555-3805FAEB7EF6
+:END:
+An exceptional failure represents particularly poor performance that goes beyond simple failure. These outcomes:
+
+- Create additional negative consequences beyond simple failure
+- May harm the character's position or resources
+- Can damage reputation or relationships
+- Often require additional recovery actions
+
+Exceptional failures should have meaningful consequences that affect the narrative, but shouldn't be so punishing as to derail the game. They work best when they create interesting complications rather than simple setbacks.
+
+When a character suffers an exceptional failure, the Game Master chooses one of the following three consequences, selecting the one that best fits what happened in the narrative:
+
+1. *Take Significant Physical Harm*: The character takes one level of physical harm on a relevant tracker (can push the harm tracker up to level 2)
+
+2. *Serious Item Damage*: Any item (a treasured lore item, skill prerequisite or skill check in a box) becomes damaged and temporarily unusable (but can be repaired)
+
+3. *Enemy Momentum*: An enemy gains *Momentum* for their next action, of any kind
+
+Game Masters should consider the specific circumstances of the failed action when selecting a consequence. For example, a failed acrobatic maneuver might result in harm, while a failed attempt to hack a computer might damage equipment, and a failed social interaction might give an opponent an advantage. This approach ensures that consequences feel natural and integrated into the story rather than arbitrary. The changes from the basic failure options (significant physical harm that can push trackers to level 2, and serious item damage that can affect treasured lore items) make these consequences more impactful than those for marginal failures.
+
+The following table can help Game Masters quickly determine an appropriate consequence based on the type of skill check that failed:
+
+#+ATTR_HTML: :class exceptional-failure-consequences-table
+| Skill Check Type         | Recommended Consequence | Reasoning                                                            |
+|--------------------------+-------------------------+----------------------------------------------------------------------|
+| Physical/Combat Skills   | Significant Physical Harm | Failed physical actions often directly harm the character            |
+| Technical/Device Skills  | Serious Item Damage     | Technical failures often damage equipment or tools                   |
+| Social/Interaction Skills| Enemy Momentum          | Social failures often give opponents an advantage                    |
+| Investigation/Research   | Serious Item Damage     | Failed research might damage or lose important documents or devices  |
+| Stealth/Infiltration     | Enemy Momentum          | Being caught often alerts or empowers enemies                        |
+| Survival/Wilderness      | Significant Physical Harm | Wilderness failures often result in direct physical harm             |
+
+When in doubt, choose Enemy Momentum in combat, Item Damage for technical tasks, and Harm for physical challenges. This provides a solid default while still allowing GMs to customize consequences based on the specific narrative circumstances.
+
+
+** Critical Failure
+:PROPERTIES:
+:ID:       B89FE04A-634B-4886-9F5E-703149997A19
+:END:
+A critical failure indicates catastrophic performance that can have severe narrative consequences. These might include:
+
+- Creating dangerous situations for the character or allies
+- Attracting unwanted attention from enemies
+- Damaging equipment or resources
+- Causing significant setbacks to plans
+
+In addition to these narrative consequences, critical failures have specific mechanical effects. When a character suffers a critical failure, they move up one level on a harm tracker related to the skill that was being used when the skill check failed, as detailed in the [[./player_characters.html#character-status-effects][Character Status Effects section]].
+
+If multiple harm trackers could apply, the Game Master should choose the one with the current lowest level, following the [[./player_characters.html#least-harmed-principle][Least Harmed Principle]]. This represents the character compensating for their wounds by leaning more heavily on their other capabilities.
+
+A critical failure can only push any harm tracker up to level 2 (Impaired). Beyond that point, there may be narrative consequences to a critical failure, but no additional mechanical effects. This limitation prevents critical failures from being overly punitive while still providing meaningful consequences for catastrophic performance. Information about [[./player_characters.html#harm-tracker-levels-and-penalties][Harm Tracker Levels and Penalties]] can be found in the Player Characters section.
+
+Critical failures are dramatic moments that can shift the direction of a scene or even an entire campaign. They should be used sparingly and with consideration for their impact on the overall narrative.
