@@ -122,6 +122,35 @@ IMPORTANT: Even Game Masters should refrain from introducing custom Special trai
 
 Traits are identified by a descriptive name. An example is *Perfect Pitch*.
 
+** Standard Trait Definition Format
+:PROPERTIES:
+:ID:       7394B52A-CF34-4512-BEC4-1FFC4AB7E730
+:END:
+
+When defining traits, use the following standardized format to ensure clarity and consistency. This format should be used for all traits, whether they are from official trait packs or custom creations.
+
+#+ATTR_HTML: :class trait-definition
+| Trait Name | Category |
+|------------|----------|
+| Skills Affected       | [List of skills affected by this trait] |
+| Effect                | [Description of the mechanical effect of this trait] |
+
+Example:
+
+#+ATTR_HTML: :class trait-definition
+| Natural Leader | Broad |
+|----------------|-------|
+| Skills Affected        | Social |
+| Effect                 | Provides a bonus to all social interaction skills. |
+
+Special traits that modify the core rules may have multiple categories:
+
+#+ATTR_HTML: :class trait-definition
+| Lucky Charm | Broad, Special |
+|-------------|-----------------|
+| Skills Affected              | All skills |
+| Effect                       | Once per session, the character may reroll any failed skill check. |
+
 ** Trait Evolution and Modification
 :PROPERTIES:
 :ID:       3F9E1A73-0CD5-4D31-8281-E1CF1341AA40
