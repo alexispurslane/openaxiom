@@ -314,3 +314,18 @@ This free attack:
 - Is resolved as a normal attack sequence (declare, roll, determine, damage, armor, apply)
 
 This rule represents how difficult it is to simply walk away from an armed opponent without dealing with them first. The zone of control mechanic adds tactical depth to positioning and makes retreats more strategically meaningful.
+
+*** Non-Harm-Tracker Status Effects
+:PROPERTIES:
+:ID:       9C0D1E2F-3G4H-5I6J-7K8L-9M0N1O2P3Q4R
+:END:
+
+While the harm tracker system covers generalized status effects that affect broad categories of skills, some specific status effects operate outside this system. These non-harm-tracker-based status effects are simpler and more focused in their mechanical impact. There are three primary types:
+
+1. *Continuous HP Drain*: Effects like bleeding or poison that continuously drain HP from a specific body location. Unlike harm trackers which apply penalties to skill checks, these effects directly reduce the HP pool of the affected limb. For example, a bleeding arm would lose a set amount of HP each round until the bleeding is stopped.
+
+2. *Movement Speed Detriment*: Effects that reduce a character's movement speed, such as being entangled or slowed. These effects set a specific detriment to the character's normal movement allowance, reducing how many hexes they can move on their turn.
+
+3. *Weapon Range Detriment*: Effects that reduce the effective range of a character's weapons, such as poor visibility or unstable footing. These effects set a specific detriment to the weapon's normal range, reducing the distance at which the weapon remains effective.
+
+These status effects represent specific, concrete mechanical impacts rather than the generalized skill penalties of harm trackers, providing more precise simulation of certain conditions that affect characters in combat.
