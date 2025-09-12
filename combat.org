@@ -269,7 +269,7 @@ Characters can change their posture as a minor action on their turn. This allows
 :ID:       7Y5Z6A8B-9C0D-1E2F-3G4H-5I6J7K8L9M0N
 :END:
 
-Players may move up to their best fleetness/quickness related *Physical* skill divided by 3 (rounded up) as their movement action. Movement is considered a minor action on their turn, allowing characters to still take a major action for attacking or other activities. Moving through difficult terrain costs additional movement points as determined by the terrain table above.
+Players may move up to their best fleetness/quickness related *Physical* skill minus 5 (minimum of 1) as their movement action. Movement is considered a minor action on their turn, allowing characters to still take a major action for attacking or other activities. Moving through difficult terrain costs additional movement points as determined by the terrain table above.
 
 *** Line of Sight
 :PROPERTIES:
