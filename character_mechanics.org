@@ -415,41 +415,35 @@ Once a skill reaches 18 (ignoring any trait bonuses), players have the option to
 
 Signature Abilities must fall into one of three categories:
 
-*** Category 1: Exemptions (Bending the Rules)
+1. *Exemptions (Bending the Rules)*: An Exemption allows a character to ignore a specific penalty or limitation. They don't give bonuses; they remove negatives.
 
-An Exemption allows a character to ignore a specific penalty or limitation. They don't give bonuses; they remove negatives.
+   #+BEGIN_QUOTE
+   Example (Jax, Computers): Signature Ability: *Predictive Algorithm*. When making a Computers (Hacking) check against a system with advanced security (a negative difficulty modifier), you reduce the penalty by 1. A -2 modifier becomes a -1.
+   #+END_QUOTE
 
-#+BEGIN_QUOTE
-Example (Jax, Computers): Signature Ability: *Predictive Algorithm*. When making a Computers (Hacking) check against a system with advanced security (a negative difficulty modifier), you reduce the penalty by 1. A -2 modifier becomes a -1.
-#+END_QUOTE
+   #+BEGIN_QUOTE
+   Example (Elara, Survival): Signature Ability: *At Home in the Wild*. You no longer suffer penalties from the Physical Harm tracker when performing any Survival (Wilderness) checks.
+   #+END_QUOTE
 
-#+BEGIN_QUOTE
-Example (Elara, Survival): Signature Ability: *At Home in the Wild*. You no longer suffer penalties from the Physical Harm tracker when performing any Survival (Wilderness) checks.
-#+END_QUOTE
+2. *Maneuvers (New Ways to Use Skills)*: A Maneuver grants a character a new, specific action they can perform with the skill, often by interacting with another game system.
 
-*** Category 2: Maneuvers (New Ways to Use Skills)
+   #+BEGIN_QUOTE
+   Example (Elara, Combat (Ranged) (Bow)): Signature Ability: *Pinning Shot*. As your action, you may make a standard Combat (Ranged) (Bow) check to pin an enemy to a nearby surface (a wall, the floor). If you succeed, the enemy cannot move from their spot until they use their own action to make a Physical (Strength) check to free themselves.
+   #+END_QUOTE
 
-A Maneuver grants a character a new, specific action they can perform with the skill, often by interacting with another game system.
+   #+BEGIN_QUOTE
+   Example (Jax, Engineering): Signature Ability: *Jury-Rig*. You can temporarily repair a damaged item without the proper tools, forgoing the "Prerequisite Item" requirement for one check. The item breaks again after the scene.
+   #+END_QUOTE
 
-#+BEGIN_QUOTE
-Example (Elara, Combat (Ranged) (Bow)): Signature Ability: *Pinning Shot*. As your action, you may make a standard Combat (Ranged) (Bow) check to pin an enemy to a nearby surface (a wall, the floor). If you succeed, the enemy cannot move from their spot until they use their own action to make a Physical (Strength) check to free themselves.
-#+END_QUOTE
+3. *Triggers (Interacting with Resources)*: A Trigger allows a character to spend a resource (like Momentum) to create a special effect related to their skill.
 
-#+BEGIN_QUOTE
-Example (Jax, Engineering): Signature Ability: *Jury-Rig*. You can temporarily repair a damaged item without the proper tools, forgoing the "Prerequisite Item" requirement for one check. The item breaks again after the scene.
-#+END_QUOTE
+   #+BEGIN_QUOTE
+   Example (Jax, Social): Signature Ability: *Fast Talk*. When you succeed on a Social (Deception) check, you may immediately spend your Momentum to ask the GM for one piece of useful (but not necessarily secret) information the target knows.
+   #+END_QUOTE
 
-*** Category 3: Triggers (Interacting with Resources)
-
-A Trigger allows a character to spend a resource (like Momentum) to create a special effect related to their skill.
-
-#+BEGIN_QUOTE
-Example (Jax, Social): Signature Ability: *Fast Talk*. When you succeed on a Social (Deception) check, you may immediately spend your Momentum to ask the GM for one piece of useful (but not necessarily secret) information the target knows.
-#+END_QUOTE
-
-#+BEGIN_QUOTE
-Example (Elara, Physical): Signature Ability: *Unflinching Poise*. When you would take Harm from a source you can see, you may spend your Momentum to reduce the amount of Harm taken by one level.
-#+END_QUOTE
+   #+BEGIN_QUOTE
+   Example (Elara, Physical): Signature Ability: *Unflinching Poise*. When you would take Harm from a source you can see, you may spend your Momentum to reduce the amount of Harm taken by one level.
+   #+END_QUOTE
 
 The custom rules they allow *must* fall into these categories. This ensures that Signature Abilities enhance the character's capabilities in meaningful ways that go beyond simple numerical bonuses, creating unique and memorable character moments that reflect their personal mastery of their chosen skills.
 
