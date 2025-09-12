@@ -1,0 +1,134 @@
+<!-- Search component for OpenAxiom TTRPG manual -->
+<style>
+.search-container {
+    display: inline-block;
+    margin-left: 1em;
+    position: relative;
+}
+
+.search-box {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 150px;
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 5px;
+    display: none;
+    z-index: 1001;
+}
+
+.search-result {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.search-result:last-child {
+    border-bottom: none;
+}
+
+.search-result:hover {
+    background-color: #f5f5f5;
+}
+
+.search-result-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.search-result-content {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+</style>
+
+<div class="search-container">
+    <input type="text" class="search-box" placeholder="Search..." id="searchBox">
+    <div class="search-results" id="searchResults"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBox = document.getElementById('searchBox');
+    const searchResults = document.getElementById('searchResults');
+    
+    searchBox.addEventListener('input', function() {
+        const query = this.value.trim();
+        
+        if (query.length === 0) {
+            searchResults.style.display = 'none';
+            return;
+        }
+        
+        // Perform search
+        fetch(`/api/search?q=${encodeURIComponent(query)}`)
+            .then(response => response.json())
+            .then(results => {
+                displayResults(results, query);
+            })
+            .catch(error => {
+                console.error('Search error:', error);
+            });
+    });
+    
+    function highlightText(text, query) {
+        if (!query) return text;
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<span class="highlight">$1</span>');
+    }
+    
+    function displayResults(results, query) {
+        if (results.length === 0) {
+            searchResults.innerHTML = '<div class="search-result">No results found</div>';
+        } else {
+            searchResults.innerHTML = results.map(result => {
+                // Highlight the search term in the content
+                const highlightedContent = highlightText(result.content, query);
+                const highlightedTitle = highlightText(result.title, query);
+                
+                // Use text fragment if available, otherwise fallback to search parameter
+                let linkUrl = `/${result.path.replace('.org', '.html')}`;
+                if (result.fragment) {
+                    linkUrl += `#${result.fragment}`;
+                } else {
+                    linkUrl += `#search:${encodeURIComponent(query)}`;
+                }
+                
+                return `
+                    <div class="search-result" onclick="window.location.href='${linkUrl}'">
+                        <div class="search-result-title">${highlightedTitle}</div>
+                        <div class="search-result-content">${highlightedContent}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+        searchResults.style.display = 'block';
+    }
+    
+    // Close search results when clicking outside
+    document.addEventListener('click', function(event) {
+        if (!searchBox.contains(event.target) && !searchResults.contains(event.target)) {
+            searchResults.style.display = 'none';
+        }
+    });
+});
+</script>

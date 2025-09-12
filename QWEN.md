@@ -36,7 +36,7 @@ When writing new rules, automatically look up and link relevant sections from el
 
 ## Python Scripts
 
-Python scripts in this project use UV for dependency management. Scripts with dependencies should include a UV script header:
+Python scripts in this project use **only** UV for dependency management. Scripts with dependencies should include a UV script header:
 ```
 # /// script
 # dependencies = [

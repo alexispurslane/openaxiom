@@ -6,6 +6,7 @@
 #   "flask-socketio",
 #   "watchdog",
 #   "pandoc",
+#   "whoosh",
 # ]
 # ///
 
@@ -17,10 +18,16 @@ import time
 import webbrowser
 from pathlib import Path
 
-from flask import Flask, send_from_directory, jsonify
+from flask import Flask, send_from_directory, jsonify, request
 from flask_socketio import SocketIO, emit
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
+
+# Import search module
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))
+from search import index_org_files, search_index
 
 # Configuration
 PORT = 8000
@@ -44,6 +51,8 @@ class FileChangeHandler(FileSystemEventHandler):
         if event.src_path.endswith(".org"):
             print(f"{event.src_path} has been modified. Rebuilding...")
             self.process_file(event.src_path)
+            # Regenerate search index
+            index_org_files()
         elif event.src_path.endswith("style.css"):
             print(f"{event.src_path} has been modified. Reloading...")
             # Emit reload event to all connected clients (if socketio_instance is available)
@@ -54,6 +63,8 @@ class FileChangeHandler(FileSystemEventHandler):
         if event.src_path.endswith(".org"):
             print(f"{event.src_path} has been created. Building...")
             self.process_file(event.src_path)
+            # Regenerate search index
+            index_org_files()
 
     def process_file(self, org_file_path):
         org_file = Path(org_file_path)
@@ -83,11 +94,28 @@ class FileChangeHandler(FileSystemEventHandler):
         except FileNotFoundError:
             print("Error: pandoc not found. Please make sure it is installed and in your PATH.", file=sys.stderr)
 
+def get_org_title(org_file_path):
+    """Extract the title from an org file."""
+    try:
+        with open(org_file_path, "r", encoding="utf-8") as f:
+            content = f.read()
+        
+        # Extract title from first line if it's a heading
+        if content.startswith("#+TITLE:"):
+            title_line = content.split("\n", 1)[0]
+            return title_line[8:].strip()  # Remove "#+TITLE:" prefix
+        else:
+            # Fallback to filename
+            return Path(org_file_path).stem.replace("_", " ").title()
+    except Exception as e:
+        print(f"Error extracting title from {org_file_path}: {e}")
+        return Path(org_file_path).stem.replace("_", " ").title()
+
 # Routes
 @app.route("/")
 def index():
-    # Redirect to README.html by default
-    return serve_html("README.html")
+    # Redirect to openaxiom_manual.html by default
+    return serve_html("openaxiom_manual.html")
 
 @app.route("/<path:filename>")
 def serve_html(filename):
@@ -109,18 +137,38 @@ def serve_html(filename):
     with open(html_file_path, "r") as f:
         content = f.read()
     
-    # Get all HTML files for navigation
-    html_files = [f for f in os.listdir(html_dir) if f.endswith(".html")]
-    html_files.sort()
+    # Get all HTML files for navigation with their titles
+    html_files_with_titles = []
+    for f in os.listdir(html_dir):
+        if f.endswith(".html"):
+            org_file_path = f.replace(".html", ".org")
+            if os.path.exists(org_file_path):
+                title = get_org_title(org_file_path)
+            else:
+                title = f.replace(".html", "").replace("_", " ").title()
+            html_files_with_titles.append((f, title))
+    
+    # Sort by title
+    html_files_with_titles.sort(key=lambda x: x[1])
     
     # Create navigation bar
     file_list_html = "<div class='file-list'><ul>"
-    for html_file in html_files:
+    for html_file, title in html_files_with_titles:
         # Highlight the current file
         if html_file == filename:
-            file_list_html += f'<li><strong>{html_file}</strong></li>'
+            file_list_html += f'<li><strong>{title}</strong></li>'
         else:
-            file_list_html += f'<li><a href="/{html_file}">{html_file}</a></li>'
+            file_list_html += f'<li><a href="/{html_file}">{title}</a></li>'
+    
+    # Add search component to the navigation bar
+    try:
+        search_component_path = os.path.join(os.path.dirname(__file__), "static", "search.html")
+        with open(search_component_path, "r") as f:
+            search_component = f.read()
+        file_list_html += f"<li>{search_component}</li>"
+    except FileNotFoundError:
+        print("Warning: search.html not found in static folder")
+    
     file_list_html += "</ul></div>"
     
     # Inject navigation bar and live reload script
@@ -152,6 +200,14 @@ def list_files():
     html_files.sort()
     return jsonify(html_files)
 
+@app.route("/api/search")
+def search():
+    query = request.args.get("q", "")
+    if not query:
+        return jsonify([])
+    results = search_index(query)
+    return jsonify(results)
+
 # Serve static files
 @app.route("/static/<path:filename>")
 def serve_static(filename):
@@ -171,6 +227,8 @@ def initial_build():
     print("Performing initial build of all .org files...")
     for org_file in Path(".").glob("*.org"):
         FileChangeHandler(None).process_file(str(org_file))
+    # Create initial search index
+    index_org_files()
 
 # Observer setup
 observer = None
@@ -204,6 +262,9 @@ def main():
         print("Performing initial build of all .org files...")
         for org_file in Path(".").glob("*.org"):
             FileChangeHandler(None).process_file(str(org_file))  # Don't need socketio for initial build
+
+        # Create initial search index
+        index_org_files()
 
         # Start file watcher
         start_file_watcher()

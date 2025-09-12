@@ -8,6 +8,7 @@ dependencies = [
     "flask-socketio>=5.3.4",
     "watchdog>=3.0.0",
     "pandoc>=2.3",
+    "whoosh>=2.7.4",
 ]
 
 [project.scripts]

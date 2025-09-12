@@ -6,13 +6,31 @@
 :ID:       1A2B3C4D-5E6F-7A8B-9C0D-1E2F3A4B5C6D
 :END:
 
-OpenAxiom is a free and open source tabletop roleplaying game (TTRPG) engine. Rather than providing a complete game with predefined settings, characters, or monsters, OpenAxiom focuses purely on the core mechanics needed for any TTRPG. It's designed to be setting and genre agnostic, with modular "packs" that can be mixed and matched to create the specific game you want to play.
+OpenAxiom is a free and open source, universal tabletop roleplaying game (TTRPG) engine inspired by GURPS. Rather than providing a complete game with predefined settings, characters, or monsters, OpenAxiom focuses purely on the core mechanics needed for any TTRPG. It's designed to be setting and genre agnostic, with modular "packs" that can be mixed and matched to create the specific game you want to play.
 
-The system is simulationist at its core, meaning that mechanics exist to directly represent actions and consequences in the game world. The rules avoid unnecessary complexity, ensuring that any situation can be resolved with simple arithmetic and a single table lookup.
+OpenAxiom is called a TTRPG "engine," instead of just a TTRPG, because it doesn't come with many of the features you'd expect from a fully-fledged TTRPG, such as lists of predefined gear, monsters, locations, lore, races, classes, skills, traits, and so on. Instead, it's /just/ the core mechanics, designed to be setting and genre agnostic.
 
-OpenAxiom provides mechanical crunch for all aspects of gameplay, from combat to social interactions to character development. The system emphasizes meaningful stakes where every risk is a choice and every outcome has weight, but nothing is unrecoverable with effort and preparation.
+Eventually, modular free and open source "packs" will provide the various other components you need to play, which you can mix and match as needed, although a core pack of sensible skills, traits, and NPCs almost any setting needs is recommended.
 
-The core mechanic is based on a /logic of action and consequences/. Rather than having specific rules for magic or technology, OpenAxiom provides a framework for simulating any action. Players and Game Masters assign names to actions and outcomes, and the system processes them consistently regardless of the specific fictional context.
+OpenAxiom is also explicitly designed to be extremely easy to write packs for, and easy to adapt material from other games for. This should mean that things like GURPS sourcebooks will serve nicely with this system! (Seriously, Steve Jackson Games rocks, give them some love.)
+
+The system is simulationist at its core, meaning that mechanics exist to directly represent actions and consequences in the game world. There are no mechanics for the sake of mechanics, seemingly hastily themed after the fact like in a European boardgame. Instead, everything in the game's system should feel like it directly corresponds to, and simulates, something in the game world, in a satisfying and specific way, with real payoffs and consequences mechanically determined and mechanically enforced, because the best stories are born from that kind of surprising story generation that can't just be smoothed away.
+
+Importantly, however, to avoid overly baroque complexity while trying to be genreless, OpenAxiom provides an engine for a /logic of action and consequences/, of /means and ends/, and that's it. It doesn't know, or have to know, about magic or laser blasters. All it knows is how to simulate an attempt to act, and the results of that action in the abstract. Players assign names to the actions and the outcomes, and the game processes them as it would any other set of actions and outcomes, producing a result. There's still a direct, one to one correspondence, but it's made in the space between the game and the player, as they assign words to things. It's like a logic programming language: it doesn't know what the words actually mean, but it can still simulate things anyway.
+
+A lot of TTRPGs, even universal ones, spend a lot more time developing combat mechanics than they do social and story mechanics. This is understandable, because developing the former is much easier and more well-understood, but also unfortunate, and undermines the supposed universality of the system. OpenAxiom seeks to provide mechanical crunch for everything, across the board, whether it's character development, story beats, social interactions, politics, or combat.
+
+This means that OpenAxiom respects your story, characters, and their social interactions just as much as their combat prowess. This is not just a game for wargamers and murder hobos, it is also a game for those who want to explore the politics of taking state power through long political intrigue, or toppling a rogue nation, or resolving a harem situation.
+
+Stories only matter when they have stakes. OpenAxiom is designed to ensure you have those stakes. This is a game that will rough you up, that intends to chew you up and spit you out if you aren't careful. However, nothing is overly random: every risk is a choice, every outcome preventable or something you can prepare for, and every bad outcome this side of death is recoverable, even if the road is long and hard. Learn to roll with the punches, embrace the Dwarf Fortress definition of fun, and grin and laugh in the face of death.
+
+Despite its depth, a primary goal for OpenAxiom is to be small, easy to read, and easy to understand.
+
+For this reason, OpenAxiom attempts to avoid being overly complex by eschewing complex calculations and multidimensional tables. Everything can and should be able to be resolved, no matter how complex the situation, by under five additions or subtractions, and one linear table lookup. Not even any multiplication needed!
+
+Similarly, OpenAxiom is exclusively written in a special simple prose designed to be easy for anyone to comprehend --- to never trip you up with an unexpected subclause.
+
+The rules avoid unnecessary complexity, ensuring that any situation can be resolved with simple arithmetic and a single table lookup. OpenAxiom provides mechanical crunch for all aspects of gameplay, from combat to social interactions to character development. The system emphasizes meaningful stakes where every risk is a choice and every outcome has weight, but nothing is unrecoverable with effort and preparation.
 
 * Table of Contents
 :PROPERTIES:

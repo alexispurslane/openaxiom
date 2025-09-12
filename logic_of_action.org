@@ -1,4 +1,4 @@
-#+TITLE: Actions: Decision Resolution Mechanism
+#+TITLE: Logic of Action
 #+OPTIONS: H:7
 #+ATTR_HTML: :class section-icon
 [[file:static/logic_of_action.svg]]
