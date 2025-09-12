@@ -29,3 +29,20 @@ Bullet points and numbered lists will be used sparingly. The rule text will prim
 ## Gameplay Examples
 
 Gameplay examples will be enclosed in quote blocks.
+
+## Cross-References
+
+When writing new rules, automatically look up and link relevant sections from elsewhere in the manual. This ensures consistency and helps readers navigate between related concepts. Use descriptive links that clearly indicate what the reader will find at the destination. Link to specific sections by getting the heading's anchor link ID from the corresponding .html page and linking to ./the-page#the-id, *not* using org's internal linking system.
+
+## Python Scripts
+
+Python scripts in this project use UV for dependency management. Scripts with dependencies should include a UV script header:
+```
+# /// script
+# dependencies = [
+#     "package1",
+#     "package2",
+# ]
+# ///
+```
+To run a script with dependencies, use: `uv run script.py`

@@ -19,40 +19,18 @@ The core mechanic is based on a /logic of action and consequences/. Rather than 
 :ID:       2B3C4D5E-6F7A-8B9C-0D1E-2F3A4B5C6D7E
 :END:
 
-1. [[file:player_characters.org][Player Characters: Properties, Creation, Inventory, Statuses, and Advancement]]
-2. [[file:logic_of_action.org][Logic of Action: Core Decision Resolution Mechanism]]
+1. [[file:player_characters.html][Player Characters: Properties, Creation, Inventory, Statuses, and Advancement]]
 
-* Gameplay
-:PROPERTIES:
-:ID:       3C4D5E6F-7A8B-9C0D-1E2F-3A4B5C6D7E8F
-:END:
+   This section describes what player characters are in OpenAxiom and how to create them. Player characters are defined by skills and traits rather than character classes or traditional attributes. This approach allows for flexible and organic character development, enabling players to build unique individuals. The rules presented here guide the player through each step of character definition, from initial concept to fully-realized character.
 
-This section covers the core rules for playing OpenAxiom games.
+2. [[file:core_game_loop.html][Core Game Loop: The Turn System]]
 
-* Character Creation
-:PROPERTIES:
-:ID:       4D5E6F7A-8B9C-0D1E-2F3A-4B5C6D7E8F9A
-:END:
+   OpenAxiom uses two distinct types of game time to create a dynamic and flexible gameplay experience: tactical time and scene time. These different pacing mechanisms allow the game to shift between intense, structured sequences and free-flowing narrative moments as needed. The transition between tactical and scene time is a binary decision made by the Game Master based on the needs of the narrative and the intensity of the situation.
 
-Creating a character in OpenAxiom is covered in detail in the [[file:player_characters.org][Player Characters]] section.
+3. [[file:logic_of_action.html][Logic of Action: Core Decision Resolution Mechanism]]
 
-* Resolution Mechanics
-:PROPERTIES:
-:ID:       5E6F7A8B-9C0D-1E2F-3A4B-5C6D7E8F9A0B
-:END:
+   This section describes the decision resolution mechanism for actions in OpenAxiom. When a character attempts an action with a meaningful chance of failure, the player and Game Master use the logic of action to determine the outcome. This system provides a consistent framework for resolving uncertainty while maintaining narrative flow. The fundamental mechanic is rolling 3d6 and comparing the result to a target number.
 
-The core decision resolution mechanism is covered in detail in the [[file:logic_of_action.org][Logic of Action]] section.
+4. [[file:combat.org][Combat: The Core Mechanics, and Advanced Modules]]
 
-* Advanced Rules
-:PROPERTIES:
-:ID:       6F7A8B9C-0D1E-2F3A-4B5C-6D7E8F9A0B1C
-:END:
-
-Advanced rules and optional mechanics for experienced players and Game Masters.
-
-* Appendices
-:PROPERTIES:
-:ID:       7A8B9C0D-1E2F-3A4B-5C6D-7E8F9A0B1C2D
-:END:
-
-Additional reference materials and tables.
+   Combat situations arise naturally in many genres and settings. OpenAxiom recognizes that violence is sometimes necessary in fiction, and that in fact it is often a key aspect of why people enjoy TTRPGs, and so provides mechanics that make these scenes engaging and meaningful. The system uses an Ablative Injury System with specific body locations, each with their own pool of Hit Points, and models realistic consequences of violence with the Harm Tracker system.

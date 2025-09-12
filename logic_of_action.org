@@ -12,6 +12,9 @@ The following sections detail how actions are resolved in various circumstances:
 :ID:       5D8E2F1A-4B9C-3D7E-2F1A-4B9C3D7E2F1A
 :END:
 
+#+ATTR_HTML: :class section-icon
+[[file:actions.svg]]
+
 The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the result to a target number. The player rolls 3d6 and sums the results. If the total is less than or equal to the target number, the action succeeds. If the total is greater than the target number, the action fails.
 
 **Restriction on Repeating Skill Checks**: Players cannot make the same skill check twice in a row without at least 3 turns between them or a change in circumstance (as determined by the Game Master). This prevents characters from simply retrying the same action indefinitely until they succeed, encouraging creative problem-solving and narrative progression.
@@ -53,7 +56,7 @@ Additional modifiers may come from temporary conditions such as *Momentum*, whic
 :ID:       DEC600FD-E945-4A3B-A9CB-06F392804B33
 :END:
 
-When two characters directly oppose each other in an action, such as in a contest of strength or a race, both characters make skill checks. The winner is determined by comparing the degree of success each character achieves, not by comparing the numerical results of their dice rolls.
+When two characters directly oppose each other in an action, such as in a contest of strength or a race, both characters make skill checks as the initiating character's major action for their turn. The winner is determined by comparing the degree of success each character achieves, not by comparing the numerical results of their dice rolls.
 
 The resolution follows this cascading logic:
 1. Each character independently determines their degree of success by consulting the Degrees of Success and Failure table based on their roll result and target number
@@ -63,6 +66,56 @@ The resolution follows this cascading logic:
 5. If both characters have the same skill value and achieve the same degree of success, the Game Master may call for additional rolls or determine the outcome narratively
 
 This approach ensures that characters with higher skills have a better chance of success while still allowing for dramatic upsets when a lower-skilled character achieves a better degree of success.
+
+** Contested Extended Actions
+:PROPERTIES:
+:ID:       3F9A4B8C-1D7E-4F0A-9C3B-6D2E5A8F1C4B
+:END:
+
+#+ATTR_HTML: :class section-icon
+[[file:contested_extended_actions.svg]]
+
+A contested extended action represents ongoing struggles between two characters that require sustained effort to maintain, such as grappling, arm wrestling, or staring contests. These actions work differently from regular extended actions in that they involve direct opposition between two characters over multiple turns.
+
+*** Initiating a Contested Extended Action
+
+1. **Declaration**
+   - A character declares they are attempting to initiate a contested extended action against a specific opponent
+
+2. **Initial Contest**
+   - The initating character makes a contested skill check against their target, as normal
+
+3. **Resolution**
+   - If the initiating character succeeds against their opponent, the contested extended action is initiated
+   - If the initiating character fails, the contested extended action does not begin
+
+*** Maintaining a Contested Extended Action
+
+Once initiated, maintaining a contested extended action requires ongoing effort:
+
+1. **On the Initiating Character's Turn:**
+   - The initiating character must declare they are maintaining the contested extended action
+   - If the initiating character does not declare this, the contested extended action ends
+   - The opponent is released on their next turn and may act normally
+   - The initiating character can resume taking normal actions on their subsequent turn
+   - The initiating character may not take normal actions on the same turn as they released a contested action
+   - If the initiating character chooses to maintain the contested extended action, they must make another contested action against the same opponent as their major action
+
+2. **On the Opponent's Turn:**
+   - The opponent may take other actions during their turn if the type of contested action does not prevent them from doing so
+   - Grappling may prevent a character from moving, but not from speaking unless that was the intention of the grapple
+   - The opponent may instead choose, as their major action for that turn, to "enter the contest"
+   - The opponent makes their own contested action against the initiating character of the contested extended action
+   - This contested action must use the exact same skill that the initiating character used
+   - The rules for resolving this contested action are the same as for resolving an initiator's contested action
+
+3. **Resolving the Contested Action:**
+   - If the initiating character wins, they maintain control of the contested extended action
+   - If the opponent wins, the contested extended action ends and the opponent gains *Momentum* as their upper hand
+   - Only the initiating character may choose to stop maintaining the contested extended action at any time
+   - The contested extended action ends immediately when the initiating character chooses to stop maintaining it
+
+This system represents the ongoing nature of physical struggles and mental contests that require continuous effort to maintain, while still allowing for clear resolution of who has the upper hand at any given moment. The non-consensual nature of the opponent's participation reflects that they are automatically considered to be resisting the initiating character's attempt to maintain control over them.
 
 ** Group Actions
 :PROPERTIES:
@@ -117,10 +170,13 @@ Jax rolls 3d6 and gets a 1, 2, and 2 for a total of 5. This is an exceptional su
 
 * Consequences
 :PROPERTIES:
-:ID:       2A3B4C5D-6E7F-8G9H-0I1J-2K3L4M5N6O7P
+:ID:       6F9A4B3C-2E1D-4F8A-1C3D-5E7F9A2B4C6D
 :END:
 
-The qualitative degree of success or failure achieved on an action roll has direct consequences for how the game simulation unfolds. These consequences are not just narrative, but inform the mechanics of the game directly. Understanding these consequences helps both players and Game Masters create more engaging and consistent narratives.
+#+ATTR_HTML: :class section-icon
+[[file:consequences.svg]]
+
+The outcomes of actions in OpenAxiom are determined by the degree of success or failure. Rolling under the target number results in success, while rolling over results in failure.
 
 ** Degrees of Success and Failure
 :PROPERTIES:

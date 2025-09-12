@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A stylized representation of grappling with two figures locked together. -->
+  <defs>
+    <style>
+      .figure { fill: #34A853; }
+      .grapple { fill: #AECBFA; }
+    </style>
+  </defs>
+  <!-- Two figures in grappling position -->
+  <circle cx="30" cy="30" r="8" class="figure"/>
+  <circle cx="70" cy="30" r="8" class="figure"/>
+  <rect x="25" y="38" width="10" height="25" rx="5" class="figure"/>
+  <rect x="65" y="38" width="10" height="25" rx="5" class="figure"/>
+  <!-- Grappling connection -->
+  <path d="M 35 50 Q 50 45 65 50" stroke="#AECBFA" stroke-width="4" fill="none"/>
+</svg>
