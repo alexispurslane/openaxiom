@@ -1,4 +1,4 @@
-#+TITLE: Core Game Loop: The Turn System
+#+TITLE: Core Game Loop
 #+OPTIONS: H:7
 
 OpenAxiom uses two distinct types of game time to create a dynamic and flexible gameplay experience: tactical time and scene time. These different pacing mechanisms allow the game to shift between intense, structured sequences and free-flowing narrative moments as needed.

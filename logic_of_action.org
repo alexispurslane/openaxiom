@@ -1,7 +1,7 @@
 #+TITLE: Actions: Decision Resolution Mechanism
 #+OPTIONS: H:7
 #+ATTR_HTML: :class section-icon
-[[file:logic_of_action.svg]]
+[[file:static/logic_of_action.svg]]
 
 This section describes the decision resolution mechanism for actions in OpenAxiom. When a character attempts an action with a meaningful chance of failure, the player and Game Master use the logic of action to determine the outcome. This system provides a consistent framework for resolving uncertainty while maintaining narrative flow.
 
@@ -13,7 +13,7 @@ The following sections detail how actions are resolved in various circumstances:
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:actions.svg]]
+[[file:static/actions.svg]]
 
 The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the result to a target number. The player rolls 3d6 and sums the results. If the total is less than or equal to the target number, the action succeeds. If the total is greater than the target number, the action fails.
 
@@ -73,20 +73,33 @@ This approach ensures that characters with higher skills have a better chance of
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:contested_extended_actions.svg]]
+[[file:static/contested_extended_actions.svg]]
 
 A contested extended action represents ongoing struggles between two characters that require sustained effort to maintain, such as grappling, arm wrestling, or staring contests. These actions work differently from regular extended actions in that they involve direct opposition between two characters over multiple turns.
+
+When initiating a contested extended action, the player must specify what they want to achieve with the action. This specification determines both the skill used and the effect that occurs while the action is maintained. The specific effects are determined by the Game Master based on the declared goal and the skill used.
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+Jax wants to grapple his opponent to prevent them from moving away. He declares he's attempting to initiate a contested extended action against the corporate security drone, specifying that he wants to prevent the drone from moving by using Physical (Wrestling) as the skill. If successful, the effect will be that the drone cannot move while the grapple is maintained.
+
+Jax has Physical (Wrestling) at 12, while the corporate security drone has Physical (Wrestling) at 10. Jax rolls 3d6 and gets a 3, 4, and 2 for a total of 9, which is a standard success against his target of 12. The drone rolls 3d6 and gets a 2, 5, and 6 for a total of 13, which is a marginal failure against its target of 10.
+
+Since Jax succeeded and the drone failed, the contested extended action is initiated. The drone is now grappled and cannot move while Jax maintains the grapple. On Jax's next turn, he must declare that he's maintaining the contested extended action and make another Physical (Wrestling) check against the drone to continue preventing them from moving.
+#+END_QUOTE
 
 *** Initiating a Contested Extended Action
 
 1. **Declaration**
    - A character declares they are attempting to initiate a contested extended action against a specific opponent
+   - The player specifies what they want to achieve, which determines both the skill used and the effect that occurs while the action is maintained
 
 2. **Initial Contest**
    - The initating character makes a contested skill check against their target, as normal
+   - The skill used should be appropriate to the declared goal
 
 3. **Resolution**
-   - If the initiating character succeeds against their opponent, the contested extended action is initiated
+   - If the initiating character succeeds against their opponent, the contested extended action is initiated and the declared effect begins
    - If the initiating character fails, the contested extended action does not begin
 
 *** Maintaining a Contested Extended Action
@@ -103,17 +116,18 @@ Once initiated, maintaining a contested extended action requires ongoing effort:
 
 2. **On the Opponent's Turn:**
    - The opponent may take other actions during their turn if the type of contested action does not prevent them from doing so
-   - Grappling may prevent a character from moving, but not from speaking unless that was the intention of the grapple
+   - The declared effect of the contested extended action determines what actions the opponent cannot take
    - The opponent may instead choose, as their major action for that turn, to "enter the contest"
    - The opponent makes their own contested action against the initiating character of the contested extended action
    - This contested action must use the exact same skill that the initiating character used
    - The rules for resolving this contested action are the same as for resolving an initiator's contested action
 
 3. **Resolving the Contested Action:**
-   - If the initiating character wins, they maintain control of the contested extended action
+   - If the initiating character wins, they maintain control of the contested extended action and the declared effect continues
    - If the opponent wins, the contested extended action ends and the opponent gains *Momentum* as their upper hand
    - Only the initiating character may choose to stop maintaining the contested extended action at any time
    - The contested extended action ends immediately when the initiating character chooses to stop maintaining it
+   - The declared effect of the contested extended action only applies while the action is maintained
 
 This system represents the ongoing nature of physical struggles and mental contests that require continuous effort to maintain, while still allowing for clear resolution of who has the upper hand at any given moment. The non-consensual nature of the opponent's participation reflects that they are automatically considered to be resisting the initiating character's attempt to maintain control over them.
 
@@ -174,7 +188,7 @@ Jax rolls 3d6 and gets a 1, 2, and 2 for a total of 5. This is an exceptional su
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:consequences.svg]]
+[[file:static/consequences.svg]]
 
 The outcomes of actions in OpenAxiom are determined by the degree of success or failure. Rolling under the target number results in success, while rolling over results in failure.
 
@@ -203,7 +217,7 @@ Not all successes and failures are equal. OpenAxiom distinguishes between differ
 The 3d6 roll follows a bell curve distribution, with results near the middle (10-11) being most common and results at the extremes (3 and 18) being rare. The graph below shows the probability of achieving each degree of success or failure for a character with a skill of 9 at different difficulty levels:
 
 #+ATTR_HTML: :class probability-distribution-graph
-[[file:probability_distribution.svg]]
+[[file:static/probability_distribution.svg]]
 
 This visualization shows how the probabilities shift as the difficulty of a task changes. At easier difficulties (higher target numbers), success becomes more likely, while at harder difficulties (lower target numbers), failure becomes more likely. The graph makes it clear that characters with average skills (target 9) on medium difficulty tasks will most commonly experience either a standard success or a marginal failure.
 

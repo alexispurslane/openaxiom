@@ -1,7 +1,7 @@
 #+TITLE: Character Creation
 #+OPTIONS: H:6
 #+ATTR_HTML: :class section-icon
-[[file:character_creation.svg]]
+[[file:static/character_creation.svg]]
 
 This document is the guide for "Session Zero." It contains everything a player needs to build a character from concept to completion.
 
@@ -11,7 +11,7 @@ This document is the guide for "Session Zero." It contains everything a player n
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:biography.svg]]
+[[file:static/biography.svg]]
 
 Every character has a biography. This biography consists of two freeform fields: Appearance and History. These descriptions are crucial for defining a character's identity. Players should carefully consider their character's appearance and history when selecting skills and traits. The biography helps to ensure a character's mechanical representation aligns with their narrative concept.
 
@@ -122,12 +122,7 @@ Here are some examples of traits. These examples illustrate diverse effects as b
 :ID:       13D011F3-1ADC-419C-8918-869AE4B302EB
 :END:
 
- During character creation, characters start with all items required by their skills, plus any worldbuilding or lore items they want, as long as those don't confer a mechanical advantage.
-
-** Inventory System
-:PROPERTIES:
-:ID:       290B9FE6-7BE7-4FBE-814C-CE965C3D5E07
-:END:
+During character creation, characters start with all items required by their skills, plus any worldbuilding or lore items they want, as long as those don't confer a mechanical advantage.
 
 Your best strength-related skill determines the number of inventory slots you have available to carry items. Strength-related skills include *Physical (Strength)*, *Physical (Endurance)*, and any other skills that the Game Master deems appropriate for determining carrying capacity.
 

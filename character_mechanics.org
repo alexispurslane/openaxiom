@@ -1,7 +1,7 @@
 #+TITLE: Character Mechanics
 #+OPTIONS: H:6
 #+ATTR_HTML: :class section-icon
-[[file:character_mechanics.svg]]
+[[file:static/character_mechanics.svg]]
 
 This document becomes the GM's primary in-game reference for how a character functions mechanically. It answers the question, "What can a character do and what is their current state?"
 
@@ -11,7 +11,7 @@ This document becomes the GM's primary in-game reference for how a character fun
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:skills.svg]]
+[[file:static/skills.svg]]
 
 A skill represents anything a character can do or be. This includes physical abilities like strength or swimming, and mental aptitudes such as various forms of intelligence. Skills are trainable, meaning a character's proficiency can improve over time. Any skill not explicitly listed on a character's sheet has the default value. Skills have a name and a numerical value, indicating proficiency.
 
@@ -63,7 +63,7 @@ Note that these probabilities and qualitative levels apply to tasks of average d
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:traits.svg]]
+[[file:static/traits.svg]]
 
 A trait is a passive effect. Traits modify a character's skills. Traits represent inherent advantages or disadvantages a character possesses. Traits are established during character creation. Traits cannot be trained or improved. Traits serve as a starting point for a character's inherent abilities.
 
@@ -170,7 +170,7 @@ Note that while skills can be improved without limit, traits can only be modifie
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:items.svg]]
+[[file:static/items.svg]]
 
 ** Character Inventory
 :PROPERTIES:
@@ -189,6 +189,8 @@ Items are categorized into four size classes that determine how they consume inv
 Other than these size and slot requirements, inventory is very simple. Players can organize their items however they see fit, and the Game Master should generally not concern themselves with tracking exact weights or volumes. The focus is on narrative gameplay rather than detailed inventory management.
 
 Items that are particularly large, bulky, or numerous may require special consideration from the Game Master, but in general, players should be able to carry a reasonable amount of equipment based on their character's physical capabilities.
+
+When characters drop items due to crippling injuries or player choice during combat, especially when using the spatial relations system, these items are placed on the hex occupied by the character. Other characters can only pick up these dropped items if they are positioned on the same hex. This adds a tactical element to item management during combat, as players must consider not only their own positioning but also the potential value of items dropped by allies or enemies.
 
 ** How Items Affect Characters
 :PROPERTIES:
@@ -267,7 +269,7 @@ These properties should be added as rows to the item card format, as shown in th
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:status_effects.svg]]
+[[file:static/status_effects.svg]]
 
 Characters in OpenAxiom face various forms of harm during their adventures. To track this, every character has three separate harm trackers that represent different aspects of a character's well-being.
 
@@ -350,7 +352,7 @@ Harm is typically inflicted by the Game Master as a result of failed rolls, envi
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:advancement.svg]]
+[[file:static/advancement.svg]]
 
 As characters face trials and adventures, they grow and change. OpenAxiom represents this evolution through Story Points. These points are earned through narrative milestones and can be spent to improve skills, overcome flaws, or even gain new innate talents. This system ensures that character growth is tied directly to the story, rewarding players for engaging with the game world and their character's journey.
 
@@ -380,7 +382,7 @@ Story points can be saved and accumulated over multiple sessions. They do not ne
 *** Improving Existing Skills
 
 #+ATTR_HTML: :class section-icon
-[[file:improving_skills.svg]]
+[[file:static/improving_skills.svg]]
 
 Any amount of story points can be applied to skills the character already has. Increasing a skill's value requires more story points as the skill becomes more proficient. Each improvement follows a simple step progression: the first time a skill is improved (when it's initially unlocked) costs 1 story point, the second improvement costs 2 story points, the third costs 3 story points, and so on.
 
@@ -402,14 +404,16 @@ This is the primary method for making existing capabilities more powerful.
 
 Reaching the pinnacle of skill mastery is an extraordinary feat. A character starting with a skill at the default "unlocked" level of 10 would need to spend a total of 44 story points to advance that skill all the way to 18 (Legendary). This represents a significant investment of time and effort, as characters typically earn only 3-6 story points per session. It would take roughly 7-15 sessions of maximum story point earnings to reach Legendary status in a single skill, reinforcing that true mastery requires tremendous dedication and perseverance.
 
+The graph below shows how a character's success rate increases over time when spending 3 story points per session to improve a skill (with story point accumulation):
+
 #+BEGIN_EXPORT html
-<img src="skill_progression.svg" alt="Skill Progression Graph" />
+[[file:static/skill_progression.svg]]
 #+END_EXPORT
 
 *** Signature Abilities
 
 #+ATTR_HTML: :class section-icon
-[[file:signature_ability.svg]]
+[[file:static/signature_ability.svg]]
 
 Once a skill reaches 18 (ignoring any trait bonuses), players have the option to spend additional story points to continue improving that skill. However, they are *strongly encouraged* to instead spend all story points in their bank to acquire a "Signature Ability" that they negotiate with the Game Master. These Signature Abilities represent the character's unique mastery and personal style with a skill, going beyond mere numerical improvement.
 
@@ -447,12 +451,10 @@ Signature Abilities must fall into one of three categories:
 
 The custom rules they allow *must* fall into these categories. This ensures that Signature Abilities enhance the character's capabilities in meaningful ways that go beyond simple numerical bonuses, creating unique and memorable character moments that reflect their personal mastery of their chosen skills.
 
-The graph below shows how a character's success rate increases over time when spending 3 story points per session to improve a skill (with story point accumulation):
-
 *** Unlocking New Skills
 
 #+ATTR_HTML: :class section-icon
-[[file:unlocking_skills.svg]]
+[[file:static/unlocking_skills.svg]]
 
 One story point can be spent to unlock a new skill. This immediately grants the skill a +1 bonus to its proficiency value, just like during character creation. Any remaining story points from that award cannot be spent on the same skill - they must be used on other options. This represents the character learning a new area of expertise, similar to how skills are chosen during character creation.
 
@@ -463,7 +465,7 @@ If a player wants to unlock a more specific skill for a more general skill they 
 *** Overcoming Negative Traits
 
 #+ATTR_HTML: :class section-icon
-[[file:overcoming_traits.svg]]
+[[file:static/overcoming_traits.svg]]
 
 Traits represent a character's inherent nature and are fundamentally different from trained skills. Altering them is a rare and monumental process tied directly to the character's story.
 
@@ -478,7 +480,7 @@ Note that existing positive traits are fixed and cannot be modified through stor
 *** Gaining Positive Traits
 
 #+ATTR_HTML: :class section-icon
-[[file:gaining_traits.svg]]
+[[file:static/gaining_traits.svg]]
 
 Gaining a new innate positive trait is a profound and permanent change to a character. This transformation requires extraordinary performance and calculated risk.
 

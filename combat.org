@@ -1,13 +1,13 @@
 #+TITLE: Combat
 #+OPTIONS: H:6
 #+ATTR_HTML: :class section-icon
-[[file:combat.svg]]
+[[file:static/combat.svg]]
 
 Combat situations arise naturally in many genres and settings. OpenAxiom recognizes that violence is sometimes necessary in fiction, and that in fact it is often a key aspect of why people enjoy TTRPGs, and so provides mechanics that make these scenes engaging and meaningful, providing enough simulationist crunch to add consistent and serious consequences and interesting tactical choices.
 
 At the same time, OpenAxiom recognizes that combat may not be the goal of some tables. As a result, the combat system is designed to be optional, not strictly necessary to character progression or development. Game Masters *may choose to avoid the combat rules entirely if they wish!* These are designed for tables that /like/ combat. If your table wants to focus on narrative, it can simply focus on the core [[file:character_mechanics.html][character mechanics]] and [[file:logic_of_action.html][logic of action]] rules, using Contested Actions or Contested Extended Actions to simulate combat when needed. This is why the health and body locations system is specified /here/, and not in the character mechanics section.
 
-When characters enter combat, the game shifts to the Tactical Time turn structure as defined in the [[file:core_game_loop.org][core game loop]]. This shift to Tactical Time is mandatory during combat encounters, ensuring that all actions occur in a consistent and fair sequence. During Tactical Time, each character takes turns performing actions, with initiative determined by relevant skills and traits. This system allows for detailed resolution of combat actions while maintaining the pace and excitement of violent confrontation.
+When characters enter combat, the game shifts to the Tactical Time round structure as defined in the [[file:core_game_loop.org][core game loop]]. This shift to Tactical Time is mandatory during combat encounters, ensuring that all actions occur in a consistent and fair sequence. During Tactical Time, each character takes turns performing actions, with initiative determined by relevant skills and traits. This system allows for detailed resolution of combat actions while maintaining the pace and excitement of violent confrontation.
 
 * The Attack Sequence
 :PROPERTIES:
@@ -15,9 +15,9 @@ When characters enter combat, the game shifts to the Tactical Time turn structur
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:combat_sequence.svg]]
+[[file:static/combat_sequence.svg]]
 
-When characters enter combat, the game shifts to the Tactical Time turn structure as defined in the [[file:core_game_loop.html][core game loop]]. The full sequence of play during a turn in combat is defined there, including how initiative is determined and how players take turns performing actions. This section describes only the sequence of steps required to perform the "Attack" Major Action under Tactical Time. Remember that attacking is just one of many possible Major Actions you can take during your turn in combat.
+When characters enter combat, the game shifts to the Tactical Time round structure as defined in the [[file:core_game_loop.html][core game loop]]. The full sequence of play during a round in combat is defined there, including how initiative is determined and how players take turns performing actions. This section describes only the sequence of steps required to perform the "Attack" Major Action under Tactical Time. Remember that attacking is just one of many possible Major Actions you can take during your turn in combat.
 
 The sequence of steps required to do the "Attack" Major Action under Tactical Time follows this sequence:
 
@@ -73,7 +73,7 @@ The injury system determines /what actually happens/ when a character takes dama
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:health_body_locations.svg]]
+[[file:/static/body_locations.svg][file:body_locations.svg]]
 
 Characters have six body locations, each with its own pool of Hit Points (HP). HP is calculated from the character's *Physical (Strength)*, *Physical (Endurance)*, *Constitution*, or other skill values, whichever is highest. The difficulty modifier applies to the attacker's combat skill value when targeting that specific location.
 
@@ -104,7 +104,7 @@ The following table provides a quick reference for the HP values of each body lo
 The following graph visualizes how a character's total HP and HP per body part increase as their *Physical (Strength)* skill improves:
 
 #+ATTR_HTML: :class health-vs-skill-graph
-[[file:health_vs_skill.svg]]
+[[file:static/health_vs_skill.svg]]
 
 ** Consequences of Injury
 :PROPERTIES:
@@ -112,7 +112,7 @@ The following graph visualizes how a character's total HP and HP per body part i
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:consequences_of_injury.svg]]
+[[file:static/consequences_of_injury.svg]]
 
 Damage to local HP pools does not immediately do anything. However, over time, as injuries to various parts of the body add up, global effects begin to take place.
 
@@ -190,53 +190,13 @@ These status effects represent specific, concrete mechanical impacts rather than
 
 The following are an optional toolkit of combat rules that GMs can assemble in order to account for various different situations or preferred combat playstyles, or use as references for designing their own optional combat mechanics for their own setting packs.
 
-** Grappling
-:PROPERTIES:
-:ID:       1S9T0U2V-3W4X-5Y6Z-7A8B-9C0D1E2F3G4H
-:END:
-
-#+ATTR_HTML: :class section-icon
-[[file:grappling.svg]]
-
-Grappling is a form of unarmed combat that does not deal HP damage. It is a very thin gloss over the existing rules for Contested Extended Actions, showing how existing rules and game systems can be composed together to simulate new situations.
-
-*** Initiating a Grapple
-:PROPERTIES:
-:ID:       2T0U1V3W-4X5Y-6Z7A-8B9C-0D1E2F3G4H5I
-:END:
-
-A character initiates a grapple using the *Physical (Wrestling)* skill for the initial contested skill check. If the initiating character succeeds, the grapple begins.
-
-*** Maintaining a Grapple & Gaining Control
-:PROPERTIES:
-:ID:       3U1V2W4X-5Y6Z-7A8B-9C0D-1E2F3G4H5I6J
-:END:
-
-The struggle for control is resolved each turn as described in the rules for Maintaining a Contested Extended Action, using *Physical (Wrestling)* for all contested checks.
-
-When the initiating character wins a contested check, they maintain control of the grapple and may choose to apply one of the following effects to the opponent:
-
-- *Immobilize a Limb*: The initiator gains control over one of the opponent's arms or legs. This has the same mechanical effect as crippling the limb (inventory loss for an arm, halved movement for a leg) for the duration of the grapple. The initiator may switch which limb is immobilized on subsequent successful checks.
-
-- *Control the Torso (Pin)*: After successfully immobilizing at least one limb on a previous turn, the initiator can use a subsequent successful check to gain control of the opponent's torso. The opponent is now Pinned. A Pinned character is fully immobilized and may only take the contested action to break the grapple on their turn.
-
-*** Ending a Grapple
-:PROPERTIES:
-:ID:       4V2W3X5Y-6Z7A-8B9C-0D1E-2F3G4H5I6J7K
-:END:
-
-A grapple ends immediately under the conditions specified in the Contested Extended Action rules:
-
-- *Break Free*: The opponent wins a contested check to "enter the contest," breaking free and gaining *Momentum*.
-- *Release*: The initiating character chooses not to maintain the grapple on their turn.
-
 ** Spatial Relations
 :PROPERTIES:
 :ID:       5W3X4Y6Z-7A8B-9C0D-1E2F-3G4H5I6J7K8L
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:spatial_relations.svg]]
+[[file:static/spatial_relations.svg]]
 
 More advanced players who want more interesting tactical opportunities may introduce a hexagonal grid when players enter combat to structure character, NPC, and enemy spatial relations. This optional system adds tactical depth by making positioning and movement important factors in combat. This set of rules is an example of how totally new dimensions of combat can be modularly added to the game and well-integrated with existing systems.
 
@@ -244,6 +204,8 @@ More advanced players who want more interesting tactical opportunities may intro
 :PROPERTIES:
 :ID:       6X4Y5Z7A-8B9C-0D1E-2F3G-4H5I6J7K8L9M
 :END:
+
+In hex-based tactical combat, the battlefield is divided into hexagonal tiles, with each tile representing a specific type of terrain. Players, NPCs, and enemies are represented by counters or miniatures that are placed on these hex tiles. Each hex tile has a terrain type that affects movement costs and combat, as detailed in the terrain table below.
 
 All players must start wherever the Game Master decides they should start on the grid. The Game Master also places all non-player characters and enemies on the grid according to the tactical situation. Each hex on the map can be one of several terrain types, each with different properties:
 
