@@ -34,7 +34,9 @@ This field outlines a character's past experiences and background. It can includ
 :ID:       EA58C73B-5613-40B4-BB9E-70A1207743A1
 :END:
 
-Since OpenAxiom does not use a point pool, and does not requiring trading some skills off against others. Instead, players can choose different five skills to add a +1 bonus to, each. These are their main, or "activated" skills, the skills unique to their character. To be clear: players can not add multiple bonuses to a single skill.
+Since OpenAxiom does not use a point pool, it does not requiring trading some skills off against others. Instead, players can choose five different skills to add a +1 bonus to, each. These are their main, or "activated" skills, the skills unique to their character. To be clear: players can not add multiple bonuses to a single skill.
+
+Each chosen skill must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification, just as with traits.
 
 Players may choose specific skills without choosing the more general version. For example, a character can have *Piloting (Starship)* without having *Piloting*. When a character has a specific skill but not its more general version, they can only use that specific skill for tasks that match it exactly. They cannot use it as a substitute for other specializations of the same general skill.
 
