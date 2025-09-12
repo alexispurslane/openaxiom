@@ -34,7 +34,7 @@ This field outlines a character's past experiences and background. It can includ
 :ID:       EA58C73B-5613-40B4-BB9E-70A1207743A1
 :END:
 
-Since OpenAxiom does not use a point pool, it does not requiring trading some skills off against others. Instead, players can choose five different skills to add a +1 bonus to, each. These are their main, or "activated" skills, the skills unique to their character. To be clear: players can not add multiple bonuses to a single skill.
+Since OpenAxiom does not use a point pool, it does not requiring trading some skills off against others. Instead, players can choose five different skills from lists provided by the Game Master to add a +1 bonus to, each. These are their main, or "activated" skills, the skills unique to their character. The Game Master typically composes these lists by selecting and combining various modular "skill packs" that are appropriate for the campaign setting and genre. This ensures that all available skills are balanced and thematically appropriate for the game world. To be clear: players can not add multiple bonuses to a single skill.
 
 Each chosen skill must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification, just as with traits.
 
@@ -62,7 +62,9 @@ Here are some examples of skills, demonstrating their breadth across various act
 :ID:       F18E6B88-ACAD-45C5-8232-D7C7237CD7E6
 :END:
 
-During character creation, players may choose up to three positive traits and up to three negative traits. The total value of all chosen positive traits must equal the absolute value of all chosen negative traits, ensuring the character is balanced and interesting. For example, if a player chooses positive traits with values of +3 and +2, they must also choose negative traits with values that sum to -5 (such as -5, or -3 and -2).
+During character creation, players may choose up to three positive traits and up to three negative traits from lists provided by the Game Master. The Game Master typically composes these lists by selecting and combining various modular "trait packs" that are appropriate for the campaign setting and genre. This ensures that all available traits are balanced and thematically appropriate for the game world.
+
+The total value of all chosen positive traits must equal the absolute value of all chosen negative traits, ensuring the character is balanced and interesting. For example, if a player chooses positive traits with values of +3 and +2, they must also choose negative traits with values that sum to -5 (such as -5, or -3 and -2).
 
 Each chosen trait must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification.
 

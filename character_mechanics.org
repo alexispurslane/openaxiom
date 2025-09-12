@@ -95,13 +95,19 @@ Traits are categorized based on how they affect skills. Understanding these cate
 
 Broad traits affect one or more top-level general skill categories. These traits have wide-ranging effects across many related skills. For example, a *Natural Leader* trait might affect the entire *Social* skill category, providing bonuses to *Social (Diplomacy)*, *Social (Command)*, *Social (Intimidation)*, and any other skills that fall under the *Social* umbrella.
 
+Broad traits represent fundamental aspects of a character's personality or physiology that affect large areas of their capabilities. They're typically more impactful than narrow traits but also more balanced in their effects.
+
 *** Narrow Traits
 
 Narrow traits affect one or more first-level specialized skills. These traits have more focused effects on specific areas of expertise. For example, *Perfect Pitch* affects *Art (Music)* specifically, rather than all *Art* skills. Similarly, *Keen Eyesight* might affect *Perception (Visual)* but not other perception skills.
 
+Narrow traits represent specific talents or limitations that only apply to particular skill areas. They're more specialized than broad traits and typically have more pronounced effects within their limited scope.
+
 *** Situational Traits
 
 Situational traits can be either broad or narrow but only activate under specific conditions defined by the trait. For example, *Night Vision* is a narrow situational trait that only applies to perception skills when in low-light conditions. *Cold Tolerance* might be a broad situational trait that affects all physical skills but only in freezing environments. The Game Master determines when situational traits activate based on the narrative circumstances.
+
+Situational traits represent abilities or limitations that only matter in specific contexts. They add flavor and tactical depth to characters without constantly affecting gameplay.
 
 *** Special Traits
 
