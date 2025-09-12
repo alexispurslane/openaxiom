@@ -283,6 +283,7 @@ main {
     margin: 0 auto;
     padding: 2em;
     padding-top: 4em; /* Add padding to account for fixed navbar */
+    margin-top: 1em; /* Additional top margin for better spacing */
 }
 
 #TOC ul {
