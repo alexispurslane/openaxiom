@@ -68,6 +68,20 @@ The total value of all chosen positive traits must equal the absolute value of a
 
 Each chosen trait must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification.
 
+** Trait Categories
+:PROPERTIES:
+:ID:       1A2B3C4D-5E6F-7G8H-9I0J-1K2L3M4N5O6P
+:END:
+
+Traits are divided into four categories that determine how and when they apply:
+
+- *Broad Traits*: Affect entire skill categories (like all Social skills) and represent fundamental aspects of your character.
+- *Narrow Traits*: Affect specific skills (like just Art (Music)) and represent specialized talents or limitations.
+- *Situational Traits*: Only apply under specific conditions (like in darkness or extreme cold) as determined by the GM.
+- *Special Traits*: Add unique game rules beyond simple bonuses, such as special abilities or rerolls.
+
+Your GM will provide lists of traits from official packs that fit your game's setting and genre.
+
 ** Standard Trait Definition Format
 :PROPERTIES:
 :ID:       7394B52A-CF34-4512-BEC4-1FFC4AB7E730
