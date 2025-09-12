@@ -271,13 +271,26 @@ Characters can change their posture as a minor action on their turn. This allows
 
 Players may move up to their best fleetness/quickness related *Physical* skill divided by 3 (rounded up) as their movement action. Movement is considered a minor action on their turn, allowing characters to still take a major action for attacking or other activities. Moving through difficult terrain costs additional movement points as determined by the terrain table above.
 
-Characters positioned on high ground hexes gain a bonus of +1 to +3 (as determined by the Game Master based on the degree of physical height) to all range based combat skills. This bonus represents the tactical advantage of elevated positions.
-
 *** Line of Sight
 :PROPERTIES:
 :ID:       8Z6A7B9C-0D1E-2F3G-4H5I-6J7K8L9M0N1O
 :END:
 
-Players who use ranged weapons must have a line of sight to the opponents they wish to attack. Only walls block movement and line of sight. Trees, bushes, and other environmental features count as walls in outdoor settings for the purpose of blocking line of sight. Characters can see and attack through other characters, but must make an extra skill check against their combat skill to succeed.
+Players who use ranged weapons must have a *line of sight* to the opponents they wish to attack. Only walls block movement and line of sight. Trees, bushes, and other environmental features count as walls in outdoor settings for the purpose of blocking line of sight. Characters can see and attack through other characters, but must make an extra skill check against their combat skill to succeed.
 
-Any ranged item designed to be used with the spatial relations rules should come with a specified range. Players only need line of sight and a successful skill check to hit something within the range of their ranged weapon. For targets beyond the weapon's range, players get a -1 penalty to their skill check for every hex beyond their range they aim.
+*** Flanking
+:PROPERTIES:
+:ID:       7A8B9C0D-1E2F-3G4H-5I6J-7K8L9M0N1O2P
+:END:
+
+When attacking an enemy in melee combat, positioning can provide significant tactical advantages. If one or more of a character's allies are adjacent to an enemy that the character is attacking, this is considered *flanking*.
+
+Flanking provides the following benefits:
+- The attacking character receives a +1 bonus to all attack skill checks against the flanked enemy
+- The flanked enemy receives a -1 penalty to all of their attack skill checks
+
+Flanking represents the tactical advantage of having multiple attackers positioned around an enemy, making it difficult for the target to defend against attacks from multiple directions simultaneously. This bonus applies to all melee attacks, and the penalty applies to all attacks made by the flanked character until the flanking conditions change (either the allies move away or the target moves).
+
+*** Range
+
+Any ranged item designed to be used with the spatial relations rules should come with a specified range. Players only need line of sight and a successful skill check to hit something within the range of their ranged weapon. *For targets beyond the weapon's range, players get a -1 penalty to their skill check for every hex beyond their range they aim.*
