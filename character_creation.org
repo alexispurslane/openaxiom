@@ -117,14 +117,30 @@ Here are some examples of traits. These examples illustrate diverse effects as b
 - *Claustrophobia*: This trait imposes a penalty on all skill checks when the character is in a confined space, as determined by the Game Master.
 - *Night Blindness*: This trait would apply a penalty to all perception and combat skills when in low-light conditions.
 
-* Character Creation (for Items)
+* Item Selection
 :PROPERTIES:
 :ID:       13D011F3-1ADC-419C-8918-869AE4B302EB
 :END:
 
  During character creation, characters start with all items required by their skills, plus any worldbuilding or lore items they want, as long as those don't confer a mechanical advantage.
 
-** Character Creation Examples
+** Inventory System
+:PROPERTIES:
+:ID:       290B9FE6-7BE7-4FBE-814C-CE965C3D5E07
+:END:
+
+Your best strength-related skill determines the number of inventory slots you have available to carry items. Strength-related skills include *Physical (Strength)*, *Physical (Endurance)*, and any other skills that the Game Master deems appropriate for determining carrying capacity.
+
+Items are categorized into four size classes that determine how they consume inventory slots:
+
+- *Small*: These items can be fit two per inventory slot (e.g., a dagger, a book, a small tool).
+- *Medium*: These items require one inventory slot (e.g., a sword, a backpack, a rope).
+- *Large*: These items require two inventory slots (e.g., a suit of armor, a large weapon, a chest).
+- *Extra Large*: These items require multiple players to carry, with each participant using all of their open slots for the duration (e.g., a canoe, a large piece of furniture, a heavy statue).
+
+This information helps you understand how many items your character can realistically carry when selecting starting equipment.
+
+* Character Creation Examples
 :PROPERTIES:
 :ID:       BC1D075E-1940-4E0F-8974-7FD8669FFB28
 :END:
