@@ -331,6 +331,30 @@ Any item can be Situational, similar to traits, in which case their effects only
 
 Lore items are usually Small in size, at max Medium, and don't convey any mechanical advantage. They simply represent items the character should have for their backstory. These are represented in-game only so that it's easier to keep track of them if they're stolen, and to avoid absurd inventories full of lore items.
 
+*** Weapon and Armor Properties
+
+Weapons and armor are Special items that can have additional mechanical properties beyond their basic category. These properties can be added as rows to the item cards.
+
+Weapons may have a Damage property indicating the dice rolled to determine how much harm they inflict. For example, a sword might have "Damage: 2d6" indicating it rolls two six-sided dice for damage.
+
+Ranged weapons may have a Range property indicating the distance at which they remain effective. For example, a bow might have "Range: 10" indicating it can effectively target opponents within 10 hexes.
+
+Armor may have a Damage Resistance property that reduces the amount of harm the wearer takes from attacks. For example, leather armor might have "Damage Resistance: 2" indicating it reduces incoming damage by 2 points.
+
+These properties should be added as rows to the item card format, as shown in the example below:
+
+#+ATTR_HTML: :class trait-definition
+| Elven Composite Bow | Prerequisite, Special |
+|---------------------+-----------------------|
+| Required For              | Combat (Ranged) (Bow) |
+| Damage                    | 1d8 |
+| Range                     | 10 |
+
+#+ATTR_HTML: :class trait-definition
+| Leather Armor | Special |
+|---------------+---------|
+| Damage Resistance         | 2 |
+
 * Character Creation Examples
 :PROPERTIES:
 :ID:       BC1D075E-1940-4E0F-8974-7FD8669FFB28
