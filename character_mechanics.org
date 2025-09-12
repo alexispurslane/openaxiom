@@ -1,33 +1,9 @@
-#+TITLE: Player Characters: Properties, Creation, Inventory, Statuses, and Advancement
+#+TITLE: Character Mechanics
 #+OPTIONS: H:6
 #+ATTR_HTML: :class section-icon
-[[file:player_characters.svg]]
+[[file:character_mechanics.svg]]
 
-This section describes what player characters are in OpenAxiom and how to create them. Player characters are defined by skills and traits rather than character classes or traditional attributes. This approach allows for flexible and organic character development, enabling players to build unique individuals. The rules presented here guide the player through each step of character definition, from initial concept to fully-realized character.
-
-* Biography
-:PROPERTIES:
-:ID:       7E638FC9-096D-4AF5-AE5C-7C5B9219D898
-:END:
-
-#+ATTR_HTML: :class section-icon
-[[file:biography.svg]]
-
-Every character has a biography. This biography consists of two freeform fields: Appearance and History. These descriptions are crucial for defining a character's identity. Players should carefully consider their character's appearance and history when selecting skills and traits. The biography helps to ensure a character's mechanical representation aligns with their narrative concept.
-
-** Appearance
-:PROPERTIES:
-:ID:       0B9A64E3-7CA9-40A6-9E0F-F9898CC59707
-:END:
-
-This field describes what a character looks like. It covers physical features, clothing, and any other visual characteristics. An appearance description can suggest certain skills or traits. For example, a character described as "exceptionally tall and gaunt" might have a high skill in *Stealth* or a trait representing *Frail Constitution*. A "heavily muscled individual with calloused hands" might have high *Strength* or a trait for *Powerful Build*.
-
-** History
-:PROPERTIES:
-:ID:       3D684FED-E0D2-45A6-A12E-062778E76CD0
-:END:
-
-This field outlines a character's past experiences and background. It can include significant life events, training, or personal struggles. A character's history directly informs their skill and trait selection. For example, a "former deep-space miner" might have high *Piloting (Mining Vessels)* or a trait for *Claustrophobia*. A "childhood spent studying ancient languages" could lead to high *Linguistics* or a trait for *Bookish*.
+This document becomes the GM's primary in-game reference for how a character functions mechanically. It answers the question, "What can a character do and what is their current state?"
 
 * Skills
 :PROPERTIES:
@@ -80,32 +56,6 @@ The following table provides a qualitative evaluation of skill levels based on t
 | 18 | 100.00% | Legendary | Automatic success. Character cannot fail under normal conditions. |
 
 Note that these probabilities and qualitative levels apply to tasks of average difficulty. Tasks that are easier or harder than average will have correspondingly higher or lower success probabilities. A skill of 18 still represents the pinnacle of human capability rather than supernatural power.
-
-** Initial Skill Selection
-:PROPERTIES:
-:ID:       EA58C73B-5613-40B4-BB9E-70A1207743A1
-:END:
-
-Since OpenAxiom does not use a point pool, and does not requiring trading some skills off against others. Instead, players can choose different five skills to add a +1 bonus to, each. These are their main, or "activated" skills, the skills unique to their character. To be clear: players can not add multiple bonuses to a single skill.
-
-Players may choose specific skills without choosing the more general version. For example, a character can have *Piloting (Starship)* without having *Piloting*. When a character has a specific skill but not its more general version, they can only use that specific skill for tasks that match it exactly. They cannot use it as a substitute for other specializations of the same general skill.
-
-** Skill Examples
-:PROPERTIES:
-:ID:       BB8F9C54-4E34-4B80-9705-607D67F5FC0B
-:END:
-
-Here are some examples of skills, demonstrating their breadth across various activities and genres:
-- *Piloting (Starship)*
-- *Languages (Ancient) (Hieroglyphs)*
-- *Combat (Melee) (Sword)*
-- *Computers (Hacking)*
-- *Social (Diplomacy) (Negotiation)*
-- *Survival (Wilderness) (Forest)*
-- *Engineering (Robotics)*
-- *Medicine (First Aid)*
-- *Art (Painting)*
-- *Physical (Strength) (Lifting)*
 
 * Traits
 :PROPERTIES:
@@ -166,53 +116,6 @@ IMPORTANT: Even Game Masters should refrain from introducing custom Special trai
 
 Traits are identified by a descriptive name. An example is *Perfect Pitch*.
 
-** Standard Trait Definition Format
-:PROPERTIES:
-:ID:       7394B52A-CF34-4512-BEC4-1FFC4AB7E730
-:END:
-
-When defining traits, use the following standardized format to ensure clarity and consistency. This format should be used for all traits, whether they are from official trait packs or custom creations.
-
-#+ATTR_HTML: :class trait-definition
-| Trait Name | Category |
-|------------|----------|
-| Skills Affected       | [List of skills affected by this trait] |
-| Effect                | [Description of the mechanical effect of this trait] |
-
-Example:
-
-#+ATTR_HTML: :class trait-definition
-| Natural Leader | Broad |
-|----------------|-------|
-| Skills Affected        | Social |
-| Effect                 | Provides a bonus to all social interaction skills. |
-
-Special traits that modify the core rules may have multiple categories:
-
-#+ATTR_HTML: :class trait-definition
-| Lucky Charm | Broad, Special |
-|-------------|-----------------|
-| Skills Affected              | All skills |
-| Effect                       | Once per session, the character may reroll any failed skill check. |
-
-** Trait Selection
-:PROPERTIES:
-:ID:       F18E6B88-ACAD-45C5-8232-D7C7237CD7E6
-:END:
-
-During character creation, players may choose up to three positive traits and up to three negative traits. The total value of all chosen positive traits must equal the absolute value of all chosen negative traits, ensuring the character is balanced and interesting. For example, if a player chooses positive traits with values of +3 and +2, they must also choose negative traits with values that sum to -5 (such as -5, or -3 and -2).
-
-Each chosen trait must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification.
-
-** Traits and Lore Items
-:PROPERTIES:
-:ID:       B67FDE9E-C707-4900-B05D-328421028608
-:END:
-
-Some traits may come with associated lore items that a character must carry with them as a result of having that trait. These items are typically Small or Medium in size and don't confer mechanical advantages beyond what the trait itself provides. For example, a character with the *Photographic Memory* trait might carry a cybernetic implant, or a character with *Night Vision* might have special eye drops or wear tinted glasses. These items are considered part of the character's backstory and serve to reinforce the narrative justification for the trait.
-
-Lore items associated with traits are automatically provided to characters during character creation and do not count against their inventory slot limits. However, they can be lost or damaged during play, potentially affecting the character's ability to use their trait effectively until the item is replaced.
-
 ** Trait Evolution and Modification
 :PROPERTIES:
 :ID:       3F9E1A73-0CD5-4D31-8281-E1CF1341AA40
@@ -226,31 +129,6 @@ Positive traits, once established, remain fixed and cannot be modified through s
 
 Note that while skills can be improved without limit, traits can only be modified through specific advancement rules, emphasizing that traits represent deeper, more fundamental aspects of character identity compared to learned skills.
 
-** Trait Examples
-:PROPERTIES:
-:ID:       B26A7CEE-BE73-4ADF-870C-0858B6FC1795
-:END:
-
-Here are some examples of traits. These examples illustrate diverse effects as boosts or hindrances. The Game Master and player should agree on the specific skills a trait affects.
-
-*** Broad Traits
-
-- *Natural Leader*: This trait would grant a bonus to social skills used for leadership, such as *Social (Diplomacy)*, *Social (Command)*, or *Social (Intimidation)*.
-- *Photographic Memory*: This trait would provide a bonus to skills that rely on recalling information, such as *Languages*, *Engineering*, *Medicine*, or *Computers*.
-- *Absent-Minded*: This trait would impose a penalty on skills that require sustained attention and memory, such as *Perception*, *Investigation*, or *Computers*.
-- *Slow Learner*: This trait increases the story point cost for the character to learn new skills. The exact increase in cost is equal to the absolute value of the trait.
-
-*** Narrow Traits
-
-- *Perfect Pitch*: This trait would apply its bonus to any skill related to music, such as *Art (Music Performance)* or *Art (Composition)*.
-- *Ambidextrous*: This trait would provide a bonus to skills requiring fine motor skills with either hand, such as *Combat (Melee)*, *Physical (Sleight of Hand)*, or certain *Art* skills.
-- *Iron Stomach*: This trait would grant a bonus to any skill checks made to resist the effects of poison, disease, or other ingested maladies, likely falling under the *Physical (Constitution)* skill.
-
-*** Situational Traits
-
-- *Colorblindness*: This trait would apply its penalty to skills where color perception is important, such as *Art (Painting)*, *Survival (Wilderness)* for identifying plants, or *Perception (Visual)* in certain situations.
-- *Claustrophobia*: This trait imposes a penalty on all skill checks when the character is in a confined space, as determined by the Game Master.
-- *Night Blindness*: This trait would apply a penalty to all perception and combat skills when in low-light conditions.
 * Items
 :PROPERTIES:
 :ID:       7D4E1F2A-8C3B-4D1E-9A2B-5C8D7E3F9A1B
@@ -276,13 +154,6 @@ Items are categorized into four size classes that determine how they consume inv
 Other than these size and slot requirements, inventory is very simple. Players can organize their items however they see fit, and the Game Master should generally not concern themselves with tracking exact weights or volumes. The focus is on narrative gameplay rather than detailed inventory management.
 
 Items that are particularly large, bulky, or numerous may require special consideration from the Game Master, but in general, players should be able to carry a reasonable amount of equipment based on their character's physical capabilities.
-
-** Character Creation
-:PROPERTIES:
-:ID:       13D011F3-1ADC-419C-8918-869AE4B302EB
-:END:
-
- During character creation, characters start with all items required by their skills, plus any worldbuilding or lore items they want, as long as those don't confer a mechanical advantage.
 
 ** How Items Affect Characters
 :PROPERTIES:
@@ -354,106 +225,6 @@ These properties should be added as rows to the item card format, as shown in th
 | Leather Armor | Special |
 |---------------+---------|
 | Damage Resistance         | 2 |
-
-* Character Creation Examples
-:PROPERTIES:
-:ID:       BC1D075E-1940-4E0F-8974-7FD8669FFB28
-:END:
-
-** Fantasy Example: Elara, the Forest Hunter and Tracker
-:PROPERTIES:
-:ID:       4EFD166D-4325-44C8-B8B2-7C6872F61E7D
-:END:
-
-#+BEGIN_QUOTE
-A player wants to create a fantasy character named Elara. The player envisions Elara as a nimble hunter and tracker from a secluded forest village.
-
-First, the player writes Elara's biography. For Appearance, the player describes Elara as "lithe and quick, with sharp eyes and practical leather clothing suited for the forest." For History, the player writes, "Elara grew up in a reclusive elven community in a deep forest. She was trained as a hunter and tracker, protecting her village from woodland dangers. She has recently left her home to explore the wider world."
-
-Next, the player chooses five skills, giving each a +1 bonus. The default for all skills is 9, so each of these skills will have a value of 10.
-- *Combat (Ranged) (Bow)*: Justification: "Elara was trained with the bow to hunt and to defend her village."
-- *Survival (Wilderness) (Forest)*: Justification: "Her entire life has been spent living and hunting in the forest."
-- *Physical (Tracking)*: Justification: "As a hunter and tracker, she learned to follow trails and find her quarry."
-- *Languages (Elven)*: Justification: "This is her native tongue from her reclusive community."
-- *Physical (Acrobatics)*: Justification: "She is naturally agile and trained to move swiftly through the dense forest canopy."
-
-During character creation, Elara also receives items appropriate to her skills and background. Her best strength-related skill is *Physical (Acrobatics)* at 10, giving her 10 inventory slots.
-- *Elven Composite Bow*: A Medium item that is required for her *Combat (Ranged) (Bow)* skill. Without it, she cannot make bow attacks.
-- *Leather Armor*: A Medium item that provides protection but doesn't confer mechanical advantages in the core rules.
-- *Hunting Knife*: A Small item that could be used for close combat or utility tasks.
-- *Bedroll and Camping Supplies*: A Medium item that allows automatic success on *Survival (Wilderness)* checks for setting up camp.
-- *Herbalism Kit*: A Medium item that aids in identifying plants and treating minor wounds, granting automatic success on certain *Survival (Wilderness)* checks.
-- *Elven Rations*: Several Small items to sustain her during her travels.
-- *Forest Cloak*: A Medium item that helps with stealth in woodland environments, providing automatic success on certain *Physical (Stealth)* checks when in forests.
-
-Finally, the player selects traits. The player chooses up to three positive traits and up to three negative traits, ensuring the total value of positive traits equals the absolute value of negative traits.
-- The player chooses the positive trait *Night Vision* and decides to give it a value of +3.
-
-  This trait will grant a +3 bonus to perception-based skills like *Physical (Tracking)* in low-light conditions, making its effective value 13 in those situations.
-
-  Justification: "Her elven heritage and life in the dim forest have given her excellent sight in low light."
-- The player adds another positive trait, *Ambidextrous*, with a value = +2.
-
-  This trait will grant a +2 bonus to skills requiring manual dexterity, such as *Combat (Ranged) (Bow)*, making that skill's effective value 12.
-
-  Justification: "Her combat training emphasized versatility, making her adept with either hand."
-- To maintain balance, the player chooses the negative trait *Claustrophobia* and gives it a value of -5.
-
-  This trait will impose a -5 penalty on all skill checks when Elara is in a confined space.
-
-  Justification: "Having spent her life in the open wilderness, she is unnerved and distracted in confined spaces."
-
-The positive traits sum to +5 (+3 + +2) and the negative trait sums to -5, creating a balanced character. She has two positive traits and one negative trait, which is within the allowed limits. The Game Master approves the justifications, and Elara is ready to play.
-#+END_QUOTE
-
-** Science Fiction Example: Jax, the Freelance Engineer
-:PROPERTIES:
-:ID:       C63E0526-9D02-4402-AB77-0888DF0A4F72
-:END:
-
-#+BEGIN_QUOTE
-Another player decides to create a science fiction character, a street-smart engineer named Jax.
-
-The player starts with the biography. For Appearance, Jax is "a tall, wiry man with a cybernetic implant replacing his left eye. He wears a worn, grease-stained mechanic's jumpsuit." For History, the player writes, "Jax is a former corporate engineer who grew disillusioned with the megacorporations. He now lives in the underbelly of a sprawling metropolis, working as a freelance mechanic and information broker."
-
-With the biography established, the player selects five skills for a +1 bonus, bringing their value to 10.
-- *Engineering (Robotics)*: Justification: "He was a robotics engineer for a major corporation."
-- *Computers (Hacking)*: Justification: "As an information broker, he often needs to access secure systems."
-- *Social (Streetwise)*: Justification: "He has learned to navigate the complex social landscape of the city's underworld."
-- *Piloting (Starship) (Freighter)*: Justification: "He owns and operates a small, customized freighter for various jobs."
-- *Combat (Ranged) (Pistol)*: Justification: "Living in the underbelly requires the ability to defend oneself."
-
-During character creation, Jax also receives items appropriate to his skills and background. His best strength-related skill is likely *Physical (Strength)* at 9, giving him 9 inventory slots.
-- *Cybernetic Eye Implant*: A Lore item associated with his *Photographic Memory* trait. This is a permanent part of his body that doesn't count against his inventory slots.
-- *Multi-tool Kit*: A Medium item required for many *Engineering* checks, allowing him to work on various mechanical devices.
-- *Portable Computer*: A Medium item that is required for his *Computers (Hacking)* skill. Without it, he cannot attempt hacking checks.
-- *Holdout Pistol*: A Small item that is required for his *Combat (Ranged) (Pistol)* skill.
-- *Tech Repair Kit*: A Medium item that provides automatic success on certain *Engineering* checks for routine maintenance.
-- *Street Clothes*: A Medium item that doesn't confer mechanical advantages but fits his background.
-- *Data Storage Device*: A Small item for storing large amounts of information he's collected.
-- *Emergency Rations*: Several Small items for survival during extended jobs.
-
-Now, the player moves to traits, selecting up to three positive traits and up to three negative traits with a balanced total value.
-- The player chooses the positive trait *Photographic Memory* and gives it a value of +5.
-
-  This will grant a +5 bonus to his knowledge-based skills like *Engineering (Robotics)* and *Computers (Hacking)*, making their effective value 15 for tasks involving memory.
-
-  Justification: "His cybernetic eye implant allows him to perfectly recall technical schematics and information."
-- The player chooses the negative trait *Absent-Minded* and gives it a value of -3.
-
-  This will impose a -3 penalty on perception and attention-based skills.
-
-  For example, when trying to spot a detail in a system he is hacking, his *Computers (Hacking)* skill would have an effective value of 12 (15 - 3). Note that this penalty applies to all skills affected by *Absent-Minded*, not just *Computers (Hacking)*.
-
-  Justification: "The constant stream of data from his implant sometimes causes him to forget mundane details."
-- The player adds another negative trait, *Slow Learner*, with a value of -2.
-
-  This will increase the story point cost for him to learn new skills.
-
-  Justification: "He is highly specialized and struggles to learn new skills outside of his established expertise."
-
-The positive traits sum to +5 and the negative traits sum to -5 (-3 + -2), creating a balanced character. He has one positive trait and two negative traits. The Game Master reviews the justifications and approves them. Jax is now ready for the game.
-#+END_QUOTE
 
 * Character Status Effects
 :PROPERTIES:
@@ -547,8 +318,6 @@ Harm is typically inflicted by the Game Master as a result of failed rolls, envi
 [[file:advancement.svg]]
 
 As characters face trials and adventures, they grow and change. OpenAxiom represents this evolution through Story Points. These points are earned through narrative milestones and can be spent to improve skills, overcome flaws, or even gain new innate talents. This system ensures that character growth is tied directly to the story, rewarding players for engaging with the game world and their character's journey.
-
-
 
 ** Earning Story Points
 :PROPERTIES:
@@ -650,7 +419,6 @@ Example (Elara, Physical): Signature Ability: *Unflinching Poise*. When you woul
 The custom rules they allow *must* fall into these categories. This ensures that Signature Abilities enhance the character's capabilities in meaningful ways that go beyond simple numerical bonuses, creating unique and memorable character moments that reflect their personal mastery of their chosen skills.
 
 The graph below shows how a character's success rate increases over time when spending 3 story points per session to improve a skill (with story point accumulation):
-
 
 *** Unlocking New Skills
 

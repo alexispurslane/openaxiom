@@ -19,7 +19,7 @@ The core mechanic is based on a /logic of action and consequences/. Rather than 
 :ID:       2B3C4D5E-6F7A-8B9C-0D1E-2F3A4B5C6D7E
 :END:
 
-1. [[file:player_characters.html][Player Characters: Properties, Creation, Inventory, Statuses, and Advancement]]
+1. [[file:character_creation.html][Character Creation]] and [[file:character_mechanics.html][Character Mechanics]]
 
    This section describes what player characters are in OpenAxiom and how to create them. Player characters are defined by skills and traits rather than character classes or traditional attributes. This approach allows for flexible and organic character development, enabling players to build unique individuals. The rules presented here guide the player through each step of character definition, from initial concept to fully-realized character.
 

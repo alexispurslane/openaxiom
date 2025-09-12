@@ -5,7 +5,7 @@
 
 Combat situations arise naturally in many genres and settings. OpenAxiom recognizes that violence is sometimes necessary in fiction, and that in fact it is often a key aspect of why people enjoy TTRPGs, and so provides mechanics that make these scenes engaging and meaningful, providing enough simulationist crunch to add consistent and serious consequences and interesting tactical choices.
 
-At the same time, OpenAxiom recognizes that combat may not be the goal of some tables. As a result, the combat system is designed to be optional, not strictly necessary to character progression or development. Game Masters *may choose to avoid the combat rules entirely if they wish!* These are designed for tables that /like/ combat. If your table wants to focus on narrative, it can simply focus on the core [[file:player_characters.html][player character]] and [[file:logic_of_action.html][logic of action]] rules, using Contested Actions or Contested Extended Actions to simulate combat when needed. This is why the health and body locations system is specified /here/, and not in the player characters section.
+At the same time, OpenAxiom recognizes that combat may not be the goal of some tables. As a result, the combat system is designed to be optional, not strictly necessary to character progression or development. Game Masters *may choose to avoid the combat rules entirely if they wish!* These are designed for tables that /like/ combat. If your table wants to focus on narrative, it can simply focus on the core [[file:character_mechanics.html][character mechanics]] and [[file:logic_of_action.html][logic of action]] rules, using Contested Actions or Contested Extended Actions to simulate combat when needed. This is why the health and body locations system is specified /here/, and not in the character mechanics section.
 
 When characters enter combat, the game shifts to the Tactical Time turn structure as defined in the [[file:core_game_loop.org][core game loop]]. This shift to Tactical Time is mandatory during combat encounters, ensuring that all actions occur in a consistent and fair sequence. During Tactical Time, each character takes turns performing actions, with initiative determined by relevant skills and traits. This system allows for detailed resolution of combat actions while maintaining the pace and excitement of violent confrontation.
 
@@ -278,6 +278,12 @@ Players may move up to their best fleetness/quickness related *Physical* skill m
 
 Players who use ranged weapons must have a *line of sight* to the opponents they wish to attack. Only walls block movement and line of sight. Trees, bushes, and other environmental features count as walls in outdoor settings for the purpose of blocking line of sight. Characters can see and attack through other characters, but must make an extra skill check against their combat skill to succeed.
 
+*** Range
+
+
+Any ranged item designed to be used with the spatial relations rules should come with a specified range. Players only need line of sight and a successful skill check to hit something within the range of their ranged weapon. *For targets beyond the weapon's range, players get a -1 penalty to their skill check for every hex beyond their range they aim.*
+
+
 *** Flanking
 :PROPERTIES:
 :ID:       7A8B9C0D-1E2F-3G4H-5I6J-7K8L9M0N1O2P
@@ -308,5 +314,3 @@ This free attack:
 - Is resolved as a normal attack sequence (declare, roll, determine, damage, armor, apply)
 
 This rule represents how difficult it is to simply walk away from an armed opponent without dealing with them first. The zone of control mechanic adds tactical depth to positioning and makes retreats more strategically meaningful.
-
-Any ranged item designed to be used with the spatial relations rules should come with a specified range. Players only need line of sight and a successful skill check to hit something within the range of their ranged weapon. *For targets beyond the weapon's range, players get a -1 penalty to their skill check for every hex beyond their range they aim.*

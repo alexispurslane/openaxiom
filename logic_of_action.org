@@ -221,7 +221,7 @@ A critical success represents an exceptional performance that exceeds normal cap
 
 In terms of character advancement, critical successes have special significance:
 
-1. When a critical success occurs at a pivotal story moment, it opens the possibility for the player to spend story points to gain new positive traits through the Crucible Roll process, as detailed in the [[./player_characters.html#gaining-positive-traits][Character Advancement section on Gaining Positive Traits]]. This represents the character having a transformative experience that could fundamentally change who they are.
+1. When a critical success occurs at a pivotal story moment, it opens the possibility for the player to spend story points to gain new positive traits through the Crucible Roll process, as detailed in the [[./character_mechanics.html#gaining-positive-traits][Character Advancement section on Gaining Positive Traits]]. This represents the character having a transformative experience that could fundamentally change who they are.
 
 2. Even if the critical success did not occur at a pivotal story moment, the player is granted one story point that they can bank for future use. This reward recognizes that exceptional performance, even in routine circumstances, demonstrates the character's growing capabilities and potential.
 
@@ -330,10 +330,10 @@ A critical failure indicates catastrophic performance that can have severe narra
 - Damaging equipment or resources
 - Causing significant setbacks to plans
 
-In addition to these narrative consequences, critical failures have specific mechanical effects. When a character suffers a critical failure, they move up one level on a harm tracker related to the skill that was being used when the skill check failed, as detailed in the [[./player_characters.html#character-status-effects][Character Status Effects section]].
+In addition to these narrative consequences, critical failures have specific mechanical effects. When a character suffers a critical failure, they move up one level on a harm tracker related to the skill that was being used when the skill check failed, as detailed in the [[./character_mechanics.html#character-status-effects][Character Status Effects section]].
 
-If multiple harm trackers could apply, the Game Master should choose the one with the current lowest level, following the [[./player_characters.html#least-harmed-principle][Least Harmed Principle]]. This represents the character compensating for their wounds by leaning more heavily on their other capabilities.
+If multiple harm trackers could apply, the Game Master should choose the one with the current lowest level, following the [[./character_mechanics.html#least-harmed-principle][Least Harmed Principle]]. This represents the character compensating for their wounds by leaning more heavily on their other capabilities.
 
-A critical failure can only push any harm tracker up to level 2 (Impaired). Beyond that point, there may be narrative consequences to a critical failure, but no additional mechanical effects. This limitation prevents critical failures from being overly punitive while still providing meaningful consequences for catastrophic performance. Information about [[./player_characters.html#harm-tracker-levels-and-penalties][Harm Tracker Levels and Penalties]] can be found in the Player Characters section.
+A critical failure can only push any harm tracker up to level 2 (Impaired). Beyond that point, there may be narrative consequences to a critical failure, but no additional mechanical effects. This limitation prevents critical failures from being overly punitive while still providing meaningful consequences for catastrophic performance. Information about [[./character_mechanics.html#harm-tracker-levels-and-penalties][Harm Tracker Levels and Penalties]] can be found in the Character Mechanics section.
 
 Critical failures are dramatic moments that can shift the direction of a scene or even an entire campaign. They should be used sparingly and with consideration for their impact on the overall narrative.
