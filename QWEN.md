@@ -46,3 +46,6 @@ Python scripts in this project use **only** UV for dependency management. Script
 # ///
 ```
 To run a script with dependencies, use: `uv run script.py`
+
+## Qwen Added Memories
+- Run the server with `uv run openaxiom-server`

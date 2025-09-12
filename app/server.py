@@ -1,14 +1,3 @@
-#!/usr/bin/env python
-# /// script
-# requires-python = ">=3.8"
-# dependencies = [
-#   "flask",
-#   "flask-socketio",
-#   "watchdog",
-#   "pandoc",
-#   "whoosh",
-# ]
-# ///
 
 import os
 import subprocess

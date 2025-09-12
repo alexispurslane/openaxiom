@@ -1,7 +1,6 @@
 #+TITLE: Character Creation
 #+OPTIONS: H:6
 #+ATTR_HTML: :class section-icon
-[[file:static/character_creation.svg]]
 
 This document is the guide for "Session Zero." It contains everything a player needs to build a character from concept to completion.
 

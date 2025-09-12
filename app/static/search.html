@@ -92,7 +92,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function highlightText(text, query) {
         if (!query) return text;
-        const regex = new RegExp(`(${query})`, 'gi');
+        // Split query into individual terms
+        const terms = query.trim().split(/\s+/);
+        // Escape special regex characters in each term
+        const escapedTerms = terms.map(term => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+        // Create a regex pattern that matches any of the terms
+        const pattern = escapedTerms.join('|');
+        const regex = new RegExp(`(${pattern})`, 'gi');
         return text.replace(regex, '<span class="highlight">$1</span>');
     }
     
@@ -101,16 +107,17 @@ document.addEventListener('DOMContentLoaded', function() {
             searchResults.innerHTML = '<div class="search-result">No results found</div>';
         } else {
             searchResults.innerHTML = results.map(result => {
-                // Highlight the search term in the content
+                // Highlight the search terms in the content and title
                 const highlightedContent = highlightText(result.content, query);
                 const highlightedTitle = highlightText(result.title, query);
                 
-                // Use text fragment if available, otherwise fallback to search parameter
+                // Generate link URL with section ID if available
                 let linkUrl = `/${result.path.replace('.org', '.html')}`;
-                if (result.fragment) {
-                    linkUrl += `#${result.fragment}`;
+                if (result.section_id) {
+                    linkUrl += `#${result.section_id}?search=${encodeURIComponent(query)}`;
                 } else {
-                    linkUrl += `#search:${encodeURIComponent(query)}`;
+                    // If no section ID, put search in query parameters
+                    linkUrl += `?search=${encodeURIComponent(query)}`;
                 }
                 
                 return `
@@ -130,5 +137,89 @@ document.addEventListener('DOMContentLoaded', function() {
             searchResults.style.display = 'none';
         }
     });
+    
+    // Highlight search terms when page loads with search parameter
+    function highlightSearchTerms() {
+        // Get search query from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        let searchQuery = urlParams.get('search');
+        
+        // If no search query in URL parameters, check hash for parameters
+        if (!searchQuery) {
+            // Extract parameters from hash
+            const hash = window.location.hash;
+            const hashParts = hash.split('?');
+            if (hashParts.length > 1) {
+                const hashParams = new URLSearchParams(hashParts[1]);
+                searchQuery = hashParams.get('search');
+            }
+        }
+        
+        if (searchQuery) {
+            highlightTextOnPage(decodeURIComponent(searchQuery));
+        }
+    }
+    
+    // Highlight text on the page
+    function highlightTextOnPage(query) {
+        if (!query) return;
+        
+        // Split query into individual terms
+        const terms = query.trim().split(/\s+/);
+        if (terms.length === 0) return;
+        
+        // Create a regex pattern that matches any of the terms
+        const escapedTerms = terms.map(term => term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+        const pattern = escapedTerms.join('|');
+        const regex = new RegExp(`(${pattern})`, 'gi');
+        
+        // Function to highlight text nodes
+        function highlightNode(node) {
+            // Skip script and style elements
+            if (node.nodeType === Node.ELEMENT_NODE && 
+                (node.tagName === 'SCRIPT' || node.tagName === 'STYLE')) {
+                return;
+            }
+            
+            // Process child nodes
+            if (node.nodeType === Node.TEXT_NODE) {
+                const text = node.nodeValue;
+                const matches = text.match(regex);
+                
+                if (matches) {
+                    const span = document.createElement('span');
+                    span.innerHTML = text.replace(regex, '<span class="highlight">$1</span>');
+                    
+                    // Replace the text node with highlighted spans
+                    const parent = node.parentNode;
+                    while (span.firstChild) {
+                        parent.insertBefore(span.firstChild, node);
+                    }
+                    parent.removeChild(node);
+                }
+            } else if (node.nodeType === Node.ELEMENT_NODE) {
+                // Process child nodes
+                const childNodes = Array.from(node.childNodes);
+                childNodes.forEach(highlightNode);
+            }
+        }
+        
+        // Highlight text in the main content area
+        const mainContent = document.querySelector('main') || document.body;
+        highlightNode(mainContent);
+        
+        // Scroll to first highlighted element
+        const firstHighlight = document.querySelector('.highlight');
+        if (firstHighlight) {
+            firstHighlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+    
+    // Run highlight function when page loads
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', highlightSearchTerms);
+    } else {
+        highlightSearchTerms();
+    }
 });
 </script>
