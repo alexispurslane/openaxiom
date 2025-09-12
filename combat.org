@@ -291,6 +291,22 @@ Flanking provides the following benefits:
 
 Flanking represents the tactical advantage of having multiple attackers positioned around an enemy, making it difficult for the target to defend against attacks from multiple directions simultaneously. This bonus applies to all melee attacks, and the penalty applies to all attacks made by the flanked character until the flanking conditions change (either the allies move away or the target moves).
 
-*** Range
+*** Zone of Control
+:PROPERTIES:
+:ID:       8B9C0D1E-2F3G-4H5I-6J7K-8L9M0N1O2P3Q
+:END:
+
+Each character exerts control over the area immediately surrounding them. The six hexes adjacent to any character constitute their *zone of control*. This represents the area that a character can effectively threaten with their presence and weapons.
+
+When an opponent enters a character's zone of control, that opponent is considered *engaged* with the character. If the opponent attempts to leave the zone of control without first knocking the controlling character unconscious or killing them, the controlling character may make a free attack against the fleeing opponent as they attempt to escape.
+
+This free attack:
+- Is made immediately when the opponent attempts to leave the zone of control
+- Does not consume the controlling character's major or minor action
+- Must be declared before the opponent's movement is resolved
+- Uses the controlling character's relevant combat skill
+- Is resolved as a normal attack sequence (declare, roll, determine, damage, armor, apply)
+
+This rule represents how difficult it is to simply walk away from an armed opponent without dealing with them first. The zone of control mechanic adds tactical depth to positioning and makes retreats more strategically meaningful.
 
 Any ranged item designed to be used with the spatial relations rules should come with a specified range. Players only need line of sight and a successful skill check to hit something within the range of their ranged weapon. *For targets beyond the weapon's range, players get a -1 penalty to their skill check for every hex beyond their range they aim.*
