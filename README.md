@@ -34,6 +34,14 @@ For this reason, OpenAxiom attempts to avoid being overly complex by eschewing c
 
 Similarly, OpenAxiom is exclusively written in a special simple prose designed to be easy for anyone to comprehend --- to never trip you up with an unexpected subclause.
 
+## Licensing
+
+The OpenAxiom project uses separate licenses for the rules content and the code:
+
+- All prose for this TTRPG (the rules, in both org and html form, and introductions to those rules, etc.) are licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. See [LICENSE.rules.txt](LICENSE.rules.txt) for the full license text.
+
+- All code in this project is licensed under the Mozilla Public License 2.0. See [LICENSE.code.txt](LICENSE.code.txt) for the full license text.
+
 ## Manual Server
 
 This repository also includes a Flask-based server for serving the OpenAxiom TTRPG manual with live reloading capabilities.
