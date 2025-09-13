@@ -60,7 +60,7 @@ The party encounters the Iron Mountain Dwarves for the first time. The Game Mast
 
 Elara, a player character, has a reputation score of 8 with the Coastal Merchants Guild. Since the Iron Mountain Dwarves are hostile to the Coastal Merchants Guild, Elara starts with a reputation score of 2 (10 - 8) with the Iron Mountain Dwarves.
 
-Klein, another player character, has a reputation score of 6 with the Coastal Merchants Guild and a reputation score of 3 with the Riverside Farmers, who are friendly to the Iron Mountain Dwarves. Since the Iron Mountain Dwarves are friendly to a faction Jax has encountered, his starting reputation with them is 3 (the lowest reputation score he has with a friendly faction).
+Klein, another player character, has a reputation score of 6 with the Coastal Merchants Guild and a reputation score of 3 with the Riverside Farmers, who are friendly to the Iron Mountain Dwarves. Since the Iron Mountain Dwarves are friendly to a faction Klein has encountered, his starting reputation with them is 3 (the lowest reputation score he has with a friendly faction).
 #+END_QUOTE
 
 * Reputation System
@@ -110,7 +110,7 @@ The Game Master determines when a social interaction is significant enough to af
 #+BEGIN_QUOTE
 Elara is negotiating with a merchant guild representative to secure supplies for her expedition. She rolls a Social (Diplomacy) check and achieves an Exceptional Success. As a result, her reputation with the merchant guild increases from 5 to 6, granting her a +1 bonus on future interactions with guild members.
 
-Later in the session, Jax attempts to deceive a city guard about his identity. He rolls poorly and suffers a Critical Failure. His reputation with the city guard faction plummets from 5 to 1, making future interactions with guards more difficult.
+Later in the session, Klein attempts to deceive a city guard about his identity. He rolls poorly and suffers a Critical Failure. His reputation with the city guard faction plummets from 5 to 1, making future interactions with guards more difficult.
 #+END_QUOTE
 
 ** Reputation Effects
@@ -158,12 +158,34 @@ After spending reputation, the character's reputation score with that faction is
 Elara has a reputation score of 9 with the merchant guild when she attempts to negotiate for a rare component needed for her expedition. She decides to spend 1 reputation point to gain an additional +1 bonus on her *Social (Diplomacy)* check. Her effective skill increases from 13 (12 + 1 from high reputation) to 14 (12 + 1 from high reputation + 1 from spending reputation). After the interaction, her reputation with the merchant guild drops to 8.
 #+END_QUOTE
 
-** Reputation Events
+** Reputation Actions
 :PROPERTIES:
-:ID:       REPUTATION-EVENTS
+:ID:       REPUTATION-ACTIONS
 :END:
 
-Major events in the campaign can cause sweeping changes to reputation. For example, if a character is publicly revealed to have saved a city from disaster, their reputation with multiple factions might improve simultaneously. Conversely, being associated with a scandal or defeat could damage reputation across several factions at once.
+Players can take specific actions that directly affect their reputation with factions. The reputation changes from these actions are in addition to any changes from social skill checks during interactions with faction members. Each type of action has a specific reputation bonus or penalty:
+
+#+ATTR_HTML: :class reputation-actions-table
+| Action | Reputation Change | Description |
+|--------|-------------------|-------------|
+| Betrayal | -3 | Characters who betray a faction's trust suffer a significant reputation penalty. Betrayal includes actions like revealing faction secrets, sabotaging faction operations, or directly working against the faction's interests. |
+| Salvation | +3 | Characters who save a faction or its members from significant harm gain a substantial reputation bonus. Salvation includes actions like rescuing faction leaders, defending faction territory from attackers, or preventing disasters that would harm the faction. |
+| Missions/Quests | +2 | Characters who complete missions or quests for a faction gain a reputation bonus. These are tasks performed for the faction without direct payment, showing dedication to the faction's goals. |
+| Jobs | +1 | Characters who complete paid jobs for a faction gain a smaller reputation bonus. While jobs show the character is trustworthy and competent, they are primarily business transactions rather than acts of dedication. |
+| Failing Missions/Quests | -2 | Characters who fail to complete missions or quests for a faction suffer a reputation penalty. This reflects the faction's disappointment in the character's inability to fulfill their commitments. |
+| Failing Jobs | -1 | Characters who fail to complete paid jobs for a faction suffer a reputation penalty. While less severe than failing an unpaid mission, failing a job still damages trust. |
+| Ignoring or Going Back on Jobs | -2 | Characters who ignore or go back on agreed-upon jobs without completing them suffer a reputation penalty. This is as severe as failing a mission because it shows the character cannot be trusted to honor their agreements. |
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+Elara agrees to a mission to recover stolen documents for the merchant guild (unpaid, so it's a mission). After successfully completing the mission, she gains +2 reputation with the guild, raising her score from 8 to 10.
+
+Klein takes a job to escort a merchant caravan for the same guild (paid work, so it's a job). After successfully completing the job, he gains +1 reputation with the guild, raising his score from 6 to 7.
+
+Later, Elara fails to protect a guild warehouse from bandits (failing a mission). She suffers a -2 reputation penalty, dropping her score from 10 to 8.
+
+Meanwhile, Klein agrees to escort another caravan but abandons the job halfway through (ignoring a job). He suffers a -2 reputation penalty, dropping his score from 7 to 5.
+#+END_QUOTE
 
 * Using Social Relations in Play
 :PROPERTIES:
