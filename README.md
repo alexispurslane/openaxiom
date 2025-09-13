@@ -42,6 +42,17 @@ The OpenAxiom project uses separate licenses for the rules content and the code:
 
 - All code in this project is licensed under the Mozilla Public License 2.0. See [LICENSE.code.txt](LICENSE.code.txt) for the full license text.
 
+## Social Relations System
+
+This repository includes a new chapter on Social Relations, which adds depth to roleplaying encounters and provides mechanical weight to social dynamics in your game. The system features:
+
+- **Factions**: Every character belongs to a faction representing their affiliations, organizations, or cultural groups
+- **Reputation Tracking**: Characters maintain reputation percentages with factions they've encountered, affecting social interactions
+- **Reputation Changes**: Reputation shifts based on the outcomes of social skill checks, with different modifiers for exceptional/critical successes and failures
+- **Mechanical Effects**: Reputation provides bonuses or penalties to social skill checks and can influence NPC behavior
+
+The Social Relations system is fully integrated with the existing OpenAxiom mechanics and follows the same design principles of being simulationist, crunchy across the board, and easy to understand.
+
 ## Manual Server
 
 This repository also includes a Flask-based server for serving the OpenAxiom TTRPG manual with live reloading capabilities.

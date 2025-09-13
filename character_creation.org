@@ -134,6 +134,24 @@ Items are categorized into four size classes that determine how they consume inv
 
 This information helps you understand how many items your character can realistically carry when selecting starting equipment.
 
+* Factions
+:PROPERTIES:
+:ID:       FACTIONS-CHARACTER-CREATION
+:END:
+
+#+ATTR_HTML: :class section-icon
+[[file:static/factions.svg]]
+
+During character creation, players should consider which faction their character primarily identifies with, consulting with their Game Master to determine what factions are available in the game's setting and which would be reasonable for a player in the planned campaign to be a part of. This faction represents their background, cultural upbringing, or primary affiliation.
+
+This choice helps inform the character's background and can suggest appropriate skills and traits. For example, a character from a scholarly faction might have high *Languages* or *Investigation* skills, while one from a criminal faction might excel in *Social (Deception)* or *Physical (Stealth)*.
+
+Players should consult with their Game Master to determine what factions are appropriate for the story and setting. The GM may have specific factions in mind for the campaign, or may allow players to propose their own.
+
+Characters start with a reputation score of 8 with their chosen primary home faction, representing their familiarity and standing within their own community. As the character encounters members of other factions during play, their reputation with those factions will be tracked separately, starting at 5 for neutral first encounters.
+
+The Game Master should use the expanded faction relationship system where initial reputation with new factions is determined by the character's existing relationships. See the Social Relations chapter for details on this core rule.
+
 * Character Creation Examples
 :PROPERTIES:
 :ID:       BC1D075E-1940-4E0F-8974-7FD8669FFB28

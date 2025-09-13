@@ -52,3 +52,7 @@ The rules avoid unnecessary complexity, ensuring that any situation can be resol
 4. [[file:combat.org][Combat: The Core Mechanics, and Advanced Modules]]
 
    Combat situations arise naturally in many genres and settings. OpenAxiom recognizes that violence is sometimes necessary in fiction, and that in fact it is often a key aspect of why people enjoy TTRPGs, and so provides mechanics that make these scenes engaging and meaningful. The system uses an Ablative Injury System with specific body locations, each with their own pool of Hit Points, and models realistic consequences of violence with the Harm Tracker system.
+
+5. [[file:social_relations.html][Social Relations: Factions and Reputation]]
+
+   Social interactions form a crucial part of many narratives, and OpenAxiom provides a structured system for tracking how characters relate to each other and to various factions. This system adds depth to roleplaying encounters and provides mechanical weight to social dynamics in your game. Characters belong to factions, and each character maintains a reputation percentage with every faction they've encountered, which affects social interactions and can change based on successful or failed social skill checks.

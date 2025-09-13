@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: openaxiom-server
+Version: 0.1.0
+Summary: A Flask-based server for the OpenAxiom TTRPG manual with live reloading
+Description-Content-Type: text/markdown
+Requires-Dist: flask>=2.3.2
+Requires-Dist: flask-socketio>=5.3.4
+Requires-Dist: watchdog>=3.0.0
+Requires-Dist: pandoc>=2.3
+Requires-Dist: whoosh>=2.7.4
+Requires-Dist: beautifulsoup4>=4.13.5
+Requires-Dist: bs4>=0.0.2

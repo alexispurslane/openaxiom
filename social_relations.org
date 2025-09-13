@@ -1,0 +1,251 @@
+#+TITLE: Social Relations
+#+OPTIONS: H:6
+#+ATTR_HTML: :class section-icon
+[[file:static/social_relations.svg]]
+
+Social interactions form a crucial part of many narratives, and OpenAxiom provides a structured system for tracking how characters relate to each other and to various factions. This system adds depth to roleplaying encounters and provides mechanical weight to social dynamics in your game.
+
+The system tracks each character's reputation score from 1 to 10 with every faction they've encountered. The Game Master defines relationships between factions, which then determine a character's initial reputation score when encountering new factions based on their existing relationships.
+
+* Factions
+:PROPERTIES:
+:ID:       FACTION-SYSTEM
+:END:
+
+#+ATTR_HTML: :class section-icon
+[[file:static/factions.svg]]
+
+Characters in OpenAxiom belong to factions, which represent their affiliations, organizations, cultures, or other groups with shared interests. Every character, whether player character, NPC, or enemy, is associated with a faction. This could be as broad as a nation or as specific as a secret society.
+
+Factions provide context for social interactions and help determine how different characters might react to each other. For example, a character from a military faction might have automatic tensions with someone from a rebel faction, while two characters from the same guild might have an easier time building rapport.
+
+Player characters establish their primary faction during character creation. See the Character Creation chapter for details on how to select an appropriate faction for your character and the initial reputation that comes with it.
+
+** Faction Identification
+:PROPERTIES:
+:ID:       FACTION-IDENTIFICATION
+:END:
+
+Each character has one primary faction affiliation. This is established during character creation for player characters or by the Game Master for NPCs and enemies. Factions can be as broad or specific as the campaign requires:
+
+- Broad factions might represent entire nations, species, or philosophical movements
+- Specific factions might represent individual organizations, guilds, or even family lineages
+
+When first creating a character, players should work with their Game Master to determine an appropriate faction that fits both the character's background and the campaign setting. The faction should make sense in the context of the character's history and the world's political landscape.
+
+** Faction Relationships
+:PROPERTIES:
+:ID:       FACTION-RELATIONSHIPS
+:END:
+
+Factions have relationships with each other that exist independently of individual characters. These relationships provide a baseline for how members of different factions interact. There are three basic relationship states:
+
+- *Friendly*: Factions that generally get along, cooperate, or share common goals
+- *Neutral*: Factions that have no particular feelings toward each other
+- *Hostile*: Factions that are actively opposed to each other
+
+These relationships are established by the Game Master as part of the campaign's world-building and can shift over time based on events in the game.
+
+When player characters encounter a new faction for the first time, their initial reputation with that faction is determined by the relationship between that faction and any factions the character has already encountered. This is determined by the following rules, in descending order of precedence:
+
+1. *Friendly Relationship*: If the new faction is friendly to a faction the character has a reputation with, the character starts with the same reputation score they have with the lowest reputation faction that is friendly to the new one.
+2. *Hostile Relationship*: If the new faction is hostile to any faction the character has a reputation with, the character starts with a reputation score of 10 minus the highest reputation score they have with a faction that is hostile to the new one.
+3. *Neutral Relationship*: If the new faction is neutral toward every faction the character has already built a reputation with, the character starts with the default reputation score of 5.
+
+The Game Master should determine the relationships between factions during campaign preparation and note them for reference during play.
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+The party encounters the Iron Mountain Dwarves for the first time. The Game Master has established that the Iron Mountain Dwarves are hostile to the player characters' home faction, the Coastal Merchants Guild.
+
+Elara, a player character, has a reputation score of 8 with the Coastal Merchants Guild. Since the Iron Mountain Dwarves are hostile to the Coastal Merchants Guild, Elara starts with a reputation score of 2 (10 - 8) with the Iron Mountain Dwarves.
+
+Klein, another player character, has a reputation score of 6 with the Coastal Merchants Guild and a reputation score of 3 with the Riverside Farmers, who are friendly to the Iron Mountain Dwarves. Since the Iron Mountain Dwarves are friendly to a faction Jax has encountered, his starting reputation with them is 3 (the lowest reputation score he has with a friendly faction).
+#+END_QUOTE
+
+* Reputation System
+:PROPERTIES:
+:ID:       REPUTATION-SYSTEM
+:END:
+
+#+ATTR_HTML: :class section-icon
+[[file:static/reputation.svg]]
+
+A character's reputation with a faction represents how a specific character is viewed by members of that faction. This system allows for complex social dynamics where individual actions can affect how others perceive you, regardless of your own faction affiliation.
+
+** Reputation Tracking
+:PROPERTIES:
+:ID:       REPUTATION-TRACKING
+:END:
+
+Each character maintains a reputation score from 1 to 10 with every faction they've encountered. This is tracked on the character sheet as follows:
+
+- When first meeting a character from a new faction, a new reputation line is *created starting at 5*. This represents a neutral stance where the faction has no particular feelings about the character
+- Reputation ranges from *1* (completely despised) to *10* (universally admired)
+
+Reputation is tracked separately for each faction encountered, meaning a character could be highly respected by one faction (score of 7-10) and poorly regarded by another (score of 1-3).
+
+** Changing Reputation
+:PROPERTIES:
+:ID:       CHANGING-REPUTATION
+:END:
+
+Reputation with a faction can change whenever a character interacts with members of that faction through social skill checks (usually *Social* or *Social (...)*):
+
+#+ATTR_HTML: :class reputation-changes-table
+| Degree of Success on Social Skill Check | Reputation Change With Faction |
+|-------------------|-------------------|
+| Critical Success  | +5 (capped at 10) |
+| Exceptional Success | +1 |
+| Standard Success  | No change |
+| Marginal Failure  | No change |
+| Exceptional Failure | -1 |
+| Critical Failure  | -5 (minimum of 1) |
+
+These changes only apply when the social interaction is with a member of the faction whose reputation is being affected. For example, impressing a military officer would improve your reputation with the military faction, but not with a merchant guild.
+
+The Game Master determines when a social interaction is significant enough to affect reputation. Minor interactions like asking for directions typically don't affect reputation, while major negotiations, public speeches, or acts of heroism/villainy would.
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+Elara is negotiating with a merchant guild representative to secure supplies for her expedition. She rolls a Social (Diplomacy) check and achieves an Exceptional Success. As a result, her reputation with the merchant guild increases from 5 to 6, granting her a +1 bonus on future interactions with guild members.
+
+Later in the session, Jax attempts to deceive a city guard about his identity. He rolls poorly and suffers a Critical Failure. His reputation with the city guard faction plummets from 5 to 1, making future interactions with guards more difficult.
+#+END_QUOTE
+
+** Reputation Effects
+:PROPERTIES:
+:ID:       REPUTATION-EFFECTS
+:END:
+
+A character's reputation with a faction affects social interactions with members of that faction:
+
+#+ATTR_HTML: :class reputation-effects-table
+| Reputation Range | Modifier |
+|------------------|----------|
+| High Reputation (7-10) | +1 bonus to social skill checks |
+| Neutral Reputation (4-6) | No modifier |
+| Poor Reputation (1-3) | -1 penalty to social skill checks |
+
+These modifiers are applied to the target number when making social skill checks against members of that faction.
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+A character with a reputation score of 9 (High Reputation) with the merchant guild attempts to negotiate a discount on equipment. Their Social (Diplomacy) skill is 12, but they receive a +1 bonus from their high reputation, making their effective skill 13 for this interaction.
+
+Conversely, a character with a reputation score of 3 (Poor Reputation) with the same guild would have a -1 penalty, reducing their Social (Diplomacy) skill from 12 to 11 for negotiations with guild members.
+#+END_QUOTE
+
+** Spending Reputation for Advantage
+:PROPERTIES:
+:ID:       SPENDING-REPUTATION
+:END:
+
+Characters can treat their reputation with various factions as social capital, spending it to gain advantages in critical moments. When a character spends reputation, they reduce their reputation score with that faction by a certain amount to gain a benefit. Spending reputation in this way represents the character calling in favors, using their status, or leveraging their influence to achieve specific goals.
+
+Characters can spend reputation in one of three ways:
+
+1. *Additional Bonus on Faction-Related Skill Checks*: Spend 1 point of reputation with a faction to add an additional +1 bonus to any *Social* skill check with that faction. This bonus stacks with the existing reputation modifier.
+
+2. *Reroll a Critical Failure*: Spend 1 reputation point with a faction to reroll any critical failure made in a *Social* skill check with that faction. The character must accept the result of the second roll, even if it is worse.
+
+3. *Vouch for a Friend*: Spend 1 reputation point with a faction to vouch for a friend's character with that faction. This temporarily grants the friend the character's (pre-spend) reputation score with that faction for the course of one scene. The friend's reputation with the faction returns to its normal value at the end of the scene.
+
+After spending reputation, the character's reputation score with that faction is reduced by the amount spent.
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+Elara has a reputation score of 9 with the merchant guild when she attempts to negotiate for a rare component needed for her expedition. She decides to spend 1 reputation point to gain an additional +1 bonus on her *Social (Diplomacy)* check. Her effective skill increases from 13 (12 + 1 from high reputation) to 14 (12 + 1 from high reputation + 1 from spending reputation). After the interaction, her reputation with the merchant guild drops to 8.
+#+END_QUOTE
+
+** Reputation Events
+:PROPERTIES:
+:ID:       REPUTATION-EVENTS
+:END:
+
+Major events in the campaign can cause sweeping changes to reputation. For example, if a character is publicly revealed to have saved a city from disaster, their reputation with multiple factions might improve simultaneously. Conversely, being associated with a scandal or defeat could damage reputation across several factions at once.
+
+* Using Social Relations in Play
+:PROPERTIES:
+:ID:       USING-SOCIAL-RELATIONS
+:END:
+
+#+ATTR_HTML: :class section-icon
+[[file:static/social_play.svg]]
+
+The social relations system is designed to add depth to roleplaying encounters without slowing down gameplay. Here's how to incorporate it into your game:
+
+** Tracking First Encounters
+:PROPERTIES:
+:ID:       FIRST-ENCOUNTERS
+:END:
+
+When player characters meet NPCs or enemies from factions they haven't encountered before, the Game Master should note this and create a new reputation entry starting at 5. This can be done quickly during play and doesn't need to interrupt the flow of the game.
+
+** Social Skill Checks
+:PROPERTIES:
+:ID:       SOCIAL-SKILL-CHECKS
+:END:
+
+When a player attempts a social skill check against an NPC, the Game Master should consider whether the interaction is significant enough to affect reputation. As a general rule:
+
+- Routine interactions (asking for directions, ordering food) don't affect reputation
+- Extended interactions (negotiations, lengthy conversations) might affect reputation
+- Pivotal interactions (alliance negotiations, public speeches, acts of heroism or villainy) always affect reputation
+
+After resolving a social skill check that affects reputation, the Game Master should adjust the appropriate reputation score and note any mechanical effects for future interactions.
+
+* Social Combat
+:PROPERTIES:
+:ID:       SOCIAL-COMBAT
+:END:
+
+#+ATTR_HTML: :class section-icon
+[[file:static/social_combat.svg]]
+
+Characters can engage in social combat, attempting to damage another character's reputation with a specific faction through slander, propaganda, or other means of social manipulation. This represents the cut and thrust of social maneuvering where characters try to undermine each other's standing in a community.
+
+Social combat is a simple gloss on the Contested Action rules found in [[file:logic_of_action.html][the Action chapter]], following the following steps:
+
+1. *Initiation*:
+   - Any character can initiate social combat against another character they know has a reputation with a faction.
+
+   - The initiating character must declare the target character, and the reputation with which faction they are targeting.
+
+   - The target character must already have an established reputation with that faction.
+2. *Resolution*:
+   - Social combat is resolved as a Contested Action between the initiating character and the target character. Each participant uses any relevant social skill (such as *Social (Diplomacy)*, *Social (Deception)*, or *Social (Performance)*).
+
+   - *The modifier for each participant's skill check is determined by their own reputation with the faction being targeted.*
+
+   - Even if the initating character did not have a reputation with the target faction before (in this case, they get the default 5).
+3. *Outcomes*:
+
+   - If the initiating character fails the contested action, they lose one point of reputation with the targeted faction as their attempts to slander another are seen as desperate or unseemly.
+
+   - If the initiating character succeeds, the target character loses one point of reputation with the targeted faction as their standing has been successfully undermined.
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+Elara and Klein are both known to the merchant guild faction, with Elara having a reputation score of 8 and Klein having a reputation score of 6. During a heated argument, Elara decides to launch a social attack against Klein by spreading rumors about his business practices to the guild members.
+
+This initiates a social combat encounter where Elara and Klein make opposed Social (Deception) checks. Elara receives a +1 bonus to her check due to her High Reputation (8) with the merchant guild, while Klein has no modifier for his Neutral Reputation (6).
+
+Elara has a skill of 12 in *Social (Deception)*. Plus her +1 reputation bonus, that gives a total of 13. Meanwhile, Klein has a *Social (Deception)* skill value of natural 13. Unfortunately, Elara rolls a 6, which is an exceptional success, whereas Klein only rolls a 12 --- a regular success. As a result, Klein loses the contest, and his reputation with the merchant guild drops to 5.
+
+If Elara had failed the opposed check, she would have lost one point of reputation instead, dropping from 8 to 7.
+#+END_QUOTE
+
+* Advanced Social Rules
+:PROPERTIES:
+:ID:       ADVANCED-SOCIAL-RULES
+:END:
+
+For groups that want more complexity in their social interactions, here are optional rules that can be added to the social relations system:
+
+** Faction Standing
+:PROPERTIES:
+:ID:       FACTION-STANDING
+:END:
+
+Characters can work to improve their standing within their own faction through special actions or quests. Higher standing might grant access to special resources, training, or privileges that aren't available to ordinary members.

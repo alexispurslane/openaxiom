@@ -1,0 +1,21 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Three interconnected circles representing factions and their relationships -->
+  <defs>
+    <style>
+      .faction { stroke: #8E44AD; stroke-width: 4; fill: none; }
+      .connection { stroke: #34A853; stroke-width: 3; stroke-dasharray: 5,5; }
+    </style>
+  </defs>
+  <!-- Faction circles -->
+  <circle cx="30" cy="35" r="20" class="faction"/>
+  <circle cx="70" cy="35" r="20" class="faction"/>
+  <circle cx="50" cy="70" r="20" class="faction"/>
+  <!-- Connections -->
+  <line x1="30" y1="35" x2="70" y2="35" class="connection"/>
+  <line x1="30" y1="35" x2="50" y2="70" class="connection"/>
+  <line x1="70" y1="35" x2="50" y2="70" class="connection"/>
+  <!-- Faction symbols -->
+  <text x="30" y="40" font-family="Arial" font-size="16" text-anchor="middle" fill="#8E44AD">F</text>
+  <text x="70" y="40" font-family="Arial" font-size="16" text-anchor="middle" fill="#8E44AD">F</text>
+  <text x="50" y="75" font-family="Arial" font-size="16" text-anchor="middle" fill="#8E44AD">F</text>
+</svg>
