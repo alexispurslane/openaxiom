@@ -7,7 +7,7 @@ import time
 import webbrowser
 from pathlib import Path
 
-from flask import Flask, send_from_directory, jsonify, request
+from flask import Flask, send_from_directory, jsonify, request, render_template
 from flask_socketio import SocketIO, emit
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
@@ -25,7 +25,8 @@ HOST = "localhost"
 # Create Flask app
 import os
 app = Flask(__name__, 
-            static_folder=os.path.join(os.path.dirname(__file__), "static"))
+            static_folder=os.path.join(os.path.dirname(__file__), "static"),
+            template_folder=os.path.join(os.path.dirname(__file__), "templates"))
 app.config["SECRET_KEY"] = "openaxiom-secret-key"
 
 # Create SocketIO instance
@@ -59,13 +60,15 @@ class FileChangeHandler(FileSystemEventHandler):
         org_file = Path(org_file_path)
         html_file = org_file.with_suffix(".html")
         output_path = os.path.join(os.path.dirname(__file__), "html", html_file.name)
+        template_path = os.path.join(os.path.dirname(__file__), "templates", "pandoc_fragment.html")
 
         try:
             subprocess.run([
                 "pandoc", 
                 str(org_file), 
-                "-s", 
-                "--css=/static/style.css", 
+                "-s",
+                "--template", 
+                template_path,
                 "--toc", 
                 "--section-divs", 
                 "--metadata=lang:en", 
@@ -140,48 +143,19 @@ def serve_html(filename):
     # Sort by title
     html_files_with_titles.sort(key=lambda x: x[1])
     
-    # Create navigation bar
-    file_list_html = "<div class='file-list'><ul>"
-    for html_file, title in html_files_with_titles:
-        # Highlight the current file
-        if html_file == filename:
-            file_list_html += f'<li><strong>{title}</strong></li>'
-        else:
-            file_list_html += f'<li><a href="/{html_file}">{title}</a></li>'
+    # Get title for current page
+    org_file_path = filename.replace(".html", ".org")
+    if os.path.exists(org_file_path):
+        title = get_org_title(org_file_path)
+    else:
+        title = filename.replace(".html", "").replace("_", " ").title()
     
-    # Add search component to the navigation bar
-    try:
-        search_component_path = os.path.join(os.path.dirname(__file__), "static", "search.html")
-        with open(search_component_path, "r") as f:
-            search_component = f.read()
-        file_list_html += f"<li>{search_component}</li>"
-    except FileNotFoundError:
-        print("Warning: search.html not found in static folder")
-    
-    file_list_html += "</ul></div>"
-    
-    # Inject navigation bar and live reload script
-    if "<body>" in content:
-        # Insert file list after <body> tag and wrap content in <main>
-        content = content.replace("<body>", f"<body>\n{file_list_html}\n<main>", 1)
-    
-    # Add live reload script before </body> tag and close <main> tag
-    if "</body>" in content:
-        script = """
-        </main>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
-        <script>
-          const socket = io();
-          socket.on('reload', function(data) {
-            location.reload();
-          });
-        </script>
-        </body>
-        """
-        content = content.replace("</body>", script, 1)
-    
-    # Return the modified content
-    return content
+    # Render template with content
+    return render_template("page.html", 
+                          content=content,
+                          title=title,
+                          html_files_with_titles=html_files_with_titles,
+                          current_file=filename)
 
 @app.route("/api/files")
 def list_files():

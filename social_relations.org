@@ -3,11 +3,9 @@
 #+ATTR_HTML: :class section-icon
 [[file:static/social_relations.svg]]
 
-Social interactions form a crucial part of many narratives, and OpenAxiom provides a structured system for tracking how characters relate to each other and to various factions. This system adds depth to roleplaying encounters and provides mechanical weight to social dynamics in your game.
+OpenAxiom recognizes that social interactions and factional relations are often just as crucial to roleplaying narratives as combat. Thus, it tries to provide a structured system for tracking how characters relate to each other and to various factions for tables that want serious mechanical consequences and tactical choice and resource management for their social interactions as much as their violent ones. *Like the* [[file:combat.html][combat rules,]] *this system is completely optional*: the core [[file:logic_of_action.html][logic of action]] rules should be more than enough to resolve social actions and consequences for tables that /don't/ desire extra depth.
 
-The system tracks each character's reputation score from 1 to 10 with every faction they've encountered. The Game Master defines relationships between factions, which then determine a character's initial reputation score when encountering new factions based on their existing relationships.
-
-* Factions
+* Faction Identification
 :PROPERTIES:
 :ID:       FACTION-SYSTEM
 :END:
@@ -15,55 +13,13 @@ The system tracks each character's reputation score from 1 to 10 with every fact
 #+ATTR_HTML: :class section-icon
 [[file:static/factions.svg]]
 
-Characters in OpenAxiom belong to factions, which represent their affiliations, organizations, cultures, or other groups with shared interests. Every character, whether player character, NPC, or enemy, is associated with a faction. This could be as broad as a nation or as specific as a secret society.
+Factions provide context for social interactions by helping to determine how different characters might react to each other. For example, a character from a military faction might have automatic tensions with someone from a rebel faction, while two characters from the same guild might have an easier time building rapport.
 
-Factions provide context for social interactions and help determine how different characters might react to each other. For example, a character from a military faction might have automatic tensions with someone from a rebel faction, while two characters from the same guild might have an easier time building rapport.
+Characters in OpenAxiom belong to one faction each, which represents their primary affiliation, organization, culture, or other group with shared interests. Every character, whether player character, NPC, or enemy, is associated with such a faction. This could be as broad as a nation or as specific as a secret society.
 
 Player characters establish their primary faction during character creation. See the Character Creation chapter for details on how to select an appropriate faction for your character and the initial reputation that comes with it.
 
-** Faction Identification
-:PROPERTIES:
-:ID:       FACTION-IDENTIFICATION
-:END:
-
-Each character has one primary faction affiliation. This is established during character creation for player characters or by the Game Master for NPCs and enemies. Factions can be as broad or specific as the campaign requires:
-
-- Broad factions might represent entire nations, species, or philosophical movements
-- Specific factions might represent individual organizations, guilds, or even family lineages
-
-When first creating a character, players should work with their Game Master to determine an appropriate faction that fits both the character's background and the campaign setting. The faction should make sense in the context of the character's history and the world's political landscape.
-
-** Faction Relationships
-:PROPERTIES:
-:ID:       FACTION-RELATIONSHIPS
-:END:
-
-Factions have relationships with each other that exist independently of individual characters. These relationships provide a baseline for how members of different factions interact. There are three basic relationship states:
-
-- *Friendly*: Factions that generally get along, cooperate, or share common goals
-- *Neutral*: Factions that have no particular feelings toward each other
-- *Hostile*: Factions that are actively opposed to each other
-
-These relationships are established by the Game Master as part of the campaign's world-building and can shift over time based on events in the game.
-
-When player characters encounter a new faction for the first time, their initial reputation with that faction is determined by the relationship between that faction and any factions the character has already encountered. This is determined by the following rules, in descending order of precedence:
-
-1. *Friendly Relationship*: If the new faction is friendly to a faction the character has a reputation with, the character starts with the same reputation score they have with the lowest reputation faction that is friendly to the new one.
-2. *Hostile Relationship*: If the new faction is hostile to any faction the character has a reputation with, the character starts with a reputation score of 10 minus the highest reputation score they have with a faction that is hostile to the new one.
-3. *Neutral Relationship*: If the new faction is neutral toward every faction the character has already built a reputation with, the character starts with the default reputation score of 5.
-
-The Game Master should determine the relationships between factions during campaign preparation and note them for reference during play.
-
-#+ATTR_HTML: :class gameplay-example
-#+BEGIN_QUOTE
-The party encounters the Iron Mountain Dwarves for the first time. The Game Master has established that the Iron Mountain Dwarves are hostile to the player characters' home faction, the Coastal Merchants Guild.
-
-Elara, a player character, has a reputation score of 8 with the Coastal Merchants Guild. Since the Iron Mountain Dwarves are hostile to the Coastal Merchants Guild, Elara starts with a reputation score of 2 (10 - 8) with the Iron Mountain Dwarves.
-
-Klein, another player character, has a reputation score of 6 with the Coastal Merchants Guild and a reputation score of 3 with the Riverside Farmers, who are friendly to the Iron Mountain Dwarves. Since the Iron Mountain Dwarves are friendly to a faction Klein has encountered, his starting reputation with them is 3 (the lowest reputation score he has with a friendly faction).
-#+END_QUOTE
-
-* Reputation System
+* Reputation With Factions
 :PROPERTIES:
 :ID:       REPUTATION-SYSTEM
 :END:
@@ -186,6 +142,40 @@ Later, Elara fails to protect a guild warehouse from bandits (failing a mission)
 
 Meanwhile, Klein agrees to escort another caravan but abandons the job halfway through (ignoring a job). He suffers a -2 reputation penalty, dropping his score from 7 to 5.
 #+END_QUOTE
+
+
+* Default Reputation: Faction Relationships
+:PROPERTIES:
+:ID:       FACTION-RELATIONSHIPS
+:END:
+
+Factions have relationships with each other that exist independently of individual characters. These relationships provide a baseline for how members of different factions interact by defining a character's default starting reputation.
+
+There are three basic relationship states between factions:
+
+- *Friendly*: Factions that generally get along, cooperate, or share common goals
+- *Neutral*: Factions that have no particular feelings toward each other
+- *Hostile*: Factions that are actively opposed to each other
+
+These relationships are established by the Game Master as part of the campaign's world-building and can shift over time based on events in the game.
+
+When player characters encounter a new faction for the first time, their initial reputation with that faction is determined by the relationship between that faction and any factions the character has already encountered. This is determined by the following rules, in descending order of precedence:
+
+1. *Friendly Relationship*: If the new faction is /friendly/ to any faction the character has a reputation with already, the character starts with a reputation score *the same* as the /lowest/ reputation score they have with a faction that the new one is friendly to.
+2. *Hostile Relationship*: If the new faction is /hostile/ to any faction the character has a reputation with already, the character starts with a reputation score of *11 minus* the /highest/ reputation score they have with a faction that the new one is hostile to.
+3. *Neutral Relationship*: If the new faction is neutral toward every faction the character has already built a reputation with, the character starts with *the default reputation score of 5.*
+
+The Game Master should determine the relationships between factions during campaign preparation and note them for reference during play.
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+The party encounters the Iron Mountain Dwarves for the first time. The Game Master has established that the Iron Mountain Dwarves are hostile to the player characters' home faction, the Coastal Merchants Guild.
+
+Elara, a player character, has a reputation score of 8 with the Coastal Merchants Guild. Since the Iron Mountain Dwarves are hostile to the Coastal Merchants Guild, Elara starts with a reputation score of 3 (11 - 8) with the Iron Mountain Dwarves.
+
+Klein, another player character, has a reputation score of 6 with the Coastal Merchants Guild and a reputation score of 3 with the Riverside Farmers, who are friendly to the Iron Mountain Dwarves. Since the Iron Mountain Dwarves are friendly to a faction Klein has encountered, his starting reputation with them is 3 (the lowest reputation score he has with a friendly faction).
+#+END_QUOTE
+
 
 * Using Social Relations in Play
 :PROPERTIES:

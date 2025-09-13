@@ -250,22 +250,42 @@ blockquote.warning {
 }
 
 /* Server-generated file list navigation bar */
-.file-list {
+header {
     background-color: #eeeeee;
     padding: 1em;
-    border-radius: 5px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
-.file-list ul {
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+header nav h1 {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    color: #333333;
+    margin: 0;
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    text-align: left;
+    position: static;
+    transform: none;
+    display: block;
+}
+
+header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -274,15 +294,31 @@ blockquote.warning {
     text-align: center;
 }
 
-.file-list li {
+header nav li {
     margin-left: 1em; /* Space between items */
+}
+
+header nav a {
+    color: #d63031; /* Red accent color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav strong {
+    color: #333333; /* Dark color for current page */
+    text-shadow: none; /* Remove shadow for current page */
+    font-weight: 700;
 }
 
 main {
     max-width: 65ch;
     margin: 0 auto;
     padding: 2em;
-    padding-top: 4em; /* Add padding to account for fixed navbar */
+    padding-top: 6em; /* Add padding to account for fixed navbar */
     margin-top: 1em; /* Additional top margin for better spacing */
 }
 
@@ -363,6 +399,8 @@ main {
         border-right: 1px solid #ddd;
         z-index: 1000;
         text-align: left; /* Ensure TOC container is left aligned */
+        margin-top: 4em; /* Account for fixed header */
+        height: calc(100vh - 4em); /* Adjust height to account for header */
     }
     
     main {
@@ -370,6 +408,7 @@ main {
         margin: 0 auto;
         margin-left: 340px; /* 300px sidebar + 40px margin */
         padding: 2em;
+        padding-top: 6em; /* Add padding to account for fixed navbar */
     }
     
     #TOC.collapsed {

@@ -88,6 +88,11 @@ def get_section_id_for_position(org_file_path, match_text):
         with open(html_full_path, 'r', encoding='utf-8') as f:
             soup = BeautifulSoup(f, 'html.parser')
         
+        # Remove the table of contents from consideration
+        toc = soup.find('nav', id='TOC')
+        if toc:
+            toc.decompose()
+        
         # Find all text elements containing the match text
         # We'll search for the text in the HTML content
         import re
