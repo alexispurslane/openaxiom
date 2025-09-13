@@ -489,3 +489,108 @@ table.trait-definition td {
     border: none;
     padding: 0.3em 0.5em;
 }
+
+/* Print styles */
+@media print {
+    /* Hide navigation elements */
+    header, nav, .file-list {
+        display: none !important;
+    }
+    
+    /* Remove fixed positioning and padding adjustments */
+    main {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    /* Ensure content flows naturally for printing */
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: black;
+        background: white;
+        text-align: justify;
+        hyphens: auto;
+    }
+    
+    /* Page break controls */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+    
+    /* Table print adjustments */
+    table {
+        page-break-inside: avoid;
+    }
+    
+    tr {
+        page-break-inside: avoid;
+    }
+    
+    /* Image adjustments for printing */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Section icons */
+    .section-icon {
+        width: 75px;
+        height: 75px;
+    }
+    
+    /* Remove shadows and background effects for cleaner print */
+    h1, h2, h3, h4, h5, h6 {
+        background: none !important;
+        color: black !important;
+        border-bottom: 1px solid #ccc !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    blockquote {
+        border-left: 4px solid #ccc !important;
+        background-color: #f9f9f9 !important;
+        color: black !important;
+    }
+    
+    /* Adjust link colors for print */
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+    
+    /* Hide interactive elements */
+    #searchBox, .search-container {
+        display: none !important;
+    }
+    
+    /* Ensure code blocks are readable */
+    code, pre {
+        background-color: #f0f0f0 !important;
+        color: black !important;
+        border: 1px solid #ccc !important;
+    }
+    
+    /* Table of Contents adjustments */
+    #TOC {
+        background: none !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+    
+    /* Remove any fixed positioning in print */
+    #TOC {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}

@@ -73,8 +73,8 @@ def org_to_plain_text(org_file_path):
             print(f"Error reading {org_file_path} directly: {e2}")
             return ""
 
-def get_section_id_for_position(org_file_path, match_text):
-    """Get the section ID for a given match text by parsing the corresponding HTML."""
+def get_section_id_for_position(org_file_path, query_string):
+    """Get the section ID for the first occurrence of query terms in the main content."""
     try:
         # Convert org file path to HTML file path
         html_file_path = org_file_path.replace('.org', '.html')
@@ -93,31 +93,47 @@ def get_section_id_for_position(org_file_path, match_text):
         if toc:
             toc.decompose()
         
-        # Find all text elements containing the match text
-        # We'll search for the text in the HTML content
-        import re
-        escaped_text = re.escape(match_text)
-        pattern = re.compile(escaped_text, re.IGNORECASE)
+        # Split query into terms
+        terms = query_string.lower().split()
         
-        # Find all text nodes containing the match
-        matching_elements = []
-        for element in soup.find_all(text=pattern):
-            # Get the parent element that contains this text
-            parent = element.parent
-            matching_elements.append(parent)
+        # Find all sections in order
+        sections = soup.find_all('section', id=True)
         
-        # If we found matching elements, find the closest section ID
-        if matching_elements:
-            # Get the first matching element
-            element = matching_elements[0]
-            # Traverse up the tree to find the closest section with an ID
-            while element:
-                if element.name == 'section' and element.get('id'):
-                    return element.get('id')
-                element = element.parent
+        # Look for the most specific section containing any of the query terms
+        # We want the deepest/nested section that contains the term
+        best_section = None
+        best_depth = -1
+        
+        for section in sections:
+            # Get all text content from this section
+            section_text = section.get_text().lower()
+            
+            # Check if any term appears in this section
+            found_term = False
+            for term in terms:
+                if term in section_text:
+                    found_term = True
+                    break
+            
+            if found_term:
+                # Calculate depth by counting ancestor sections
+                depth = 0
+                parent = section.parent
+                while parent:
+                    if parent.name == 'section':
+                        depth += 1
+                    parent = parent.parent
+                
+                # If this is deeper than our current best, use it
+                if depth > best_depth:
+                    best_depth = depth
+                    best_section = section
+        
+        # If we found a specific section, return its ID
+        if best_section:
+            return best_section.get('id')
                 
         # Fallback: return the first section ID if we can't find a specific match
-        sections = soup.find_all('section', id=True)
         if sections:
             return sections[0].get('id')
                 
@@ -155,39 +171,6 @@ def index_org_files():
     writer.commit()
     print("Search index updated successfully.")
 
-def highlight_terms(text, terms, org_file_path, context_length=150):
-    """Extract context around search terms in text and return it without any highlighting markup."""
-    # Create a regex pattern to find any of the terms
-    pattern = '|'.join(re.escape(term) for term in terms)
-    regex = re.compile(pattern, re.IGNORECASE)
-    
-    # Find all matches
-    matches = list(regex.finditer(text))
-    
-    if not matches:
-        # If no matches, return beginning of text
-        return text[:200] + "..." if len(text) > 200 else text, None
-    
-    # Get context around the first match
-    first_match = matches[0]
-    start = max(0, first_match.start() - context_length)
-    end = min(len(text), first_match.end() + context_length)
-    
-    # Extract context
-    context = text[start:end]
-    
-    # Add ellipsis if we're not at the beginning or end
-    if start > 0:
-        context = "..." + context
-    if end < len(text):
-        context = context + "..."
-    
-    # Try to find the section ID that contains this match
-    match_text = first_match.group()
-    section_id = get_section_id_for_position(org_file_path, match_text)
-    
-    return context, section_id
-
 def search_index(query_string):
     """Search the index for the given query string."""
     try:
@@ -199,19 +182,32 @@ def search_index(query_string):
         query = parser.parse(query_string)
         results = searcher.search(query, limit=20)
         
-        # Split query into terms for highlighting
-        terms = query_string.split()
+        # Enable highlighting with custom formatter
+        from whoosh.highlight import HtmlFormatter
+        results.fragmenter.charlimit = None  # Don't limit the size of documents to scan
+        results.fragmenter.maxchars = 200    # Limit the size of fragments
+        results.fragmenter.surround = 50     # Context around matches
+        results.formatter = HtmlFormatter(tagname="span", classname="highlight")  # Use our CSS class
         
         # Return results as a list of dictionaries
         search_results = []
         for result in results:
-            content, section_id = highlight_terms(result["content"], terms, result["path"])
+            # Get highlighted fragment
+            highlighted_content = result.highlights("content")
+            
+            # If no highlights were found, fall back to a snippet
+            if not highlighted_content:
+                highlighted_content = result["content"][:200] + "..." if len(result["content"]) > 200 else result["content"]
+            
+            # Get section ID for the match using the original query string
+            section_id = get_section_id_for_position(result["path"], query_string)
+            
             search_results.append({
                 "title": result["title"],
                 "path": result["path"],
-                "content": content,
+                "content": highlighted_content,
                 "section_id": section_id,
-                "query": query_string  # Pass the original query for highlighting
+                "query": query_string
             })
         return search_results
     except Exception as e:

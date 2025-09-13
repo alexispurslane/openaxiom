@@ -105,7 +105,7 @@ Characters can spend reputation in one of three ways:
 
 2. *Reroll a Critical Failure*: Spend 1 reputation point with a faction to reroll any critical failure made in a *Social* skill check with that faction. The character must accept the result of the second roll, even if it is worse.
 
-3. *Vouch for a Friend*: Spend 1 reputation point with a faction to vouch for a friend's character with that faction. This temporarily grants the friend the character's (pre-spend) reputation score with that faction for the course of one scene. The friend's reputation with the faction returns to its normal value at the end of the scene.
+3. *Vouch for a Friend*: Spend 1 reputation point with a faction to vouch for a friend's character with that faction. This temporarily grants the friend the character's (pre-spend) reputation score with that faction for the course of one scene, if it is higher than the friend's own. The friend's reputation with the faction returns to its normal value at the end of the scene.
 
 After spending reputation, the character's reputation score with that faction is reduced by the amount spent.
 
@@ -230,7 +230,7 @@ Social combat is a simple gloss on the Contested Action rules found in [[file:lo
 
    - *The modifier for each participant's skill check is determined by their own reputation with the faction being targeted.*
 
-   - Even if the initating character did not have a reputation with the target faction before (in this case, they get the default 5).
+   - If the initiating character lacks a reputation with the targeted faction, they use the default score of 5 for their check.
 3. *Outcomes*:
 
    - If the initiating character fails the contested action, they lose one point of reputation with the targeted faction as their attempts to slander another are seen as desperate or unseemly.

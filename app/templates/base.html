@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} - OpenAxiom TTRPG</title>
+    <link rel="stylesheet" href="/static/style.css">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                {% for file, file_title in html_files_with_titles %}
+                    {% if file == current_file %}
+                        <li><strong>{{ file_title }}</strong></li>
+                    {% else %}
+                        <li><a href="/{{ file }}">{{ file_title }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                <li>
+                    {% include 'search.html' %}
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        const socket = io();
+        socket.on('reload', function(data) {
+            location.reload();
+        });
+    </script>
+    
+    {% block scripts %}{% endblock %}
+</body>
+</html>
