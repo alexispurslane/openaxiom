@@ -1,7 +1,0 @@
-flask>=2.3.2
-flask-socketio>=5.3.4
-watchdog>=3.0.0
-pandoc>=2.3
-whoosh>=2.7.4
-beautifulsoup4>=4.13.5
-bs4>=0.0.2

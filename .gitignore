@@ -1,3 +1,4 @@
 app/html/*.html
 app/__pycache__/
 app/search_index/
+openaxiom_server.egg-info/
