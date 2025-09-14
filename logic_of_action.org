@@ -157,10 +157,10 @@ Extended actions can occur in two contexts:
 
 The outcome of each turn's check determines the progress:
 
-- Standard Success or Exceptional Success: The character completes the turn's work and counts it toward the total required turns
-- Critical Success: The character finishes the rest of the task all in that one turn, immediately completing the entire extended action
-- Marginal Failure: The character doesn't make progress on this turn but can continue the task on subsequent turns without penalty
-- Exceptional Failure or Critical Failure: The character fails catastrophically and must attempt the task all over again (if the Game Master will allow a retry)
+- *Standard Success* or *Exceptional Success*: The character completes the turn's work and counts it toward the total required turns
+- *Critical Success*: The character finishes the rest of the task all in that one turn, immediately completing the entire extended action
+- *Marginal Failure*: The character doesn't make progress on this turn but can continue the task on subsequent turns without penalty
+- *Exceptional Failure* or *Critical Failure*: The character fails catastrophically and must attempt the task all over again (if the Game Master will allow a retry)
 
 This system allows for dramatic moments where a character can suddenly overcome a long task with a single amazing roll, while also providing meaningful consequences for poor performance that don't necessarily end the action immediately.
 
@@ -279,21 +279,19 @@ Standard successes are important because they keep the game moving forward witho
 :PROPERTIES:
 :ID:       0D5DEAFF-5B59-4C4E-85C6-6E026E33ABEE
 :END:
-A marginal failure indicates a near-success where the character almost achieved their goal. When a character suffers a marginal failure, the player has two options:
 
-*Let It Fail*: The action fails completely, creating a dead end. The character can try a different approach or attempt the action again under different circumstances without any immediate consequences.
+A marginal failure indicates a near-success where the character almost achieved their goal. When a character suffers a marginal failure, they have one of two choices. They can *accept the failure* and move on, or they can *retry with grit*.
 
-*Retry with Grit*: The character can retry the action with renewed determination, putting more effort and grit into the attempt. This approach requires two turns to succeed as the character pushes themselves harder, but it also comes with a cost. The player must choose one of the following negative consequences that represent the toll of this extra effort:
+*Retry With Grit*: The character can retry the action with renewed determination, putting more effort into the attempt. This approach turns the desired action into an Extended Action that must last two turns, but it also comes with a cost. The player rolls 1d6 on the Marginal Failure Outcomes Table to determine the specific consequence that represents the toll of this extra effort.
 
-1. *Take Harm*: The character takes one level of harm on a relevant tracker, but it can't push the tracker past level 1. The physical or mental strain of pushing themselves takes its toll.
+#+ATTR_HTML: :class marginal-failure-outcomes-table
+| Roll 1d6 | Marginal Failure Outcome |
+|----------|--------------------------|
+| 1-2 | *Take Harm*: The character takes one level of harm on a relevant tracker, but it can't push the tracker past level 1. The physical or mental strain of pushing themselves takes its toll. |
+| 3-4 | *Item Damage*: A relevant item (that is not a skill prerequisite) becomes damaged and temporarily unusable, but can be repaired. The intense effort damages their equipment or resources. |
+| 5-6 | *Enemy Momentum*: An enemy gains *Momentum* for their next action, of any kind. The delay and initial shock of failing the action gives the enemy initiative. |
 
-2. *Item Damage*: A relevant item (skill prerequisite or skill check in a box) becomes damaged and temporarily unusable, but can be repaired. The intense effort damages their equipment or resources.
-
-3. *Enemy Momentum*: An enemy gains *Momentum* for their next action, of any kind.
-
-While the retry takes longer for the player, the increased effort makes it more likely to succeed. The character can continue to reroll for a critical or standard success on each attempt, as long as they don't get an exceptional or critical failure. This approach represents the character refusing to give up and pushing through the challenge with sheer determination, but such grit comes at a price.
-
-This choice gives players agency in determining how their character responds to near-success. They can either accept the failure and move on, or invest additional time and accept a consequence to guarantee eventual success through sheer determination. Game Masters should work with players to determine which option makes the most narrative sense in the given situation.
+While the retry takes longer for the player, the increased effort of an Extended Action makes it more likely to succeed.
 
 ** Exceptional Failure
 :PROPERTIES:
@@ -308,30 +306,17 @@ An exceptional failure represents particularly poor performance that goes beyond
 
 Exceptional failures should have meaningful consequences that affect the narrative, but shouldn't be so punishing as to derail the game. They work best when they create interesting complications rather than simple setbacks.
 
-When a character suffers an exceptional failure, the Game Master chooses one of the following three consequences, selecting the one that best fits what happened in the narrative:
+When a character suffers an exceptional failure, the player rolls 1d6 on the Exceptional Failure Outcomes Table to determine the specific consequence:
 
-1. *Take Significant Physical Harm*: The character takes one level of physical harm on a relevant tracker (can push the harm tracker up to level 2)
-
-2. *Serious Item Damage*: Any item (a treasured lore item, skill prerequisite or skill check in a box) becomes damaged and temporarily unusable (but can be repaired)
-
-3. *Enemy Momentum*: An enemy gains *Momentum* for their next action, of any kind
-
-Game Masters should consider the specific circumstances of the failed action when selecting a consequence. For example, a failed acrobatic maneuver might result in harm, while a failed attempt to hack a computer might damage equipment, and a failed social interaction might give an opponent an advantage. This approach ensures that consequences feel natural and integrated into the story rather than arbitrary. The changes from the basic failure options (significant physical harm that can push trackers to level 2, and serious item damage that can affect treasured lore items) make these consequences more impactful than those for marginal failures.
-
-The following table can help Game Masters quickly determine an appropriate consequence based on the type of skill check that failed:
-
-#+ATTR_HTML: :class exceptional-failure-consequences-table
-| Skill Check Type         | Recommended Consequence | Reasoning                                                            |
-|--------------------------+-------------------------+----------------------------------------------------------------------|
-| Physical/Combat Skills   | Significant Physical Harm | Failed physical actions often directly harm the character            |
-| Technical/Device Skills  | Serious Item Damage     | Technical failures often damage equipment or tools                   |
-| Social/Interaction Skills| Enemy Momentum          | Social failures often give opponents an advantage                    |
-| Investigation/Research   | Serious Item Damage     | Failed research might damage or lose important documents or devices  |
-| Stealth/Infiltration     | Enemy Momentum          | Being caught often alerts or empowers enemies                        |
-| Survival/Wilderness      | Significant Physical Harm | Wilderness failures often result in direct physical harm             |
-
-When in doubt, choose Enemy Momentum in combat, Item Damage for technical tasks, and Harm for physical challenges. This provides a solid default while still allowing GMs to customize consequences based on the specific narrative circumstances.
-
+#+ATTR_HTML: :class exceptional-failure-outcomes-table
+| Roll 1d6 | Exceptional Failure Outcome |
+|----------|-----------------------------|
+| 1 | *Take Significant Physical Harm*: The character takes one level of physical harm on a relevant tracker (can push the harm tracker up to level 2) |
+| 2 | *Serious Item Damage*: Any item (a treasured lore item, skill prerequisite or skill check in a box) becomes damaged and temporarily unusable (but can be repaired) |
+| 3 | *Enemy Momentum*: An enemy gains *Momentum* for their next action, of any kind |
+| 4 | *Worsening Situation*: The character's action not only fails but actively makes the situation worse. The Game Master describes how the failure creates additional complications or obstacles. In addition, the character takes one level of mental harm on a relevant tracker (can push the harm tracker up to level 2) |
+| 5 | *Resource Drain*: A valuable resource is expended or lost. This could be ammunition, power cells, medical supplies, or other relevant consumables. If the character has no applicable resources, they instead suffer a level of mental harm as they realize their unpreparedness |
+| 6 | *Reputation Damage*: The character's failure is witnessed or becomes known to others, damaging their reputation or relationships. This is particularly relevant for social interactions but can apply to any situation where others might observe the failure. The character suffers a -1 penalty to all Social skill checks for the remainder of the scene |
 
 ** Critical Failure
 :PROPERTIES:

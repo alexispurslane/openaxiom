@@ -34,12 +34,44 @@ A character's reputation with a faction represents how a specific character is v
 :ID:       REPUTATION-TRACKING
 :END:
 
-Each character maintains a reputation score from 1 to 10 with every faction they've encountered. This is tracked on the character sheet as follows:
+Each character maintains a reputation score from -5 to 5 with every faction they've encountered. This is tracked on the character sheet as follows:
 
-- When first meeting a character from a new faction, a new reputation line is *created starting at 5*. This represents a neutral stance where the faction has no particular feelings about the character
-- Reputation ranges from *1* (completely despised) to *10* (universally admired)
+- When first meeting a character from a new faction, a new reputation line is created, with a default value determined by the rules in the Default Reputation section.
+- Reputation ranges from *-5* (completely despised) to *5* (universally admired), with *0* representing a neutral standing
 
-Reputation is tracked separately for each faction encountered, meaning a character could be highly respected by one faction (score of 7-10) and poorly regarded by another (score of 1-3).
+Reputation is tracked separately for each faction encountered, meaning a character could be highly respected by one faction (score of 3-5) and poorly regarded by another (score of -5 to -3).
+
+** Default Reputation: Faction Relationships
+:PROPERTIES:
+:ID:       FACTION-RELATIONSHIPS
+:END:
+
+Factions have relationships with each other that exist independently of individual characters. These relationships provide a baseline for how members of different factions interact by defining a character's default starting reputation.
+
+There are three basic relationship states between factions:
+
+- *Friendly*: Factions that generally get along, cooperate, or share common goals
+- *Neutral*: Factions that have no particular feelings toward each other
+- *Hostile*: Factions that are actively opposed to each other
+
+These relationships are established by the Game Master as part of the campaign's world-building and can shift over time based on events in the game.
+
+When player characters encounter a new faction for the first time, their initial reputation with that faction is determined by the relationship between that faction and any factions the character has already encountered. This is determined by the following rules, in descending order of precedence:
+
+1. *Friendly Relationship*: If the new faction is /friendly/ to any faction the character has a reputation with already, the character starts with a reputation score *the same* as the /lowest/ reputation score they have with a faction that the new one is friendly to.
+2. *Hostile Relationship*: If the new faction is /hostile/ to any faction the character has a reputation with already, the character starts with a reputation score of *0 minus* the /highest/ reputation score they have with a faction that the new one is hostile to (in other words, the negative version of that reputation score).
+3. *Neutral Relationship*: If the new faction is neutral toward every faction the character has already built a reputation with, the character starts with *the default reputation score of 0.*
+
+#+ATTR_HTML: :class gameplay-example
+#+BEGIN_QUOTE
+The party encounters the Iron Mountain Dwarves for the first time. The Game Master has established that the Iron Mountain Dwarves are hostile to the player characters' home faction, the Coastal Merchants Guild.
+
+Elara, a player character, has a reputation score of 3 with the Coastal Merchants Guild. Since the Iron Mountain Dwarves are hostile to the Coastal Merchants Guild, Elara starts with a reputation score of -3 (0 - 3) with the Iron Mountain Dwarves.
+
+Klein, another player character, has a reputation score of 1 with the Coastal Merchants Guild and a reputation score of 3 with the Riverside Farmers, who are friendly to the Iron Mountain Dwarves. Since the Iron Mountain Dwarves are friendly to a faction Klein has encountered, his starting reputation with them is 3 (the lowest reputation score he has with a friendly faction).
+#+END_QUOTE
+
+The Game Master should determine the relationships between factions during campaign preparation and note them for reference during play.
 
 ** Changing Reputation
 :PROPERTIES:
@@ -51,12 +83,12 @@ Reputation with a faction can change whenever a character interacts with members
 #+ATTR_HTML: :class reputation-changes-table
 | Degree of Success on Social Skill Check | Reputation Change With Faction |
 |-------------------|-------------------|
-| Critical Success  | +5 (capped at 10) |
+| Critical Success  | +3 (capped at 5) |
 | Exceptional Success | +1 |
 | Standard Success  | No change |
 | Marginal Failure  | No change |
 | Exceptional Failure | -1 |
-| Critical Failure  | -5 (minimum of 1) |
+| Critical Failure  | -3 (minimum of -5) |
 
 These changes only apply when the social interaction is with a member of the faction whose reputation is being affected. For example, impressing a military officer would improve your reputation with the military faction, but not with a merchant guild.
 
@@ -64,9 +96,9 @@ The Game Master determines when a social interaction is significant enough to af
 
 #+ATTR_HTML: :class gameplay-example
 #+BEGIN_QUOTE
-Elara is negotiating with a merchant guild representative to secure supplies for her expedition. She rolls a Social (Diplomacy) check and achieves an Exceptional Success. As a result, her reputation with the merchant guild increases from 5 to 6, granting her a +1 bonus on future interactions with guild members.
+Elara is negotiating with a merchant guild representative to secure supplies for her expedition. She rolls a Social (Diplomacy) check and achieves an Exceptional Success. As a result, her reputation with the merchant guild increases from 0 to 1, granting her a +1 bonus on future interactions with guild members.
 
-Later in the session, Klein attempts to deceive a city guard about his identity. He rolls poorly and suffers a Critical Failure. His reputation with the city guard faction plummets from 5 to 1, making future interactions with guards more difficult.
+Later in the session, Klein attempts to deceive a city guard about his identity. He rolls poorly and suffers a Critical Failure. His reputation with the city guard faction plummets from 0 to -3, making future interactions with guards more difficult.
 #+END_QUOTE
 
 ** Reputation Effects
@@ -79,17 +111,17 @@ A character's reputation with a faction affects social interactions with members
 #+ATTR_HTML: :class reputation-effects-table
 | Reputation Range | Modifier |
 |------------------|----------|
-| High Reputation (7-10) | +1 bonus to social skill checks |
-| Neutral Reputation (4-6) | No modifier |
-| Poor Reputation (1-3) | -1 penalty to social skill checks |
+| High Reputation (3-5) | +1 bonus to social skill checks |
+| Neutral Reputation (-2 to 2) | No modifier |
+| Poor Reputation (-5 to -3) | -1 penalty to social skill checks |
 
 These modifiers are applied to the target number when making social skill checks against members of that faction.
 
 #+ATTR_HTML: :class gameplay-example
 #+BEGIN_QUOTE
-A character with a reputation score of 9 (High Reputation) with the merchant guild attempts to negotiate a discount on equipment. Their Social (Diplomacy) skill is 12, but they receive a +1 bonus from their high reputation, making their effective skill 13 for this interaction.
+A character with a reputation score of 4 (High Reputation) with the merchant guild attempts to negotiate a discount on equipment. Their Social (Diplomacy) skill is 12, but they receive a +1 bonus from their high reputation, making their effective skill 13 for this interaction.
 
-Conversely, a character with a reputation score of 3 (Poor Reputation) with the same guild would have a -1 penalty, reducing their Social (Diplomacy) skill from 12 to 11 for negotiations with guild members.
+Conversely, a character with a reputation score of -3 (Poor Reputation) with the same guild would have a -1 penalty, reducing their Social (Diplomacy) skill from 12 to 11 for negotiations with guild members.
 #+END_QUOTE
 
 ** Spending Reputation for Advantage
@@ -111,7 +143,7 @@ After spending reputation, the character's reputation score with that faction is
 
 #+ATTR_HTML: :class gameplay-example
 #+BEGIN_QUOTE
-Elara has a reputation score of 9 with the merchant guild when she attempts to negotiate for a rare component needed for her expedition. She decides to spend 1 reputation point to gain an additional +1 bonus on her *Social (Diplomacy)* check. Her effective skill increases from 13 (12 + 1 from high reputation) to 14 (12 + 1 from high reputation + 1 from spending reputation). After the interaction, her reputation with the merchant guild drops to 8.
+Elara has a reputation score of 4 with the merchant guild when she attempts to negotiate for a rare component needed for her expedition. She decides to spend 1 reputation point to gain an additional +1 bonus on her *Social (Diplomacy)* check. Her effective skill increases from 13 (12 + 1 from high reputation) to 14 (12 + 1 from high reputation + 1 from spending reputation). After the interaction, her reputation with the merchant guild drops to 3.
 #+END_QUOTE
 
 ** Reputation Actions
@@ -134,46 +166,13 @@ Players can take specific actions that directly affect their reputation with fac
 
 #+ATTR_HTML: :class gameplay-example
 #+BEGIN_QUOTE
-Elara agrees to a mission to recover stolen documents for the merchant guild (unpaid, so it's a mission). After successfully completing the mission, she gains +2 reputation with the guild, raising her score from 8 to 10.
+Elara agrees to a mission to recover stolen documents for the merchant guild (unpaid, so it's a mission). After successfully completing the mission, she gains +2 reputation with the guild, raising her score from 3 to 5.
 
-Klein takes a job to escort a merchant caravan for the same guild (paid work, so it's a job). After successfully completing the job, he gains +1 reputation with the guild, raising his score from 6 to 7.
+Klein takes a job to escort a merchant caravan for the same guild (paid work, so it's a job). After successfully completing the job, he gains +1 reputation with the guild, raising his score from 1 to 2.
 
-Later, Elara fails to protect a guild warehouse from bandits (failing a mission). She suffers a -2 reputation penalty, dropping her score from 10 to 8.
+Later, Elara fails to protect a guild warehouse from bandits (failing a mission). She suffers a -2 reputation penalty, dropping her score from 5 to 3.
 
-Meanwhile, Klein agrees to escort another caravan but abandons the job halfway through (ignoring a job). He suffers a -2 reputation penalty, dropping his score from 7 to 5.
-#+END_QUOTE
-
-
-* Default Reputation: Faction Relationships
-:PROPERTIES:
-:ID:       FACTION-RELATIONSHIPS
-:END:
-
-Factions have relationships with each other that exist independently of individual characters. These relationships provide a baseline for how members of different factions interact by defining a character's default starting reputation.
-
-There are three basic relationship states between factions:
-
-- *Friendly*: Factions that generally get along, cooperate, or share common goals
-- *Neutral*: Factions that have no particular feelings toward each other
-- *Hostile*: Factions that are actively opposed to each other
-
-These relationships are established by the Game Master as part of the campaign's world-building and can shift over time based on events in the game.
-
-When player characters encounter a new faction for the first time, their initial reputation with that faction is determined by the relationship between that faction and any factions the character has already encountered. This is determined by the following rules, in descending order of precedence:
-
-1. *Friendly Relationship*: If the new faction is /friendly/ to any faction the character has a reputation with already, the character starts with a reputation score *the same* as the /lowest/ reputation score they have with a faction that the new one is friendly to.
-2. *Hostile Relationship*: If the new faction is /hostile/ to any faction the character has a reputation with already, the character starts with a reputation score of *11 minus* the /highest/ reputation score they have with a faction that the new one is hostile to.
-3. *Neutral Relationship*: If the new faction is neutral toward every faction the character has already built a reputation with, the character starts with *the default reputation score of 5.*
-
-The Game Master should determine the relationships between factions during campaign preparation and note them for reference during play.
-
-#+ATTR_HTML: :class gameplay-example
-#+BEGIN_QUOTE
-The party encounters the Iron Mountain Dwarves for the first time. The Game Master has established that the Iron Mountain Dwarves are hostile to the player characters' home faction, the Coastal Merchants Guild.
-
-Elara, a player character, has a reputation score of 8 with the Coastal Merchants Guild. Since the Iron Mountain Dwarves are hostile to the Coastal Merchants Guild, Elara starts with a reputation score of 3 (11 - 8) with the Iron Mountain Dwarves.
-
-Klein, another player character, has a reputation score of 6 with the Coastal Merchants Guild and a reputation score of 3 with the Riverside Farmers, who are friendly to the Iron Mountain Dwarves. Since the Iron Mountain Dwarves are friendly to a faction Klein has encountered, his starting reputation with them is 3 (the lowest reputation score he has with a friendly faction).
+Meanwhile, Klein agrees to escort another caravan but abandons the job halfway through (ignoring a job). He suffers a -2 reputation penalty, dropping his score from 2 to 0.
 #+END_QUOTE
 
 
@@ -192,7 +191,7 @@ The social relations system is designed to add depth to roleplaying encounters w
 :ID:       FIRST-ENCOUNTERS
 :END:
 
-When player characters meet NPCs or enemies from factions they haven't encountered before, the Game Master should note this and create a new reputation entry starting at 5. This can be done quickly during play and doesn't need to interrupt the flow of the game.
+When player characters meet NPCs or enemies from factions they haven't encountered before, the Game Master should note this and create a new reputation entry starting at 0. This can be done quickly during play and doesn't need to interrupt the flow of the game.
 
 ** Social Skill Checks
 :PROPERTIES:
@@ -230,7 +229,7 @@ Social combat is a simple gloss on the Contested Action rules found in [[file:lo
 
    - *The modifier for each participant's skill check is determined by their own reputation with the faction being targeted.*
 
-   - If the initiating character lacks a reputation with the targeted faction, they use the default score of 5 for their check.
+   - If the initiating character lacks a reputation with the targeted faction, they use the default score of 0 for their check.
 3. *Outcomes*:
 
    - If the initiating character fails the contested action, they lose one point of reputation with the targeted faction as their attempts to slander another are seen as desperate or unseemly.
@@ -239,25 +238,11 @@ Social combat is a simple gloss on the Contested Action rules found in [[file:lo
 
 #+ATTR_HTML: :class gameplay-example
 #+BEGIN_QUOTE
-Elara and Klein are both known to the merchant guild faction, with Elara having a reputation score of 8 and Klein having a reputation score of 6. During a heated argument, Elara decides to launch a social attack against Klein by spreading rumors about his business practices to the guild members.
+Elara and Klein are both known to the merchant guild faction, with Elara having a reputation score of 3 and Klein having a reputation score of 1. During a heated argument, Elara decides to launch a social attack against Klein by spreading rumors about his business practices to the guild members.
 
-This initiates a social combat encounter where Elara and Klein make opposed Social (Deception) checks. Elara receives a +1 bonus to her check due to her High Reputation (8) with the merchant guild, while Klein has no modifier for his Neutral Reputation (6).
+This initiates a social combat encounter where Elara and Klein make opposed Social (Deception) checks. Elara receives a +1 bonus to her check due to her High Reputation (3) with the merchant guild, while Klein has no modifier for his Neutral Reputation (1).
 
-Elara has a skill of 12 in *Social (Deception)*. Plus her +1 reputation bonus, that gives a total of 13. Meanwhile, Klein has a *Social (Deception)* skill value of natural 13. Unfortunately, Elara rolls a 6, which is an exceptional success, whereas Klein only rolls a 12 --- a regular success. As a result, Klein loses the contest, and his reputation with the merchant guild drops to 5.
+Elara has a skill of 12 in *Social (Deception)*. Plus her +1 reputation bonus, that gives a total of 13. Meanwhile, Klein has a *Social (Deception)* skill value of natural 13. Unfortunately, Elara rolls a 6, which is an exceptional success, whereas Klein only rolls a 12 --- a regular success. As a result, Klein loses the contest, and his reputation with the merchant guild drops to 0.
 
-If Elara had failed the opposed check, she would have lost one point of reputation instead, dropping from 8 to 7.
+If Elara had failed the opposed check, she would have lost one point of reputation instead, dropping from 3 to 2.
 #+END_QUOTE
-
-* Advanced Social Rules
-:PROPERTIES:
-:ID:       ADVANCED-SOCIAL-RULES
-:END:
-
-For groups that want more complexity in their social interactions, here are optional rules that can be added to the social relations system:
-
-** Faction Standing
-:PROPERTIES:
-:ID:       FACTION-STANDING
-:END:
-
-Characters can work to improve their standing within their own faction through special actions or quests. Higher standing might grant access to special resources, training, or privileges that aren't available to ordinary members.

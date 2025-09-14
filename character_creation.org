@@ -148,7 +148,7 @@ This choice helps inform the character's background and can suggest appropriate 
 
 Players should consult with their Game Master to determine what factions are appropriate for the story and setting. The GM may have specific factions in mind for the campaign, or may allow players to propose their own.
 
-Characters start with a reputation score of 8 with their chosen primary home faction, representing their familiarity and standing within their own community. As the character encounters members of other factions during play, their reputation with those factions will be tracked separately, starting at 5 for neutral first encounters.
+Characters start with a reputation score of 3 with their chosen primary home faction, representing their familiarity and standing within their own community. As the character encounters members of other factions during play, their reputation with those factions will be tracked separately, starting at 0 for neutral first encounters.
 
 The Game Master should use the expanded faction relationship system where initial reputation with new factions is determined by the character's existing relationships. See the Social Relations chapter for details on this core rule.
 
