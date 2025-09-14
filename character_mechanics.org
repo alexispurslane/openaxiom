@@ -243,6 +243,8 @@ Lore items are usually Small in size, at max Medium, and don't convey any mechan
 
 Weapons and armor are Special items that can have additional mechanical properties beyond their basic category. These properties can be added as rows to the item cards.
 
+Weapons have a Required Skill property indicating the minimum skill level needed to use the weapon effectively. If a character's skill level is below this requirement, they must pay additional action points to make attacks with the weapon (see combat rules). For example, a masterwork sword might have "Required Skill: 12" indicating it requires a Combat (Melee) skill of at least 12 to use without penalty.
+
 Weapons may have a Damage property indicating the dice rolled to determine how much harm they inflict. For example, a sword might have "Damage: 2d6" indicating it rolls two six-sided dice for damage.
 
 Ranged weapons may have a Range property indicating the distance at which they remain effective. For example, a bow might have "Range: 10" indicating it can effectively target opponents within 10 hexes.
@@ -255,6 +257,7 @@ These properties should be added as rows to the item card format, as shown in th
 | Elven Composite Bow | Prerequisite, Special |
 |---------------------+-----------------------|
 | Required For              | Combat (Ranged) (Bow) |
+| Required Skill            | 10 |
 | Damage                    | 1d8 |
 | Range                     | 10 |
 
@@ -401,6 +404,8 @@ The formula for determining the cost to improve a skill to the next level is: ne
 |          18 | 9 points           |
 
 This is the primary method for making existing capabilities more powerful.
+
+As characters improve their skills, their tactical capabilities in combat also increase. In particular, a character's maximum action points (AP) available each turn in tactical combat is determined by their best Physical skill related to dexterity or speed. When a character improves any of these skills, their available AP increases accordingly, allowing them to take more actions during their turn.
 
 Reaching the pinnacle of skill mastery is an extraordinary feat. A character starting with a skill at the default "unlocked" level of 10 would need to spend a total of 44 story points to advance that skill all the way to 18 (Legendary). This represents a significant investment of time and effort, as characters typically earn only 3-6 story points per session. It would take roughly 7-15 sessions of maximum story point earnings to reach Legendary status in a single skill, reinforcing that true mastery requires tremendous dedication and perseverance.
 

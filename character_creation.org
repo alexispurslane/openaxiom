@@ -175,7 +175,7 @@ Next, the player chooses five skills, giving each a +1 bonus. The default for al
 - *Physical (Acrobatics)*: Justification: "She is naturally agile and trained to move swiftly through the dense forest canopy."
 
 During character creation, Elara also receives items appropriate to her skills and background. Her best strength-related skill is *Physical (Acrobatics)* at 10, giving her 10 inventory slots.
-- *Elven Composite Bow*: A Medium item that is required for her *Combat (Ranged) (Bow)* skill. Without it, she cannot make bow attacks.
+- *Elven Composite Bow*: A Medium item that is required for her *Combat (Ranged) (Bow)* skill. Without it, she cannot make bow attacks. Requires a minimum *Combat (Ranged) (Bow)* skill of 10 to use effectively.
 - *Leather Armor*: A Medium item that provides protection but doesn't confer mechanical advantages in the core rules.
 - *Hunting Knife*: A Small item that could be used for close combat or utility tasks.
 - *Bedroll and Camping Supplies*: A Medium item that allows automatic success on *Survival (Wilderness)* checks for setting up camp.
@@ -224,7 +224,7 @@ During character creation, Jax also receives items appropriate to his skills and
 - *Cybernetic Eye Implant*: A Lore item associated with his *Photographic Memory* trait. This is a permanent part of his body that doesn't count against his inventory slots.
 - *Multi-tool Kit*: A Medium item required for many *Engineering* checks, allowing him to work on various mechanical devices.
 - *Portable Computer*: A Medium item that is required for his *Computers (Hacking)* skill. Without it, he cannot attempt hacking checks.
-- *Holdout Pistol*: A Small item that is required for his *Combat (Ranged) (Pistol)* skill.
+- *Holdout Pistol*: A Small item that is required for his *Combat (Ranged) (Pistol)* skill. Requires a minimum *Combat (Ranged) (Pistol)* skill of 8 to use effectively.
 - *Tech Repair Kit*: A Medium item that provides automatic success on certain *Engineering* checks for routine maintenance.
 - *Street Clothes*: A Medium item that doesn't confer mechanical advantages but fits his background.
 - *Data Storage Device*: A Small item for storing large amounts of information he's collected.

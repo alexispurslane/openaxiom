@@ -19,19 +19,23 @@ When characters enter combat, the game shifts to the Tactical Time round structu
 
 When characters enter combat, the game shifts to the Tactical Time round structure as defined in the [[file:core_game_loop.html][core game loop]]. The full sequence of play during a round in combat is defined there, including how initiative is determined and how players take turns performing actions. This section describes only the sequence of steps required to perform the "Attack" Major Action under Tactical Time. Remember that attacking is just one of many possible Major Actions you can take during your turn in combat.
 
+All weapons have a required skill level that must be met or exceeded to use them effectively. The action point cost to make an attack with a weapon is the standard 6 AP for a Major Action plus the additional cost based on skill difference. This additional cost is determined by subtracting the character's skill level from the weapon's required skill level, with a minimum additional cost of 0 AP. For example, if a character has a *Combat (Melee) (Sword)* skill of 12 and the sword requires a skill level of 10, the attack would cost 6 AP (6 + 10 - 12 = 6 + -2, minimum 0 = 6). If the character's skill is significantly lower than the weapon's requirement, the attack costs more AP. For instance, if the character has a skill of 8 and the weapon requires 10, the attack would cost 8 AP (6 + 10 - 8 = 8).
+
 The sequence of steps required to do the "Attack" Major Action under Tactical Time follows this sequence:
 
-1. *Declare*: The attacker uses their Major Action, specifying their target and the location they are aiming for.
+1. *Declare*: The attacker declares their attack, specifying their target, the location they are aiming for, and the weapon they are using.
 
-2. *Roll*: The attacker makes their *Combat* skill check. The defender makes a relevant defense check (e.g., *Physical (Dodge)*).
+2. *Calculate Cost*: The action point cost of the attack is calculated (6 AP base + weapon's required skill - character's skill, minimum 0 additional cost).
 
-3. *Determine*: The outcome is determined by comparing the Degrees of Success. The attack hits if the attacker achieves a higher degree of success.
+3. *Roll*: The attacker makes their *Combat* skill check. The defender makes a relevant defense check (e.g., *Physical (Dodge)*).
 
-4. *Damage*: On a hit, the attacker rolls their weapon's damage.
+4. *Determine*: The outcome is determined by comparing the Degrees of Success. The attack hits if the attacker achieves a higher degree of success.
 
-5. *Armor*: The target subtracts the Damage Resistance (DR) value of the armor covering the specific location hit from the total damage.
+5. *Damage*: On a hit, the attacker rolls their weapon's damage.
 
-6. *Apply*: The final damage is subtracted from the HP of the location that was hit.
+6. *Armor*: The target subtracts the Damage Resistance (DR) value of the armor covering the specific location hit from the total damage.
+
+7. *Apply*: The final damage is subtracted from the HP of the location that was hit.
 
 
 * Beyond Attacks: Other Combat Actions
@@ -245,7 +249,7 @@ Characters can change their posture as a minor action on their turn. This allows
 :ID:       7Y5Z6A8B-9C0D-1E2F-3G4H-5I6J7K8L9M0N
 :END:
 
-Players may move up to their best fleetness/quickness related *Physical* skill minus 5 (minimum of 1) as their movement action. Movement is considered a minor action on their turn, allowing characters to still take a major action for attacking or other activities. Moving through difficult terrain costs additional movement points as determined by the terrain table above.
+Moving is considered a minor action that costs 3 action points. Players may move up to their best fleetness/quickness related *Physical* skill minus 5 (minimum of 1) as their movement distance. Since moving is a minor action, players with sufficient action points could potentially move multiple times during their turn, or move and still take a major action. Moving through difficult terrain costs additional movement points as determined by the terrain table above.
 
 *** Line of Sight
 :PROPERTIES:
