@@ -353,6 +353,8 @@ Vehicles must move a number of hexes equal to their current speed on each turn, 
 
 Characters operating vehicles use the vehicle's movement rules instead of their own. Any characters riding in the vehicle move with it automatically.
 
-Attacks against vehicles work the same as attacks against characters, but vehicles may have different HP values and armor ratings than characters. When a vehicle is reduced to 0 HP, it becomes inoperable and may crash depending on the circumstances.
+Attacks against vehicles directly are not possible in this system. Instead, characters must target those inside the vehicle, and vehicles act as simple pieces of armor for the characters inside the vehicle, but not outside.
 
-Vehicles can be used to ram enemies, providing a new tactical option in combat. The damage from a ramming attack is determined by the vehicle's size, speed, and construction. Characters inside a vehicle benefit from the vehicle's Damage Resistance when attacked, in addition to any armor they are wearing.
+Vehicles can be used to ram enemies. This does an amount of damage points determined by the vehicle's size plus its current speed.
+
+XL vehicles can also be used to knock down walls, but this reduces the speed of that vehicle back down to one.
