@@ -77,7 +77,7 @@ The injury system determines /what actually happens/ when a character takes dama
 :END:
 
 #+ATTR_HTML: :class section-icon
-[[file:/static/body_locations.svg][file:body_locations.svg]]
+[[file:static/body_locations.svg][file:body_locations.svg]]
 
 Characters have six body locations, each with its own pool of Hit Points (HP). HP is calculated from the character's *Physical (Strength)*, *Physical (Endurance)*, *Constitution*, or other skill values, whichever is highest. The difficulty modifier applies to the attacker's combat skill value when targeting that specific location.
 

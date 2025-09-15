@@ -211,14 +211,14 @@ def print_manual():
                 html_path = os.path.join(os.path.dirname(__file__), "html", html_file)
                 if os.path.exists(html_path):
                     with open(html_path, "r") as infile:
-                        content = infile.read()
-                        # Parse the HTML content to extract only the main content
-                        from bs4 import BeautifulSoup
-                        soup = BeautifulSoup(content, 'html.parser')
+                        content = infile.readlines()
                         # Extract the main content (excluding header, nav, etc.)
-                        outfile.write('<div style="page-break-before: always;"></div>\n')    
+                        
+                        outfile.write('<div style="page-break-before: always;"></div>\n')
+                        title = get_org_title(os.path.join(os.path.dirname(__file__), "..", Path(html_file).with_suffix('.org')))
+                        outfile.write(f'<h1>{title}</h1>')
                         # Write the main content
-                        outfile.write(str(main_content))
+                        outfile.write("\n".join(content))
             
             outfile.write("\n</body>\n</html>")
         
@@ -309,29 +309,15 @@ def main():
         # Start file watcher
         start_file_watcher()
 
-        # Run the Flask app in a separate thread so we can open the browser after it's ready
-        import threading
-        server_thread = threading.Thread(target=lambda: socketio.run(app, host=HOST, port=PORT, debug=False, use_reloader=False, allow_unsafe_werkzeug=True))
-        server_thread.daemon = True
-        server_thread.start()
-
-        # Wait a moment for the server to start
-        import time
-        time.sleep(2)
-
         # Open the main page in a browser
         webbrowser.open_new_tab(f"http://{HOST}:{PORT}/")
 
-        # Print status message
+        # Run the Flask app
         print(f"Serving at http://{HOST}:{PORT}")
+        socketio.run(app, host=HOST, port=PORT, debug=True, use_reloader=False, allow_unsafe_werkzeug=True)
         
-        # Keep the main thread alive
-        try:
-            while True:
-                time.sleep(1)
-        except KeyboardInterrupt:
-            print("\nShutting down...")
-        
+    except KeyboardInterrupt:
+        print("\nShutting down...")
     finally:
         stop_file_watcher()
 
