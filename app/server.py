@@ -14,6 +14,9 @@ from flask_socketio import SocketIO, emit
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
 
+# Import weasyprint for PDF generation
+from weasyprint import HTML, CSS
+
 # Import search module
 import sys
 import os
@@ -182,77 +185,58 @@ def print_manual():
         with open(toc_file, "r") as f:
             toc_data = json.load(f)
         
-        # Get the list of org files in order
+        # Get the list of org files in order and convert to HTML filenames
         org_files = toc_data["files"]
+        html_files = [f.replace(".org", ".html") for f in org_files]
         
         # Create a temporary directory in the system temp folder
         temp_dir = tempfile.mkdtemp()
-        combined_file = os.path.join(temp_dir, "combined_manual.org")
+        combined_html_file = os.path.join(temp_dir, "combined_manual.html")
         
-        # Combine all org files in order
-        with open(combined_file, "w") as outfile:
-            for i, org_file in enumerate(org_files):
-                org_path = os.path.join(os.path.dirname(__file__), "..", org_file)
-                if os.path.exists(org_path):
-                    with open(org_path, "r") as infile:
+        # Read the CSS file
+        css_file = os.path.join(os.path.dirname(__file__), "static", "style.css")
+        with open(css_file, "r") as f:
+            css_content = f.read()
+        
+        # Combine all HTML files in order
+        with open(combined_html_file, "w") as outfile:
+            outfile.write("<!DOCTYPE html>\n<html>\n<head>\n")
+            outfile.write('<meta charset="utf-8">\n')
+            outfile.write('<style>\n')
+            outfile.write(css_content)
+            outfile.write('\n</style>\n')
+            outfile.write("</head>\n<body>\n")
+            
+            for i, html_file in enumerate(html_files):
+                html_path = os.path.join(os.path.dirname(__file__), "html", html_file)
+                if os.path.exists(html_path):
+                    with open(html_path, "r") as infile:
                         content = infile.read()
-                        # Remove the title line for files other than the first one to avoid duplicate titles
-                        if i > 0:
-                            lines = content.split("\n")
-                            # Remove #+TITLE line if it exists
-                            lines = [line for line in lines if not line.startswith("#+TITLE:")]
-                            content = "\n".join(lines)
-                        outfile.write(content)
-                        outfile.write("\n\n")
+                        # Parse the HTML content to extract only the main content
+                        from bs4 import BeautifulSoup
+                        soup = BeautifulSoup(content, 'html.parser')
+                        
+                        # Extract the main content (excluding header, nav, etc.)
+                        main_content = soup.find('main')
+                        if main_content:
+                            # Add a page break before each section except the first
+                            if i > 0:
+                                outfile.write('<div style="page-break-before: always;"></div>\n')
+                            
+                            # Write the main content
+                            outfile.write(str(main_content))
+            
+            outfile.write("\n</body>\n</html>")
         
-        # Create static directory in temp folder and copy SVG files
-        temp_static_dir = os.path.join(temp_dir, "static")
-        os.makedirs(temp_static_dir, exist_ok=True)
-        
-        # Copy all SVG files from the app/static directory to temp/static
-        static_source_dir = os.path.join(os.path.dirname(__file__), "static")
-        if os.path.exists(static_source_dir):
-            for file in os.listdir(static_source_dir):
-                if file.endswith(".svg"):
-                    src = os.path.join(static_source_dir, file)
-                    dst = os.path.join(temp_static_dir, file)
-                    shutil.copy2(src, dst)
-        
-        # Also copy the CSS file
-        css_src = os.path.join(static_source_dir, "style.css")
-        css_dst = os.path.join(temp_static_dir, "style.css")
-        if os.path.exists(css_src):
-            shutil.copy2(css_src, css_dst)
-        
-        # Generate PDF using pandoc with weasyprint if available, otherwise use default
+        # Generate PDF using weasyprint
         pdf_file = os.path.join(temp_dir, "openaxiom_manual.pdf")
-        css_file = os.path.join(temp_dir, "static", "style.css")
         
-        # Try to use weasyprint if available, otherwise fall back to default
-        try:
-            subprocess.run([
-                "pandoc",
-                combined_file,
-                "--toc",
-                "--section-divs",
-                "--metadata=lang:en",
-                "--number-sections",
-                "--css", css_file,
-                "--pdf-engine", "weasyprint",
-                "-o", pdf_file
-            ], check=True)
-        except (subprocess.CalledProcessError, FileNotFoundError):
-            # Fall back to default PDF engine
-            subprocess.run([
-                "pandoc",
-                combined_file,
-                "--toc",
-                "--section-divs",
-                "--metadata=lang:en",
-                "--number-sections",
-                "--css", css_file,
-                "-o", pdf_file
-            ], check=True)
+        # Create HTML object and CSS object for weasyprint
+        html = HTML(filename=combined_html_file)
+        css = CSS(filename=css_file)
+        
+        # Generate PDF
+        html.write_pdf(pdf_file, stylesheets=[css])
         
         # Send the PDF file
         return send_file(pdf_file, as_attachment=True, download_name="openaxiom_manual.pdf")
@@ -263,6 +247,7 @@ def print_manual():
     finally:
         # Clean up temp directory
         try:
+            print(os.listdir(temp_dir))
             if 'temp_dir' in locals():
                 shutil.rmtree(temp_dir)
         except Exception as e:
