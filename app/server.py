@@ -215,16 +215,10 @@ def print_manual():
                         # Parse the HTML content to extract only the main content
                         from bs4 import BeautifulSoup
                         soup = BeautifulSoup(content, 'html.parser')
-                        
                         # Extract the main content (excluding header, nav, etc.)
-                        main_content = soup.find('main')
-                        if main_content:
-                            # Add a page break before each section except the first
-                            if i > 0:
-                                outfile.write('<div style="page-break-before: always;"></div>\n')
-                            
-                            # Write the main content
-                            outfile.write(str(main_content))
+                        outfile.write('<div style="page-break-before: always;"></div>\n')    
+                        # Write the main content
+                        outfile.write(str(main_content))
             
             outfile.write("\n</body>\n</html>")
         
@@ -247,9 +241,10 @@ def print_manual():
     finally:
         # Clean up temp directory
         try:
-            print(os.listdir(temp_dir))
+            print(temp_dir)
             if 'temp_dir' in locals():
-                shutil.rmtree(temp_dir)
+                # shutil.rmtree(temp_dir)
+                pass
         except Exception as e:
             print(f"Error cleaning up temp directory: {e}")
 
@@ -314,15 +309,29 @@ def main():
         # Start file watcher
         start_file_watcher()
 
+        # Run the Flask app in a separate thread so we can open the browser after it's ready
+        import threading
+        server_thread = threading.Thread(target=lambda: socketio.run(app, host=HOST, port=PORT, debug=False, use_reloader=False, allow_unsafe_werkzeug=True))
+        server_thread.daemon = True
+        server_thread.start()
+
+        # Wait a moment for the server to start
+        import time
+        time.sleep(2)
+
         # Open the main page in a browser
         webbrowser.open_new_tab(f"http://{HOST}:{PORT}/")
 
-        # Run the Flask app
+        # Print status message
         print(f"Serving at http://{HOST}:{PORT}")
-        socketio.run(app, host=HOST, port=PORT, debug=True, use_reloader=False, allow_unsafe_werkzeug=True)
         
-    except KeyboardInterrupt:
-        print("\nShutting down...")
+        # Keep the main thread alive
+        try:
+            while True:
+                time.sleep(1)
+        except KeyboardInterrupt:
+            print("\nShutting down...")
+        
     finally:
         stop_file_watcher()
 
