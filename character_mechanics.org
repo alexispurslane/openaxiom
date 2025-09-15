@@ -31,15 +31,7 @@ When a character attempts a task requiring a specific skill the character does n
 
 Each skill has a numerical value that indicates the character's level of proficiency. A higher number signifies greater ability. The default value for any general, non-specific skill (such as *Strength* or *Piloting*) is 9.
 
-For the purposes of using skills, specific skills are undefined by default and relay up to more general skills as described in the previous section. However, for the purpose of selecting specific skills during character creation, they default to 9 and are bumped to 10 when you select them and add the +1 bonus as normal, and then considered defined and can be used directly.
-
-This lower default value means that even characters with world-class traits will not be exceptionally skilled without training. Talent isn't everything - characters also need to put in the blood, sweat, and tears of practice to truly excel.
-
-With 3d6 the chance to roll ≤ 9 is 37.50%.
-
-A +5 trait applied to that same untrained skill is still only 9 + 5 = 14 (90.74%).
-
-In other words, a so-called "world-class innate gift" merely pushes you from average to very good unless you also put in the training time and Story Points.
+For the purposes of using skills, specific skills are undefined by default and relay up to more general skills as described in the previous section. During character creation, players can increase skills above the default value of 9 using their character points. Skills that have not been increased during character creation remain at the default value of 9 and are considered defined and can be used directly.
 
 The following table provides a qualitative evaluation of skill levels based on the probability of success for tasks of average difficulty:
 
@@ -65,18 +57,20 @@ Note that these probabilities and qualitative levels apply to tasks of average d
 #+ATTR_HTML: :class section-icon
 [[file:static/traits.svg]]
 
-A trait is a passive effect. Traits modify a character's skills. Traits represent inherent advantages or disadvantages a character possesses. Traits are established during character creation. Traits cannot be trained or improved. Traits serve as a starting point for a character's inherent abilities.
+A trait is a passive effect, representng inherent advantages or disadvantages a character possesses. Traits typically modify a character's skills, and traits are established during character creation. Traits cannot be trained or improved.
 
 ** Trait Value
 :PROPERTIES:
 :ID:       A93E7E8F-9A0D-40DA-AAF2-D23E80AFAEFE
 :END:
 
-Each trait is inherently either positive (a boost) or negative (a hindrance). During character creation, the player chooses a numerical value for the trait, which determines the trait's effect on skills.
+Each trait is inherently either positive (a boost) or negative (a hindrance). During character creation, the player chooses a numerical value for the trait, which determines both the trait's effect on skills and its character point cost. For positive traits, the player chooses a positive value (e.g., from +1 to +5) and spends that many character points. For negative traits, the player chooses a negative value (e.g., from -1 to -5) and gains that many character points.
 
-For positive traits, the player chooses a positive value (e.g., from +1 to +5). This value is the bonus applied to affected skills.
+The value of the trait directly determines the size of its effect in the case of broad and narrow skill-based traits. For example, a +3 trait provides a +3 bonus to affected skills, while a -2 trait imposes a -2 penalty. With special traits, the value indicates generally how much the special ability or rule is worth, but doesn't necessarily mechanically feed in.
 
-For negative traits, the player chooses a negative value (e.g., from -1 to -5). This value is the penalty applied to affected skills.
+For example:
+- A player might choose the *Photographic Memory* trait at +3, spending 3 character points
+- A player might choose the *Absent-Minded* trait at -2, gaining 2 character points
 
 *Warning:* Game Masters should be aware that extreme trait values like +5 or -5 represent a 50% swing in success rates, which can have a massive effect on characters. Players are strongly encouraged to talk to their GMs before taking any such extreme traits to ensure they fit the campaign and won't unbalance the game.
 
@@ -112,15 +106,6 @@ Situational traits represent abilities or limitations that only matter in specif
 *** Special Traits
 
 Traits can also be designated as "Special" traits. These traits introduce simple new rules that layer on top of, but do not replace, core game mechanics. Like the way cards in some deck-building games introduce custom rules, Special traits add unique mechanical effects to a character that go beyond simple skill bonuses or penalties. For example, a *Second Wind* trait might allow a character to recover some health once per session, or a *Lucky Charm* trait might allow rerolling a failed skill check once per game session.
-
-IMPORTANT: Even Game Masters should refrain from introducing custom Special traits, and should strongly discourage players from doing so. Generally, the community-provided trait packs should be relied upon for such things, to avoid hashing out game balance at the gaming table. Custom Special traits can unintentionally break game balance or create mechanical complications that are difficult to resolve during play. When in doubt, stick to the official trait packs provided by the OpenAxiom community.
-
-** Trait Naming
-:PROPERTIES:
-:ID:       F0B9DBBD-92C5-4927-910F-D435DC595E3F
-:END:
-
-Traits are identified by a descriptive name. An example is *Perfect Pitch*.
 
 ** Standard Trait Definition Format
 :PROPERTIES:
@@ -161,8 +146,6 @@ Traits represent a character's inherent nature and are generally stable over tim
 Negative traits can be gradually reduced through story point expenditure, as detailed in the Character Advancement section. This process represents the character's journey of personal growth and resilience as they work to overcome their flaws and hindrances through in-game experiences.
 
 Positive traits, once established, remain fixed and cannot be modified through story point expenditure. They represent core aspects of a character's identity that define who they are at their foundation.
-
-Note that while skills can be improved without limit, traits can only be modified through specific advancement rules, emphasizing that traits represent deeper, more fundamental aspects of character identity compared to learned skills.
 
 * Items
 :PROPERTIES:
@@ -461,11 +444,11 @@ The custom rules they allow *must* fall into these categories. This ensures that
 #+ATTR_HTML: :class section-icon
 [[file:static/unlocking_skills.svg]]
 
-One story point can be spent to unlock a new skill. This immediately grants the skill a +1 bonus to its proficiency value, just like during character creation. Any remaining story points from that award cannot be spent on the same skill - they must be used on other options. This represents the character learning a new area of expertise, similar to how skills are chosen during character creation.
+One story point can be spent to unlock a new skill. This immediately grants the skill a value of 10 (1 point above the default value of 9). Any remaining story points from that award cannot be spent on the same skill - they must be used on other options. This represents the character learning a new area of expertise.
 
 Characters can have specific skills without having the more general version. For example, a character can unlock *Piloting (Starship)* without having *Piloting*. When a character has a specific skill but not its more general version, they can only use that specific skill for tasks that match it exactly. They cannot use it as a substitute for other specializations of the same general skill.
 
-If a player wants to unlock a more specific skill for a more general skill they already have, that specific skill starts at a +2 advantage, because knowledge is transferrable. For example, a character with *Piloting* at +1 who wants to unlock *Piloting (Starship)* would start with a +3 bonus (+1 from the unlock +2 from the transferable knowledge).
+If a player wants to unlock a more specific skill for a more general skill they already have, that specific skill starts at a value of 11, because knowledge is transferrable. For example, a character with *Piloting* at 10 who wants to unlock *Piloting (Starship)* would start with a value of 11 (1 point above the default value of 10 for the unlocked skill).
 
 *** Overcoming Negative Traits
 

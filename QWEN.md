@@ -47,5 +47,11 @@ Python scripts in this project use **only** UV for dependency management. Script
 ```
 To run a script with dependencies, use: `uv run script.py`
 
+## Style Guide Additions
+
+1. Do not reference previous versions of the system or "unlike previous versions" - the rules should be written as if they are the only version that exists.
+2. Do not make comparisons to other systems or versions unless explicitly requested.
+
 ## Qwen Added Memories
 - Run the server with `uv run openaxiom-server`
+- always push after committing, unless something is currently broken
