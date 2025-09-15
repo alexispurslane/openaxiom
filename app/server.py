@@ -115,24 +115,11 @@ def get_sorted_html_files():
     try:
         with open(toc_file, "r") as f:
             toc_data = json.load(f)
-        toc_order = [f.replace(".org", ".html") for f in toc_data["files"]]
+        html_files = [f.replace(".org", ".html") for f in toc_data["files"]]
     except Exception as e:
         print(f"Error loading TOC order: {e}")
         # Fallback to alphabetical order
         toc_order = []
-    
-    # Get all HTML files
-    html_dir = os.path.join(os.path.dirname(__file__), "html")
-    html_files = [f for f in os.listdir(html_dir) if f.endswith(".html")]
-    
-    # Sort according to TOC order, with any files not in TOC at the end
-    def sort_key(filename):
-        try:
-            return toc_order.index(filename)
-        except ValueError:
-            return len(toc_order)  # Put files not in TOC at the end
-    
-    html_files.sort(key=sort_key)
     
     # Get titles for each file
     html_files_with_titles = []
@@ -248,11 +235,11 @@ def print_manual():
         pdf_file = os.path.join(temp_dir, "openaxiom_manual.pdf")
         
         # Create HTML object and CSS object for weasyprint
-        html = HTML(filename=combined_html_file)
+        html = HTML(filename=combined_html_file, base_url='http://localhost:8000', media_type='print')
         css = CSS(filename=css_file)
         
         # Generate PDF
-        html.write_pdf(pdf_file, stylesheets=[css])
+        html.write_pdf(pdf_file, stylesheets=[css], presentational_hints=True)
         
         # Send the PDF file
         return send_file(pdf_file, as_attachment=True, download_name="openaxiom_manual.pdf")

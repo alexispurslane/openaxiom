@@ -1,0 +1,26 @@
+<!-- Vehicle Icon -->
+<!-- Abstract representation of a vehicle using simple geometric shapes -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .vehicle-body { fill: #4285F4; }
+    .vehicle-window { fill: #AECBFA; }
+    .vehicle-wheel { fill: #202124; }
+  </style>
+  
+  <!-- Vehicle body -->
+  <rect x="15" y="35" width="70" height="25" rx="5" class="vehicle-body" />
+  
+  <!-- Vehicle cabin -->
+  <rect x="50" y="25" width="30" height="15" rx="3" class="vehicle-window" />
+  
+  <!-- Front window -->
+  <rect x="45" y="30" width="5" height="10" rx="2" class="vehicle-window" />
+  
+  <!-- Wheels -->
+  <circle cx="25" cy="65" r="7" class="vehicle-wheel" />
+  <circle cx="75" cy="65" r="7" class="vehicle-wheel" />
+  
+  <!-- Details -->
+  <rect x="20" y="40" width="8" height="3" rx="1" fill="#EA4335" />
+  <rect x="72" y="40" width="8" height="3" rx="1" fill="#FBBC05" />
+</svg>

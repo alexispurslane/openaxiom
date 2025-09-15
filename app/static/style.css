@@ -492,38 +492,40 @@ table.trait-definition td {
 
 /* Print styles */
 @media print {
-    /* Hide navigation elements */
-    header, nav, .file-list {
-        display: none !important;
-    }
     
     /* Remove fixed positioning and padding adjustments */
     main {
         padding-top: 0 !important;
         margin-top: 0 !important;
         margin-left: 0 !important;
-        max-width: 100% !important;
+        width: 100% !important;
     }
     
     /* Ensure content flows naturally for printing */
     body {
-        font-size: 12pt;
-        line-height: 1.4;
+        font-size: 11pt;
+        line-height: 1.8;
         color: black;
         background: white;
         text-align: justify;
         hyphens: auto;
     }
+
+    h1 { font-size: 24pt; }
+    h2 { font-size: 16pt; }
+    h3 { font-size: 14pt; }
     
     /* Page break controls */
     h1, h2, h3, h4, h5, h6 {
         page-break-after: avoid;
         page-break-inside: avoid;
+        margin-top: 24pt;
     }
     
     p {
         orphans: 3;
         widows: 3;
+        margin-bottom: 12pt;
     }
     
     /* Table print adjustments */
@@ -551,7 +553,7 @@ table.trait-definition td {
     h1, h2, h3, h4, h5, h6 {
         background: none !important;
         color: black !important;
-        border-bottom: 1px solid #ccc !important;
+        border-bottom: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -578,19 +580,5 @@ table.trait-definition td {
         background-color: #f0f0f0 !important;
         color: black !important;
         border: 1px solid #ccc !important;
-    }
-    
-    /* Table of Contents adjustments */
-    #TOC {
-        background: none !important;
-        border: 1px solid #ccc !important;
-        box-shadow: none !important;
-    }
-    
-    /* Remove any fixed positioning in print */
-    #TOC {
-        position: static !important;
-        width: auto !important;
-        height: auto !important;
     }
 }

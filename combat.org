@@ -263,7 +263,6 @@ Players who use ranged weapons must have a *line of sight* to the opponents they
 
 Any ranged item designed to be used with the spatial relations rules should come with a specified range. Players only need line of sight and a successful skill check to hit something within the range of their ranged weapon. *For targets beyond the weapon's range, players get a -1 penalty to their skill check for every hex beyond their range they aim.*
 
-
 *** Flanking
 :PROPERTIES:
 :ID:       7A8B9C0D-1E2F-3G4H-5I6J-7K8L9M0N1O2P
@@ -294,3 +293,66 @@ This free attack:
 - Is resolved as a normal attack sequence (declare, roll, determine, damage, armor, apply)
 
 This rule represents how difficult it is to simply walk away from an armed opponent without dealing with them first. The zone of control mechanic adds tactical depth to positioning and makes retreats more strategically meaningful.
+
+** Vehicles
+:PROPERTIES:
+:ID:       1V2E3H4I-5C6L-7E8S-9R0U-1L2E3V4E5H6I
+:END:
+
+#+ATTR_HTML: :class section-icon
+[[file:static/vehicles.svg]]
+
+This advanced combat rule requires the [[* Spatial Relations][Spatial Relations]] rules to be in use.
+
+Vehicles add a new layer of tactical complexity to combat encounters. Whether it's a high-speed chase through a futuristic city or a naval battle between warships, vehicles require different handling than regular characters.
+
+*** Vehicle Statistics
+:PROPERTIES:
+:ID:       2W3X4Y5Z-6A7B-8C9D-0E1F-2G3H4I5J6K7L
+:END:
+
+Every vehicle has several key statistics:
+
+- *Size*: Determines how many characters a vehicle can hold:
+  - Small (S): One character riding on the outside
+  - Medium (M): One character riding on the inside
+  - Large (L): Four characters riding on the inside
+  - Extra Large (XL): Six characters riding on the inside
+
+- *Acceleration Rate*: A constant value measured in hexes, representing how many hexes the vehicle can add to its current speed each turn. This value also determines how many hexes the vehicle can subtract from its current speed each turn when braking. For example, a vehicle with an acceleration rate of 2 can increase or decrease its speed by up to 2 hexes per turn.
+
+- *Maneuverability*: A constant rating that determines how many hex sides the vehicle can turn each turn. For example, a vehicle with a maneuverability of 2 can change its facing by up to 2 hex sides per turn.
+
+- *Damage Resistance (DR)*: A constant value that reduces damage taken by anyone inside the vehicle. Characters riding inside a vehicle apply this DR in addition to any armor they are wearing when determining damage taken from attacks.
+
+Vehicles also have variable values that are tracked during play:
+
+- *Speed*: A variable value that changes over time and represents the number of hexes a vehicle moves on its turn, as long as this value is greater than zero. Vehicles must move this many hexes in the direction they are currently facing. Represented using a d100.
+
+- *Facing*: The current hex side the vehicle is pointed, which determines the direction of movement. Represented by the direction the vehicle token or mini is pointing in.
+
+*** Steering and Movement
+:PROPERTIES:
+:ID:       3X4Y5Z6A-7B8C-9D0E-1F2G-3H4I5J6K7L8M
+:END:
+
+Vehicles have two primary movement actions that each cost 3 Action Points:
+
+- *Accelerating or Braking*: Vehicles can accelerate or brake by up to their acceleration rate in hexes per turn. Acceleration increases the vehicle's speed, while braking decreases it. A vehicle's speed can never be reduced below zero.
+
+- *Turning*: Vehicles can change their facing by up to their maneuverability rating in hex sides per turn.
+
+When steering, the vehicle's facing changes first, and then the vehicle moves in that new direction. This means that players can plan their turns by first deciding how much to turn, then moving the appropriate number of hexes in that direction.
+
+Vehicles must move a number of hexes equal to their current speed on each turn, as long as their speed is greater than zero. This movement is mandatory and must be in the direction the vehicle is currently facing. Players cannot choose to move fewer hexes than their current speed.
+
+*** Using Vehicles in Combat
+:PROPERTIES:
+:ID:       4Y5Z6A7B-8C9D-0E1F-2G3H-4I5J-6K7L-8M9N
+:END:
+
+Characters operating vehicles use the vehicle's movement rules instead of their own. Any characters riding in the vehicle move with it automatically.
+
+Attacks against vehicles work the same as attacks against characters, but vehicles may have different HP values and armor ratings than characters. When a vehicle is reduced to 0 HP, it becomes inoperable and may crash depending on the circumstances.
+
+Vehicles can be used to ram enemies, providing a new tactical option in combat. The damage from a ramming attack is determined by the vehicle's size, speed, and construction. Characters inside a vehicle benefit from the vehicle's Damage Resistance when attacked, in addition to any armor they are wearing.
