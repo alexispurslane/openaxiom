@@ -394,9 +394,7 @@ Reaching the pinnacle of skill mastery is an extraordinary feat. A character sta
 
 The graph below shows how a character's success rate increases over time when spending 3 story points per session to improve a skill (with story point accumulation):
 
-#+BEGIN_EXPORT html
 [[file:static/skill_progression.svg]]
-#+END_EXPORT
 
 *** Signature Abilities
 
@@ -405,37 +403,11 @@ The graph below shows how a character's success rate increases over time when sp
 
 Once a skill reaches 18 (ignoring any trait bonuses), players have the option to spend additional story points to continue improving that skill. However, they are *strongly encouraged* to instead spend all story points in their bank to acquire a "Signature Ability" that they negotiate with the Game Master. These Signature Abilities represent the character's unique mastery and personal style with a skill, going beyond mere numerical improvement.
 
-Signature Abilities must fall into one of three categories:
-
-1. *Exemptions (Bending the Rules)*: An Exemption allows a character to ignore a specific penalty or limitation. They don't give bonuses; they remove negatives.
-
-   #+BEGIN_QUOTE
-   Example (Jax, Computers): Signature Ability: *Predictive Algorithm*. When making a Computers (Hacking) check against a system with advanced security (a negative difficulty modifier), you reduce the penalty by 1. A -2 modifier becomes a -1.
-   #+END_QUOTE
-
-   #+BEGIN_QUOTE
-   Example (Elara, Survival): Signature Ability: *At Home in the Wild*. You no longer suffer penalties from the Physical Harm tracker when performing any Survival (Wilderness) checks.
-   #+END_QUOTE
+1. *Specialties (New Ways to Use Skills)*: A Specialty grants a character a new, specific way to use a skill, often by interacting with another game system.
 
 2. *Maneuvers (New Ways to Use Skills)*: A Maneuver grants a character a new, specific action they can perform with the skill, often by interacting with another game system.
 
-   #+BEGIN_QUOTE
-   Example (Elara, Combat (Ranged) (Bow)): Signature Ability: *Pinning Shot*. As your action, you may make a standard Combat (Ranged) (Bow) check to pin an enemy to a nearby surface (a wall, the floor). If you succeed, the enemy cannot move from their spot until they use their own action to make a Physical (Strength) check to free themselves.
-   #+END_QUOTE
-
-   #+BEGIN_QUOTE
-   Example (Jax, Engineering): Signature Ability: *Jury-Rig*. You can temporarily repair a damaged item without the proper tools, forgoing the "Prerequisite Item" requirement for one check. The item breaks again after the scene.
-   #+END_QUOTE
-
 3. *Triggers (Interacting with Resources)*: A Trigger allows a character to spend a resource (like Momentum) to create a special effect related to their skill.
-
-   #+BEGIN_QUOTE
-   Example (Jax, Social): Signature Ability: *Fast Talk*. When you succeed on a Social (Deception) check, you may immediately spend your Momentum to ask the GM for one piece of useful (but not necessarily secret) information the target knows.
-   #+END_QUOTE
-
-   #+BEGIN_QUOTE
-   Example (Elara, Physical): Signature Ability: *Unflinching Poise*. When you would take Harm from a source you can see, you may spend your Momentum to reduce the amount of Harm taken by one level.
-   #+END_QUOTE
 
 The custom rules they allow *must* fall into these categories. This ensures that Signature Abilities enhance the character's capabilities in meaningful ways that go beyond simple numerical bonuses, creating unique and memorable character moments that reflect their personal mastery of their chosen skills.
 
@@ -497,27 +469,4 @@ The process has three steps:
 :ID:       85B84067-FCF5-42B0-8250-1A3DF239D57C
 :END:
 
-#+ATTR_HTML: :class gameplay-example
-#+BEGIN_QUOTE
-After a successful mission to recover a stolen prototype, Elara's player is awarded 4 story points. The player decides to spend them as follows:
 
-1. 2 story points to improve her *Survival (Wilderness) (Forest)* skill from 10 to 11 (second improvement)
-2. 1 story point to unlock the *Perception (Visual)* skill, immediately granting it a +1 bonus (default 9 + 1 = 10)
-3. 1 story points to unlock *Combat (Melee) (Dagger)*, because earlier in the campaign she was caught in a fight where it was too close range to use a bow, and she almost died.
-
-Later, after facing her claustrophobia while navigating a tight tunnel system (but still struggling), Elara's player is awarded 6 story points by the Game Master. The player chooses to spend all 6 story points to reduce the *Claustrophobia* trait from -6 to -5, reflecting Elara's gradual improvement in overcoming this hindrance.
-#+END_QUOTE
-
-#+ATTR_HTML: :class gameplay-example
-#+BEGIN_QUOTE
-Jax's player is awarded 3 story points after successfully hacking a corporate mainframe. The player decides to:
-
-1. Spend 1 story point to unlock the *Social (Deception)* skill, immediately granting it a +1 bonus (default 9 + 1 = 10)
-2. Spend 2 story points to improve his *Computers (Hacking)* skill from 10 to 11 (second improvement)
-
-In a much later session, Jax's player earns 5 story points for overcoming his absent-mindedness during a critical mission. The player chooses to spend all 5 story points to reduce his *Absent-Minded* trait from -5 to -4, showing his gradual improvement in focus and attention.
-
-In an even later session, during a pivotal moment when Jax successfully repairs a damaged starship while under enemy fire (scoring a critical success on a 3d6 roll), his player earns 7 story points. The player declares a Crucible Roll, spending all 7 points in an attempt to gain the *Cool Under Pressure* trait. After naming the trait, the player rolls 3d6 and gets a result of 12 - a standard success. Jax gains the *Cool Under Pressure* trait at +5, the maximum value of the points invested, reflecting his newfound ability to remain calm in dangerous situations.
-
-In a subsequent session, Jax attempts another Crucible Roll after earning 5 story points for an incredible feat of engineering that he also got a critical success on. The player spends all 5 points to attempt to gain the *Intuitive Interface* trait. The player rolls 3d6 and gets a result of 4 - a critical success! Jax gains the *Intuitive Interface* trait at +6 (the maximum of 5 plus the +1 bonus for a critical success).
-#+END_QUOTE

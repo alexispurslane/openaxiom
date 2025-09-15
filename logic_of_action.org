@@ -79,15 +79,6 @@ A contested extended action represents ongoing struggles between two characters 
 
 When initiating a contested extended action, the player must specify what they want to achieve with the action. This specification determines both the skill used and the effect that occurs while the action is maintained. The specific effects are determined by the Game Master based on the declared goal and the skill used.
 
-#+ATTR_HTML: :class gameplay-example
-#+BEGIN_QUOTE
-Jax wants to grapple his opponent to prevent them from moving away. He declares he's attempting to initiate a contested extended action against the corporate security drone, specifying that he wants to prevent the drone from moving by using Physical (Wrestling) as the skill. If successful, the effect will be that the drone cannot move while the grapple is maintained.
-
-Jax has Physical (Wrestling) at 12, while the corporate security drone has Physical (Wrestling) at 10. Jax rolls 3d6 and gets a 3, 4, and 2 for a total of 9, which is a standard success against his target of 12. The drone rolls 3d6 and gets a 2, 5, and 6 for a total of 13, which is a marginal failure against its target of 10.
-
-Since Jax succeeded and the drone failed, the contested extended action is initiated. The drone is now grappled and cannot move while Jax maintains the grapple. On Jax's next turn, he must declare that he's maintaining the contested extended action and make another Physical (Wrestling) check against the drone to continue preventing them from moving.
-#+END_QUOTE
-
 *** Initiating a Contested Extended Action
 
 1. **Declaration**
@@ -170,17 +161,6 @@ The time between checks and other consequences of failures are determined by the
 :PROPERTIES:
 :ID:       9D1E4F3A-6B2C-5D9E-2F4A-7B1C6D0E3F5A
 :END:
-
-#+ATTR_HTML: :class gameplay-example
-#+BEGIN_QUOTE
-Elara attempts to pick a lock on a secure door. Her *Physical (Lockpicking)* skill is 11. The Game Master judges the lock to be of average difficulty, so no modifier is applied. Elara's target number is 11.
-
-She rolls 3d6 and gets a 2, 4, and 5 for a total of 11. This is a standard success. The lock clicks open after a few moments of careful work.
-
-In another situation, Jax needs to hack a corporate security system. His *Computers (Hacking)* skill is 13, but the system is particularly advanced, giving it a -2 difficulty modifier. His target number is 11.
-
-Jax rolls 3d6 and gets a 1, 2, and 2 for a total of 5. This is an exceptional success (6 below his target number). The system is not only hacked but Jax gains additional information about the network that could prove useful later.
-#+END_QUOTE
 
 * Consequences
 :PROPERTIES:
