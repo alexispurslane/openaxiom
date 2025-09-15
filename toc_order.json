@@ -1,0 +1,11 @@
+{
+  "files": [
+    "openaxiom_manual.org",
+    "character_creation.org",
+    "character_mechanics.org",
+    "core_game_loop.org",
+    "logic_of_action.org",
+    "combat.org",
+    "social_relations.org"
+  ]
+}

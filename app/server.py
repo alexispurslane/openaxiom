@@ -5,9 +5,10 @@ import sys
 import threading
 import time
 import webbrowser
+import json
 from pathlib import Path
 
-from flask import Flask, send_from_directory, jsonify, request, render_template
+from flask import Flask, send_from_directory, jsonify, request, render_template, send_file
 from flask_socketio import SocketIO, emit
 from watchdog.events import FileSystemEventHandler
 from watchdog.observers import Observer
@@ -170,6 +171,61 @@ def search():
         return jsonify([])
     results = search_index(query)
     return jsonify(results)
+
+@app.route("/api/print")
+def print_manual():
+    try:
+        # Load the table of contents order
+        toc_file = os.path.join(os.path.dirname(__file__), "..", "toc_order.json")
+        with open(toc_file, "r") as f:
+            toc_data = json.load(f)
+        
+        # Get the list of org files in order
+        org_files = toc_data["files"]
+        
+        # Create a temporary combined org file
+        temp_dir = os.path.join(os.path.dirname(__file__), "temp")
+        os.makedirs(temp_dir, exist_ok=True)
+        combined_file = os.path.join(temp_dir, "combined_manual.org")
+        
+        # Combine all org files in order
+        with open(combined_file, "w") as outfile:
+            for i, org_file in enumerate(org_files):
+                org_path = os.path.join(os.path.dirname(__file__), "..", org_file)
+                if os.path.exists(org_path):
+                    with open(org_path, "r") as infile:
+                        content = infile.read()
+                        # Remove the title line for files other than the first one to avoid duplicate titles
+                        if i > 0:
+                            lines = content.split("\n")
+                            # Remove #+TITLE line if it exists
+                            lines = [line for line in lines if not line.startswith("#+TITLE:")]
+                            content = "\n".join(lines)
+                        outfile.write(content)
+                        outfile.write("\n\n")
+        
+        # Generate PDF using pandoc
+        pdf_file = os.path.join(temp_dir, "openaxiom_manual.pdf")
+        css_file = os.path.join(os.path.dirname(__file__), "static", "style.css")
+        
+        # Run pandoc to generate PDF
+        subprocess.run([
+            "pandoc",
+            combined_file,
+            "--toc",
+            "--section-divs",
+            "--metadata=lang:en",
+            "--number-sections",
+            "--css", css_file,
+            "-o", pdf_file
+        ], check=True)
+        
+        # Send the PDF file
+        return send_file(pdf_file, as_attachment=True, download_name="openaxiom_manual.pdf")
+        
+    except Exception as e:
+        print(f"Error generating PDF: {e}")
+        return f"Error generating PDF: {str(e)}", 500
 
 # Serve static files
 @app.route("/static/<path:filename>")
