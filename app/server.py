@@ -175,6 +175,7 @@ def search():
 
 @app.route("/api/print")
 def print_manual():
+    import tempfile
     try:
         # Load the table of contents order
         toc_file = os.path.join(os.path.dirname(__file__), "..", "toc_order.json")
@@ -184,9 +185,8 @@ def print_manual():
         # Get the list of org files in order
         org_files = toc_data["files"]
         
-        # Create a temporary combined org file
-        temp_dir = os.path.join(os.path.dirname(__file__), "temp")
-        os.makedirs(temp_dir, exist_ok=True)
+        # Create a temporary directory in the system temp folder
+        temp_dir = tempfile.mkdtemp()
         combined_file = os.path.join(temp_dir, "combined_manual.org")
         
         # Combine all org files in order
@@ -248,6 +248,13 @@ def print_manual():
     except Exception as e:
         print(f"Error generating PDF: {e}")
         return f"Error generating PDF: {str(e)}", 500
+    finally:
+        # Clean up temp directory
+        try:
+            if 'temp_dir' in locals():
+                shutil.rmtree(temp_dir)
+        except Exception as e:
+            print(f"Error cleaning up temp directory: {e}")
 
 # Serve static files
 @app.route("/static/<path:filename>")
