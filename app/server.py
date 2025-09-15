@@ -6,6 +6,7 @@ import threading
 import time
 import webbrowser
 import json
+import shutil
 from pathlib import Path
 
 from flask import Flask, send_from_directory, jsonify, request, render_template, send_file
@@ -204,21 +205,42 @@ def print_manual():
                         outfile.write(content)
                         outfile.write("\n\n")
         
-        # Generate PDF using pandoc
-        pdf_file = os.path.join(temp_dir, "openaxiom_manual.pdf")
-        css_file = os.path.join(os.path.dirname(__file__), "static", "style.css")
+        # Copy static files to temp directory to fix image paths
+        static_dir = os.path.join(os.path.dirname(__file__), "static")
+        temp_static_dir = os.path.join(temp_dir, "static")
+        if os.path.exists(temp_static_dir):
+            shutil.rmtree(temp_static_dir)
+        shutil.copytree(static_dir, temp_static_dir)
         
-        # Run pandoc to generate PDF
-        subprocess.run([
-            "pandoc",
-            combined_file,
-            "--toc",
-            "--section-divs",
-            "--metadata=lang:en",
-            "--number-sections",
-            "--css", css_file,
-            "-o", pdf_file
-        ], check=True)
+        # Generate PDF using pandoc with weasyprint if available, otherwise use default
+        pdf_file = os.path.join(temp_dir, "openaxiom_manual.pdf")
+        css_file = os.path.join(temp_dir, "static", "style.css")
+        
+        # Try to use weasyprint if available, otherwise fall back to default
+        try:
+            subprocess.run([
+                "pandoc",
+                combined_file,
+                "--toc",
+                "--section-divs",
+                "--metadata=lang:en",
+                "--number-sections",
+                "--css", css_file,
+                "--pdf-engine", "weasyprint",
+                "-o", pdf_file
+            ], check=True)
+        except (subprocess.CalledProcessError, FileNotFoundError):
+            # Fall back to default PDF engine
+            subprocess.run([
+                "pandoc",
+                combined_file,
+                "--toc",
+                "--section-divs",
+                "--metadata=lang:en",
+                "--number-sections",
+                "--css", css_file,
+                "-o", pdf_file
+            ], check=True)
         
         # Send the PDF file
         return send_file(pdf_file, as_attachment=True, download_name="openaxiom_manual.pdf")
