@@ -205,12 +205,24 @@ def print_manual():
                         outfile.write(content)
                         outfile.write("\n\n")
         
-        # Copy static files to temp directory to fix image paths
-        static_dir = os.path.join(os.path.dirname(__file__), "static")
+        # Create static directory in temp folder and copy SVG files
         temp_static_dir = os.path.join(temp_dir, "static")
-        if os.path.exists(temp_static_dir):
-            shutil.rmtree(temp_static_dir)
-        shutil.copytree(static_dir, temp_static_dir)
+        os.makedirs(temp_static_dir, exist_ok=True)
+        
+        # Copy all SVG files from the app/static directory to temp/static
+        static_source_dir = os.path.join(os.path.dirname(__file__), "static")
+        if os.path.exists(static_source_dir):
+            for file in os.listdir(static_source_dir):
+                if file.endswith(".svg"):
+                    src = os.path.join(static_source_dir, file)
+                    dst = os.path.join(temp_static_dir, file)
+                    shutil.copy2(src, dst)
+        
+        # Also copy the CSS file
+        css_src = os.path.join(static_source_dir, "style.css")
+        css_dst = os.path.join(temp_static_dir, "style.css")
+        if os.path.exists(css_src):
+            shutil.copy2(css_src, css_dst)
         
         # Generate PDF using pandoc with weasyprint if available, otherwise use default
         pdf_file = os.path.join(temp_dir, "openaxiom_manual.pdf")
