@@ -108,6 +108,44 @@ def get_org_title(org_file_path):
         print(f"Error extracting title from {org_file_path}: {e}")
         return Path(org_file_path).stem.replace("_", " ").title()
 
+def get_sorted_html_files():
+    """Get HTML files sorted according to TOC order."""
+    # Load the table of contents order
+    toc_file = os.path.join(os.path.dirname(__file__), "..", "toc_order.json")
+    try:
+        with open(toc_file, "r") as f:
+            toc_data = json.load(f)
+        toc_order = [f.replace(".org", ".html") for f in toc_data["files"]]
+    except Exception as e:
+        print(f"Error loading TOC order: {e}")
+        # Fallback to alphabetical order
+        toc_order = []
+    
+    # Get all HTML files
+    html_dir = os.path.join(os.path.dirname(__file__), "html")
+    html_files = [f for f in os.listdir(html_dir) if f.endswith(".html")]
+    
+    # Sort according to TOC order, with any files not in TOC at the end
+    def sort_key(filename):
+        try:
+            return toc_order.index(filename)
+        except ValueError:
+            return len(toc_order)  # Put files not in TOC at the end
+    
+    html_files.sort(key=sort_key)
+    
+    # Get titles for each file
+    html_files_with_titles = []
+    for f in html_files:
+        org_file_path = os.path.join(os.path.dirname(__file__), "..", f.replace(".html", ".org"))
+        if os.path.exists(org_file_path):
+            title = get_org_title(org_file_path)
+        else:
+            title = f.replace(".html", "").replace("_", " ").title()
+        html_files_with_titles.append((f, title))
+    
+    return html_files_with_titles
+
 # Routes
 @app.route("/")
 def index():
@@ -134,22 +172,11 @@ def serve_html(filename):
     with open(html_file_path, "r") as f:
         content = f.read()
     
-    # Get all HTML files for navigation with their titles
-    html_files_with_titles = []
-    for f in os.listdir(html_dir):
-        if f.endswith(".html"):
-            org_file_path = f.replace(".html", ".org")
-            if os.path.exists(org_file_path):
-                title = get_org_title(org_file_path)
-            else:
-                title = f.replace(".html", "").replace("_", " ").title()
-            html_files_with_titles.append((f, title))
-    
-    # Sort by title
-    html_files_with_titles.sort(key=lambda x: x[1])
+    # Get all HTML files for navigation with their titles, sorted according to TOC
+    html_files_with_titles = get_sorted_html_files()
     
     # Get title for current page
-    org_file_path = filename.replace(".html", ".org")
+    org_file_path = os.path.join(os.path.dirname(__file__), "..", filename.replace(".html", ".org"))
     if os.path.exists(org_file_path):
         title = get_org_title(org_file_path)
     else:
@@ -180,14 +207,9 @@ def search():
 def print_manual():
     import tempfile
     try:
-        # Load the table of contents order
-        toc_file = os.path.join(os.path.dirname(__file__), "..", "toc_order.json")
-        with open(toc_file, "r") as f:
-            toc_data = json.load(f)
-        
-        # Get the list of org files in order and convert to HTML filenames
-        org_files = toc_data["files"]
-        html_files = [f.replace(".org", ".html") for f in org_files]
+        # Get HTML files sorted according to TOC order
+        html_files_with_titles = get_sorted_html_files()
+        html_files = [f[0] for f in html_files_with_titles]
         
         # Create a temporary directory in the system temp folder
         temp_dir = tempfile.mkdtemp()
@@ -241,10 +263,8 @@ def print_manual():
     finally:
         # Clean up temp directory
         try:
-            print(temp_dir)
             if 'temp_dir' in locals():
-                # shutil.rmtree(temp_dir)
-                pass
+                shutil.rmtree(temp_dir)
         except Exception as e:
             print(f"Error cleaning up temp directory: {e}")
 
