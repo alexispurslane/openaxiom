@@ -115,15 +115,13 @@ There are several important tradeoffs between skills and traits. The following t
 | Aspect | Skills | Traits |
 |--------|--------|--------|
 | Improvement | Can change and improve over time | Static and cannot be improved |
-| Bonus Size | Can give a much larger bonus in particular skills (up to +9) | Capped at +5 per trait |
-| Scope | Affects only the specific skill | Can apply to many skills at once |
 | Maximum Value | Cap at 18 | Can stack on top of skills for a maximum of 23 |
-| Versatility | Limited to specific skill improvement | Can introduce new rules and special abilities |
-| Mechanical Variety | Simple numerical bonuses | Wide variety including special abilities and lore items |
+| Scope | Affects only the specific skill | Can apply to many skills at once |
+| Bonus Size | Can give a much larger bonus in particular skills (up to +9) | Capped at +5 per trait |
+| Special Effects | Simple numerical bonuses | Can introduce new rules and special abilities |
 | Negative Effects | None | Can impose penalties or limitations |
-| Character Development | Can overcome negative traits to some degree | Persistent advantages or disadvantages throughout game |
 
-Moreover, while positive skill improvement can overcome negative traits to a certain degree, skill values cap out at 18, meaning that while a character with a negative trait may equal or surpass other characters without such a negative trait with regards to some skill in the middle of the distribution, at the tail ends of character development, they will fall behind: characters with negative traits both start the game at a disadvantage and, when characters finish training, end at one. For instance, a character with a trait that applies a -5 to *Mental (Reasoning)* can dump all of their character points, including the 5 provided by that negative trait, into that skill in order to reach 14, but that's the highest they could go, whereas a character with no such disability can reach 18.
+Moreover, while positive skill improvement can overcome negative traits to a certain degree, skill values cap out at 18, meaning that characters with negative traits will eventually fall behind those without such traits. For example, a character with a trait that applies a -5 penalty to *Mental (Reasoning)* can spend all their character points to increase that skill to 14 (9 + 5 from the negative trait + 0 remaining points), whereas a character with no such disability can reach 18. This means that negative traits create a permanent disadvantage that becomes more pronounced at the extremes of character development.
 
 ** Traits and Lore Items
 :PROPERTIES:
