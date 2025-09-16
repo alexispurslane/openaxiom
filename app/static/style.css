@@ -455,6 +455,166 @@ table th {
     background-color: #f0f0f0;
 }
 
+/* Core Oracle Table styling */
+table.core-oracle-table {
+    font-size: 0.7em; /* Extra small font */
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Square aspect ratio */
+    table-layout: fixed; /* Ensures equal column widths */
+}
+
+/* Background colors for different likelihood levels */
+table.core-oracle-table td:nth-child(2), /* Standard Unlikely */
+table.core-oracle-table th:nth-child(2) {
+    background-color: #ffebee; /* Very light red */
+}
+
+table.core-oracle-table td:nth-child(3), /* Exceptionally Unlikely */
+table.core-oracle-table th:nth-child(3) {
+    background-color: #ffcdd2; /* Light red */
+}
+
+table.core-oracle-table td:nth-child(4), /* Critically Unlikely */
+table.core-oracle-table th:nth-child(4) {
+    background-color: #ef9a9a; /* Medium red */
+}
+
+table.core-oracle-table td:nth-child(5), /* Standard Likely */
+table.core-oracle-table th:nth-child(5) {
+    background-color: #e8f5e9; /* Very light green */
+}
+
+table.core-oracle-table td:nth-child(6), /* Exceptionally Likely */
+table.core-oracle-table th:nth-child(6) {
+    background-color: #c8e6c9; /* Light green */
+}
+
+table.core-oracle-table td:nth-child(7), /* Critically Likely */
+table.core-oracle-table th:nth-child(7) {
+    background-color: #a5d6a7; /* Medium green */
+}
+
+/* Special result styling based on the stepped pattern */
+/* "Yes, and..." results - darker green */
+table.core-oracle-table tr:nth-child(1) td,
+table.core-oracle-table tr:nth-child(2) td {
+    font-weight: bold;
+}
+
+table.core-oracle-table tr:nth-child(1) td:nth-child(n+5),
+table.core-oracle-table tr:nth-child(2) td:nth-child(n+5) {
+    background-color: #81c784; /* Darker green for "Yes, and..." */
+}
+
+/* "Yes" results - medium green */
+table.core-oracle-table tr:nth-child(7) td:nth-child(5),
+table.core-oracle-table tr:nth-child(7) td:nth-child(6),
+table.core-oracle-table tr:nth-child(7) td:nth-child(7),
+table.core-oracle-table tr:nth-child(8) td:nth-child(5),
+table.core-oracle-table tr:nth-child(8) td:nth-child(6),
+table.core-oracle-table tr:nth-child(8) td:nth-child(7),
+table.core-oracle-table tr:nth-child(9) td:nth-child(5),
+table.core-oracle-table tr:nth-child(9) td:nth-child(6),
+table.core-oracle-table tr:nth-child(9) td:nth-child(7),
+table.core-oracle-table tr:nth-child(10) td:nth-child(5),
+table.core-oracle-table tr:nth-child(10) td:nth-child(6),
+table.core-oracle-table tr:nth-child(10) td:nth-child(7),
+table.core-oracle-table tr:nth-child(11) td:nth-child(5),
+table.core-oracle-table tr:nth-child(11) td:nth-child(6),
+table.core-oracle-table tr:nth-child(11) td:nth-child(7),
+table.core-oracle-table tr:nth-child(12) td:nth-child(5),
+table.core-oracle-table tr:nth-child(12) td:nth-child(6),
+table.core-oracle-table tr:nth-child(12) td:nth-child(7) {
+    background-color: #aed581; /* Medium green for "Yes" */
+    font-weight: bold;
+}
+
+/* "Yes, but..." results - light green */
+table.core-oracle-table tr:nth-child(13) td:nth-child(5),
+table.core-oracle-table tr:nth-child(13) td:nth-child(6),
+table.core-oracle-table tr:nth-child(13) td:nth-child(7),
+table.core-oracle-table tr:nth-child(14) td:nth-child(5),
+table.core-oracle-table tr:nth-child(14) td:nth-child(6),
+table.core-oracle-table tr:nth-child(14) td:nth-child(7),
+table.core-oracle-table tr:nth-child(15) td:nth-child(5),
+table.core-oracle-table tr:nth-child(16) td:nth-child(5) {
+    background-color: #dce775; /* Light green for "Yes, but..." */
+    font-weight: bold;
+}
+
+/* "Yes, but..." results - orange */
+table.core-oracle-table tr:nth-child(15) td:nth-child(6),
+table.core-oracle-table tr:nth-child(15) td:nth-child(7),
+table.core-oracle-table tr:nth-child(16) td:nth-child(6),
+table.core-oracle-table tr:nth-child(16) td:nth-child(7) {
+    background-color: #ffb74d; /* Orange for "Yes, but..." */
+    font-weight: bold;
+}
+
+/* "No, but..." results - light orange */
+table.core-oracle-table tr:nth-child(3) td:nth-child(2),
+table.core-oracle-table tr:nth-child(3) td:nth-child(3),
+table.core-oracle-table tr:nth-child(3) td:nth-child(4),
+table.core-oracle-table tr:nth-child(4) td:nth-child(2),
+table.core-oracle-table tr:nth-child(4) td:nth-child(3),
+table.core-oracle-table tr:nth-child(4) td:nth-child(4),
+table.core-oracle-table tr:nth-child(5) td:nth-child(2),
+table.core-oracle-table tr:nth-child(5) td:nth-child(3),
+table.core-oracle-table tr:nth-child(5) td:nth-child(4),
+table.core-oracle-table tr:nth-child(6) td:nth-child(2),
+table.core-oracle-table tr:nth-child(6) td:nth-child(3),
+table.core-oracle-table tr:nth-child(6) td:nth-child(4),
+table.core-oracle-table tr:nth-child(7) td:nth-child(2),
+table.core-oracle-table tr:nth-child(7) td:nth-child(3),
+table.core-oracle-table tr:nth-child(7) td:nth-child(4),
+table.core-oracle-table tr:nth-child(8) td:nth-child(2),
+table.core-oracle-table tr:nth-child(8) td:nth-child(3),
+table.core-oracle-table tr:nth-child(8) td:nth-child(4) {
+    background-color: #ffcc80; /* Light orange for "No, but..." */
+    font-weight: bold;
+}
+
+/* "No" results - medium red */
+table.core-oracle-table tr:nth-child(9) td:nth-child(2),
+table.core-oracle-table tr:nth-child(9) td:nth-child(3),
+table.core-oracle-table tr:nth-child(9) td:nth-child(4),
+table.core-oracle-table tr:nth-child(10) td:nth-child(2),
+table.core-oracle-table tr:nth-child(10) td:nth-child(3),
+table.core-oracle-table tr:nth-child(10) td:nth-child(4),
+table.core-oracle-table tr:nth-child(11) td:nth-child(2),
+table.core-oracle-table tr:nth-child(11) td:nth-child(3),
+table.core-oracle-table tr:nth-child(11) td:nth-child(4),
+table.core-oracle-table tr:nth-child(12) td:nth-child(2),
+table.core-oracle-table tr:nth-child(12) td:nth-child(3),
+table.core-oracle-table tr:nth-child(12) td:nth-child(4) {
+    background-color: #ef9a9a; /* Medium red for "No" */
+    font-weight: bold;
+}
+
+/* "No, but..." results - darker red */
+table.core-oracle-table tr:nth-child(13) td:nth-child(2),
+table.core-oracle-table tr:nth-child(13) td:nth-child(3),
+table.core-oracle-table tr:nth-child(13) td:nth-child(4),
+table.core-oracle-table tr:nth-child(14) td:nth-child(2),
+table.core-oracle-table tr:nth-child(14) td:nth-child(3),
+table.core-oracle-table tr:nth-child(14) td:nth-child(4) {
+    background-color: #ff8a65; /* Darker red for "No, but..." */
+    font-weight: bold;
+}
+
+/* "No, and..." results - darkest red */
+table.core-oracle-table tr:nth-child(15) td:nth-child(2),
+table.core-oracle-table tr:nth-child(15) td:nth-child(3),
+table.core-oracle-table tr:nth-child(15) td:nth-child(4),
+table.core-oracle-table tr:nth-child(16) td:nth-child(2),
+table.core-oracle-table tr:nth-child(16) td:nth-child(3),
+table.core-oracle-table tr:nth-child(16) td:nth-child(4),
+table.core-oracle-table tr:nth-child(17) td,
+table.core-oracle-table tr:nth-child(18) td {
+    background-color: #e57373; /* Darkest red for "No, and..." */
+    font-weight: bold;
+}
+
 /* Trait definition table styling */
 table.trait-definition {
     background-color: #f0f0f0;

@@ -147,6 +147,49 @@ Negative traits can be gradually reduced through story point expenditure, as det
 
 Positive traits, once established, remain fixed and cannot be modified through story point expenditure. They represent core aspects of a character's identity that define who they are at their foundation.
 
+** Example Traits
+:PROPERTIES:
+:ID:       TRAIT-EXAMPLES
+:END:
+
+The following examples are designed to showcase the breadth of the trait system, covering physical, mental, and social applications as well as the different mechanical categories.
+
+#+ATTR_HTML: :class trait-definition
+| Acrobatic Recovery | Special, Situational |
+|--------------------|----------------------|
+| Skills Affected    | Physical (Acrobatics) |
+| Effect             | When you would be knocked prone from a failed *Physical* check, you may spend 1 AP to immediately make a *Physical (Acrobatics)* check. On a success, you land safely on your feet in an adjacent hex. This can only be attempted once per turn. |
+
+#+ATTR_HTML: :class trait-definition
+| Tactical Acumen | Broad |
+|-----------------|-------|
+| Skills Affected | Combat, Investigation, Perception |
+| Effect          | Provides a bonus to skill checks related to identifying enemy weaknesses, assessing a crime scene, or noticing environmental details that could be used to one's advantage. |
+
+#+ATTR_HTML: :class trait-definition
+| Information Broker | Special |
+|--------------------|---------|
+| Skills Affected    | Streetwise, Social (Investigation) |
+| Effect             | Once per session, when in a populated area, the character can make a *Streetwise* check as an Extended Action (3 turns). On a success, they learn a useful secret related to a person, faction, or location of their choice. |
+
+#+ATTR_HTML: :class trait-definition
+| Iron Grip | Narrow |
+|-----------|--------|
+| Skills Affected | Physical (Grip), Physical (Climbing) |
+| Effect          | Provides a bonus to any skill check made to resist being disarmed or to maintain a grip. |
+
+#+ATTR_HTML: :class trait-definition
+| Composure | Special, Situational |
+|-----------|----------------------|
+| Skills Affected | Social (Deception), Physical (Endurance) |
+| Effect          | When this character would gain a level on their Mental or Social Harm trackers, they can choose to take a level of Physical Harm instead. This cannot be used if the Physical Harm tracker is already at Level 3 (*Wrecked*). |
+
+#+ATTR_HTML: :class trait-definition
+| Otherworldly Charm | Broad, Special |
+|--------------------|----------------|
+| Skills Affected    | Social |
+| Effect             | Provides a bonus to all *Social* checks with a specific category of non-human beings (e.g., aliens, AI - chosen at character creation). However, the character suffers a -2 penalty on all *Social* checks with a faction that is Hostile to that group. |
+
 * Items
 :PROPERTIES:
 :ID:       7D4E1F2A-8C3B-4D1E-9A2B-5C8D7E3F9A1B
@@ -468,5 +511,3 @@ The process has three steps:
 :PROPERTIES:
 :ID:       85B84067-FCF5-42B0-8250-1A3DF239D57C
 :END:
-
-

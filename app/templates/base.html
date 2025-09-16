@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title }} - OpenAxiom TTRPG</title>
+    <link rel="stylesheet" href="/static/oracle-tables.css">
     <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/npc-reactions.css">
     {% block head %}{% endblock %}
 </head>
 <body>
@@ -32,70 +34,14 @@
         {% block content %}{% endblock %}
     </main>
     
+    <!-- External JavaScript libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
-    <script>
-        // Store a unique identifier for this tab
-        const tabId = Date.now().toString();
-        sessionStorage.setItem('openaxiomTabId', tabId);
-        
-        // Broadcast to other tabs that this tab is now active
-        const channel = new BroadcastChannel('openaxiom_channel');
-        channel.postMessage({type: 'newTab', id: tabId});
-        
-        // Listen for messages from other tabs
-        channel.addEventListener('message', function(event) {
-            if (event.data.type === 'newTab' && event.data.id !== tabId) {
-                // Close this tab if another one opens
-                window.close();
-            }
-        });
-        
-        const socket = io();
-        socket.on('reload', function(data) {
-            location.reload();
-        });
-        
-        // Function to print all pages in order
-        function printAllPages() {
-            // Show loading indicator
-            const printButton = document.getElementById('printButton');
-            const originalText = printButton.textContent;
-            printButton.textContent = 'Generating PDF...';
-            printButton.disabled = true;
-            
-            // Call the server endpoint to generate and download the PDF
-            fetch('/api/print')
-                .then(response => {
-                    if (response.ok) {
-                        return response.blob();
-                    } else {
-                        throw new Error('Failed to generate PDF');
-                    }
-                })
-                .then(blob => {
-                    // Create download link
-                    const url = window.URL.createObjectURL(blob);
-                    const a = document.createElement('a');
-                    a.href = url;
-                    a.download = 'openaxiom_manual.pdf';
-                    document.body.appendChild(a);
-                    a.click();
-                    a.remove();
-                    window.URL.revokeObjectURL(url);
-                    
-                    // Restore button
-                    printButton.textContent = originalText;
-                    printButton.disabled = false;
-                })
-                .catch(error => {
-                    console.error('Error generating PDF:', error);
-                    alert('Error generating PDF. Please try again.');
-                    // Restore button
-                    printButton.textContent = originalText;
-                    printButton.disabled = false;
-                });
-        }
-    </script>
+    
+    <!-- Application JavaScript files -->
+    <script src="/static/tab-management.js"></script>
+    <script src="/static/print.js"></script>
+    <script src="/static/oracle-table-coloring.js"></script>
+    <script src="/static/npc-reactions-coloring.js"></script>
     
     {% block scripts %}{% endblock %}
 </body>

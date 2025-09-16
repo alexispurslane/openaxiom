@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="swirlGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8A2BE2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0082;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#swirlGradient)" d="M50,50 m-45,0 a45,45 0 1,0 90,0 a45,45 0 1,0 -90,0"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" d="M50,50 C60,30 80,40 70,60 S30,80 40,60 S60,30 50,50"/>
+  <path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" d="M50,50 C40,70 20,60 30,40 S70,20 60,40 S40,70 50,50"/>
+</svg>

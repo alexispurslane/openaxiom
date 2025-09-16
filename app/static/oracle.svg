@@ -1,0 +1,27 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .crown { fill: #FBBC05; }
+      .book { fill: #4285F4; }
+      .dice { fill: #EA4335; }
+      .crystal { fill: #34A853; }
+    </style>
+  </defs>
+  
+  <!-- Crown representing the Game Master's authority -->
+  <path d="M30,35 L40,25 L50,30 L60,25 L70,35 L65,45 L35,45 Z" class="crown"/>
+  
+  <!-- Book representing knowledge and rules -->
+  <rect x="25" y="50" width="20" height="25" rx="2" class="book"/>
+  <rect x="30" y="55" width="10" height="15" rx="1" fill="#AECBFA"/>
+  
+  <!-- Dice representing chance and randomness -->
+  <rect x="55" y="50" width="20" height="20" rx="3" class="dice"/>
+  <circle cx="60" cy="55" r="2" fill="#fff"/>
+  <circle cx="65" cy="60" r="2" fill="#fff"/>
+  <circle cx="70" cy="65" r="2" fill="#fff"/>
+  
+  <!-- Crystal ball representing the oracle -->
+  <circle cx="50" cy="25" r="8" class="crystal"/>
+  <circle cx="48" cy="23" r="2" fill="#fff" opacity="0.7"/>
+</svg>
