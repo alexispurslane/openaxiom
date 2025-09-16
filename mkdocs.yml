@@ -9,6 +9,7 @@ nav:
   - Channeling: channeling.md
   - Social Relations: social_relations.md
   - Game Mastering: game_mastering.md
+  - Advanced Rules: advanced.md
   - Die Roller Tool: dice_roller.md
 theme:
   name: readthedocs

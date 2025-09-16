@@ -41,21 +41,25 @@ We hope you enjoy!
 
    This section describes the decision resolution mechanism for actions in OpenAxiom. When a character attempts an action with a meaningful chance of failure, the player and Game Master use the logic of action to determine the outcome. This system provides a consistent framework for resolving uncertainty while maintaining narrative flow. The fundamental mechanic is rolling 3d6 and comparing the result to a target number.
 
-4. [[file:combat.org][Combat: The Core Mechanics, and Advanced Modules]]
+4. [[file:combat.org][Combat: The Core Mechanics]]
 
    Combat situations arise naturally in many genres and settings. OpenAxiom recognizes that violence is sometimes necessary in fiction, and that in fact it is often a key aspect of why people enjoy TTRPGs, and so provides mechanics that make these scenes engaging and meaningful. The system uses an Ablative Injury System with specific body locations, each with their own pool of Hit Points, and models realistic consequences of violence with the Harm Tracker system.
 
-5. [[file:game_mastering.md][Game Mastering and Oracle System]]
-
-   This section serves as a guide for human Game Masters running OpenAxiom games, and also provides an oracle system for players who wish to play solo or without a human GM. It covers the role of the Game Master, encounter creation, NPC generation, and faction management.
-
-6. [[file:social_relations.md][Social Relations: Factions and Reputation]]
+5. [[file:social_relations.md][Social Relations: Factions and Reputation]]
 
    Social interactions form a crucial part of many narratives, and OpenAxiom provides a structured system for tracking how characters relate to each other and to various factions. This system adds depth to roleplaying encounters and provides mechanical weight to social dynamics in your game. Characters belong to factions, and each character maintains a reputation percentage with every faction they've encountered, which affects social interactions and can change based on successful or failed social skill checks.
+
+6. [[file:game_mastering.md][Game Mastering and Oracle System]]
+
+   This section serves as a guide for human Game Masters running OpenAxiom games, and also provides an oracle system for players who wish to play solo or without a human GM. It covers the role of the Game Master, encounter creation, NPC generation, and faction management.
 
 7. [[file:channeling.md][Channeling: Extraordinary Abilities Framework]]
 
    Channeling is the universal mechanism for extraordinary abilities. This system provides a genre-less and setting-less framework for powers like psionics, magic, nanotech manipulation, reality bending, or quickhacking. The rules for Channeling are designed to be abstract and flexible. This allows Game Masters to adapt them to any setting.
+
+8. [[file:advanced.org][Advanced Rules]]
+
+   This chapter is a compendium of extra, optional rules to add on to the various modular subsystems of OpenAxiom, for Game Masters who want even more tactical choice, mechanical variety, and simulation.
 
 * Licensing
 :PROPERTIES:

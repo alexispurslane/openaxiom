@@ -69,18 +69,15 @@ number of abilities they can wrangle.
 
 Channeling abilities are specific applications of a character's power.
 Each ability has a defined effect, an Action Point (AP) cost, and a
-`Required Skill` level. Some powerful abilities may also require
-knowledge of other, more basic abilities as a ****Prerequisite****. This
-represents a character building on their foundational knowledge to
-create more complex effects.
+`Required Skill` level.
 
 By default, activating an ability is a single Major Action that does not
-require a skill check from the user; the power simply works. However,
+require a skill check from the user. The power simply works. However,
 more complex abilities may have different activation requirements,
 drawing on other core mechanics of the game. These can include requiring
 prerequisite items, or functioning as a Group Action, an Extended
-Action, or even a Contested Extended Action to initiate. These special
-conditions will be listed in the ability's definition.
+Action, or even a Contested Extended Action. These special conditions
+will be listed in the ability's definition.
 
 If an ability targets another character who is aware of the attempt, the
 target may be able to resist. This is resolved as a [Contested
@@ -109,6 +106,17 @@ The format for defining a Channeling ability is as follows:
 | AP Cost | \[AP cost\] |
 | Effect | \[Description of the effect\] |
 | Defense | \[Skill used for defense, if any\] |
+
+Some powerful abilities may also require knowledge of other, more basic
+abilities as a **Prerequisite**. This represents a character building on
+their foundational knowledge to create more complex effects.
+
+An ability is considered "learned" once it has been successfully used
+four times. An ability's prerequisite abilities must have been fully
+learned (used successfully four times each) before the more advanced
+ability can be selected and prepared in an ability slot. This learning
+mechanism represents the practice and mastery needed to build upon
+foundational abilities.
 
 #### 7.1.3.1. Example Abilities
 

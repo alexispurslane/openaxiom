@@ -111,7 +111,7 @@ We hope you enjoy!
     flow. The fundamental mechanic is rolling 3d6 and comparing the
     result to a target number.
 
-4.  [Combat: The Core Mechanics, and Advanced Modules](combat.org)
+4.  [Combat: The Core Mechanics](combat.org)
 
     Combat situations arise naturally in many genres and settings.
     OpenAxiom recognizes that violence is sometimes necessary in
@@ -122,15 +122,7 @@ We hope you enjoy!
     Points, and models realistic consequences of violence with the Harm
     Tracker system.
 
-5.  [Game Mastering and Oracle System](game_mastering.md)
-
-    This section serves as a guide for human Game Masters running
-    OpenAxiom games, and also provides an oracle system for players who
-    wish to play solo or without a human GM. It covers the role of the
-    Game Master, encounter creation, NPC generation, and faction
-    management.
-
-6.  [Social Relations: Factions and Reputation](social_relations.md)
+5.  [Social Relations: Factions and Reputation](social_relations.md)
 
     Social interactions form a crucial part of many narratives, and
     OpenAxiom provides a structured system for tracking how characters
@@ -141,6 +133,14 @@ We hope you enjoy!
     they've encountered, which affects social interactions and can
     change based on successful or failed social skill checks.
 
+6.  [Game Mastering and Oracle System](game_mastering.md)
+
+    This section serves as a guide for human Game Masters running
+    OpenAxiom games, and also provides an oracle system for players who
+    wish to play solo or without a human GM. It covers the role of the
+    Game Master, encounter creation, NPC generation, and faction
+    management.
+
 7.  [Channeling: Extraordinary Abilities Framework](channeling.md)
 
     Channeling is the universal mechanism for extraordinary abilities.
@@ -149,6 +149,12 @@ We hope you enjoy!
     or quickhacking. The rules for Channeling are designed to be
     abstract and flexible. This allows Game Masters to adapt them to any
     setting.
+
+8.  [Advanced Rules](advanced.org)
+
+    This chapter is a compendium of extra, optional rules to add on to
+    the various modular subsystems of OpenAxiom, for Game Masters who
+    want even more tactical choice, mechanical variety, and simulation.
 
 ## 1.3. Licensing
 
