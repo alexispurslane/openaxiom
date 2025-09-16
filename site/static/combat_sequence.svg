@@ -1,0 +1,21 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A flowchart representing the combat sequence steps. -->
+  <defs>
+    <style>
+      .step { fill: #AECBFA; }
+      .arrow { stroke: #4285F4; stroke-width: 4; stroke-linecap: round; fill: none; }
+    </style>
+  </defs>
+  <!-- Steps -->
+  <rect x="10" y="20" width="25" height="15" rx="7" class="step"/>
+  <rect x="10" y="45" width="25" height="15" rx="7" class="step"/>
+  <rect x="10" y="70" width="25" height="15" rx="7" class="step"/>
+  <rect x="65" y="20" width="25" height="15" rx="7" class="step"/>
+  <rect x="65" y="45" width="25" height="15" rx="7" class="step"/>
+  <rect x="65" y="70" width="25" height="15" rx="7" class="step"/>
+  <!-- Arrows -->
+  <path d="M 35 27 L 65 27" class="arrow"/>
+  <path d="M 35 52 L 65 52" class="arrow"/>
+  <path d="M 35 77 L 65 77" class="arrow"/>
+  <path d="M 77 35 L 77 45" class="arrow"/>
+</svg>

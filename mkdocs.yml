@@ -1,0 +1,19 @@
+site_name: OpenAxiom TTRPG SRD
+nav:
+  - Introduction: openaxiom_manual.md
+  - Character Creation: character_creation.md
+  - Character Mechanics: character_mechanics.md
+  - Core Game Loop: core_game_loop.md
+  - Logic of Action: logic_of_action.md
+  - Combat: combat.md
+  - Channeling: channeling.md
+  - Social Relations: social_relations.md
+  - Game Mastering: game_mastering.md
+  - Die Roller Tool: dice_roller.md
+theme:
+  name: readthedocs
+plugins:
+  - search
+use_directory_urls: false
+extra_css:
+  - static/style.css

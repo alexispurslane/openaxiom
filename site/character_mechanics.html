@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Character Mechanics - OpenAxiom TTRPG SRD</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="static/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Character Mechanics";
+        var mkdocs_page_input_path = "character_mechanics.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> OpenAxiom TTRPG SRD
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="openaxiom_manual.html">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_creation.html">Character Creation</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Character Mechanics</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#skills">Skills</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#skill-naming-and-hierarchy">Skill Naming and Hierarchy</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#skill-proficiency-value">Skill Proficiency Value</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#traits">Traits</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#trait-value">Trait Value</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-traits-apply">How Traits Apply</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#broad-traits">Broad Traits</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#narrow-traits">Narrow Traits</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#situational-traits">Situational Traits</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#special-traits">Special Traits</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#standard-trait-definition-format">Standard Trait Definition Format</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#trait-evolution-and-modification">Trait Evolution and Modification</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#example-traits">Example Traits</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#items">Items</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#character-inventory">Character Inventory</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#how-items-affect-characters">How Items Affect Characters</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#skill-checks-in-a-box">Skill Checks in a Box</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#skill-prerequisite-items">Skill Prerequisite Items</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#special-items">Special Items</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#situational-items">Situational Items</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#lore-items">Lore Items</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#weapon-and-armor-properties">Weapon and Armor Properties</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#character-status-effects">Character Status Effects</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#types-of-harm-trackers">Types of Harm Trackers</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#physical-harm">Physical Harm</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#mental-harm">Mental Harm</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#social-harm">Social Harm</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#harm-tracker-levels-and-penalties">Harm Tracker Levels and Penalties</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#least-harmed-principle">Least Harmed Principle</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#managing-harm">Managing Harm</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#character-advancement">Character Advancement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#earning-story-points">Earning Story Points</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#spending-story-points">Spending Story Points</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#improving-existing-skills">Improving Existing Skills</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#signature-abilities">Signature Abilities</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#unlocking-new-skills">Unlocking New Skills</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#overcoming-negative-traits">Overcoming Negative Traits</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#gaining-positive-traits">Gaining Positive Traits</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="core_game_loop.html">Core Game Loop</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="logic_of_action.html">Logic of Action</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="combat.html">Combat</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="channeling.html">Channeling</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="social_relations.html">Social Relations</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="game_mastering.html">Game Mastering</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">OpenAxiom TTRPG SRD</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Character Mechanics</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="character-mechanics">Character Mechanics</h1>
+<p>This document becomes the GM's primary in-game reference for how a
+character functions mechanically. It answers the question, "What can a
+character do and what is their current state?"</p>
+<h2 id="skills">Skills</h2>
+<p><img src="static/skills.svg" class="section-icon" /></p>
+<p>A skill represents anything a character can do or be. This includes
+physical abilities like strength or swimming, and mental aptitudes such
+as various forms of intelligence. Skills are trainable, meaning a
+character's proficiency can improve over time. Any skill not explicitly
+listed on a character's sheet has the default value. Skills have a name
+and a numerical value, indicating proficiency.</p>
+<h3 id="skill-naming-and-hierarchy">Skill Naming and Hierarchy</h3>
+<p>Skills are named to reflect their scope and specialization. Skills can
+be organized into a hierarchical tree. A general skill can have more
+specific versions. The naming format for specific skills uses
+parentheses. For example, a general skill like <strong>Piloting</strong> can have a
+more specific version like <strong>Piloting (Starship)</strong>. This can extend
+further, such as <strong>Piloting (Starship) (Freighter)</strong>. The game master
+determines the specific skills that exist in a game world, although
+players can suggest new skills, or new specializations of skills, as
+long as the GM agrees.</p>
+<p>When a character attempts a task requiring a specific skill the
+character does not possess, the character can use a more general skill
+from the same hierarchy. However, using a general skill for a more
+specific task incurs a disadvantage. A character using a general skill
+for a more specific skill suffers a -1 disadvantage for each level of
+specialization their more general skill is missing. For example, using
+<strong>Piloting</strong> for a <strong>Piloting (Starship)</strong> task incurs a -1
+disadvantage, while using <strong>Piloting</strong> for a <strong>Piloting (Starship)
+(Freighter)</strong> task incurs a -2 disadvantage. Rule of thumb: count the
+number of parenthesized expressions to see what the disadvantage should
+be.</p>
+<h3 id="skill-proficiency-value">Skill Proficiency Value</h3>
+<p>Each skill has a numerical value that indicates the character's level of
+proficiency. A higher number signifies greater ability. The default
+value for any general, non-specific skill (such as <strong>Strength</strong> or
+<strong>Piloting</strong>) is 9.</p>
+<p>For the purposes of using skills, specific skills are undefined by
+default and relay up to more general skills as described in the previous
+section. During character creation, players can increase skills above
+the default value of 9 using their character points. Skills that have
+not been increased during character creation remain at the default value
+of 9 and are considered defined and can be used directly.</p>
+<p>The following table provides a qualitative evaluation of skill levels
+based on the probability of success for tasks of average difficulty:</p>
+<table>
+<thead>
+<tr>
+<th>Skill Range</th>
+<th>Probability Range (≤ Value)</th>
+<th>Qualitative Level</th>
+<th>In-Game Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3-5</td>
+<td>0.46% - 4.63%</td>
+<td>Hopeless</td>
+<td>Character has virtually no chance of success. Tasks feel impossible.</td>
+</tr>
+<tr>
+<td>6-7</td>
+<td>9.26% - 16.20%</td>
+<td>Very Poor</td>
+<td>Minimal capability. Success requires extraordinary luck.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>25.93%</td>
+<td>Poor</td>
+<td>Below average capability. Frequent failures even on simple tasks.</td>
+</tr>
+<tr>
+<td>9-10</td>
+<td>37.50% - 50.00%</td>
+<td>Average</td>
+<td>Baseline human capability. Modest chance of success on routine tasks.</td>
+</tr>
+<tr>
+<td>11-12</td>
+<td>62.50% - 74.07%</td>
+<td>Good</td>
+<td>Reliable performance. Succeeds more often than fails on standard tasks.</td>
+</tr>
+<tr>
+<td>13-14</td>
+<td>83.80% - 90.74%</td>
+<td>Very Good</td>
+<td>Skilled practitioner. Rarely fails at standard tasks.</td>
+</tr>
+<tr>
+<td>15-16</td>
+<td>95.37% - 98.15%</td>
+<td>Excellent</td>
+<td>Highly specialized mastery. Failure is exceptional.</td>
+</tr>
+<tr>
+<td>17</td>
+<td>99.54%</td>
+<td>Masterful</td>
+<td>Virtually flawless. Represents pinnacle of human capability.</td>
+</tr>
+<tr>
+<td>18</td>
+<td>100.00%</td>
+<td>Legendary</td>
+<td>Automatic success. Character cannot fail under normal conditions.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that these probabilities and qualitative levels apply to tasks of
+average difficulty. Tasks that are easier or harder than average will
+have correspondingly higher or lower success probabilities. A skill of
+18 still represents the pinnacle of human capability rather than
+supernatural power.</p>
+<h2 id="traits">Traits</h2>
+<p><img src="static/traits.svg" class="section-icon" /></p>
+<p>A trait is a passive effect, representng inherent advantages or
+disadvantages a character possesses. Traits typically modify a
+character's skills, and traits are established during character
+creation. Traits cannot be trained or improved.</p>
+<h3 id="trait-value">Trait Value</h3>
+<p>Each trait is inherently either positive (a boost) or negative (a
+hindrance). During character creation, the player chooses a numerical
+value for the trait, which determines both the trait's effect on skills
+and its character point cost. For positive traits, the player chooses a
+positive value (e.g., from +1 to +5) and spends that many character
+points. For negative traits, the player chooses a negative value (e.g.,
+from -1 to -5) and gains that many character points.</p>
+<p>The value of the trait directly determines the size of its effect in the
+case of broad and narrow skill-based traits. For example, a +3 trait
+provides a +3 bonus to affected skills, while a -2 trait imposes a -2
+penalty. With special traits, the value indicates generally how much the
+special ability or rule is worth, but doesn't necessarily mechanically
+feed in.</p>
+<p>For example:</p>
+<ul>
+<li>A player might choose the <strong>Photographic Memory</strong> trait at +3,
+  spending 3 character points</li>
+<li>A player might choose the <strong>Absent-Minded</strong> trait at -2, gaining 2
+  character points</li>
+</ul>
+<p><strong>Warning:</strong> Game Masters should be aware that extreme trait values like
++5 or -5 represent a 50% swing in success rates, which can have a
+massive effect on characters. Players are strongly encouraged to talk to
+their GMs before taking any such extreme traits to ensure they fit the
+campaign and won't unbalance the game.</p>
+<h3 id="how-traits-apply">How Traits Apply</h3>
+<p>Each trait is associated with a specific list of skills that it effects.
+When a trait affects a skill, its effect applies to all skills
+hierarchically subordinate to that skill.</p>
+<p>If multiple traits affect the same skill, only the highest bonus and the
+highest penalty are applied. This prevents skill values from becoming
+unbalanced, as bonuses would otherwise stack and quickly become
+excessive.</p>
+<p>Traits are categorized based on how they affect skills. Understanding
+these categories helps players and Game Masters determine when and how
+traits apply during gameplay, and <strong>these categories should be noted in
+any trait definition</strong>, alongside the skills the category requires the
+trait to effect.</p>
+<h4 id="broad-traits">Broad Traits</h4>
+<p>Broad traits affect one or more top-level general skill categories.
+These traits have wide-ranging effects across many related skills. For
+example, a <strong>Natural Leader</strong> trait might affect the entire <strong>Social</strong>
+skill category, providing bonuses to <strong>Social (Diplomacy)</strong>, <strong>Social
+(Command)</strong>, <strong>Social (Intimidation)</strong>, and any other skills that fall
+under the <strong>Social</strong> umbrella.</p>
+<p>Broad traits represent fundamental aspects of a character's personality
+or physiology that affect large areas of their capabilities. They're
+typically more impactful than narrow traits but also more balanced in
+their effects.</p>
+<h4 id="narrow-traits">Narrow Traits</h4>
+<p>Narrow traits affect one or more first-level specialized skills. These
+traits have more focused effects on specific areas of expertise. For
+example, <strong>Perfect Pitch</strong> affects <strong>Art (Music)</strong> specifically, rather
+than all <strong>Art</strong> skills. Similarly, <strong>Keen Eyesight</strong> might affect
+<strong>Perception (Visual)</strong> but not other perception skills.</p>
+<p>Narrow traits represent specific talents or limitations that only apply
+to particular skill areas. They're more specialized than broad traits
+and typically have more pronounced effects within their limited scope.</p>
+<h4 id="situational-traits">Situational Traits</h4>
+<p>Situational traits can be either broad or narrow but only activate under
+specific conditions defined by the trait. For example, <strong>Night Vision</strong>
+is a narrow situational trait that only applies to perception skills
+when in low-light conditions. <strong>Cold Tolerance</strong> might be a broad
+situational trait that affects all physical skills but only in freezing
+environments. The Game Master determines when situational traits
+activate based on the narrative circumstances.</p>
+<p>Situational traits represent abilities or limitations that only matter
+in specific contexts. They add flavor and tactical depth to characters
+without constantly affecting gameplay.</p>
+<h4 id="special-traits">Special Traits</h4>
+<p>Traits can also be designated as "Special" traits. These traits
+introduce simple new rules that layer on top of, but do not replace,
+core game mechanics. Like the way cards in some deck-building games
+introduce custom rules, Special traits add unique mechanical effects to
+a character that go beyond simple skill bonuses or penalties. For
+example, a <strong>Second Wind</strong> trait might allow a character to recover some
+health once per session, or a <strong>Lucky Charm</strong> trait might allow
+rerolling a failed skill check once per game session.</p>
+<h3 id="standard-trait-definition-format">Standard Trait Definition Format</h3>
+<p>When defining traits, use the following standardized format to ensure
+clarity and consistency. This format should be used for all traits,
+whether they are from official trait packs or custom creations.</p>
+<table>
+<thead>
+<tr>
+<th>Trait Name</th>
+<th>Category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>[List of skills affected by this trait]</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>[Description of the mechanical effect of this trait]</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<table>
+<thead>
+<tr>
+<th>Natural Leader</th>
+<th>Broad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Social</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>Provides a bonus to all social interaction skills.</td>
+</tr>
+</tbody>
+</table>
+<p>Special traits that modify the core rules may have multiple categories:</p>
+<table>
+<thead>
+<tr>
+<th>Lucky Charm</th>
+<th>Broad, Special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>All skills</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>Once per session, the character may reroll any failed skill check.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trait-evolution-and-modification">Trait Evolution and Modification</h3>
+<p>Traits represent a character's inherent nature and are generally stable
+over time. However, they are not completely immutable. Through dedicated
+effort and significant personal growth, characters can modify their
+traits over time.</p>
+<p>Negative traits can be gradually reduced through story point
+expenditure, as detailed in the Character Advancement section. This
+process represents the character's journey of personal growth and
+resilience as they work to overcome their flaws and hindrances through
+in-game experiences.</p>
+<p>Positive traits, once established, remain fixed and cannot be modified
+through story point expenditure. They represent core aspects of a
+character's identity that define who they are at their foundation.</p>
+<h3 id="example-traits">Example Traits</h3>
+<p>The following examples are designed to showcase the breadth of the trait
+system, covering physical, mental, and social applications as well as
+the different mechanical categories.</p>
+<table>
+<thead>
+<tr>
+<th>Acrobatic Recovery</th>
+<th>Special, Situational</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Physical (Acrobatics)</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>When you would be knocked prone from a failed <strong>Physical</strong> check, you may spend 1 AP to immediately make a <strong>Physical (Acrobatics)</strong> check. On a success, you land safely on your feet in an adjacent hex. This can only be attempted once per turn.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Tactical Acumen</th>
+<th>Broad</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Combat, Investigation, Perception</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>Provides a bonus to skill checks related to identifying enemy weaknesses, assessing a crime scene, or noticing environmental details that could be used to one's advantage.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Information Broker</th>
+<th>Special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Streetwise, Social (Investigation)</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>Once per session, when in a populated area, the character can make a <strong>Streetwise</strong> check as an Extended Action (3 turns). On a success, they learn a useful secret related to a person, faction, or location of their choice.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Iron Grip</th>
+<th>Narrow</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Physical (Grip), Physical (Climbing)</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>Provides a bonus to any skill check made to resist being disarmed or to maintain a grip.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Composure</th>
+<th>Special, Situational</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Social (Deception), Physical (Endurance)</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>When this character would gain a level on their Mental or Social Harm trackers, they can choose to take a level of Physical Harm instead. This cannot be used if the Physical Harm tracker is already at Level 3 (<strong>Wrecked</strong>).</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Otherworldly Charm</th>
+<th>Broad, Special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Social</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>Provides a bonus to all <strong>Social</strong> checks with a specific category of non-human beings (e.g., aliens, AI - chosen at character creation). However, the character suffers a -2 penalty on all <strong>Social</strong> checks with a faction that is Hostile to that group.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="items">Items</h2>
+<p><img src="static/items.svg" class="section-icon" /></p>
+<h3 id="character-inventory">Character Inventory</h3>
+<p>Characters in OpenAxiom have a simple inventory system. Your best
+strength-related skill determines the number of inventory slots you have
+available to carry items. Strength-related skills include <strong>Physical
+(Strength)</strong>, <strong>Physical (Endurance)</strong>, and any other skills that the
+Game Master deems appropriate for determining carrying capacity.</p>
+<p>Items are categorized into four size classes that determine how they
+consume inventory slots:</p>
+<ul>
+<li><strong>Small</strong>: These items can be fit two per inventory slot (e.g., a
+  dagger, a book, a small tool).</li>
+<li><strong>Medium</strong>: These items require one inventory slot (e.g., a sword, a
+  backpack, a rope).</li>
+<li><strong>Large</strong>: These items require two inventory slots (e.g., a suit of
+  armor, a large weapon, a chest).</li>
+<li><strong>Extra Large</strong>: These items require multiple players to carry, with
+  each participant using all of their open slots for the duration (e.g.,
+  a canoe, a large piece of furniture, a heavy statue).</li>
+</ul>
+<p>Other than these size and slot requirements, inventory is very simple.
+Players can organize their items however they see fit, and the Game
+Master should generally not concern themselves with tracking exact
+weights or volumes. The focus is on narrative gameplay rather than
+detailed inventory management.</p>
+<p>Items that are particularly large, bulky, or numerous may require
+special consideration from the Game Master, but in general, players
+should be able to carry a reasonable amount of equipment based on their
+character's physical capabilities.</p>
+<p>When characters drop items due to crippling injuries or player choice
+during combat, especially when using the spatial relations system, these
+items are placed on the hex occupied by the character. Other characters
+can only pick up these dropped items if they are positioned on the same
+hex. This adds a tactical element to item management during combat, as
+players must consider not only their own positioning but also the
+potential value of items dropped by allies or enemies.</p>
+<h3 id="how-items-affect-characters">How Items Affect Characters</h3>
+<p>The way items affect characters falls into one of three categories, with
+an additional modifier for situational items:</p>
+<h4 id="skill-checks-in-a-box">Skill Checks in a Box</h4>
+<p>The most basic types of items are "skill checks in a box." These items
+list one or more <strong>specific</strong> (not general) skills that they grant
+automatic successes to. This could include beers for <strong>Social
+(Diplomacy)</strong> checks in casual settings, bedding for <strong>Survival
+(Wilderness)</strong> checks to set up camp, or binoculars for <strong>Perception
+(Visual)</strong> checks to spot distant objects. When a character possesses
+such an item and attempts a relevant skill check, they automatically
+succeed without rolling dice.</p>
+<table>
+<thead>
+<tr>
+<th>Quality Binoculars</th>
+<th>Skill Check in a Box</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Perception (Visual)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="skill-prerequisite-items">Skill Prerequisite Items</h4>
+<p>The next level of complexity includes skill prerequisite items. These
+items are specified as required by a skill to perform that skill
+effectively. This is usually specified in resource packs, but the
+ultimate decision is up to the GM. For example, a lockpick set might be
+required for <strong>Physical (Lockpicking)</strong> checks, or a computer might be
+required for <strong>Computers (Hacking)</strong> checks. Without these prerequisite
+items, characters are fully unable to attempt certain skill checks.</p>
+<table>
+<thead>
+<tr>
+<th>Professional Lockpick Set</th>
+<th>Prerequisite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required For</td>
+<td>Physical (Lockpicking)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="special-items">Special Items</h4>
+<p>Finally, there are Special items; much like Special traits, Special
+items introduce new rules that may include modifying dice outcomes or
+providing or removing penalties. These items add unique mechanical
+effects that go beyond simple skill bonuses. Examples might include a
+lucky charm that allows rerolling failed checks, or a suit of armor that
+reduces harm tracker penalties. As with Special traits, Game Masters
+should be cautious about introducing custom Special items, as they can
+significantly affect game balance.</p>
+<table>
+<thead>
+<tr>
+<th>Lucky Charm</th>
+<th>Special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>All skills</td>
+</tr>
+<tr>
+<td>Effect</td>
+<td>Once per session, the character may reroll any failed skill check.</td>
+</tr>
+</tbody>
+</table>
+<p>Other than these officially published Special items, Game Masters should
+be cautious about introducing custom Special items, as they can
+significantly affect game balance.</p>
+<h4 id="situational-items">Situational Items</h4>
+<p>Any item can be Situational, similar to traits, in which case their
+effects only apply under certain conditions defined by the item's
+description. For example, a raincoat would only provide its benefits in
+wet weather, or night vision goggles would only function in low-light
+conditions. The Game Master determines when situational items activate
+based on the narrative circumstances. A situational item can be any one
+of the other three types, so the specification of the type in that case
+is a comma separated list. The format of an item card for a situational
+item is the same as the format for the item card of the type it is, plus
+the "situation" row.</p>
+<table>
+<thead>
+<tr>
+<th>Night Vision Goggles</th>
+<th>Situational, Skill Check in a Box</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skills Affected</td>
+<td>Perception (Visual)</td>
+</tr>
+<tr>
+<td>Situation</td>
+<td>Only functions in low-light conditions.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="lore-items">Lore Items</h4>
+<p>Lore items are usually Small in size, at max Medium, and don't convey
+any mechanical advantage. They simply represent items the character
+should have for their backstory. These are represented in-game only so
+that it's easier to keep track of them if they're stolen, and to avoid
+absurd inventories full of lore items.</p>
+<h4 id="weapon-and-armor-properties">Weapon and Armor Properties</h4>
+<p>Weapons and armor are Special items that can have additional mechanical
+properties beyond their basic category. These properties can be added as
+rows to the item cards.</p>
+<p>Weapons have a Required Skill property indicating the minimum skill
+level needed to use the weapon effectively. If a character's skill level
+is below this requirement, they must pay additional action points to
+make attacks with the weapon (see combat rules). For example, a
+masterwork sword might have "Required Skill: 12" indicating it requires
+a Combat (Melee) skill of at least 12 to use without penalty.</p>
+<p>Weapons may have a Damage property indicating the dice rolled to
+determine how much harm they inflict. For example, a sword might have
+"Damage: 2d6" indicating it rolls two six-sided dice for damage.</p>
+<p>Ranged weapons may have a Range property indicating the distance at
+which they remain effective. For example, a bow might have "Range: 10"
+indicating it can effectively target opponents within 10 hexes.</p>
+<p>Armor may have a Damage Resistance property that reduces the amount of
+harm the wearer takes from attacks. For example, leather armor might
+have "Damage Resistance: 2" indicating it reduces incoming damage by 2
+points.</p>
+<p>These properties should be added as rows to the item card format, as
+shown in the example below:</p>
+<table>
+<thead>
+<tr>
+<th>Elven Composite Bow</th>
+<th>Prerequisite, Special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Required For</td>
+<td>Combat (Ranged) (Bow)</td>
+</tr>
+<tr>
+<td>Required Skill</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Damage</td>
+<td>1d8</td>
+</tr>
+<tr>
+<td>Range</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Leather Armor</th>
+<th>Special</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Damage Resistance</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="character-status-effects">Character Status Effects</h2>
+<p><img src="static/status_effects.svg" class="section-icon" /></p>
+<p>Characters in OpenAxiom face various forms of harm during their
+adventures. To track this, every character has three separate harm
+trackers that represent different aspects of a character's well-being.</p>
+<h3 id="types-of-harm-trackers">Types of Harm Trackers</h3>
+<h4 id="physical-harm">Physical Harm</h4>
+<p>A character with physical harm suffers penalties to skills requiring
+bodily coordination, strength, or endurance. The Physical tracker tracks
+wounds, poison, fatigue, and bodily injury.</p>
+<p>Affected General Skills:</p>
+<ul>
+<li><strong>Combat</strong> (all specializations)</li>
+<li><strong>Physical</strong> (all specializations: Strength, Acrobatics, Stealth,
+  etc.)</li>
+<li><strong>Piloting</strong> (all specializations)</li>
+<li><strong>Survival</strong> (all specializations)</li>
+<li>Any other skills requiring physical exertion or coordination</li>
+</ul>
+<h4 id="mental-harm">Mental Harm</h4>
+<p>A character with mental harm suffers penalties to skills requiring
+concentration, memory, or cognitive processing. The Mental tracker
+tracks fear, confusion, stress, and psychic damage.</p>
+<p>Affected General Skills:</p>
+<ul>
+<li><strong>Computers</strong> (all specializations)</li>
+<li><strong>Investigation</strong></li>
+<li><strong>Perception</strong></li>
+<li><strong>Engineering</strong> (all specializations)</li>
+<li><strong>Medicine</strong> (all specializations)</li>
+<li>Any other skills requiring focused mental effort or problem-solving</li>
+</ul>
+<h4 id="social-harm">Social Harm</h4>
+<p>A character with social harm suffers penalties to skills requiring
+interpersonal interaction, emotional control, or social awareness. The
+Social tracker tracks humiliation, loss of face, damaged reputation, and
+shaken confidence.</p>
+<p>Affected General Skills:</p>
+<ul>
+<li><strong>Social</strong> (all specializations: Diplomacy, Deception, Intimidation,
+  etc.)</li>
+<li><strong>Languages</strong> (when used in social contexts)</li>
+<li><strong>Art</strong> (Performance)</li>
+<li><strong>Streetwise</strong></li>
+<li>Any other skills requiring social interaction or emotional stability</li>
+</ul>
+<h3 id="harm-tracker-levels-and-penalties">Harm Tracker Levels and Penalties</h3>
+<p>Each harm tracker progresses through four distinct levels, with
+corresponding penalties:</p>
+<ul>
+<li><strong>Hindered (Level 1)</strong>: The character experiences minor difficulties
+  that affect their performance. Applies a -1 penalty to all affected
+  skills.</li>
+<li><strong>Impaired (Level 2)</strong>: The character suffers noticeable setbacks that
+  significantly impact their capabilities. Applies a -2 penalty to all
+  affected skills.</li>
+<li><strong>Wrecked (Level 3)</strong>: The character endures severe trauma that
+  gravely hampers their effectiveness. Applies a -3 penalty to all
+  affected skills.</li>
+<li><strong>Incapacitated (Level 4)</strong>: The character is completely unable to
+  function and must sit out the scene. The character cannot take actions
+  requiring that type of effort.</li>
+</ul>
+<p>When a harm tracker applies a penalty to a general skill, it also
+applies to any more specific sub-skills under that general skill. For
+example, if Physical harm affects <strong>Combat</strong>, it also affects <strong>Combat
+(Melee)</strong> and <strong>Combat (Ranged)</strong>.</p>
+<h4 id="least-harmed-principle">Least Harmed Principle</h4>
+<p>When a skill could fall under multiple harm trackers, by default the
+harm tracker that is <strong>least</strong> harmed is the one the skill is treated as
+falling under, but the decision is ultimately up to the GM.</p>
+<p>This principle represents how characters compensate for their wounds by
+leaning more heavily on their other capabilities to still execute a
+skill. For instance, a character might use <strong>Social (Streetwise)</strong> to
+physically intimidate a foe or to mentally recall the layout of a gang's
+territory, depending on if they are more mentally or physically harmed,
+respectively. This mechanic reflects the adaptability of characters as
+they work around their limitations.</p>
+<p>Examples of skills that might fall under multiple harm trackers include:</p>
+<ul>
+<li><strong>Social (Streetwise)</strong>: Can be used for physical intimidation
+  (Physical) or recalling territorial knowledge (Mental)</li>
+<li><strong>Physical (Acrobatics)</strong>: Might be used in social performance
+  (Social) or to mentally calculate trajectories (Mental)</li>
+<li><strong>Combat (Melee)</strong>: Could involve social intimidation (Social) or
+  mental tactical planning (Mental)</li>
+<li><strong>Art (Performance)</strong>: May require physical dexterity (Physical),
+  mental memorization (Mental), or social engagement (Social)</li>
+<li><strong>Survival (Tracking)</strong>: Can involve physical stamina (Physical),
+  mental pattern recognition (Mental), or social knowledge of local
+  customs (Social)</li>
+</ul>
+<h3 id="managing-harm">Managing Harm</h3>
+<p>Harm is typically inflicted by the Game Master as a result of failed
+rolls, environmental hazards, or narrative consequences. There are two
+primary methods for recovery from harm:</p>
+<ol>
+<li>
+<p><strong>Rest</strong>: A character can reduce one harm tracker by one level
+    whenever they get adequate long rest and recuperation, allowing
+    their body, mind, or social standing to heal naturally.</p>
+</li>
+<li>
+<p><strong>Skill Development</strong>: When a character spends story points to
+    improve a skill that falls under a particular harm tracker, they can
+    also reduce that harm tracker by one level. This represents the
+    character's growing mastery and resilience in that area of their
+    life. This recovery is a free benefit earned by reaffirming one's
+    capabilities.</p>
+</li>
+</ol>
+<h2 id="character-advancement">Character Advancement</h2>
+<p><img src="static/advancement.svg" class="section-icon" /></p>
+<p>As characters face trials and adventures, they grow and change.
+OpenAxiom represents this evolution through Story Points. These points
+are earned through narrative milestones and can be spent to improve
+skills, overcome flaws, or even gain new innate talents. This system
+ensures that character growth is tied directly to the story, rewarding
+players for engaging with the game world and their character's journey.</p>
+<h3 id="earning-story-points">Earning Story Points</h3>
+<p>Story points are awarded by the Game Master at the conclusion of
+significant plot beats or story moments. These moments might include:</p>
+<ul>
+<li>Completing a major quest or mission</li>
+<li>Overcoming a significant challenge or adversary</li>
+<li>Making a crucial discovery that advances the narrative</li>
+<li>Resolving a personal character conflict or subplot</li>
+<li>Contributing significantly to a group's success</li>
+</ul>
+<p>The number of story points awarded depends on the importance and
+difficulty of the accomplished plot beat. A minor milestone might earn
+1-2 story points, while a major achievement could earn 5 or more. The
+Game Master has full discretion in determining both when story points
+are awarded and how many to give.</p>
+<p>As a general guideline, players should expect to receive 3-6 story
+points per typical game session, depending on the pacing of the story
+and the number of significant accomplishments. This pace allows for
+steady character development while maintaining the value of story points
+as meaningful rewards.</p>
+<h3 id="spending-story-points">Spending Story Points</h3>
+<p>Story points can be saved and accumulated over multiple sessions. They
+do not need to be spent immediately when awarded. Players can choose
+when to spend their accumulated story points, allowing them to save up
+for more significant improvements. Players have three options for
+spending their story points:</p>
+<h4 id="improving-existing-skills">Improving Existing Skills</h4>
+<p><img src="static/improving_skills.svg" class="section-icon" /></p>
+<p>Any amount of story points can be applied to skills the character
+already has. Increasing a skill's value requires more story points as
+the skill becomes more proficient. Each improvement follows a simple
+step progression: the first time a skill is improved (when it's
+initially unlocked) costs 1 story point, the second improvement costs 2
+story points, the third costs 3 story points, and so on.</p>
+<p>The formula for determining the cost to improve a skill to the next
+level is: next level cost = new value - 9</p>
+<table>
+<thead>
+<tr>
+<th>Skill Value</th>
+<th>Cost From Previous</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>1 point (already paid during character creation or skill unlocking)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>2 points</td>
+</tr>
+<tr>
+<td>12</td>
+<td>3 points</td>
+</tr>
+<tr>
+<td>13</td>
+<td>4 points</td>
+</tr>
+<tr>
+<td>14</td>
+<td>5 points</td>
+</tr>
+<tr>
+<td>15</td>
+<td>6 points</td>
+</tr>
+<tr>
+<td>16</td>
+<td>7 points</td>
+</tr>
+<tr>
+<td>17</td>
+<td>8 points</td>
+</tr>
+<tr>
+<td>18</td>
+<td>9 points</td>
+</tr>
+</tbody>
+</table>
+<p>This is the primary method for making existing capabilities more
+powerful.</p>
+<p>As characters improve their skills, their tactical capabilities in
+combat also increase. In particular, a character's maximum action points
+(AP) available each turn in tactical combat is determined by their best
+Physical skill related to dexterity or speed. When a character improves
+any of these skills, their available AP increases accordingly, allowing
+them to take more actions during their turn.</p>
+<p>Reaching the pinnacle of skill mastery is an extraordinary feat. A
+character starting with a skill at the default "unlocked" level of 10
+would need to spend a total of 44 story points to advance that skill all
+the way to 18 (Legendary). This represents a significant investment of
+time and effort, as characters typically earn only 3-6 story points per
+session. It would take roughly 7-15 sessions of maximum story point
+earnings to reach Legendary status in a single skill, reinforcing that
+true mastery requires tremendous dedication and perseverance.</p>
+<p>The graph below shows how a character's success rate increases over time
+when spending 3 story points per session to improve a skill (with story
+point accumulation):</p>
+<p><img alt="" src="static/skill_progression.svg" /></p>
+<h4 id="signature-abilities">Signature Abilities</h4>
+<p><img src="static/signature_ability.svg" class="section-icon" /></p>
+<p>Once a skill reaches 18 (ignoring any trait bonuses), players have the
+option to spend additional story points to continue improving that
+skill. However, they are <strong>strongly encouraged</strong> to instead spend all
+story points in their bank to acquire a "Signature Ability" that they
+negotiate with the Game Master. These Signature Abilities represent the
+character's unique mastery and personal style with a skill, going beyond
+mere numerical improvement.</p>
+<ol>
+<li>
+<p><strong>Specialties (New Ways to Use Skills)</strong>: A Specialty grants a
+    character a new, specific way to use a skill, often by interacting
+    with another game system.</p>
+</li>
+<li>
+<p><strong>Maneuvers (New Ways to Use Skills)</strong>: A Maneuver grants a
+    character a new, specific action they can perform with the skill,
+    often by interacting with another game system.</p>
+</li>
+<li>
+<p><strong>Triggers (Interacting with Resources)</strong>: A Trigger allows a
+    character to spend a resource (like Momentum) to create a special
+    effect related to their skill.</p>
+</li>
+</ol>
+<p>The custom rules they allow <strong>must</strong> fall into these categories. This
+ensures that Signature Abilities enhance the character's capabilities in
+meaningful ways that go beyond simple numerical bonuses, creating unique
+and memorable character moments that reflect their personal mastery of
+their chosen skills.</p>
+<h4 id="unlocking-new-skills">Unlocking New Skills</h4>
+<p><img src="static/unlocking_skills.svg" class="section-icon" /></p>
+<p>One story point can be spent to unlock a new skill. This immediately
+grants the skill a value of 10 (1 point above the default value of 9).
+Any remaining story points from that award cannot be spent on the same
+skill - they must be used on other options. This represents the
+character learning a new area of expertise.</p>
+<p>Characters can have specific skills without having the more general
+version. For example, a character can unlock <strong>Piloting (Starship)</strong>
+without having <strong>Piloting</strong>. When a character has a specific skill but
+not its more general version, they can only use that specific skill for
+tasks that match it exactly. They cannot use it as a substitute for
+other specializations of the same general skill.</p>
+<p>If a player wants to unlock a more specific skill for a more general
+skill they already have, that specific skill starts at a value of 11,
+because knowledge is transferrable. For example, a character with
+<strong>Piloting</strong> at 10 who wants to unlock <strong>Piloting (Starship)</strong> would
+start with a value of 11 (1 point above the default value of 10 for the
+unlocked skill).</p>
+<h4 id="overcoming-negative-traits">Overcoming Negative Traits</h4>
+<p><img src="static/overcoming_traits.svg" class="section-icon" /></p>
+<p>Traits represent a character's inherent nature and are fundamentally
+different from trained skills. Altering them is a rare and monumental
+process tied directly to the character's story.</p>
+<p>Overcoming an ingrained flaw is a long and difficult process of personal
+growth and resilience. This is represented by gradually eroding the
+trait's power. Thus, characters may improve negative traits over time by
+spending story points. Any negative trait can be reduced by exactly one
+point at a time, with the character spending story points equal to the
+trait's current value to decrease it by one point.</p>
+<p>For example, a character with a -5 trait must spend 5 story points to
+reduce it to -4. Later, they would need to spend 4 story points to
+reduce it to -3, and so on, until the trait eventually reaches 0 and is
+removed entirely.</p>
+<p>This system represents gradual character growth as players work to
+overcome their character's flaws and hindrances through in-game
+experiences. Traits can only be improved in this incremental fashion and
+cannot be removed entirely in a single expenditure of story points.</p>
+<p>Note that existing positive traits are fixed and cannot be modified
+through story point expenditure. Only negative traits can be reduced or
+overcome.</p>
+<h4 id="gaining-positive-traits">Gaining Positive Traits</h4>
+<p><img src="static/gaining_traits.svg" class="section-icon" /></p>
+<p>Gaining a new innate positive trait is a profound and permanent change
+to a character. This transformation requires extraordinary performance
+and calculated risk.</p>
+<p>The process has three steps:</p>
+<ol>
+<li>
+<p><strong>Precondition</strong>: A character may only attempt to gain a new
+    positive trait if they have scored a critical success during a
+    pivotal story moment. A critical success is a roll of 3 or 4 on 3d6.
+    The game master determines what constitutes a pivotal story moment.
+    This opportunity must be claimed when story points are next awarded.</p>
+</li>
+<li>
+<p><strong>Attempt</strong>: To attempt the transformation, the player must declare
+    they are making a Crucible Roll. They must then commit all story
+    points from the current award to the attempt. This investment has
+    two parts:</p>
+<ul>
+<li>
+<p>The Potential: The maximum value of the new trait equals the
+  points spent, up to a maximum of +5.</p>
+</li>
+<li>
+<p>The Ante: Any story points spent beyond 5 are lost. They are the
+  price paid for the chance to change.</p>
+</li>
+</ul>
+<p>Example: A player is awarded 8 story points. They <em>must</em> spend all 8
+points to attempt the Crucible Roll. The maximum trait they can gain
+is +5. The extra 3 points are lost in the process, regardless of the
+outcome.</p>
+</li>
+<li>
+<p><strong>Outcome</strong>: After spending the points, the player names their
+    desired trait and makes the Crucible Roll (3d6). The outcome depends
+    on the result.</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Roll Result</th>
+<th>Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Success (5 - 16)</td>
+<td>Success. The character's focus pays off. They gain the new positive trait at the full value of the points invested up to +5.</td>
+</tr>
+<tr>
+<td>Critical Success (3-4)</td>
+<td>Transcendence. An incredible breakthrough! They gain the new positive trait at its full value, plus an additional +1 bonus, giving them a truly superhuman trait.</td>
+</tr>
+<tr>
+<td>Critical Failure (17-18)</td>
+<td>Backlash. The attempt fails catastrophically, scarring the character. The positive trait is not gained. Instead, they gain a new, permanent negative trait with a fixed value of -3. This trait should be narratively linked to the failed attempt (e.g., trying for Deadeye might result in Nerve Jitters).</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="character_creation.html" class="btn btn-neutral float-left" title="Character Creation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="core_game_loop.html" class="btn btn-neutral float-right" title="Core Game Loop">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="character_creation.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="core_game_loop.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

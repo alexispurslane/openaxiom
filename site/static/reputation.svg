@@ -1,0 +1,31 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A reputation meter with icons representing different reputation levels -->
+  <defs>
+    <style>
+      .meter-bg { fill: #BDC3C7; }
+      .meter-fill { fill: #34A853; }
+      .happy { fill: #34A853; }
+      .neutral { fill: #F1C40F; }
+      .angry { fill: #EA4335; }
+    </style>
+  </defs>
+  <!-- Reputation meter -->
+  <rect x="15" y="20" width="70" height="15" class="meter-bg" rx="7"/>
+  <rect x="15" y="20" width="50" height="15" class="meter-fill" rx="7"/>
+  <!-- Face icons representing reputation levels -->
+  <!-- Happy face (high reputation) -->
+  <circle cx="25" cy="50" r="8" class="happy"/>
+  <circle cx="22" cy="48" r="1.5" fill="white"/>
+  <circle cx="28" cy="48" r="1.5" fill="white"/>
+  <path d="M 20 52 Q 25 57 30 52" stroke="white" stroke-width="2" fill="none"/>
+  <!-- Neutral face (medium reputation) -->
+  <circle cx="50" cy="50" r="8" class="neutral"/>
+  <circle cx="47" cy="48" r="1.5" fill="white"/>
+  <circle cx="53" cy="48" r="1.5" fill="white"/>
+  <line x1="45" y1="52" x2="55" y2="52" stroke="white" stroke-width="2"/>
+  <!-- Angry face (low reputation) -->
+  <circle cx="75" cy="50" r="8" class="angry"/>
+  <circle cx="72" cy="48" r="1.5" fill="white"/>
+  <circle cx="78" cy="48" r="1.5" fill="white"/>
+  <path d="M 70 55 Q 75 50 80 55" stroke="white" stroke-width="2" fill="none"/>
+</svg>

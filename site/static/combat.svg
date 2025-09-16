@@ -1,0 +1,16 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Two crossed swords representing combat. -->
+  <defs>
+    <style>
+      .weapon { fill: #4285F4; }
+      .crossguard { fill: #AECBFA; }
+    </style>
+  </defs>
+  <!-- Crossed swords with crossguards -->
+  <!-- First sword -->
+  <rect x="30" y="20" width="8" height="60" rx="4" class="weapon" transform="rotate(45 34 50)"/>
+  <rect x="25" y="70" width="18" height="4" rx="2" class="crossguard" transform="rotate(45 34 50)"/>
+  <!-- Second sword -->
+  <rect x="50" y="20" width="8" height="60" rx="4" class="weapon" transform="rotate(-45 54 50)"/>
+  <rect x="45" y="70" width="18" height="4" rx="2" class="crossguard" transform="rotate(-45 54 50)"/>
+</svg>

@@ -1,0 +1,5 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A minus sign (negative trait) being lifted by a green arrow (positive growth). -->
+  <line x1="35" y1="55" x2="65" y2="55" stroke="#EA4335" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 40 70 L 50 30 L 60 70" fill="none" stroke="#34A853" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

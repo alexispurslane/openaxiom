@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Logic of Action - OpenAxiom TTRPG SRD</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="static/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Logic of Action";
+        var mkdocs_page_input_path = "logic_of_action.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> OpenAxiom TTRPG SRD
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="openaxiom_manual.html">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_creation.html">Character Creation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_mechanics.html">Character Mechanics</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="core_game_loop.html">Core Game Loop</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Logic of Action</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#actions">Actions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#determining-target-numbers">Determining Target Numbers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#momentum">Momentum</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contested-actions">Contested Actions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contested-extended-actions">Contested Extended Actions</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#initiating-a-contested-extended-action">Initiating a Contested Extended Action</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#maintaining-a-contested-extended-action">Maintaining a Contested Extended Action</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#group-actions">Group Actions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#extended-actions">Extended Actions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#logic-of-action-examples">Logic of Action Examples</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#consequences">Consequences</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#degrees-of-success-and-failure">Degrees of Success and Failure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#probability-of-degrees-of-success-and-failure-at-different-difficulty-levels">Probability of Degrees of Success and Failure at Different Difficulty Levels</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#critical-success">Critical Success</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#exceptional-success">Exceptional Success</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#standard-success">Standard Success</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#marginal-failure">Marginal Failure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#exceptional-failure">Exceptional Failure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#critical-failure">Critical Failure</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="combat.html">Combat</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="channeling.html">Channeling</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="social_relations.html">Social Relations</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="game_mastering.html">Game Mastering</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">OpenAxiom TTRPG SRD</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Logic of Action</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="logic-of-action">Logic of Action</h1>
+<p><img src="static/logic_of_action.svg" class="section-icon" /></p>
+<p>This section describes the decision resolution mechanism for actions in
+OpenAxiom. When a character attempts an action with a meaningful chance
+of failure, the player and Game Master use the logic of action to
+determine the outcome. This system provides a consistent framework for
+resolving uncertainty while maintaining narrative flow.</p>
+<p>The following sections detail how actions are resolved in various
+circumstances:</p>
+<h2 id="actions">Actions</h2>
+<p><img src="static/actions.svg" class="section-icon" /></p>
+<p>The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the
+result to a target number. The player rolls 3d6 and sums the results. If
+the total is less than or equal to the target number, the action
+succeeds. If the total is greater than the target number, the action
+fails.</p>
+<p><strong><em>*Restriction on Repeating Skill Checks</em></strong>*: Players cannot make the
+same skill check twice in a row without at least 3 turns between them or
+a change in circumstance (as determined by the Game Master). This
+prevents characters from simply retrying the same action indefinitely
+until they succeed, encouraging creative problem-solving and narrative
+progression.</p>
+<p>This simple mechanic underlies all character actions in the game. The
+target number is determined by the character's relevant skill value,
+modified by applicable traits and situational factors as determined by
+the Game Master. Characters may also receive temporary modifiers from
+systems like <strong>Momentum</strong>, which can provide a +1 bonus to the
+character's skill value for the purpose of determining the target number
+for any action in the same scene.</p>
+<h3 id="determining-target-numbers">Determining Target Numbers</h3>
+<p>The base target number for any skill check is the character's skill
+value. A character with <strong>Piloting (Starship)</strong> at 12 would have a
+target number of 12 for starship piloting checks.</p>
+<p>The target number is then modified by applicable character traits and
+situational factors as determined by the Game Master. Applicable traits
+always modify the target number, while situational adjustments typically
+range from -3 to +3, representing extremely easy to extremely difficult
+circumstances. Trait modifiers will vary based on the specific traits
+the character possesses and how they apply to the situation. The
+following table provides guidelines for determining appropriate
+modifiers, showing what the resulting target number would be for a
+character with the default skill level of 9:</p>
+<table>
+<thead>
+<tr>
+<th>Difficulty</th>
+<th>Modifier</th>
+<th>Target Number (Skill 9)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Very Easy</td>
+<td>+3</td>
+<td>12</td>
+<td>Tasks that should almost always succeed for competent characters.</td>
+</tr>
+<tr>
+<td>Easy</td>
+<td>+2</td>
+<td>11</td>
+<td>Tasks that are straightforward for characters with relevant skills.</td>
+</tr>
+<tr>
+<td>Moderate</td>
+<td>+1</td>
+<td>10</td>
+<td>Tasks of average difficulty for characters with relevant skills.</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>0</td>
+<td>9</td>
+<td>No modifier for tasks of standard difficulty.</td>
+</tr>
+<tr>
+<td>Hard</td>
+<td>-1</td>
+<td>8</td>
+<td>Tasks that challenge even skilled characters.</td>
+</tr>
+<tr>
+<td>Very Hard</td>
+<td>-2</td>
+<td>7</td>
+<td>Tasks that are difficult even for experts.</td>
+</tr>
+<tr>
+<td>Nearly Impossible</td>
+<td>-3</td>
+<td>6</td>
+<td>Tasks that border on the impossible.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="momentum">Momentum</h3>
+<p>Additional modifiers may come from temporary conditions such as
+<strong>Momentum</strong>, which can provide a +1 bonus to the character's skill
+value for the purpose of determining the target number for any
+subsequent action in the same scene.</p>
+<p><strong>Momentum</strong> is a simple resource that characters either have or don't
+have. When a character has <strong>Momentum</strong>, they <em>must</em> spend it to gain
+the +1 bonus within the same scene.</p>
+<h3 id="contested-actions">Contested Actions</h3>
+<p>When two characters directly oppose each other in an action, such as in
+a contest of strength or a race, both characters make skill checks as
+the initiating character's major action for their turn. The winner is
+determined by comparing the degree of success each character achieves,
+not by comparing the numerical results of their dice rolls.</p>
+<p>The resolution follows this cascading logic:</p>
+<ol>
+<li>Each character independently determines their degree of success by
+    consulting the Degrees of Success and Failure table based on their
+    roll result and target number</li>
+<li>Compare the qualitative outcomes: Critical Success &gt; Exceptional
+    Success &gt; Standard Success &gt; Marginal Failure &gt; Exceptional
+    Failure &gt; Critical Failure</li>
+<li>The character with the higher degree of success wins the opposed
+    action</li>
+<li>If both characters achieve the same degree of success, the character
+    with the higher skill value wins</li>
+<li>If both characters have the same skill value and achieve the same
+    degree of success, the Game Master may call for additional rolls or
+    determine the outcome narratively</li>
+</ol>
+<p>This approach ensures that characters with higher skills have a better
+chance of success while still allowing for dramatic upsets when a
+lower-skilled character achieves a better degree of success.</p>
+<h3 id="contested-extended-actions">Contested Extended Actions</h3>
+<p><img src="static/contested_extended_actions.svg" class="section-icon" /></p>
+<p>A contested extended action represents ongoing struggles between two
+characters that require sustained effort to maintain, such as grappling,
+arm wrestling, or staring contests. These actions work differently from
+regular extended actions in that they involve direct opposition between
+two characters over multiple turns.</p>
+<p>When initiating a contested extended action, the player must specify
+what they want to achieve with the action. This specification determines
+both the skill used and the effect that occurs while the action is
+maintained. The specific effects are determined by the Game Master based
+on the declared goal and the skill used.</p>
+<h4 id="initiating-a-contested-extended-action">Initiating a Contested Extended Action</h4>
+<ol>
+<li><strong><em>*Declaration</em></strong>*<ul>
+<li>A character declares they are attempting to initiate a contested
+  extended action against a specific opponent</li>
+<li>The player specifies what they want to achieve, which determines
+  both the skill used and the effect that occurs while the action is
+  maintained</li>
+</ul>
+</li>
+<li><strong><em>*Initial Contest</em></strong>*<ul>
+<li>The initating character makes a contested skill check against
+  their target, as normal</li>
+<li>The skill used should be appropriate to the declared goal</li>
+</ul>
+</li>
+<li><strong><em>*Resolution</em></strong>*<ul>
+<li>If the initiating character succeeds against their opponent, the
+  contested extended action is initiated and the declared effect
+  begins</li>
+<li>If the initiating character fails, the contested extended action
+  does not begin</li>
+</ul>
+</li>
+</ol>
+<h4 id="maintaining-a-contested-extended-action">Maintaining a Contested Extended Action</h4>
+<p>Once initiated, maintaining a contested extended action requires ongoing
+effort:</p>
+<ol>
+<li><strong><em>*On the Initiating Character's Turn:</em></strong>*<ul>
+<li>The initiating character must declare they are maintaining the
+  contested extended action</li>
+<li>If the initiating character does not declare this, the contested
+  extended action ends</li>
+<li>The opponent is released on their next turn and may act normally</li>
+<li>The initiating character can resume taking normal actions on their
+  subsequent turn</li>
+<li>The initiating character may not take normal actions on the same
+  turn as they released a contested action</li>
+<li>If the initiating character chooses to maintain the contested
+  extended action, they must make another contested action against
+  the same opponent as their major action</li>
+</ul>
+</li>
+<li><strong><em>*On the Opponent's Turn:</em></strong>*<ul>
+<li>The opponent may take other actions during their turn if the type
+  of contested action does not prevent them from doing so</li>
+<li>The declared effect of the contested extended action determines
+  what actions the opponent cannot take</li>
+<li>The opponent may instead choose, as their major action for that
+  turn, to "enter the contest"</li>
+<li>The opponent makes their own contested action against the
+  initiating character of the contested extended action</li>
+<li>This contested action must use the exact same skill that the
+  initiating character used</li>
+<li>The rules for resolving this contested action are the same as for
+  resolving an initiator's contested action</li>
+</ul>
+</li>
+<li><strong><em>*Resolving the Contested Action:</em></strong>*<ul>
+<li>If the initiating character wins, they maintain control of the
+  contested extended action and the declared effect continues</li>
+<li>If the opponent wins, the contested extended action ends and the
+  opponent gains <strong>Momentum</strong> as their upper hand</li>
+<li>Only the initiating character may choose to stop maintaining the
+  contested extended action at any time</li>
+<li>The contested extended action ends immediately when the initiating
+  character chooses to stop maintaining it</li>
+<li>The declared effect of the contested extended action only applies
+  while the action is maintained</li>
+</ul>
+</li>
+</ol>
+<p>This system represents the ongoing nature of physical struggles and
+mental contests that require continuous effort to maintain, while still
+allowing for clear resolution of who has the upper hand at any given
+moment. The non-consensual nature of the opponent's participation
+reflects that they are automatically considered to be resisting the
+initiating character's attempt to maintain control over them.</p>
+<h3 id="group-actions">Group Actions</h3>
+<p>When a group of characters works together on a task, the Game Master
+determines which character has the highest relevant skill. That
+character makes the primary skill check. Other characters may provide
+assistance, granting a +1 bonus to the primary character's roll for each
+assisting character, up to a maximum bonus of +3.</p>
+<p>If two or more characters have the same value in a skill relevant to the
+action (even if the skills themselves are not identical), and the first
+attempt does not go well, the group may attempt the action again in the
+same turn using a different character with the same value in a skill
+relevant to the action as the primary actor. The same bonuses for
+additional helpers still apply to this second attempt. This allows for a
+rapid second attempt by a different character, serving as an exception
+to the general restriction on repeating skill checks.</p>
+<p>Characters can also work independently on the same task. In this case,
+each character makes their own skill check. The Game Master determines
+how the individual results combine to affect the overall outcome.</p>
+<h3 id="extended-actions">Extended Actions</h3>
+<p>Some tasks require sustained effort over time rather than a single roll.
+For these extended actions, the Game Master sets a required number of
+turns based on the complexity and duration of the task. Characters must
+make skill checks on each turn until they have successfully completed
+the required number of turns.</p>
+<p>Extended actions can occur in two contexts:</p>
+<ol>
+<li>
+<p><strong>Planned Extended Actions</strong>: Tasks that are inherently complex or
+    time-consuming, such as crafting items, conducting research, or
+    performing complex repairs.</p>
+</li>
+<li>
+<p><strong>Gritted Retries</strong>: Tasks that were previously failed with a
+    marginal failure and are being retried with renewed determination.
+    In this case, the action requires two turns to succeed as the
+    character pushes themselves harder, and the player must accept a
+    consequence (taking harm, damaging an item, or granting an enemy
+    <strong>Momentum</strong> for their next action, of any kind) as the cost of this
+    extra effort.</p>
+</li>
+</ol>
+<p>The outcome of each turn's check determines the progress:</p>
+<ul>
+<li><strong>Standard Success</strong> or <strong>Exceptional Success</strong>: The character
+  completes the turn's work and counts it toward the total required
+  turns</li>
+<li><strong>Critical Success</strong>: The character finishes the rest of the task all
+  in that one turn, immediately completing the entire extended action</li>
+<li><strong>Marginal Failure</strong>: The character doesn't make progress on this turn
+  but can continue the task on subsequent turns without penalty</li>
+<li><strong>Exceptional Failure</strong> or <strong>Critical Failure</strong>: The character fails
+  catastrophically and must attempt the task all over again (if the Game
+  Master will allow a retry)</li>
+</ul>
+<p>This system allows for dramatic moments where a character can suddenly
+overcome a long task with a single amazing roll, while also providing
+meaningful consequences for poor performance that don't necessarily end
+the action immediately.</p>
+<p>The time between checks and other consequences of failures are
+determined by the Game Master based on the narrative circumstances.</p>
+<h3 id="logic-of-action-examples">Logic of Action Examples</h3>
+<h2 id="consequences">Consequences</h2>
+<p><img src="static/consequences.svg" class="section-icon" /></p>
+<p>The outcomes of actions in OpenAxiom are determined by the degree of
+success or failure. Rolling under the target number results in success,
+while rolling over results in failure.</p>
+<h3 id="degrees-of-success-and-failure">Degrees of Success and Failure</h3>
+<p>Not all successes and failures are equal. OpenAxiom distinguishes
+between different degrees of success and failure based on how much the
+roll deviates from the target number.</p>
+<table>
+<thead>
+<tr>
+<th>Degree of Success/Failure</th>
+<th>Roll Result</th>
+<th>Description</th>
+<th>GM Guidance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical Success</td>
+<td>3 or 4</td>
+<td>Exceptional performance that exceeds normal capabilities.</td>
+<td>Narrate as particularly impressive or fortunate outcomes.</td>
+</tr>
+<tr>
+<td>Exceptional Success</td>
+<td>5 or more below target number</td>
+<td>Above-average performance.</td>
+<td>May provide minor additional benefits.</td>
+</tr>
+<tr>
+<td>Standard Success</td>
+<td>Equal to target or 1-4 below target</td>
+<td>Competent performance.</td>
+<td>Standard success with no additional benefits.</td>
+</tr>
+<tr>
+<td>Marginal Failure</td>
+<td>1-4 above target number</td>
+<td>Near-success.</td>
+<td>May have some positive outcomes despite the overall failure.</td>
+</tr>
+<tr>
+<td>Exceptional Failure</td>
+<td>5 or more above target number</td>
+<td>Particularly poor performance.</td>
+<td>May have additional negative consequences besides simple failure</td>
+</tr>
+<tr>
+<td>Critical Failure</td>
+<td>17 or 18</td>
+<td>Catastrophic performance.</td>
+<td>Narrate as particularly disastrous or unfortunate outcomes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="probability-of-degrees-of-success-and-failure-at-different-difficulty-levels">Probability of Degrees of Success and Failure at Different Difficulty Levels</h3>
+<p>The 3d6 roll follows a bell curve distribution, with results near the
+middle (10-11) being most common and results at the extremes (3 and 18)
+being rare. The graph below shows the probability of achieving each
+degree of success or failure for a character with a skill of 9 at
+different difficulty levels:</p>
+<p><img src="static/probability_distribution.svg"
+class="probability-distribution-graph" /></p>
+<p>This visualization shows how the probabilities shift as the difficulty
+of a task changes. At easier difficulties (higher target numbers),
+success becomes more likely, while at harder difficulties (lower target
+numbers), failure becomes more likely. The graph makes it clear that
+characters with average skills (target 9) on medium difficulty tasks
+will most commonly experience either a standard success or a marginal
+failure.</p>
+<h3 id="critical-success">Critical Success</h3>
+<p>A critical success represents an exceptional performance that exceeds
+normal capabilities. When a character achieves a critical success, they
+not only accomplish their intended goal but often gain additional
+benefits or insights that weren't anticipated. These might include:</p>
+<ul>
+<li>Gaining extra information beyond what was sought</li>
+<li>Completing the task with time to spare</li>
+<li>Creating an advantageous situation for future actions</li>
+<li>Impressing observers or gaining reputation benefits</li>
+<li>Avoiding potential complications or hazards</li>
+</ul>
+<p>In terms of character advancement, critical successes have special
+significance:</p>
+<ol>
+<li>
+<p>When a critical success occurs at a pivotal story moment, it opens
+    the possibility for the player to spend story points to gain new
+    positive traits through the Crucible Roll process, as detailed in
+    the <a href="character_mechanics.html#gaining-positive-traits">Character Advancement section on Gaining Positive
+    Traits</a>. This
+    represents the character having a transformative experience that
+    could fundamentally change who they are.</p>
+</li>
+<li>
+<p>Even if the critical success did not occur at a pivotal story
+    moment, the player is granted one story point that they can bank for
+    future use. This reward recognizes that exceptional performance,
+    even in routine circumstances, demonstrates the character's growing
+    capabilities and potential.</p>
+</li>
+</ol>
+<p>Critical successes should be celebrated as significant moments in a
+character's development, representing times when they exceed their
+normal limits and potentially glimpse new possibilities for growth.</p>
+<h3 id="exceptional-success">Exceptional Success</h3>
+<p>An exceptional success indicates above-average performance that goes
+beyond what was expected. Characters who achieve exceptional successes:</p>
+<ul>
+<li>Accomplish their goals with notable skill</li>
+<li>May gain minor additional benefits</li>
+<li>Create positive ripple effects in the narrative</li>
+<li>Demonstrate expertise that might influence NPC reactions</li>
+</ul>
+<p>Exceptional successes represent the character operating at peak
+performance and can be used by the Game Master to highlight a
+character's expertise or specialties.</p>
+<p>In addition to these narrative benefits, exceptional successes grants
+characters <strong>Momentum</strong>, which provides a mechanical benefit for
+subsequent actions. The rules for how Momentum applies to future skill
+checks are detailed in the <a href="logic_of_action.html#momentum">Momentum
+section</a> under Actions. The logic for how
+it is gained is as follows:</p>
+<ul>
+<li>If the player didn't already have Momentum, then they gain it.</li>
+<li>If the player had Momentum for the skill check that resulted in the
+  current exceptional success, they gain Momentum again.</li>
+<li>If the player already had Momentum, and gained it again, even without
+  using it, they keep it.</li>
+</ul>
+<p>This represents characters "getting into the flow" or "getting high on
+success," encouraging players to keep the actual momentum of play going,
+and giving them an interesting tatical advantage to play with, as they
+can act in more risky ways.</p>
+<h3 id="standard-success">Standard Success</h3>
+<p>A standard success represents competent performance - the character
+achieves their intended goal without complications but also without
+additional benefits. This is the most common outcome for characters with
+average skills attempting moderate difficulty tasks. Standard successes:</p>
+<ul>
+<li>Achieve the intended goal directly</li>
+<li>Proceed without narrative embellishment</li>
+<li>Represent reliable, everyday competence</li>
+<li>Form the backbone of routine character activities</li>
+</ul>
+<p>Standard successes are important because they keep the game moving
+forward without bogging it down in constant exceptional outcomes. They
+represent the baseline of competent performance that players should
+expect from their characters.</p>
+<h3 id="marginal-failure">Marginal Failure</h3>
+<p>A marginal failure indicates a near-success where the character almost
+achieved their goal. When a character suffers a marginal failure, they
+have one of two choices. They can <strong>accept the failure</strong> and move on, or
+they can <strong>retry with grit</strong>.</p>
+<p><strong>Retry With Grit</strong>: The character can retry the action with renewed
+determination, putting more effort into the attempt. This approach turns
+the desired action into an Extended Action that must last two turns, but
+it also comes with a cost. The player rolls 1d6 on the Marginal Failure
+Outcomes Table to determine the specific consequence that represents the
+toll of this extra effort.</p>
+<table>
+<thead>
+<tr>
+<th>Roll 1d6</th>
+<th>Marginal Failure Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1-2</td>
+<td><strong>Take Harm</strong>: The character takes one level of harm on a relevant tracker, but it can't push the tracker past level 1. The physical or mental strain of pushing themselves takes its toll.</td>
+</tr>
+<tr>
+<td>3-4</td>
+<td><strong>Item Damage</strong>: A relevant item (that is not a skill prerequisite) becomes damaged and temporarily unusable, but can be repaired. The intense effort damages their equipment or resources.</td>
+</tr>
+<tr>
+<td>5-6</td>
+<td><strong>Enemy Momentum</strong>: An enemy gains <strong>Momentum</strong> for their next action, of any kind. The delay and initial shock of failing the action gives the enemy initiative.</td>
+</tr>
+</tbody>
+</table>
+<p>While the retry takes longer for the player, the increased effort of an
+Extended Action makes it more likely to succeed.</p>
+<h3 id="exceptional-failure">Exceptional Failure</h3>
+<p>An exceptional failure represents particularly poor performance that
+goes beyond simple failure. These outcomes:</p>
+<ul>
+<li>Create additional negative consequences beyond simple failure</li>
+<li>May harm the character's position or resources</li>
+<li>Can damage reputation or relationships</li>
+<li>Often require additional recovery actions</li>
+</ul>
+<p>Exceptional failures should have meaningful consequences that affect the
+narrative, but shouldn't be so punishing as to derail the game. They
+work best when they create interesting complications rather than simple
+setbacks.</p>
+<p>When a character suffers an exceptional failure, the player rolls 1d6 on
+the Exceptional Failure Outcomes Table to determine the specific
+consequence:</p>
+<table>
+<thead>
+<tr>
+<th>Roll 1d6</th>
+<th>Exceptional Failure Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Take Significant Physical Harm</strong>: The character takes one level of physical harm on a relevant tracker (can push the harm tracker up to level 2)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Serious Item Damage</strong>: Any item (a treasured lore item, skill prerequisite or skill check in a box) becomes damaged and temporarily unusable (but can be repaired)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Enemy Momentum</strong>: An enemy gains <strong>Momentum</strong> for their next action, of any kind</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Worsening Situation</strong>: The character's action not only fails but actively makes the situation worse. The Game Master describes how the failure creates additional complications or obstacles. In addition, the character takes one level of mental harm on a relevant tracker (can push the harm tracker up to level 2)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Resource Drain</strong>: A valuable resource is expended or lost. This could be ammunition, power cells, medical supplies, or other relevant consumables. If the character has no applicable resources, they instead suffer a level of mental harm as they realize their unpreparedness</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Reputation Damage</strong>: The character's failure is witnessed or becomes known to others, damaging their reputation or relationships. This is particularly relevant for social interactions but can apply to any situation where others might observe the failure. The character suffers a -1 penalty to all Social skill checks for the remainder of the scene</td>
+</tr>
+</tbody>
+</table>
+<h3 id="critical-failure">Critical Failure</h3>
+<p>A critical failure indicates catastrophic performance that can have
+severe narrative consequences. These might include:</p>
+<ul>
+<li>Creating dangerous situations for the character or allies</li>
+<li>Attracting unwanted attention from enemies</li>
+<li>Damaging equipment or resources</li>
+<li>Causing significant setbacks to plans</li>
+</ul>
+<p>In addition to these narrative consequences, critical failures have
+specific mechanical effects. When a character suffers a critical
+failure, they move up one level on a harm tracker related to the skill
+that was being used when the skill check failed, as detailed in the
+<a href="character_mechanics.html#character-status-effects">Character Status Effects
+section</a>.</p>
+<p>If multiple harm trackers could apply, the Game Master should choose the
+one with the current lowest level, following the <a href="character_mechanics.html#least-harmed-principle">Least Harmed
+Principle</a>. This
+represents the character compensating for their wounds by leaning more
+heavily on their other capabilities.</p>
+<p>A critical failure can only push any harm tracker up to level 2
+(Impaired). Beyond that point, there may be narrative consequences to a
+critical failure, but no additional mechanical effects. This limitation
+prevents critical failures from being overly punitive while still
+providing meaningful consequences for catastrophic performance.
+Information about <a href="character_mechanics.html#harm-tracker-levels-and-penalties">Harm Tracker Levels and
+Penalties</a>
+can be found in the Character Mechanics section.</p>
+<p>Critical failures are dramatic moments that can shift the direction of a
+scene or even an entire campaign. They should be used sparingly and with
+consideration for their impact on the overall narrative.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="core_game_loop.html" class="btn btn-neutral float-left" title="Core Game Loop"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="combat.html" class="btn btn-neutral float-right" title="Combat">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="core_game_loop.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="combat.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

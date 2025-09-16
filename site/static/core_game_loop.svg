@@ -1,0 +1,6 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A circular arrow representing the game loop, with two distinct sections for tactical and scene time -->
+  <circle cx="50" cy="50" r="40" fill="none" stroke="#AECBFA" stroke-width="8"/>
+  <path d="M 50 10 L 50 30 M 90 50 L 70 50 M 50 90 L 50 70 M 10 50 L 30 50" stroke="#4285F4" stroke-width="8" stroke-linecap="round"/>
+  <rect x="35" y="35" width="30" height="30" rx="6" fill="#A8DAB5"/>
+</svg>

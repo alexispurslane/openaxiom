@@ -1,0 +1,17 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- A stylized representation of consequences with harm trackers and injury symbols. -->
+  <defs>
+    <style>
+      .harm { fill: #EA4335; }
+      .injury { fill: #FBBC04; }
+    </style>
+  </defs>
+  <!-- Harm tracker indicators -->
+  <circle cx="30" cy="30" r="8" class="harm"/>
+  <circle cx="50" cy="30" r="8" class="harm"/>
+  <circle cx="70" cy="30" r="8" class="harm"/>
+  <!-- Injury symbols -->
+  <path d="M 25 60 L 35 70 M 35 60 L 25 70" stroke="#FBBC04" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 45 60 L 55 70 M 55 60 L 45 70" stroke="#FBBC04" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 65 60 L 75 70 M 75 60 L 65 70" stroke="#FBBC04" stroke-width="4" stroke-linecap="round"/>
+</svg>

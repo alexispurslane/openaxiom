@@ -1,0 +1,269 @@
+# 7. Channeling
+
+<img src="static/channeling.svg" class="section-icon" />
+
+Channeling is the universal mechanism for extraordinary abilities. This
+system provides a genre-less and setting-less framework for powers like
+psionics, magic, nanotech manipulation, reality bending, or
+quickhacking. The rules for Channeling are designed to be abstract and
+flexible. This allows Game Masters to adapt them to any setting.
+
+Like the combat system, the Channeling rules are optional. Tables that
+prefer a lower-fantasy or more grounded setting can choose to ignore
+this chapter entirely. These rules are for tables that enjoy characters
+with supernatural or superhuman powers.
+
+## 7.1. The Channeling System
+
+The Channeling system is based on a character's skill, ability slots,
+and the specific abilities the character has prepared.
+
+### 7.1.1. Channeling Skills
+
+Channeling is a general skill category. This skill represents a
+character's ability to harness and control extraordinary energies or
+forces. Like other skills, it has a numerical value. The default value
+for the general **Channeling** skill is 9.
+
+Specific types of Channeling are represented as specializations. For
+example:
+
+- **Channeling (Magic)** for spellcasters.
+- **Channeling (Psionics)** for psychics.
+- **Channeling (Nanotech)** for characters manipulating microscopic
+  robots.
+- **Channeling (Cybernetics)** for characters manipulating implants and
+  networked devices.
+- **Channeling (Reality)** for reality benders.
+
+The Game Master determines which Channeling specializations are
+available in the game world. Players can use the general **Channeling**
+skill for a specialized task with the standard penalties.
+
+### 7.1.2. Ability Slots
+
+A character's ability to manage and prepare Channeling abilities is
+determined by their highest skill value within the **Channeling** skill
+hierarchy. This skill value determines the number of ability slots a
+character has.
+
+| Best Channeling Skill | Ability Slots |
+|-----------------------|---------------|
+| 9-10                  | 1             |
+| 11-12                 | 2             |
+| 13-14                 | 3             |
+| 15-16                 | 4             |
+| 17-18                 | 5             |
+
+A character can prepare a number of abilities equal to their available
+slots. These abilities are chosen from a list of abilities the character
+knows. A character can only change their prepared abilities between game
+sessions. This represents a period of rest, meditation, or
+recalibration.
+
+As a character's skill value increases through character advancement,
+their number of ability slots also increases, representing the greater
+number of abilities they can wrangle.
+
+### 7.1.3. Channeling Abilities
+
+Channeling abilities are specific applications of a character's power.
+Each ability has a defined effect, an Action Point (AP) cost, and a
+`Required Skill` level. Some powerful abilities may also require
+knowledge of other, more basic abilities as a ****Prerequisite****. This
+represents a character building on their foundational knowledge to
+create more complex effects.
+
+By default, activating an ability is a single Major Action that does not
+require a skill check from the user; the power simply works. However,
+more complex abilities may have different activation requirements,
+drawing on other core mechanics of the game. These can include requiring
+prerequisite items, or functioning as a Group Action, an Extended
+Action, or even a Contested Extended Action to initiate. These special
+conditions will be listed in the ability's definition.
+
+If an ability targets another character who is aware of the attempt, the
+target may be able to resist. This is resolved as a [Contested
+Action](./logic_of_action.md#contested-actions). The Channeller does not
+roll; their 'roll' is considered an automatic ****Standard Success****.
+The defender then rolls their relevant defense skill. The outcome is
+determined by the defender's degree of success:
+
+- **Failure (Marginal, Exceptional, or Critical):** The ability takes
+  its full effect.
+- **Standard Success:** The ability takes its full effect, as the
+  channeler wins the tie. However, the defender gains **Momentum**.
+- **Exceptional Success:** The defender successfully overcomes the
+  ability's effect. The power rebounds, and the channeler gains one
+  level of Flux.
+- **Critical Success:** The defender not only overcomes the ability, but
+  turns it back on the channeler. The ability fails, and the channeler
+  must immediately roll on the Resonance Cascade table.
+
+The format for defining a Channeling ability is as follows:
+
+| Ability Name | Required Skill |
+|----|----|
+| Prerequisites | \[List of required abilities, or None\] |
+| Activation | \[Activation method, e.g., Major Action, Extended Action (3 turns)\] |
+| AP Cost | \[AP cost\] |
+| Effect | \[Description of the effect\] |
+| Defense | \[Skill used for defense, if any\] |
+
+#### 7.1.3.1. Example Abilities
+
+Here are some example abilities to illustrate the system.
+
+| Psychic Push | Channeling (Psionics) 10 |
+|----|----|
+| Prerequisites | None |
+| Activation | Major Action |
+| AP Cost | 6 |
+| Effect | The character creates a telekinetic force. This force can push an object or character of human size up to 3 hexes away. This does no damage. |
+| Defense | Physical (Strength) |
+
+| Telekinetic Barrier | Channeling (Psionics) 13 |
+|----|----|
+| Prerequisites | Psychic Push |
+| Activation | Major Action |
+| AP Cost | 10 |
+| Effect | Creates a temporary, invisible wall of force in an adjacent hex. The wall is 2 hexes wide and blocks line of sight and movement for one round. |
+| Defense | None |
+
+| Minor Heal | Channeling (Magic) 11 |
+|----|----|
+| Prerequisites | None |
+| Activation | Major Action |
+| AP Cost | 8 |
+| Effect | The character touches a character. The target heals 1d6 HP on a single body location of the channeler's choice. This cannot be used on oneself. |
+| Defense | None |
+
+| Flesh Knit | Channeling (Nanotech) 11 |
+|----|----|
+| Prerequisites | None |
+| Activation | Major Action |
+| AP Cost | 8 |
+| Effect | The channeler directs a swarm of nanites to repair living tissue. The target heals 1d6 HP on a single body location. This can be used on oneself. |
+| Defense | None |
+
+| Weapon Glitch | Channeling (Cybernetics) 12 |
+|----|----|
+| Prerequisites | None |
+| Activation | Major Action |
+| AP Cost | 8 |
+| Effect | Targets a character using a weapon with a smart-link or other cybernetic integration. The weapon is rendered inoperable for the target's next turn. |
+| Defense | Computers (Security) |
+
+| System Shock | Channeling (Cybernetics) 13 |
+|----|----|
+| Prerequisites | Weapon Glitch |
+| Activation | Major Action |
+| AP Cost | 10 |
+| Effect | The character sends a disruptive signal to a target with cybernetic implants. The target gains one level on their Mental Harm tracker. This cannot push the tracker beyond level 3. |
+| Defense | Computers (Security) |
+
+| Reality Warp | Channeling (Reality) 15 |
+|----|----|
+| Prerequisites | None |
+| Activation | Extended Action (2 turns) |
+| AP Cost | 12 |
+| Effect | The character may alter a minor, non-living detail of the environment. For example, changing the color of a wall, creating a small object, or making a door unlock. The change must be temporary and cannot directly harm a character. |
+| Defense | None |
+
+## 7.2. Modifying Abilities with Techniques
+
+Channelers can learn to alter their abilities on the fly, applying
+special techniques to change how their powers manifest. Applying a
+technique is a choice made just before an ability is activated. A
+character can apply multiple techniques to a single ability, provided
+they can pay the combined costs.
+
+The following techniques are available:
+
+| Technique | Cost | Effect |
+|----|----|----|
+| **Distant** | +2 AP | Doubles the ability's effective range. If the ability does not have a range, this technique has no effect. |
+| **Subtle** | +1 Flux | The ability manifests with no obvious sensory effects (e.g., no flash of light, no sound). This makes its source difficult to pinpoint. |
+| **Empowered** | +4 AP, +1 Flux | Increases the numerical effects of the ability (damage, healing, number of targets, etc.) by 50%, rounded up. |
+| **Swift** | Double AP Cost | Halves the number of turns required for an ability activated by an Extended or Contested Extended Action. |
+| **Non-lethal** | +1 AP | Any damage inflicted by the ability is temporary. The target recovers fully at the end of the scene without lasting injury. This only applies to abilities that inflict Physical harm. |
+
+## 7.3. Channeling and Consequences
+
+Using Channeling abilities can have consequences, both for the target
+and sometimes for the channeler.
+
+### 7.3.1. Inflicting Harm
+
+Some Channeling abilities can inflict harm. The type of harm depends on
+the nature of the ability. A psychic attack might inflict Mental harm. A
+magical fireblast would inflict Physical harm. A public humiliation
+curse could inflict Social harm. The ability's description will specify
+the type and amount of harm. This harm is applied to the relevant [Harm
+Tracker](./character_mechanics.md#character-status-effects).
+
+### 7.3.2. The Perils of Channeling
+
+Channeling powerful, unstable energies has consequences. Using abilities
+beyond one's level of mastery introduces risk and instability in the
+form of Flux.
+
+#### 7.3.2.1. Pushing Your Limits and Gaining Flux
+
+A character can attempt to use a Channeling ability even if their
+relevant skill is lower than the ability's `Required Skill`. This is
+known as "Pushing." While this allows for greater flexibility and power,
+it comes at the cost of gaining Flux.
+
+For each point a character's skill is below the requirement, they gain
+one level of Flux immediately after the ability is used. For example,
+using an ability with a `Required Skill` of 13 when your character's
+skill is 11 will cause you to gain two levels of Flux.
+
+#### 7.3.2.2. The Flux System
+
+Flux is a tracker, similar to the Harm trackers, that represents a
+character's growing instability from channeling energies beyond their
+control. It has four levels. A character's Flux level can only increase
+from Pushing, and it is reduced through rest or specific actions.
+
+#### 7.3.2.3. Flux Levels and Effects
+
+- **Level 1 (Flickering):** The character's control is slightly
+  compromised. Any character defending against their abilities gains a
+  +1 bonus to the skill they're rolling against, increasing their
+  chances of resisting.
+- **Level 2 (Unstable):** The power becomes volatile. Every time the
+  character Pushes to gain Flux, including the instance that moved them
+  up to this level, a **Resonance Cascade** occurs.
+- **Level 3 (Overloaded):** The character is struggling to contain the
+  power. They take a -2 penalty to all non-Channeling skill checks, in
+  addition to the effects of the previous level.
+- **Level 4 (Burnout):** The character is overwhelmed. They immediately
+  take one level of Mental Harm and cannot use any Channeling abilities
+  until their Flux is reduced below Level 4.
+
+#### 7.3.2.4. Resonance Cascade
+
+When a Resonance Cascade is triggered, roll a d6 on the following table
+to determine the outcome:
+
+| Roll d6 | Outcome |
+|----|----|
+| 1 | **Unexpected Failure:** The ability fails to manifest. The AP cost is spent and Flux is gained, but nothing happens. |
+| 2 | **Ability Backlash:** The ability targets the channeler instead of their intended target. If the ability was self-targeted, it hits the nearest enemy instead. If that is not possible, it fails. |
+| 3 | **Chaotic Scramble:** The intended ability fails. Instead, one of the channeler's other prepared abilities (chosen randomly) activates on the original target. |
+| 4 | **Energy Bleed:** The raw power lashes back at the channeler. They immediately take one level of Harm on a tracker relevant to their Channeling type (e.g., Physical for Nanotech, Mental for Psionics). |
+| 5 | **Wild Manifestation:** The ability's effect also hits a random target (friend or foe) within 5 hexes, but with half effect. If no other target is in range, the channeler takes the half effect. |
+| 6 | **Power Surge:** The ability's numerical effects (damage, healing, range, etc.) are unexpectedly doubled. This can be beneficial or harmful depending on the situation. |
+
+#### 7.3.2.5. Reducing Flux
+
+A character can reduce their Flux in two ways:
+
+1.  **Rest:** A full night of rest reduces a character's Flux by one
+    level.
+2.  **Grounding:** A character can take a Major Action to ground
+    themselves. This requires a skill check against an effective skill
+    value of 10, the same for all characters no matter their actual
+    skill level. A success reduces Flux by one level.

@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+/* ReadTheDocs theme customizations */
+.wy-nav-content {
+    max-width: 65ch;
+}
+
+.wy-nav-content-wrap {
+    background: #f8f8f8;
+}
+
+.wy-nav-side {
+    background: #343131;
+}
+
+.wy-side-nav-search {
+    background-color: #d63031;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #d63031;
+}
+
+.wy-nav-top {
+    background-color: #d63031;
+}
+
+/* Custom styles for content */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8; /* Off-white background */
+    color: #333333; /* Dark text for readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
+
+main, .wy-nav-content {
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+/* Image styling - scale to body width while maintaining aspect ratio */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em 0;
+}
+
+/* SVG section icons */
+.section-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 1em auto;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.2em 1em;
+    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2em;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.2em 1em;
+    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.2em 1em;
+    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    font-family: 'Lora', serif;
+    font-size: 1.3em;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+    text-align: left;
+    position: relative;
+    padding: 0.2em 1em;
+    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+h5 {
+    font-family: 'Lora', serif;
+    font-size: 1.1em;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+    text-align: left;
+    position: relative;
+    padding: 0.2em 1em;
+    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+h6 {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+    text-align: left;
+    position: relative;
+    padding: 0.2em 1em;
+    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+h1:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #d63031);
+    border-radius: 2px;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #d63031);
+    border-radius: 2px;
+}
+
+h3:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 3px;
+    background: linear-gradient(90deg, #ff6b6b, #d63031);
+    border-radius: 2px;
+}
+
+h4:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #d63031);
+    border-radius: 2px;
+}
+
+h5:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #d63031);
+    border-radius: 2px;
+}
+
+h6:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #d63031);
+    border-radius: 2px;
+}
+
+/* Spiced up bold text */
+strong, b {
+    color: #d63031; /* Red accent color */
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: #d63031; /* Red accent color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code, pre {
+    font-family: 'Fira Code', monospace;
+    background-color: #eeeeee;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+pre {
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+blockquote {
+    border-left: 4px solid #d63031; /* Red accent color */
+    padding: 1em;
+    margin: 1em 0;
+    color: #333333;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    font-style: italic;
+}
+
+blockquote.warning {
+    border-left: 4px solid #e17055; /* Different red for warnings */
+    font-style: normal;
+}
+
+/* Server-generated file list navigation bar */
+header {
+    background-color: #eeeeee;
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+header nav h1 {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    color: #333333;
+    margin: 0;
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    text-align: left;
+    position: static;
+    transform: none;
+    display: block;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+header nav li {
+    margin-left: 1em; /* Space between items */
+}
+
+header nav a {
+    color: #d63031; /* Red accent color */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav strong {
+    color: #333333; /* Dark color for current page */
+    text-shadow: none; /* Remove shadow for current page */
+    font-weight: 700;
+}
+
+/* Adjustments for ReadTheDocs theme */
+.wy-nav-content-wrap {
+    background: #f8f8f8;
+}
+
+.wy-nav-content {
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: 2em;
+    padding-top: 6em; /* Add padding to account for fixed navbar */
+    margin-top: 1em; /* Additional top margin for better spacing */
+}
+
+main {
+    max-width: 65ch;
+    margin: 0 auto;
+    padding: 2em;
+    padding-top: 6em; /* Add padding to account for fixed navbar */
+    margin-top: 1em; /* Additional top margin for better spacing */
+}
+
+#TOC ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    text-align: left; /* Ensure TOC text is always left aligned */
+}
+
+#TOC li {
+    margin-bottom: 0.5em;
+    text-align: left; /* Ensure TOC items are left aligned */
+}
+
+#TOC li li {
+    margin-bottom: 0.2em;
+    padding-left: 1.5em;
+    font-size: 0.9em;
+    text-align: left; /* Ensure nested TOC items are left aligned */
+}
+
+/* Ensure links in TOC are left aligned */
+#TOC a {
+    text-align: left;
+    display: inline-block;
+}
+
+/* Table of Contents styling */
+#TOC {
+    background-color: #eeeeee;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Collapsible TOC toggle button */
+#toc-toggle {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    color: #d63031;
+    user-select: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 1em;
+    padding: 0;
+}
+
+#toc-toggle::before {
+    content: "▼ ";
+}
+
+#TOC.collapsed #toc-toggle::before {
+    content: "▶ ";
+}
+
+#TOC.collapsed > ul {
+    display: none;
+}
+
+/* Side TOC for wider screens */
+@media (min-width: 1200px) {
+    #TOC {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        overflow-y: auto;
+        width: 300px;
+        margin: 0;
+        border-radius: 0;
+        border-right: 1px solid #ddd;
+        z-index: 1000;
+        text-align: left; /* Ensure TOC container is left aligned */
+        margin-top: 4em; /* Account for fixed header */
+        height: calc(100vh - 4em); /* Adjust height to account for header */
+    }
+    
+    main {
+        max-width: 65ch;
+        margin: 0 auto;
+        margin-left: 340px; /* 300px sidebar + 40px margin */
+        padding: 2em;
+        padding-top: 6em; /* Add padding to account for fixed navbar */
+    }
+    
+    #TOC.collapsed {
+        width: 40px;
+        overflow: hidden;
+    }
+    
+    #TOC.collapsed + main {
+        margin-left: 80px; /* 40px collapsed sidebar + 40px margin */
+    }
+    
+    #TOC.collapsed #toc-toggle {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        padding: 1em 0.5em;
+        text-align: center;
+    }
+    
+    #TOC.collapsed #toc-toggle::before {
+        content: "▶";
+    }
+    
+    #TOC.collapsed > ul {
+        display: none;
+    }
+}
+
+/* Table styling for better clarity */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+    color: #333333;
+}
+
+table th, table td {
+    border: 1px solid #dddddd;
+    padding: 0.5em;
+    text-align: left;
+}
+
+table th {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* Trait definition table styling */
+table.trait-definition {
+    background-color: #f0f0f0;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+    border-collapse: separate;
+}
+
+table.trait-definition thead tr {
+    background-color: #e0e0e0;
+    font-family: 'Lora', serif;
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd;
+}
+
+table.trait-definition thead th {
+    border: none;
+    padding: 0.5em;
+    text-align: center;
+}
+
+table.trait-definition tbody td:first-child {
+    font-weight: bold;
+    width: 25%;
+}
+
+table.trait-definition td {
+    border: none;
+    padding: 0.3em 0.5em;
+}
+
+/* Print styles */
+@media print {
+    /* Hide navigation elements */
+    header, nav, .file-list {
+        display: none !important;
+    }
+    
+    /* Remove fixed positioning and padding adjustments */
+    main {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+        margin-left: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    /* Ensure content flows naturally for printing */
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+        color: black;
+        background: white;
+        text-align: justify;
+        hyphens: auto;
+    }
+    
+    /* Page break controls */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+    
+    /* Table print adjustments */
+    table {
+        page-break-inside: avoid;
+    }
+    
+    tr {
+        page-break-inside: avoid;
+    }
+    
+    /* Image adjustments for printing */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    
+    /* Section icons */
+    .section-icon {
+        width: 75px;
+        height: 75px;
+    }
+    
+    /* Remove shadows and background effects for cleaner print */
+    h1, h2, h3, h4, h5, h6 {
+        background: none !important;
+        color: black !important;
+        border-bottom: 1px solid #ccc !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    blockquote {
+        border-left: 4px solid #ccc !important;
+        background-color: #f9f9f9 !important;
+        color: black !important;
+    }
+    
+    /* Adjust link colors for print */
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+    
+    /* Hide interactive elements */
+    #searchBox, .search-container {
+        display: none !important;
+    }
+    
+    /* Ensure code blocks are readable */
+    code, pre {
+        background-color: #f0f0f0 !important;
+        color: black !important;
+        border: 1px solid #ccc !important;
+    }
+    
+    /* Table of Contents adjustments */
+    #TOC {
+        background: none !important;
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+    }
+    
+    /* Remove any fixed positioning in print */
+    #TOC {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+/* Additional ReadTheDocs theme overrides */
+.rst-content .admonition {
+    background: #f0f0f0;
+    border-left: 4px solid #d63031;
+}
+
+.rst-content .admonition-title {
+    background: #d63031;
+    color: white;
+}
+
+.rst-content code {
+    background: #eeeeee;
+    border: 1px solid #ddd;
+}
+
+.rst-content pre {
+    background: #eeeeee;
+    border: 1px solid #ddd;
+}
+
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal;
+}
+
+.wy-table-bordered-all, .wy-table-bordered-all tbody > tr > td, .wy-table-bordered-all thead > tr > th {
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Combat - OpenAxiom TTRPG SRD</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="static/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Combat";
+        var mkdocs_page_input_path = "combat.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> OpenAxiom TTRPG SRD
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="openaxiom_manual.html">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_creation.html">Character Creation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_mechanics.html">Character Mechanics</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="core_game_loop.html">Core Game Loop</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="logic_of_action.html">Logic of Action</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Combat</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#the-attack-sequence">The Attack Sequence</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#beyond-attacks-other-combat-actions">Beyond Attacks: Other Combat Actions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-injury-system">The Injury System</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#health-body-locations">Health &amp; Body Locations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#consequences-of-injury">Consequences of Injury</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#crippling-injury">Crippling Injury</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#critical-success-on-attack">Critical Success on Attack</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#systemic-shock">Systemic Shock</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#defeat-and-death">Defeat and Death</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#non-harm-tracker-status-effects">Non-Harm-Tracker Status Effects</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-combat-rules">Advanced Combat Rules</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#spatial-relations">Spatial Relations</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#setting-up-the-battlefield">Setting Up the Battlefield</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#posture-system">Posture System</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#movement">Movement</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#line-of-sight">Line of Sight</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#range">Range</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#flanking">Flanking</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#zone-of-control">Zone of Control</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#vehicles">Vehicles</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#vehicle-statistics">Vehicle Statistics</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#steering-and-movement">Steering and Movement</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#using-vehicles-in-combat">Using Vehicles in Combat</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="channeling.html">Channeling</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="social_relations.html">Social Relations</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="game_mastering.html">Game Mastering</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">OpenAxiom TTRPG SRD</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Combat</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="combat">Combat</h1>
+<p><img src="static/combat.svg" class="section-icon" /></p>
+<p>Combat situations arise naturally in many genres and settings. OpenAxiom
+recognizes that violence is sometimes necessary in fiction, and that in
+fact it is often a key aspect of why people enjoy TTRPGs, and so
+provides mechanics that make these scenes engaging and meaningful,
+providing enough simulationist crunch to add consistent and serious
+consequences and interesting tactical choices.</p>
+<p>At the same time, OpenAxiom recognizes that combat may not be the goal
+of some tables. As a result, the combat system is designed to be
+optional, not strictly necessary to character progression or
+development. Game Masters <strong>may choose to avoid the combat rules
+entirely if they wish!</strong> These are designed for tables that <em>like</em>
+combat. If your table wants to focus on narrative, it can simply focus
+on the core <a href="character_mechanics.html">character mechanics</a> and <a href="logic_of_action.html">logic of
+action</a> rules, using Contested Actions or Contested
+Extended Actions to simulate combat when needed. This is why the health
+and body locations system is specified <em>here</em>, and not in the character
+mechanics section.</p>
+<p>When characters enter combat, the game shifts to the Tactical Time round
+structure as defined in the <a href="core_game_loop.org">core game loop</a>. This
+shift to Tactical Time is mandatory during combat encounters, ensuring
+that all actions occur in a consistent and fair sequence. During
+Tactical Time, each character takes turns performing actions, with
+initiative determined by relevant skills and traits. This system allows
+for detailed resolution of combat actions while maintaining the pace and
+excitement of violent confrontation.</p>
+<h2 id="the-attack-sequence">The Attack Sequence</h2>
+<p><img src="static/combat_sequence.svg" class="section-icon" /></p>
+<p>When characters enter combat, the game shifts to the Tactical Time round
+structure as defined in the <a href="core_game_loop.html">core game loop</a>. The
+full sequence of play during a round in combat is defined there,
+including how initiative is determined and how players take turns
+performing actions. This section describes only the sequence of steps
+required to perform the "Attack" Major Action under Tactical Time.
+Remember that attacking is just one of many possible Major Actions you
+can take during your turn in combat.</p>
+<p>All weapons have a required skill level that must be met or exceeded to
+use them effectively. The action point cost to make an attack with a
+weapon is the standard 6 AP for a Major Action plus the additional cost
+based on skill difference. This additional cost is determined by
+subtracting the character's skill level from the weapon's required skill
+level, with a minimum additional cost of 0 AP. For example, if a
+character has a <strong>Combat (Melee) (Sword)</strong> skill of 12 and the sword
+requires a skill level of 10, the attack would cost 6 AP (6 + 10 - 12 =
+6 + -2, minimum 0 = 6). If the character's skill is significantly lower
+than the weapon's requirement, the attack costs more AP. For instance,
+if the character has a skill of 8 and the weapon requires 10, the attack
+would cost 8 AP (6 + 10 - 8 = 8).</p>
+<p>The sequence of steps required to do the "Attack" Major Action under
+Tactical Time follows this sequence:</p>
+<ol>
+<li>
+<p><strong>Declare</strong>: The attacker declares their attack, specifying their
+    target, the location they are aiming for, and the weapon they are
+    using.</p>
+</li>
+<li>
+<p><strong>Calculate Cost</strong>: The action point cost of the attack is
+    calculated (6 AP base + weapon's required skill - character's skill,
+    minimum 0 additional cost).</p>
+</li>
+<li>
+<p><strong>Roll</strong>: The attacker makes their <strong>Combat</strong> skill check. The
+    defender makes a relevant defense check (e.g., <strong>Physical
+    (Dodge)</strong>).</p>
+</li>
+<li>
+<p><strong>Determine</strong>: The outcome is determined by comparing the Degrees of
+    Success. The attack hits if the attacker achieves a higher degree of
+    success.</p>
+</li>
+<li>
+<p><strong>Damage</strong>: On a hit, the attacker rolls their weapon's damage.</p>
+</li>
+<li>
+<p><strong>Armor</strong>: The target subtracts the Damage Resistance (DR) value of
+    the armor covering the specific location hit from the total damage.</p>
+</li>
+<li>
+<p><strong>Apply</strong>: The final damage is subtracted from the HP of the
+    location that was hit.</p>
+</li>
+</ol>
+<h2 id="beyond-attacks-other-combat-actions">Beyond Attacks: Other Combat Actions</h2>
+<p>While the attack sequence focuses on making attacks, combat encounters
+often involve much more than just hitting opponents. Players can use
+their Major Actions during combat to perform a wide variety of
+activities that make sense in the situation.</p>
+<p>Examples of other combat actions include:</p>
+<ul>
+<li>Shoving an opponent to push them backward or knock them prone</li>
+<li>Hiding behind cover or ducking behind an obstacle</li>
+<li>Attempting to disarm an opponent's weapon</li>
+<li>Climbing onto a ledge or structure for tactical advantage</li>
+<li>Binding a wound during a lull in the fighting</li>
+<li>Shouting commands to allies or intimidating enemies</li>
+<li>Searching a fallen opponent for items</li>
+<li>Activating a special ability or item</li>
+</ul>
+<p>When a player wants to perform an action that isn't covered by the
+standard attack sequence, they simply describe what they want to do and
+ask the Game Master. The Game Master will determine what type of skill
+check is appropriate based on the situation:</p>
+<ul>
+<li>Simple Action: For straightforward tasks that don't require opposition</li>
+<li>Contested Action: For actions that directly oppose another character's
+  efforts</li>
+<li>Extended Action: For tasks that require time and sustained effort</li>
+<li>Contested Extended Action: For ongoing struggles between characters</li>
+</ul>
+<p>This approach provides much less to remember than traditional move lists
+while maintaining the simulational crunch players enjoy. It also allows
+for greater creativity and flexibility in combat situations, as players
+aren't limited to a predefined set of actions.</p>
+<h2 id="the-injury-system">The Injury System</h2>
+<p>The injury system determines <em>what actually happens</em> when a character
+takes damage. It represents different body parts separately, with
+different mechanical effects as a result of attacking them, to provide
+more interesting mechanical choices.</p>
+<h3 id="health-body-locations">Health &amp; Body Locations</h3>
+<p><img alt="" src="static/body_locations.svg" /></p>
+<p>Characters have six body locations, each with its own pool of Hit Points
+(HP). HP is calculated from the character's <strong>Physical (Strength)</strong>,
+<strong>Physical (Endurance)</strong>, <strong>Constitution</strong>, or other skill values,
+whichever is highest. The difficulty modifier applies to the attacker's
+combat skill value when targeting that specific location.</p>
+<table>
+<thead>
+<tr>
+<th>Body Location</th>
+<th>Hit Points Calculation</th>
+<th>Example (Strength 9)</th>
+<th>Difficulty Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Torso</td>
+<td>Full <strong>Physical (Strength)</strong> value</td>
+<td>9 HP</td>
+<td>+0</td>
+</tr>
+<tr>
+<td>Head</td>
+<td>1/2 <strong>Physical (Strength)</strong> (round up)</td>
+<td>5 HP</td>
+<td>-3</td>
+</tr>
+<tr>
+<td>Each Arm</td>
+<td>2/3 <strong>Physical (Strength)</strong> (round up)</td>
+<td>6 HP</td>
+<td>-2</td>
+</tr>
+<tr>
+<td>Each Leg</td>
+<td>2/3 <strong>Physical (Strength)</strong> (round up)</td>
+<td>6 HP</td>
+<td>-2</td>
+</tr>
+</tbody>
+</table>
+<p>The following table provides a quick reference for the HP values of each
+body location for characters with <strong>Physical (Strength)</strong> skills ranging
+from 9 to 18. This is purely for convenience; the actual rule is still
+the calculation in the body part table above.</p>
+<table>
+<thead>
+<tr>
+<th>Physical (Strength)</th>
+<th>Torso</th>
+<th>Head</th>
+<th>Each Arm</th>
+<th>Each Leg</th>
+<th>Total HP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>9</td>
+<td>5</td>
+<td>6</td>
+<td>6</td>
+<td>38</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10</td>
+<td>5</td>
+<td>7</td>
+<td>7</td>
+<td>43</td>
+</tr>
+<tr>
+<td>11</td>
+<td>11</td>
+<td>6</td>
+<td>8</td>
+<td>8</td>
+<td>49</td>
+</tr>
+<tr>
+<td>12</td>
+<td>12</td>
+<td>6</td>
+<td>8</td>
+<td>8</td>
+<td>50</td>
+</tr>
+<tr>
+<td>13</td>
+<td>13</td>
+<td>7</td>
+<td>9</td>
+<td>9</td>
+<td>56</td>
+</tr>
+<tr>
+<td>14</td>
+<td>14</td>
+<td>7</td>
+<td>10</td>
+<td>10</td>
+<td>61</td>
+</tr>
+<tr>
+<td>15</td>
+<td>15</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+<td>63</td>
+</tr>
+<tr>
+<td>16</td>
+<td>16</td>
+<td>8</td>
+<td>11</td>
+<td>11</td>
+<td>68</td>
+</tr>
+<tr>
+<td>17</td>
+<td>17</td>
+<td>9</td>
+<td>12</td>
+<td>12</td>
+<td>74</td>
+</tr>
+<tr>
+<td>18</td>
+<td>18</td>
+<td>9</td>
+<td>12</td>
+<td>12</td>
+<td>75</td>
+</tr>
+</tbody>
+</table>
+<p>The following graph visualizes how a character's total HP and HP per
+body part increase as their <strong>Physical (Strength)</strong> skill improves:</p>
+<p><img src="static/health_vs_skill.svg" class="health-vs-skill-graph" /></p>
+<h3 id="consequences-of-injury">Consequences of Injury</h3>
+<p><img src="static/consequences_of_injury.svg" class="section-icon" /></p>
+<p>Damage to local HP pools does not immediately do anything. However, over
+time, as injuries to various parts of the body add up, global effects
+begin to take place.</p>
+<h4 id="crippling-injury">Crippling Injury</h4>
+<p>When a location's HP is reduced to <strong><em>*0 or below</em></strong>*, it is Crippled.
+This has the following effects:</p>
+<table>
+<thead>
+<tr>
+<th>Body Location</th>
+<th>Effect on Character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General</td>
+<td>When a location is first Crippled, the character's <strong>Physical</strong> Harm Tracker immediately increases by one level.</td>
+</tr>
+<tr>
+<td>Head</td>
+<td>In addition to the <strong>Physical</strong> Harm, the character's <strong>Mental</strong> Harm Tracker also increases by one level. The character must make an immediate <strong>Physical (Endurance)</strong> check or fall unconscious.</td>
+</tr>
+<tr>
+<td>Arm (First Crippled)</td>
+<td>The character loses access to half of their total inventory slots, rounded up. The player must immediately choose which items to drop.</td>
+</tr>
+<tr>
+<td>Arm (Second Crippled)</td>
+<td>The character's available inventory slots are reduced to 0</td>
+</tr>
+<tr>
+<td>Leg (First Crippled)</td>
+<td>The character's movement speed is halved.</td>
+</tr>
+<tr>
+<td>Leg (Second Crippled)</td>
+<td>The character's movement speed is reduced to a minimum of 1.</td>
+</tr>
+</tbody>
+</table>
+<p>A limb may go into the negative HP levels as well. This does not make
+the crippling worse, but it can have other consequences, as described in
+the Systemic Shock section.</p>
+<h4 id="critical-success-on-attack">Critical Success on Attack</h4>
+<p>When an attacker scores a Critical Success, they deal damage as normal.
+In addition, the target's <strong>Physical</strong> Harm Tracker immediately
+increases by one level. This is independent of and can stack with Harm
+gained from a Crippling Injury on the same attack.</p>
+<h4 id="systemic-shock">Systemic Shock</h4>
+<p>Systemic shock occurs whenever a character's total HP pool is decreased
+by another half of their total original HP pool. The character's
+<strong>Physical</strong> Harm Tracker increases by one level for every half of their
+total original HP pool that they lose.</p>
+<p>For example, a character with average <strong>Physical (Strength)</strong> of 9 would
+have a total of 38 HP across all locations (9 Torso + 5 Head + 6 Left
+Arm + 6 Right Arm + 6 Left Leg + 6 Right Leg). This character would
+experience systemic shock and gain one level on their <strong>Physical</strong> Harm
+Tracker for every 19 HP they lose from their original total:</p>
+<ul>
+<li>At 38-20 HP remaining (0-18 HP lost): No systemic shock</li>
+<li>At 19-1 HP remaining (19-37 HP lost): First systemic shock (+1 to
+  <strong>Physical</strong> Harm Tracker)</li>
+<li>At 0 HP remaining (38+ HP lost): Second systemic shock (+2 to
+  <strong>Physical</strong> Harm Tracker)</li>
+</ul>
+<h4 id="defeat-and-death">Defeat and Death</h4>
+<p>A character is taken out of a fight under the following conditions:</p>
+<ul>
+<li>
+<p><strong>Incapacitated</strong>: Their <strong>Physical</strong> Harm Tracker reaches Level 4.</p>
+</li>
+<li>
+<p><strong>Unconscious</strong>: Their Head or Torso is Crippled, and they fail the
+  subsequent <strong>Physical (Endurance)</strong> check.</p>
+</li>
+<li>
+<p><strong>Killed</strong>: Their Head or Torso HP is reduced to a negative value
+  equal to its starting maximum (e.g., -5 HP for a 5 HP Head).</p>
+</li>
+</ul>
+<p>In the former two cases, staying alive becomes an extended action their
+<strong>Physical (Strength)</strong>: if they succeed, they get to continue being
+only unconscious until the combat scene ends. If they fail, they die.</p>
+<h4 id="non-harm-tracker-status-effects">Non-Harm-Tracker Status Effects</h4>
+<p>While the harm tracker system covers generalized status effects that
+affect broad categories of skills, some specific status effects operate
+outside this system. These non-harm-tracker-based status effects are
+simpler and more focused in their mechanical impact. There are three
+primary types:</p>
+<ol>
+<li>
+<p><strong>Continuous HP Drain</strong>: Effects like bleeding or poison that
+    continuously drain HP from a specific body location. Unlike harm
+    trackers which apply penalties to skill checks, these effects
+    directly reduce the HP pool of the affected limb. For example, a
+    bleeding arm would lose a set amount of HP each round until the
+    bleeding is stopped. Note that all normal effects of HP loss still
+    apply to continuous HP drain, including systemic shock when total HP
+    loss reaches certain thresholds and checks for whether the limb
+    becomes crippled when its HP reaches 0 or below.</p>
+</li>
+<li>
+<p><strong>Movement Speed Detriment</strong>: Effects that reduce a character's
+    movement speed, such as being entangled or slowed. These effects set
+    a specific detriment to the character's normal movement allowance,
+    reducing how many hexes they can move on their turn.</p>
+</li>
+<li>
+<p><strong>Weapon Range Detriment</strong>: Effects that reduce the effective range
+    of a character's weapons, such as poor visibility or unstable
+    footing. These effects set a specific detriment to the weapon's
+    normal range, reducing the distance at which the weapon remains
+    effective.</p>
+</li>
+</ol>
+<p>These status effects represent specific, concrete mechanical impacts
+rather than the generalized skill penalties of harm trackers, providing
+more precise simulation of certain conditions that affect characters in
+combat.</p>
+<h2 id="advanced-combat-rules">Advanced Combat Rules</h2>
+<p>The following are an optional toolkit of combat rules that GMs can
+assemble in order to account for various different situations or
+preferred combat playstyles, or use as references for designing their
+own optional combat mechanics for their own setting packs.</p>
+<h3 id="spatial-relations">Spatial Relations</h3>
+<p><img src="static/spatial_relations.svg" class="section-icon" /></p>
+<p>More advanced players who want more interesting tactical opportunities
+may introduce a hexagonal grid when players enter combat to structure
+character, NPC, and enemy spatial relations. This optional system adds
+tactical depth by making positioning and movement important factors in
+combat. This set of rules is an example of how totally new dimensions of
+combat can be modularly added to the game and well-integrated with
+existing systems.</p>
+<h4 id="setting-up-the-battlefield">Setting Up the Battlefield</h4>
+<p>In hex-based tactical combat, the battlefield is divided into hexagonal
+tiles, with each tile representing a specific type of terrain. Players,
+NPCs, and enemies are represented by counters or miniatures that are
+placed on these hex tiles. Each hex tile has a terrain type that affects
+movement costs and combat, as detailed in the terrain table below.</p>
+<p>All players must start wherever the Game Master decides they should
+start on the grid. The Game Master also places all non-player characters
+and enemies on the grid according to the tactical situation. Each hex on
+the map can be one of several terrain types, each with different
+properties:</p>
+<table>
+<thead>
+<tr>
+<th>Terrain Type</th>
+<th>Movement Cost</th>
+<th>Combat Effects</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Floor</td>
+<td>Normal</td>
+<td>None</td>
+<td>Standard terrain with no special properties</td>
+</tr>
+<tr>
+<td>Wall</td>
+<td>Impassable</td>
+<td>Blocks movement and line of sight</td>
+<td>Solid barriers that cannot be moved through</td>
+</tr>
+<tr>
+<td>Difficult Terrain</td>
+<td>+1 to +3 movement</td>
+<td>As determined by the Game Master</td>
+<td>Environmental features like trees, bushes, water, etc.</td>
+</tr>
+<tr>
+<td>High Ground</td>
+<td>Normal</td>
+<td>+1 to +3 bonus to ranged combat skills</td>
+<td>Elevated positions that grant tactical advantages</td>
+</tr>
+<tr>
+<td>Cover</td>
+<td>Normal</td>
+<td>-1 penalty to ranged attacks through it</td>
+<td>Provides partial protection without blocking movement or line of sight</td>
+</tr>
+<tr>
+<td>Unstable Terrain</td>
+<td>Normal</td>
+<td>Requires Physical (Acrobatics) check to avoid falling prone</td>
+<td>Surfaces that are slippery, loose, or otherwise unstable. The Physical (Acrobatics) check must be made whenever a character moves into a hex of this type.</td>
+</tr>
+<tr>
+<td>Damaging Terrain</td>
+<td>Normal</td>
+<td>Causes fixed HP damage to both legs</td>
+<td>Surfaces that cause damage. Fixed HP damage is applied to both legs whenever a character moves into a hex of this type.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that posture and cover penalties stack. For example, a character
+laying down (-2 penalty) behind cover (-1 penalty) would have a total -3
+penalty to ranged attacks targeting them.</p>
+<p>Specific examples of all types of terrain (both special and not) are
+determined automatically by the setting and location, but all
+conceivable types of gameplay-relevant terrain should fall into one of
+these categories.</p>
+<h4 id="posture-system">Posture System</h4>
+<p>Characters can adopt different postures during combat to gain defensive
+advantages at the cost of mobility. The posture system provides tactical
+options for players who want to trade movement for protection:</p>
+<table>
+<thead>
+<tr>
+<th>Posture</th>
+<th>Movement Restriction</th>
+<th>Ranged Combat Defense Bonus</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standing</td>
+<td>Normal movement</td>
+<td>None</td>
+<td>Standard posture with no restrictions or bonuses</td>
+</tr>
+<tr>
+<td>Crouching</td>
+<td>Only one hex per turn</td>
+<td>-1 modifier to hit</td>
+<td>Lower profile provides minor protection against ranged attacks</td>
+</tr>
+<tr>
+<td>Laying Down</td>
+<td>Cannot move</td>
+<td>-2 modifier to hit</td>
+<td>Maximum protection against ranged attacks at the cost of mobility</td>
+</tr>
+</tbody>
+</table>
+<p>Characters can change their posture as a minor action on their turn.
+This allows them to adapt their tactics based on the current situation,
+such as taking cover when under heavy ranged fire or standing up to move
+more freely.</p>
+<h4 id="movement">Movement</h4>
+<p>Moving is considered a minor action that costs 3 action points. Players
+may move up to their best fleetness/quickness related <strong>Physical</strong> skill
+minus 5 (minimum of 1) as their movement distance. Since moving is a
+minor action, players with sufficient action points could potentially
+move multiple times during their turn, or move and still take a major
+action. Moving through difficult terrain costs additional movement
+points as determined by the terrain table above.</p>
+<h4 id="line-of-sight">Line of Sight</h4>
+<p>Players who use ranged weapons must have a <strong>line of sight</strong> to the
+opponents they wish to attack. Only walls block movement and line of
+sight. Trees, bushes, and other environmental features count as walls in
+outdoor settings for the purpose of blocking line of sight. Characters
+can see and attack through other characters, but must make an extra
+skill check against their combat skill to succeed.</p>
+<h4 id="range">Range</h4>
+<p>Any ranged item designed to be used with the spatial relations rules
+should come with a specified range. Players only need line of sight and
+a successful skill check to hit something within the range of their
+ranged weapon. <strong>For targets beyond the weapon's range, players get a -1
+penalty to their skill check for every hex beyond their range they
+aim.</strong></p>
+<h4 id="flanking">Flanking</h4>
+<p>When attacking an enemy in melee combat, positioning can provide
+significant tactical advantages. If one or more of a character's allies
+are adjacent to an enemy that the character is attacking, this is
+considered <strong>flanking</strong>.</p>
+<p>Flanking provides the following benefits:</p>
+<ul>
+<li>The attacking character receives a +1 bonus to all attack skill checks
+  against the flanked enemy</li>
+<li>The flanked enemy receives a -1 penalty to all of their attack skill
+  checks</li>
+</ul>
+<p>Flanking represents the tactical advantage of having multiple attackers
+positioned around an enemy, making it difficult for the target to defend
+against attacks from multiple directions simultaneously. This bonus
+applies to all melee attacks, and the penalty applies to all attacks
+made by the flanked character until the flanking conditions change
+(either the allies move away or the target moves).</p>
+<h4 id="zone-of-control">Zone of Control</h4>
+<p>Each character exerts control over the area immediately surrounding
+them. The six hexes adjacent to any character constitute their <strong>zone of
+control</strong>. This represents the area that a character can effectively
+threaten with their presence and weapons.</p>
+<p>When an opponent enters a character's zone of control, that opponent is
+considered <strong>engaged</strong> with the character. If the opponent attempts to
+leave the zone of control without first knocking the controlling
+character unconscious or killing them, the controlling character may
+make a free attack against the fleeing opponent as they attempt to
+escape.</p>
+<p>This free attack:</p>
+<ul>
+<li>Is made immediately when the opponent attempts to leave the zone of
+  control</li>
+<li>Does not consume the controlling character's major or minor action</li>
+<li>Must be declared before the opponent's movement is resolved</li>
+<li>Uses the controlling character's relevant combat skill</li>
+<li>Is resolved as a normal attack sequence (declare, roll, determine,
+  damage, armor, apply)</li>
+</ul>
+<p>This rule represents how difficult it is to simply walk away from an
+armed opponent without dealing with them first. The zone of control
+mechanic adds tactical depth to positioning and makes retreats more
+strategically meaningful.</p>
+<h3 id="vehicles">Vehicles</h3>
+<p><img src="static/vehicles.svg" class="section-icon" /></p>
+<p>This advanced combat rule requires the <span class="spurious-link"
+target="* Spatial Relations"><em>Spatial Relations</em></span> rules to be in
+use.</p>
+<p>Vehicles add a new layer of tactical complexity to combat encounters.
+Whether it's a high-speed chase through a futuristic city or a naval
+battle between warships, vehicles require different handling than
+regular characters.</p>
+<h4 id="vehicle-statistics">Vehicle Statistics</h4>
+<p>Every vehicle has several key statistics:</p>
+<ul>
+<li>
+<p><strong>Size</strong>: Determines how many characters a vehicle can hold:</p>
+</li>
+<li>
+<p>Small (S): One character riding on the outside</p>
+</li>
+<li>Medium (M): One character riding on the inside</li>
+<li>Large (L): Four characters riding on the inside</li>
+<li>
+<p>Extra Large (XL): Six characters riding on the inside</p>
+</li>
+<li>
+<p><strong>Acceleration Rate</strong>: A constant value measured in hexes,
+  representing how many hexes the vehicle can add to its current speed
+  each turn. This value also determines how many hexes the vehicle can
+  subtract from its current speed each turn when braking. For example, a
+  vehicle with an acceleration rate of 2 can increase or decrease its
+  speed by up to 2 hexes per turn.</p>
+</li>
+<li>
+<p><strong>Maneuverability</strong>: A constant rating that determines how many hex
+  sides the vehicle can turn each turn. For example, a vehicle with a
+  maneuverability of 2 can change its facing by up to 2 hex sides per
+  turn.</p>
+</li>
+<li>
+<p><strong>Damage Resistance (DR)</strong>: A constant value that reduces damage taken
+  by anyone inside the vehicle. Characters riding inside a vehicle apply
+  this DR in addition to any armor they are wearing when determining
+  damage taken from attacks.</p>
+</li>
+</ul>
+<p>Vehicles also have variable values that are tracked during play:</p>
+<ul>
+<li>
+<p><strong>Speed</strong>: A variable value that changes over time and represents the
+  number of hexes a vehicle moves on its turn, as long as this value is
+  greater than zero. Vehicles must move this many hexes in the direction
+  they are currently facing. Represented using a d100.</p>
+</li>
+<li>
+<p><strong>Facing</strong>: The current hex side the vehicle is pointed, which
+  determines the direction of movement. Represented by the direction the
+  vehicle token or mini is pointing in.</p>
+</li>
+</ul>
+<h4 id="steering-and-movement">Steering and Movement</h4>
+<p>Vehicles have two primary movement actions that each cost 3 Action
+Points:</p>
+<ul>
+<li>
+<p><strong>Accelerating or Braking</strong>: Vehicles can accelerate or brake by up to
+  their acceleration rate in hexes per turn. Acceleration increases the
+  vehicle's speed, while braking decreases it. A vehicle's speed can
+  never be reduced below zero.</p>
+</li>
+<li>
+<p><strong>Turning</strong>: Vehicles can change their facing by up to their
+  maneuverability rating in hex sides per turn.</p>
+</li>
+</ul>
+<p>When steering, the vehicle's facing changes first, and then the vehicle
+moves in that new direction. This means that players can plan their
+turns by first deciding how much to turn, then moving the appropriate
+number of hexes in that direction.</p>
+<p>Vehicles must move a number of hexes equal to their current speed on
+each turn, as long as their speed is greater than zero. This movement is
+mandatory and must be in the direction the vehicle is currently facing.
+Players cannot choose to move fewer hexes than their current speed.</p>
+<h4 id="using-vehicles-in-combat">Using Vehicles in Combat</h4>
+<p>Characters operating vehicles use the vehicle's movement rules instead
+of their own. Any characters riding in the vehicle move with it
+automatically.</p>
+<p>Attacks against vehicles directly are not possible in this system.
+Instead, characters must target those inside the vehicle, and vehicles
+act as simple pieces of armor for the characters inside the vehicle, but
+not outside.</p>
+<p>Vehicles can be used to ram enemies. This does an amount of damage
+points determined by the vehicle's size plus its current speed.</p>
+<p>XL vehicles can also be used to knock down walls, but this reduces the
+speed of that vehicle back down to one.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="logic_of_action.html" class="btn btn-neutral float-left" title="Logic of Action"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="channeling.html" class="btn btn-neutral float-right" title="Channeling">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="logic_of_action.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="channeling.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

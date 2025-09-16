@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Core Game Loop - OpenAxiom TTRPG SRD</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="static/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Core Game Loop";
+        var mkdocs_page_input_path = "core_game_loop.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> OpenAxiom TTRPG SRD
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="openaxiom_manual.html">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_creation.html">Character Creation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_mechanics.html">Character Mechanics</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Core Game Loop</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#units-of-time">Units of Time</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tactical-time">Tactical Time</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#initiative">Initiative</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#action-points">Action Points</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#triggers">Triggers</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scene-time">Scene Time</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rests">Rests</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="logic_of_action.html">Logic of Action</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="combat.html">Combat</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="channeling.html">Channeling</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="social_relations.html">Social Relations</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="game_mastering.html">Game Mastering</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">OpenAxiom TTRPG SRD</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Core Game Loop</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="core-game-loop">Core Game Loop</h1>
+<p>OpenAxiom uses two distinct types of game time to create a dynamic and
+flexible gameplay experience: tactical time and scene time. These
+different pacing mechanisms allow the game to shift between intense,
+structured sequences and free-flowing narrative moments as needed.</p>
+<p>The transition between tactical and scene time is a binary decision made
+by the Game Master based on the needs of the narrative and the intensity
+of the situation.</p>
+<h2 id="units-of-time">Units of Time</h2>
+<p>There are five main units of time in OpenAxiom. Here they are, in order
+of granularity:</p>
+<ol>
+<li><strong>Turn</strong>: a unit of time comprising a participant spending their
+    action points on various actions before other participants get to
+    act.</li>
+<li><strong>Round</strong>: a unit of time comprising one iteration through each
+    player (and NPC and enemy) getting their turn.</li>
+<li><strong>Scene</strong>: a continuous period of gameplay that uses a single type
+    of time. A new scene begins whenever the Game Master switches
+    between tactical time and scene time. For example, an entire combat
+    encounter run using tactical time is one scene. The period of
+    free-flowing roleplaying that happens in scene time right after that
+    combat is another scene.</li>
+<li><strong>Session</strong>: a session of play for the day/week/month.</li>
+<li><strong>Campaign</strong>: a full narrative with a beginning, middle, and end,
+    composed of sessions.</li>
+</ol>
+<h2 id="tactical-time">Tactical Time</h2>
+<p>Tactical time is used during combat encounters, chases, or any situation
+where precise timing and turn order are important. During tactical time,
+all participants (players, NPCs, and enemies) take turns in a specific
+order determined by initiative rolls.</p>
+<h3 id="initiative">Initiative</h3>
+<p>At the start of tactical time, all participants roll 3d6. Turns are
+taken in order from lowest to highest roll. In the case of ties,
+participants with the same roll go in clockwise order from the Game
+Master.</p>
+<p>Each full cycle through all participants constitutes one round of
+tactical time. Participants retain their initiative order throughout the
+encounter unless specific game effects modify it.</p>
+<h3 id="action-points">Action Points</h3>
+<p>In tactical time, each participant has a pool of action points (AP) they
+can spend on various actions during their turn. Characters start each
+turn with action points equal to their best Physical skill related to
+dexterity or speed (default value of 9). As characters improve their
+skills through story point expenditure, their action point pool
+increases accordingly, allowing for more tactical options during combat.</p>
+<p>Participants can spend their action points on any combination of actions
+that they can afford. Actions have varying costs:</p>
+<ol>
+<li><strong>Minor Actions</strong> (3 AP)<ol>
+<li>Moving up to their normal movement speed</li>
+<li>Speaking a few words or short phrases</li>
+<li>Interacting with a mundane object (opening a door, picking up an
+    item)</li>
+<li>Taking cover or changing position</li>
+<li>Dropping an item or drawing a readily accessible item</li>
+</ol>
+</li>
+<li><strong>Major Actions</strong> (6 AP base cost)<ol>
+<li>Attacking an opponent with a weapon (base cost 6 AP + variable
+    cost based on weapon skill requirements)</li>
+<li>Using a skill that requires a check</li>
+<li>Activating a special ability</li>
+<li>Casting a spell or using advanced technology</li>
+<li>Performing a complex task</li>
+</ol>
+</li>
+</ol>
+<p>Participants can spend any or all of their action points during their
+turn. Unused action points are normally lost at the end of the turn and
+do not carry over to future turns.</p>
+<p>For example, a character with 9 action points could:</p>
+<ol>
+<li>Take one major action (6 AP) and one minor action (3 AP) for a total
+    of 9 AP</li>
+<li>Take three minor actions (3 AP each) for a total of 9 AP</li>
+<li>Take one major action (6 AP) and have 3 AP remaining that would be
+    lost</li>
+</ol>
+<p>Players who wish to set triggers (see Triggers section) must
+deliberately take fewer actions during their turn to maintain a reserve
+of unused AP that can be used for triggered actions.</p>
+<h3 id="triggers">Triggers</h3>
+<p>Players can specify triggers for their actions. A trigger is an if-else
+condition where if the condition is met, the player's character takes an
+action before anyone else can act.</p>
+<p>The "if" part of a trigger condition must be a specific skill check,
+attack, movement, or posture change by another participant. This ensures
+triggers are tied to concrete, observable game mechanics rather than
+subjective interpretations.</p>
+<p>Valid trigger conditions include:</p>
+<ol>
+<li>When a specific enemy makes a particular skill check (e.g., "If the
+    guard makes a Perception (Visual) check")</li>
+<li>When a specific enemy makes an attack (e.g., "If the orc attacks
+    me")</li>
+<li>When a specific enemy moves (e.g., "If the thief moves within 5
+    meters of the chest")</li>
+<li>When a specific enemy changes posture (e.g., "If the knight stands
+    up from prone")</li>
+</ol>
+<p>When setting a trigger, players must reserve a pool of unused action
+points (AP) from their previous turn. This reserved pool is used to
+execute the triggered action when the trigger condition is met. Players
+must deliberately take fewer actions during their turn to maintain this
+reserve, effectively "banking" AP for potential triggers.</p>
+<ol>
+<li>Trigger mechanics:<ol>
+<li>Players must declare triggers and the AP pool reserved for them
+    at the start of their turn</li>
+<li>The reserved AP pool must be sufficient to cover the cost of the
+    triggered action</li>
+<li>If a trigger activates but there aren't enough reserved AP to
+    cover its cost, the trigger fails</li>
+<li>Reserved AP that isn't used by triggered actions is lost at the
+    end of the round</li>
+<li>Players can adjust their reserved AP pools and triggers at the
+    start of each turn</li>
+</ol>
+</li>
+<li>When multiple trigger actions are activated simultaneously:<ol>
+<li>They resolve in the order they were specified to the Game Master</li>
+<li>Each triggered action consumes the appropriate action points
+    from the character's reserved pool</li>
+</ol>
+</li>
+</ol>
+<h2 id="scene-time">Scene Time</h2>
+<p>Scene time is used for exploration, roleplaying, investigation, and
+other non-combat situations. During scene time, gameplay is completely
+free-flowing:</p>
+<ol>
+<li>Players act when they want to act</li>
+<li>There is no turn order or initiative</li>
+<li>Players can take as many actions as appropriate to the narrative</li>
+<li>The Game Master manages the flow of events and time naturally</li>
+</ol>
+<p>Scene time is ideal for conversations, exploration, research, and other
+activities where the structured pace of tactical time would be
+unnecessarily restrictive.</p>
+<h2 id="rests">Rests</h2>
+<p>Rests represent periods when characters take time to recover from
+exertion, heal injuries, and restore their mental and physical
+well-being. The Game Master decides when rests occur based on the
+narrative flow and the characters' needs.</p>
+<p>Rests can only happen during scene time. This means that characters
+cannot rest during active combat encounters or other situations
+requiring tactical time. The Game Master may call for a rest when:</p>
+<ol>
+<li>Characters have had a particularly challenging encounter or series
+    of encounters</li>
+<li>The narrative naturally provides a safe space for recovery</li>
+<li>Characters express a need to recuperate from injuries or exhaustion</li>
+<li>A significant amount of time has passed in the game world</li>
+</ol>
+<p>During a rest, characters may recover from harm through natural recovery
+methods. A character can reduce one harm tracker by one level whenever
+they get adequate long rest and recuperation, allowing their body, mind,
+or social standing to heal naturally.</p>
+<p>The Game Master determines the specific benefits of a rest based on its
+duration and conditions. A brief respite might provide minor benefits,
+while an extended period of rest in comfortable conditions could provide
+more substantial recovery.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="character_mechanics.html" class="btn btn-neutral float-left" title="Character Mechanics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="logic_of_action.html" class="btn btn-neutral float-right" title="Logic of Action">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="character_mechanics.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="logic_of_action.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
