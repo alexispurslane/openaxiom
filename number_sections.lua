@@ -37,14 +37,14 @@ end
 chapter_number = get_chapter_number()
 
 function Pandoc(doc)
-    local header = pandoc.Header(1, (chapter_number or "") .. ". " .. pandoc.utils.stringify(doc.meta.title))
-    table.insert(doc.blocks, 1, header)
-  
+    if chapter_number then
+        local header = pandoc.Header(1, chapter_number .. ". " .. pandoc.utils.stringify(doc.meta.title))
+        table.insert(doc.blocks, 1, header)
+    end
     return doc
 end
 
 
-local BRACKET_PATTERN = "%s*%\\[.*%\\]$"
 function Header(el)
     el.level = el.level + 1
     heading_count[1] = chapter_number
