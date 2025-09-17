@@ -1,4 +1,6 @@
--- Custom markdown writer that increases list indentation by 3 spaces
+-- Custom Pandoc writer for Markdown with increased list indentation
+-- and proper table rendering
+
 local layout = pandoc.layout
 local concat, blankline, hang, space = 
   layout.concat, layout.blankline, layout.hang, layout.space
@@ -6,7 +8,7 @@ local concat, blankline, hang, space =
 -- Use scaffolding to reduce boilerplate
 Writer = pandoc.scaffolding.Writer
 
--- Basic inline elements
+-- Inline elements
 Writer.Inline.Str = function(el)
   return el.text
 end
@@ -28,7 +30,13 @@ Writer.Inline.Emph = function(el)
 end
 
 Writer.Inline.Strong = function(el)
-  return concat{"**", Writer.Inlines(el.content), "**"}
+  -- Handle potential nested strong elements from org parsing
+  -- Check if content is a single Strong element to avoid double wrapping
+  if #el.content == 1 and el.content[1].tag == "Strong" then
+    return Writer.Inlines(el.content)
+  else
+    return concat{"**", Writer.Inlines(el.content), "**"}
+  end
 end
 
 Writer.Inline.Code = function(el)
@@ -62,7 +70,7 @@ Writer.Inline.Span = function(el)
   return Writer.Inlines(el.content)
 end
 
--- Basic block elements
+-- Block elements
 Writer.Block.Header = function(el)
   local tag = string.rep("#", el.level)
   return concat{tag, " ", Writer.Inlines(el.content), blankline}
@@ -108,7 +116,8 @@ Writer.Block.Table = function(el)
     -- Process the first row of the header
     local first_header_row = el.head.rows[1]
     for i, cell in ipairs(first_header_row.cells) do
-      local cell_content = pandoc.utils.stringify(cell.contents)
+      -- Use Writer.Blocks to preserve formatting
+      local cell_content = Writer.Blocks(cell.contents)
       header_row = header_row .. " " .. cell_content .. " |"
       -- Create simple separator
       separator_row = separator_row .. "--------|"
@@ -123,7 +132,8 @@ Writer.Block.Table = function(el)
     for _, row in ipairs(body.body) do
       local row_str = "|"
       for i, cell in ipairs(row.cells) do
-        local cell_content = pandoc.utils.stringify(cell.contents)
+        -- Use Writer.Blocks to preserve formatting
+        local cell_content = Writer.Blocks(cell.contents)
         row_str = row_str .. " " .. cell_content .. " |"
       end
       result[#result + 1] = row_str

@@ -93,15 +93,15 @@ When initiating a contested extended action, the player must specify what they w
 
 *** Initiating a Contested Extended Action
 
-1. **Declaration**
+1. *Declaration*
    - A character declares they are attempting to initiate a contested extended action against a specific opponent
    - The player specifies what they want to achieve, which determines both the skill used and the effect that occurs while the action is maintained
 
-2. **Initial Contest**
+2. *Initial Contest*
    - The initating character makes a contested skill check against their target, as normal
    - The skill used should be appropriate to the declared goal
 
-3. **Resolution**
+3. *Resolution*
    - If the initiating character succeeds against their opponent, the contested extended action is initiated and the declared effect begins
    - If the initiating character fails, the contested extended action does not begin
 
@@ -109,7 +109,7 @@ When initiating a contested extended action, the player must specify what they w
 
 Once initiated, maintaining a contested extended action requires ongoing effort:
 
-1. **On the Initiating Character's Turn:**
+1. *On the Initiating Character's Turn:*
    - The initiating character must declare they are maintaining the contested extended action
    - If the initiating character does not declare this, the contested extended action ends
    - The opponent is released on their next turn and may act normally
@@ -117,7 +117,7 @@ Once initiated, maintaining a contested extended action requires ongoing effort:
    - The initiating character may not take normal actions on the same turn as they released a contested action
    - If the initiating character chooses to maintain the contested extended action, they must make another contested action against the same opponent as their major action
 
-2. **On the Opponent's Turn:**
+2. *On the Opponent's Turn:*
    - The opponent may take other actions during their turn if the type of contested action does not prevent them from doing so
    - The declared effect of the contested extended action determines what actions the opponent cannot take
    - The opponent may instead choose, as their major action for that turn, to "enter the contest"
@@ -125,7 +125,7 @@ Once initiated, maintaining a contested extended action requires ongoing effort:
    - This contested action must use the exact same skill that the initiating character used
    - The rules for resolving this contested action are the same as for resolving an initiator's contested action
 
-3. **Resolving the Contested Action:**
+3. *Resolving the Contested Action:*
    - If the initiating character wins, they maintain control of the contested extended action and the declared effect continues
    - If the opponent wins, the contested extended action ends and the opponent gains *Momentum* as their upper hand
    - Only the initiating character may choose to stop maintaining the contested extended action at any time
