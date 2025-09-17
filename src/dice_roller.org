@@ -1,4 +1,4 @@
-#+TITLE: Dice Roller
+#+TITLE: Appendix II - Dice Roller
 #+OPTIONS: H:6
 
 #+ATTR_HTML: :class section-icon

@@ -75,8 +75,12 @@ that they can afford. Actions have varying costs:
     5.  Performing a complex task
 
 Participants can spend any or all of their action points during their
-turn. Unused action points are normally lost at the end of the turn and
-do not carry over to future turns.
+turn. Unused Action Points are typically lost at the end of your turn.
+However, you may declare at the start of your turn that you are
+reserving a specific number of AP for a Trigger. This reserved AP is not
+lost at the end of your turn but is instead lost *before your next turn*
+(so after an entire round has passed) if the Trigger is not activated
+before then.
 
 For example, a character with 9 action points could:
 

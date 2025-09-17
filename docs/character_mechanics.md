@@ -11,9 +11,8 @@ character do and what is their current state?"
 A skill represents anything a character can do or be. This includes
 physical abilities like strength or swimming, and mental aptitudes such
 as various forms of intelligence. Skills are trainable, meaning a
-character's proficiency can improve over time. Any skill not explicitly
-listed on a character's sheet has the default value. Skills have a name
-and a numerical value, indicating proficiency.
+character's proficiency can improve over time. Skills have a name and a
+numerical value, indicating proficiency.
 
 ### 3.1.1. Skill Naming and Hierarchy
 
@@ -44,14 +43,16 @@ be.
 Each skill has a numerical value that indicates the character's level of
 proficiency. A higher number signifies greater ability. The default
 value for any general, non-specific skill (such as **Strength** or
-**Piloting**) is 9.
+**Piloting**) is 9. The default value of any specific skill (such as
+**Strength (Lifting)** or **Piloting (Starship)**) is considered
+undefined if it is not in the character sheet.
 
-For the purposes of using skills, specific skills are undefined by
-default and relay up to more general skills as described in the previous
-section. During character creation, players can increase skills above
-the default value of 9 using their character points. Skills that have
-not been increased during character creation remain at the default value
-of 9 and are considered defined and can be used directly.
+For the purposes of using such undefined specific skills, these skills
+relay up to more general skills for their value (at a disadvantage per
+level up to the general skill) as described in the previous section.
+
+During character creation, players can increase skills above the default
+value of 9 using their character points.
 
 The following table provides a qualitative evaluation of skill levels
 based on the probability of success for tasks of average difficulty:
@@ -317,7 +318,8 @@ automatic successes to. This could include beers for **Social
 (Wilderness)** checks to set up camp, or binoculars for **Perception
 (Visual)** checks to spot distant objects. When a character possesses
 such an item and attempts a relevant skill check, they automatically
-succeed without rolling dice.
+succeed without rolling dice, but taking the action still uses the usual
+amount of action points during tactical time.
 
 | Quality Binoculars | Skill Check in a Box |
 |--------------------|----------------------|
@@ -737,7 +739,8 @@ The process has three steps:
     positive trait if they have scored a critical success during a
     pivotal story moment. A critical success is a roll of 3 or 4 on 3d6.
     The game master determines what constitutes a pivotal story moment.
-    This opportunity must be claimed when story points are next awarded.
+    This opportunity can only be claimed when story points are next
+    awarded, not in the middle of a session.
 
 2.  **Attempt**: To attempt the transformation, the player must declare
     they are making a Crucible Roll. They must then commit all story

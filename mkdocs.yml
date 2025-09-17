@@ -1,6 +1,6 @@
 site_name: OpenAxiom TTRPG SRD
 nav:
-  - Introduction: openaxiom_manual.md
+  - Introduction: index.md
   - Character Creation: character_creation.md
   - Character Mechanics: character_mechanics.md
   - Core Game Loop: core_game_loop.md
@@ -9,8 +9,8 @@ nav:
   - Channeling: channeling.md
   - Social Relations: social_relations.md
   - Game Mastering: game_mastering.md
-  - Advanced Rules: advanced.md
-  - Die Roller Tool: dice_roller.md
+  - Appendix I - Advanced Rules: advanced.md
+  - Appendix II - Die Roller Tool: dice_roller.md
 theme:
   name: readthedocs
 plugins:

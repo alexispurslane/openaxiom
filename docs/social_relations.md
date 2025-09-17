@@ -88,13 +88,24 @@ order of precedence:
     faction the character has a reputation with already, the character
     starts with a reputation score **the same** as the *lowest*
     reputation score they have with a faction that the new one is
-    friendly to.
+    friendly to. For example, say your character has a +4 reputation
+    with the Empire and a -2 reputation with the Smugglers' Guild. You
+    encounter the Trade Federation, which is Friendly to both the Empire
+    and the Guild. Because the rule uses your lowest reputation among
+    friendly factions, your starting reputation with the Trade
+    Federation is -2.
+
 2.  **Hostile Relationship**: If the new faction is *hostile* to any
     faction the character has a reputation with already, the character
     starts with a reputation score of **0 minus** the *highest*
     reputation score they have with a faction that the new one is
     hostile to (in other words, the negative version of that reputation
-    score).
+    score). For example, if you meet the Rebel faction, and you have a
+    reputation of 4 with the Empire, and a reputation of -2 with the
+    Trade Federation, then your reputation with the Rebels will be -4,
+    since your highest reputation with a faction hostile to the Rebels
+    is 4, not -2, and 0 - 4 is -4.
+
 3.  **Neutral Relationship**: If the new faction is neutral toward every
     faction the character has already built a reputation with, the
     character starts with **the default reputation score of 0.**

@@ -238,7 +238,7 @@ In addition to these narrative benefits, exceptional successes grants characters
 
 - If the player didn't already have Momentum, then they gain it.
 - If the player had Momentum for the skill check that resulted in the current exceptional success, they gain Momentum again.
-- If the player already had Momentum, and gained it again, even without using it, they keep it.
+- If the player already had Momentum, and has "gained it again" even without using it (which can happen if they roll an exceptional success a second time within the same scene, before they've decided what to use their existing Momentum on), it does not stack, they just keep the existing Momentum.
 
 This represents characters "getting into the flow" or "getting high on success," encouraging players to keep the actual momentum of play going, and giving them an interesting tatical advantage to play with, as they can act in more risky ways.
 

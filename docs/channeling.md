@@ -38,7 +38,8 @@ example:
 
 The Game Master determines which Channeling specializations are
 available in the game world. Players can use the general **Channeling**
-skill for a specialized task with the standard penalties.
+skill for a specialized task with the standard -1 penalty per level of
+specialization as per the rules in Character Mechanics.
 
 ### 7.1.2. Ability Slots
 
@@ -112,11 +113,16 @@ abilities as a **Prerequisite**. This represents a character building on
 their foundational knowledge to create more complex effects.
 
 An ability is considered "learned" once it has been successfully used
-four times. An ability's prerequisite abilities must have been fully
-learned (used successfully four times each) before the more advanced
-ability can be selected and prepared in an ability slot. This learning
-mechanism represents the practice and mastery needed to build upon
-foundational abilities.
+four times. An ability is considered successfully used if it applies as
+the user intends: is not effected by anything on the resonance table, is
+not resisted by a target, or does not have its Extended Action failed if
+it requires one.
+
+An ability's prerequisite abilities must have been fully learned (used
+successfully four times each) before the more advanced ability can be
+selected and prepared in an ability slot. This learning mechanism
+represents the practice and mastery needed to build upon foundational
+abilities.
 
 #### 7.1.3.1. Example Abilities
 
@@ -182,9 +188,9 @@ Here are some example abilities to illustrate the system.
 
 Channelers can learn to alter their abilities on the fly, applying
 special techniques to change how their powers manifest. Applying a
-technique is a choice made just before an ability is activated. A
-character can apply multiple techniques to a single ability, provided
-they can pay the combined costs.
+technique is a choice made just before an ability is activated. Only one
+technique may be applied at a time, to avoid order of operations
+problems.
 
 The following techniques are available:
 
@@ -272,6 +278,6 @@ A character can reduce their Flux in two ways:
 1.  **Rest:** A full night of rest reduces a character's Flux by one
     level.
 2.  **Grounding:** A character can take a Major Action to ground
-    themselves. This requires a skill check against an effective skill
-    value of 10, the same for all characters no matter their actual
-    skill level. A success reduces Flux by one level.
+    themselves. This requires a skill check against a target number of
+    10, using no skill. It's the same for all characters no matter their
+    actual skill level. A success reduces Flux by one level.

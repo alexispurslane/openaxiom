@@ -57,7 +57,7 @@ Participants can spend their action points on any combination of actions that th
    4. Casting a spell or using advanced technology
    5. Performing a complex task
 
-Participants can spend any or all of their action points during their turn. Unused action points are normally lost at the end of the turn and do not carry over to future turns.
+Participants can spend any or all of their action points during their turn. Unused Action Points are typically lost at the end of your turn. However, you may declare at the start of your turn that you are reserving a specific number of AP for a Trigger. This reserved AP is not lost at the end of your turn but is instead lost /before your next turn/ (so after an entire round has passed) if the Trigger is not activated before then.
 
 For example, a character with 9 action points could:
 1. Take one major action (6 AP) and one minor action (3 AP) for a total of 9 AP

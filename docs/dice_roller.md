@@ -1,4 +1,4 @@
-# . Dice Roller
+# . Appendix II - Dice Roller
 
 <img src="static/dice_roller.svg" class="section-icon" />
 

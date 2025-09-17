@@ -116,23 +116,16 @@ h3 {
 
 h4 {
     font-family: 'Lora', serif;
-    font-size: 1.5em; /* Decreased from 1.3em */
-    color: #333333;
+    font-size: 1.3em; /* Decreased from 1.3em */
+    color: #d63031;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;
     text-align: left;
-    position: relative;
-    padding: 0.2em 1em;
-    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block;
 }
 
 h5 {
     font-family: 'Lora', serif;
-    font-size: 1.3em; /* Increased from 1.1em */
+    font-size: 1.2em; /* Increased from 1.1em */
     color: #333333;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;

@@ -51,7 +51,9 @@ representing the average capabilities of an average human.
 Character points can be spent in three ways:
 
 1.  **Increasing skills** above the default value of 9 (costs 1 point
-    per skill level above 9)
+    per skill level above 9, unlike *story points*, which are used to
+    upgrade characters after creation, and have an increasing cost
+    curve)
 2.  **Purchasing positive traits** (costs 1 point per trait level)
 3.  **Purchasing negative traits** (gains 1 point per trait level)
 
@@ -169,16 +171,17 @@ pronounced at the extremes of character development. Therefore, it is
 recommended to work *with* negative traits, not against them.
 
 For example, a character with a trait that applies a -5 penalty to
-**Mental (Reasoning)** can spend all their character points to increase
-that skill to the maximum possible value of 18 (9 + 5 from the negative
-trait + 5 starting character points, capped to 18) but it will
-effectively be only 13 thanks to the negative trait, whereas a character
-with no such disability can reach 18, and a character with a relevant
-positive trait can reach 23. Therefore, while spending *some* skill
-points on that skill, to get it back up to a reasonable level to
-compensate for the negative trait, makes sense, spending all 10 skill
-points was a waste of time for the character. Those points could have
-been more effectively spent elsewhere.
+**Mental (Reasoning)** can spend all their available character points (5
+CP gained from the negative trait + the 5 starting CP) to .increase that
+skill to the maximum possible value of 18 (costing 9 of their 10
+available points), but it will effectively be only 13 thanks to the
+negative trait, whereas a character with no such disability can reach
+18, and a character with a relevant positive trait can reach 23.
+Therefore, while spending *some* skill points on that skill, to get it
+back up to a reasonable level to compensate for the negative trait,
+makes sense, spending all 10 skill points was a waste of time for the
+character. Those points could have been more effectively spent
+elsewhere.
 
 ### 2.4.4. Traits and Lore Items
 

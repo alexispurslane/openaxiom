@@ -228,9 +228,11 @@ A character is taken out of a fight under the following conditions:
 - **Killed**: Their Head or Torso HP is reduced to a negative value
   equal to its starting maximum (e.g., -5 HP for a 5 HP Head).
 
-In the former two cases, staying alive becomes an extended action their
-**Physical (Strength)**: if they succeed, they get to continue being
-only unconscious until the combat scene ends. If they fail, they die.
+In the former two cases, staying alive becomes an Extended Action
+against their **Physical (Strength)** skill that lasts as many turns as
+the tactical combat scene, instead of a set number of turns. While/if
+they succeed, they get to continue being only unconscious until the
+combat scene ends. If they fail, they die.
 
 #### 6.3.2.5. Non-Harm-Tracker Status Effects
 

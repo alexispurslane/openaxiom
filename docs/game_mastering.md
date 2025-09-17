@@ -146,9 +146,10 @@ The results are interpreted as follows:
 
 #### 9.2.3.2. NPC Reactions
 
-When you need to determine how an NPC reacts to the players, consult
-this 2D table that cross-references the result of the social skill check
-with the 3d6 roll:
+When you need to determine how an NPC reacts to the players after
+they've rolled a social skill check against that NPC, consult this 2D
+table that cross-references the result of the social skill check with a
+second 3d6 roll:
 
 | 3d6 Roll | Critical Success | Exceptional Success | Standard Success | Marginal Failure | Exceptional Failure | Critical Failure |
 |----|----|----|----|----|----|----|
