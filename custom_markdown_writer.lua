@@ -85,12 +85,22 @@ Writer.Block.Plain = function(el)
 end
 
 Writer.Block.BlockQuote = function(el)
-  local lines = pandoc.utils.stringify(el.content)
-  local quoted = ""
-  for line in lines:gmatch("[^\r\n]+") do
-    quoted = quoted .. "> " .. line .. "\n"
+  -- Process each block individually to preserve formatting and structure
+  local result = {}
+  for i, block in ipairs(el.content) do
+    local block_content = Writer.Block(block)
+    -- Convert the layout Doc to string properly
+    local block_string = pandoc.layout.render(block_content)
+    -- Add > prefix to each line
+    for line in string.gmatch(block_string, "[^\r\n]*") do
+      if line ~= "" then
+        result[#result + 1] = "> " .. line
+      else
+        result[#result + 1] = ">"
+      end
+    end
   end
-  return quoted .. "\n"
+  return concat{concat(result, "\n"), "\n"}
 end
 
 Writer.Block.CodeBlock = function(el)

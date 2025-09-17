@@ -14,6 +14,9 @@ Skills are named to reflect their scope and specialization. Skills can be organi
 
 When a character attempts a task requiring a specific skill the character does not possess, the character can use a more general skill from the same hierarchy. However, using a general skill for a more specific task incurs a disadvantage. A character using a general skill for a more specific skill suffers a -1 disadvantage for each level of specialization their more general skill is missing. For example, using **Piloting** for a **Piloting (Starship)** task incurs a -1 disadvantage, while using **Piloting** for a **Piloting (Starship) (Freighter)** task incurs a -2 disadvantage. Rule of thumb: count the number of parenthesized expressions to see what the disadvantage should be.
 
+> Kaelen, a hotshot starship pilot, finds himself at the controls of a borrowed ground-effect vehicle. The hovercraft bucks and sputters, feeling clumsy and alien compared to the sleek interceptors he's used to. The GM says, "Okay Kaelen, the console is unfamiliar, and this thing handles nothing like a starship. Your **Piloting (Starship)** skill of 14 won't help you here. You'll have to use your general **Piloting** skill, which defaults to 9. Since you're using a general skill for a specialized task, you'll take a -1 penalty. Your target number to get this thing moving without crashing is 8."
+>
+
 **GM-Provided Skill Lists**: The Game Master is responsible for providing players with a specific list of skills that are available in their game world. This list serves as the canonical set of skills that can be used for skill checks. Players must always use the most specific applicable skill from this list when making skill checks. For example, if a GM's list includes both **Investigation** and **Investigation (Forensics)**, and a character is examining a crime scene, they must use **Investigation (Forensics)** rather than the more general **Investigation** skill.
 
 ### 3.1.2. Skill Proficiency Value
@@ -89,6 +92,9 @@ Situational traits represent abilities or limitations that only matter in specif
 #### 3.2.2.4. Special Traits
 
 Traits can also be designated as "Special" traits. These traits introduce simple new rules that layer on top of, but do not replace, core game mechanics. Like the way cards in some deck-building games introduce custom rules, Special traits add unique mechanical effects to a character that go beyond simple skill bonuses or penalties. For example, a **Second Wind** trait might allow a character to recover some health once per session, or a **Lucky Charm** trait might allow rerolling a failed skill check once per game session.
+
+> The medical bay is chaos. Emergency lights cast long, dancing shadows as Dr. Aris Thorne prepares for emergency surgery. The GM sets the scene: "Aris, the lights are failing. Your innate **Composure** (+2 to all Medicine) helps you stay calm amidst the panic. However, your **Shaky Hands** (-3 to Surgery) are a real problem for this delicate work. Luckily, your **Night Vision** augments (+1 in low-light) allow you to see just enough to operate. Let's calculate your final target number."
+>
 
 ### 3.2.3. Standard Trait Definition Format
 
@@ -468,3 +474,30 @@ The process has three steps:
 | Success (5 - 16) | Success. The character's focus pays off. They gain the new positive trait at the full value of the points invested up to +5. |
 | Critical Success (3-4) | Transcendence. An incredible breakthrough! They gain the new positive trait at its full value, plus an additional +1 bonus, giving them a truly superhuman trait. |
 | Critical Failure (17-18) | Backlash. The attempt fails catastrophically, scarring the character. The positive trait is not gained. Instead, they gain a new, permanent negative trait with a fixed value of -3. This trait should be narratively linked to the failed attempt (e.g., trying for Deadeye might result in Nerve Jitters). |
+
+## 3.6. Advancement in Play: The Story of Jax
+
+> After a tense session where Jax successfully infiltrated a corporate server farm, the GM awards him 4 Story Points (SP).
+>
+> **Improving a Skill**
+>
+> Jax's life depended on his stealth. Sarah decides to invest in what works. "I'm spending all 4 of my Story Points to increase Jax's **Physical (Stealth)**," she declares. The cost to go from 12 to 13 is 4 SP (13 - 9 = 4), a perfect fit. Jax is now even harder to pin down.
+>
+> **Overcoming a Trait**
+>
+> Months later, after many close calls involving technology, Jax has 3 SP saved up. Sarah decides it's time he started confronting his fears. "I want to work on Jax's **Technophobia**," she tells the GM. "It's at -3, so I'll spend 3 story points to reduce its penalty to -2." Jax is still wary, but the crippling fear is beginning to subside.
+>
+> **Gaining a Trait**
+>
+> In the campaign's climax, Jax's nemesis is escaping. Jax has one shot. The GM declares it a "pivotal story moment." Sarah rolls for her **Combat (Ranged)** check and gets a 4—a Critical Success! The shot is perfect. At the session's end, the GM awards 6 SP. Sarah sees her chance. "Since I got that critical success, I want to attempt a Crucible Roll to gain a new trait. I'll call it **Deadeye**." She commits all 6 SP, knowing the extra 1 point is a lost 'ante' for this high-stakes roll. She rolls 3d6 and gets a 12—a solid success. The GM smiles. "Your focus pays off. You gain the new positive trait **Deadeye** at a value of +5."
+>
+
+## 3.7. Advancement in Play: The Story of Jax
+
+After a tense session where Jax successfully infiltrated a corporate server farm, the GM awards him 4 Story Points (SP).
+
+**Improving a Skill** Jax's life depended on his stealth. Sarah decides to invest in what works. "I'm spending all 4 of my Story Points to increase Jax's **Physical (Stealth)**," she declares. The cost to go from 12 to 13 is 4 SP (13 - 9 = 4), a perfect fit. Jax is now even harder to pin down.
+
+**Overcoming a Trait** Months later, after many close calls involving technology, Jax has 3 SP saved up. Sarah decides it's time he started confronting his fears. "I want to work on Jax's **Technophobia**," she tells the GM. "It's at -3, so I'll spend 3 story points to reduce its penalty to -2." Jax is still wary, but the crippling fear is beginning to subside.
+
+**Gaining a Trait** In the campaign's climax, Jax's nemesis is escaping. Jax has one shot. The GM declares it a "pivotal story moment." Sarah rolls for her **Combat (Ranged)** check and gets a 4—a Critical Success! The shot is perfect. At the session's end, the GM awards 6 SP. Sarah sees her chance. "Since I got that critical success, I want to attempt a Crucible Roll to gain a new trait. I'll call it **Deadeye**." She commits all 6 SP, knowing the extra 1 point is a lost 'ante' for this high-stakes roll. She rolls 3d6 and gets a 12—a solid success. The GM smiles. "Your focus pays off. You gain the new positive trait **Deadeye** at a value of +5."

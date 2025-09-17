@@ -44,6 +44,9 @@ For example, a player with 5 character points could:
 
 - Or distribute points across many smaller improvements
 
+> Ben wants to create a brilliant but frail academic. Starting with 5 Character Points, he decides to lean into this concept. To represent his character's physical weakness, he takes the **Frail** negative trait at a value of -4. This immediately gives him 4 extra CP, boosting his pool to a total of 9. He then invests heavily in his character's intellect, spending 5 CP to raise his **Investigation** skill from 9 to a formidable 14. With his remaining 4 CP, he purchases the **Photographic Memory** positive trait at +4, perfectly capturing the image of a scholar with a mind like a steel trap but a body like glass.
+>
+
 Players may not reduce skills below the default value of 9 to gain additional character points. This prevents players from creating dump stats to gain an excessive number of character points.
 
 **Each chosen skill, positive trait, and negative trait must be justified by a one-sentence appeal to the character's Appearance and History sections.** The Game Master must approve this justification.
@@ -144,3 +147,42 @@ Players should consult with their Game Master to determine what factions are app
 Characters start with a reputation score of 3 with their chosen primary home faction, representing their familiarity and standing within their own community. As the character encounters members of other factions during play, their reputation with those factions will be tracked separately, starting at 0 for neutral first encounters.
 
 The Game Master should use the expanded faction relationship system where initial reputation with new factions is determined by the character's existing relationships. See the Social Relations chapter for details on this core rule.
+
+## 2.7. Full Walkthrough Example: Creating Jax
+
+> Sarah sits down for Session Zero, eager to create her character for the GM's new cyberpunk campaign. She has a concept in mind: a street-level courier who is fast and clever, but haunted by a past brush with faulty cybernetics.
+>
+> **1. Biography**
+>
+> First, she breathes life into her character, Jax, by defining his story.
+>
+> - **Appearance:** She pictures him clearly: **"Jax is a lanky man in his late twenties, with a mess of dark hair that's perpetually damp with rain or sweat. His face is sharp and angular, but his most notable features are his cybernetic eyes, which glow with a faint blue light, and the worn, synth-leather duster he always wears to hide the cheap chrome of his prosthetic left arm."**
+>
+> - **History:** She writes a backstory to anchor his skills and fears: **"Jax grew up an orphan on the neon-drenched streets of Neo-Kyoto, making a living by running data and contraband for minor league gangs. A botched delivery job cost him his arm and nearly his life. He was saved by a back-alley cyber-doc who replaced the limb with a clunky, second-hand prosthetic. The experience left him with a deep-seated fear of faulty technology and a determination to get by on his wits and reflexes, rather than trusting in implants that could fail him again."**
+> **2. Allocating Character Points**
+>
+> The GM has given everyone a pool of 5 Character Points (CP). Sarah plans how to spend them to reflect Jax's history.
+>
+> **3. Justifying Skills & Traits**
+>
+> Sarah selects Jax's abilities, providing a one-sentence justification for each, directly tying them to his biography.
+>
+> - First, she decides Jax's life as a courier made him an expert at avoiding notice. She spends 3 of her 5 CP to raise his **Physical (Stealth)** from the default 9 to 12.
+>
+>      - **Justification:** "His history as a street runner and contraband courier required him to know how to move unseen through the city's underbelly."
+>
+> - Next, she spends her last 2 CP to reflect his silver tongue, increasing his **Social (Deception)** from 9 to 11.
+>
+>      - **Justification:** "Living on the streets, Jax had to lie constantly to clients, rivals, and law enforcement to survive."
+>
+> - To get more points and deepen his character, she chooses a negative trait. The **Broad, Situational** trait **Technophobia** at a -3 value feels perfect.
+>
+>      - **Justification:** "His history of losing his arm to a botched job and being fitted with a cheap, unreliable prosthetic has given him a profound distrust and fear of complex tech."
+>
+> - Finally, she spends those 3 points on a positive trait reflecting his cyber-eyes. She chooses the **Narrow** trait **Keen Eyesight** at a +3 value.
+>
+>      - **Justification:** "His appearance notes his advanced cybernetic eyes, which would logically grant him superior vision for spotting details others might miss."
+> **4. Final Touches**
+>
+> Jax automatically starts with his worn duster and a cheap data-slate as lore items. His highest strength-related skill is **Physical** (default 9), granting him 9 inventory slots. For his faction, Sarah and the GM agree he belongs to the "Street Runners," giving him an initial reputation of 3 with his peers. Jax is ready to hit the streets of Neo-Kyoto.
+>

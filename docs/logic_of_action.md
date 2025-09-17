@@ -136,6 +136,12 @@ Once initiated, maintaining a contested extended action requires ongoing effort:
 
 This system represents the ongoing nature of physical struggles and mental contests that require continuous effort to maintain, while still allowing for clear resolution of who has the upper hand at any given moment. The non-consensual nature of the opponent's participation reflects that they are automatically considered to be resisting the initiating character's attempt to maintain control over them.
 
+> Kaelen saw his chance. The enemy soldier was reloading, exposing his flank. Rather than shoot, Kaelen lunged, initiating a grapple. He won the initial contested roll, and the fight became a close-quarters struggle. On the enemy's turn, trapped in the grapple, he used his Major Action to "enter the contest," trying to break free. He made a contested **Combat (Melee)** check against Kaelen and won. The GM described the sudden reversal: "The soldier twists violently in your grip, breaking your hold! He shoves you back, seizing the initiative and gaining **Momentum**."
+>
+
+> The air in the spaceport cantina was thick with engine fumes and cheap synth-ale. Kaelen found himself in an arm-wrestling match with a hulking docker. Kaelen's **Physical (Strength)** is 12, while the docker's is a mighty 14. They both roll. Kaelen gets an 8, a Standard Success. The docker rolls a 13, also a Standard Success. The GM narrates the outcome: "You both strain, muscles bulging, but with the degrees of success tied, the docker's higher skill value of 14 gives him the edge. His raw power is just too much, and he slowly forces your hand down to the table. He wins."
+>
+
 ### 5.1.7. Group Actions
 
 When a group of characters works together on a task, the Game Master determines which character has the highest relevant skill. That character makes the primary skill check. Other characters may provide assistance, granting a +1 bonus to the primary character's roll for each assisting character, up to a maximum bonus of +3.
@@ -143,6 +149,9 @@ When a group of characters works together on a task, the Game Master determines 
 If two or more characters have the same value in a skill relevant to the action (even if the skills themselves are not identical), and the first attempt does not go well, the group may attempt the action again in the same turn using a different character with the same value in a skill relevant to the action as the primary actor. The same bonuses for additional helpers still apply to this second attempt. This allows for a rapid second attempt by a different character, serving as an exception to the general restriction on repeating skill checks.
 
 Characters can also work independently on the same task. In this case, each character makes their own skill check. The Game Master determines how the individual results combine to affect the overall outcome.
+
+> For example, a heavy blast door, dented and sparking, blocked the team's escape. Dr. Aris and two security guards put their shoulders to it. The guards both have a **Physical (Strength)** of 11, while Aris is a meager 8. The GM explained, "The guard with the best footing will be the primary actor, rolling against his skill of 11. The other guard and Dr. Aris provide assistance, granting a +2 bonus. Your total target number to force this door is 13."
+>
 
 ### 5.1.8. Extended Actions
 
@@ -168,7 +177,13 @@ This system allows for dramatic moments where a character can suddenly overcome 
 
 The time between checks and other consequences of failures are determined by the Game Master based on the narrative circumstances.
 
-### 5.1.9. Logic of Action Examples
+> Jax's fingers flew across the holographic interface of a corporate vault's mag-lock. The GM told him this was an Extended Action requiring 3 successful turns.
+>
+> - **Turn 1:** He rolled a 7 against his skill of 11—a success. One down.
+>
+> - **Turn 2:** He hit a snag, rolling a 13—a Marginal Failure. He made no progress.
+>
+> - **Turn 3:** Undeterred, he tried a new approach and rolled a 4—a Critical Success! The GM grinned. "You're struggling, but then you spot a critical flaw in their logic. With a flurry of commands, you shatter the entire security suite in seconds. The lock clicks open. The job is done."
 
 ## 5.2. Consequences
 
@@ -271,6 +286,9 @@ A marginal failure indicates a near-success where the character almost achieved 
 
 While the retry takes longer for the player, the increased effort of an Extended Action makes it more likely to succeed.
 
+> Kaelen was halfway up a sheer, rain-slicked cliff when his handhold gave way. He rolled an 11 against his **Physical (Climbing)** of 10—a Marginal Failure. He dangled precariously. "I'm not giving up," his player said. "I'll **Retry With Grit**." The GM nodded. "Okay, this is now a two-turn Extended Action, but there's a cost. Roll on the Marginal Failure table." The player rolled a 3: **Item Damage**. "As you scramble for a new hold," the GM narrated, "the strap on your gear pack snags and rips. The pack, with your spare ammo, tumbles into the chasm below. It's gone. Now, make your first roll for the climb."
+>
+
 ### 5.2.7. Exceptional Failure
 
 An exceptional failure represents particularly poor performance that goes beyond simple failure. These outcomes:
@@ -295,6 +313,9 @@ When a character suffers an exceptional failure, the player rolls 1d6 on the Exc
 | 4 | **Worsening Situation**: The character's action not only fails but actively makes the situation worse. The Game Master describes how the failure creates additional complications or obstacles. In addition, the character takes one level of mental harm on a relevant tracker (can push the harm tracker up to level 2) |
 | 5 | **Resource Drain**: A valuable resource is expended or lost. This could be ammunition, power cells, medical supplies, or other relevant consumables. If the character has no applicable resources, they instead suffer a level of mental harm as they realize their unpreparedness |
 | 6 | **Reputation Damage**: The character's failure is witnessed or becomes known to others, damaging their reputation or relationships. This is particularly relevant for social interactions but can apply to any situation where others might observe the failure. The character suffers a -1 penalty to all Social skill checks for the remainder of the scene |
+
+> Dr. Aris stood before the Hyperion corporate board, his voice pleading for funding. His **Social (Diplomacy)** was 12, but he rolled a 17—an Exceptional Failure. "This is bad," the GM said. "Roll on the Exceptional Failure table." The result was a 6: **Reputation Damage**. "Your plea comes across as desperate and unhinged," the GM explained. "They not only reject your proposal, but your reputation with Hyperion Corporation drops by 1. For the rest of this meeting, they view you with disdain, giving you a -1 penalty to all Social checks."
+>
 
 ### 5.2.8. Critical Failure
 

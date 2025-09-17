@@ -60,6 +60,9 @@ If an ability targets another character who is aware of the attempt, the target 
 
 - **Critical Success:** The defender not only overcomes the ability, but turns it back on the channeler. The ability fails, and the channeler must immediately roll on the Resonance Cascade table.
 
+> The corporate guard stood between the psychic Eva and the console she needed to reach. She focused her will, intending to use **Psychic Push**. This was a Contested Action. Eva's power was an automatic **Standard Success**. The guard, aware of the mental assault, braced himself and rolled against his **Physical (Strength)** of 12. He got an 8—an Exceptional Success. The GM described the result: "Your psychic force slams into the guard, but he stands firm as if rooted to the floor. The energy rebounds, jolting you with feedback. You gain one level of Flux."
+>
+
 The format for defining a Channeling ability is as follows:
 
 | Ability Name | Required Skill |
@@ -150,6 +153,9 @@ The following techniques are available:
 | **Swift** | Double AP Cost | Halves the number of turns required for an ability activated by an Extended or Contested Extended Action. |
 | **Non-lethal** | +1 AP | Any damage inflicted by the ability is temporary. The target recovers fully at the end of the scene without lasting injury. This only applies to abilities that inflict Physical harm. |
 
+> Seeing two guards blocking her path, Eva knew a simple push wouldn't be enough. "I'm using **Psychic Push** on the first guard," she said, "but I'm applying the **Empowered** technique." The GM calculated the cost: 6 AP for the push, plus 4 AP for the technique, for a total of 10 AP. It also cost her 1 level of Flux. "The effect is increased by 50%," the GM confirmed. "Instead of pushing him 3 hexes, you'll send him flying 5 hexes. A much more powerful shove. Now, let's see if he can resist it."
+>
+
 ## 7.3. Channeling and Consequences
 
 Using Channeling abilities can have consequences, both for the target and sometimes for the channeler.
@@ -167,6 +173,9 @@ Channeling powerful, unstable energies has consequences. Using abilities beyond 
 A character can attempt to use a Channeling ability even if their relevant skill is lower than the ability's `Required Skill`. This is known as "Pushing." While this allows for greater flexibility and power, it comes at the cost of gaining Flux.
 
 For each point a character's skill is below the requirement, they gain one level of Flux immediately after the ability is used. For example, using an ability with a `Required Skill` of 13 when your character's skill is 11 will cause you to gain two levels of Flux.
+
+> An automated turret whirred to life, and Eva was caught in the open. Her only hope was **Telekinetic Barrier**, an ability requiring a skill of 13. Her own skill was only 11. She had to Push. "I'm pushing to create the barrier!" she yelled. The GM explained the cost: "You strain, pulling on energies you can't fully control. Because you're pushing 2 skill points, you gain two levels of Flux. Since this takes you to Flux Level 2 or higher, it triggers a **Resonance Cascade**. Roll a d6." She rolled a 2: **Ability Backlash**. "As you try to form the wall of force," the GM narrated, "the power snaps back! The telekinetic force slams into **you**, throwing you back 3 hexes."
+>
 
 #### 7.3.2.2. The Flux System
 

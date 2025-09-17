@@ -34,6 +34,22 @@ The sequence of steps required to do the "Attack" Major Action under Tactical Ti
 
 7. **Apply**: The final damage is subtracted from the HP of the location that was hit.
 
+> It was Kaelen's turn. He lunged at the pirate in front of him, combat knife a silver blur.
+>
+> 1. **Declare:** "I'm attacking the pirate with my knife, aiming for his Torso!"
+>
+> 2. **Calculate Cost:** His skill of 13 easily met the knife's requirement of 9, so the attack cost the standard 6 AP.
+>
+> 3. **Roll:** Kaelen rolled a 7 against his target of 13—an Exceptional Success. The pirate rolled a 9 against his Dodge of 10—a Standard Success.
+>
+> 4. **Determine:** Kaelen's higher degree of success meant a clean hit.
+>
+> 5. **Damage:** His knife deals 1d6 damage; he rolled a 5.
+>
+> 6. **Armor:** The pirate's armored clothing had a DR of 2, reducing the damage to 3.
+>
+> 7. **Apply:** The GM narrated, "Your blade slips past his guard, and he grunts as it sinks into his side, dealing 3 points of damage to his Torso."
+
 ## 6.2. Wielding Weapons
 
 ![](static/wielding.svg)
@@ -162,6 +178,9 @@ A character is taken out of a fight under the following conditions:
 - **Killed**: Their Head or Torso HP is reduced to a negative value equal to its starting maximum (e.g., -5 HP for a 5 HP Head).
 
 In the former two cases, staying alive becomes an Extended Action against their **Physical (Strength)** skill that lasts as many turns as the tactical combat scene, instead of a set number of turns. While/if they succeed, they get to continue being only unconscious until the combat scene ends. If they fail, they die.
+
+> The pirate, with a Strength of 10, had only 3 HP left on his Torso. Kaelen's 3-damage strike was devastating. "That hit reduces his Torso HP to 0," the GM announced. "That location is now **Crippled**. His **Physical** Harm Tracker increases to Level 1, giving him a -1 penalty to all physical actions. He also needs to make an Endurance check to stay conscious." The pirate passed the check, grimacing in pain but remaining on his feet. The pirate had lost 18 HP total in the fight, just shy of the 21.5 needed to trigger Systemic Shock. For now, he was merely wounded, not yet in shock.
+>
 
 #### 6.4.2.5. Non-Harm-Tracker Status Effects
 

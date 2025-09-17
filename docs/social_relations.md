@@ -54,6 +54,9 @@ When player characters encounter a new faction for the first time, their initial
 
 The Game Master should determine the relationships between factions during campaign preparation and note them for reference during play.
 
+> Jax, with his +4 Street Runner reputation, met with a representative of the Dockworkers' Union for the first time. The GM had established that the Union was Friendly to the Runners. The GM explained, "The Union foreman sizes you up. He's heard good things about the Runners and knows you're one of them. Following the rule for friendly factions, your starting reputation with the Dockworkers' Union is the same as your reputation with the Street Runners. You start at +4."
+>
+
 ### 8.2.3. Changing Reputation
 
 Reputation with a faction can change whenever a character interacts with members of that faction through social skill checks (usually **Social** or **Social (…)**):
@@ -96,6 +99,9 @@ Characters can spend reputation in one of three ways:
 3. **Vouch for a Friend**: Spend 1 reputation point with a faction to vouch for a friend's character with that faction. This temporarily grants the friend the character's (pre-spend) reputation score with that faction for the course of one scene, if it is higher than the friend's own. The friend's reputation with the faction returns to its normal value at the end of the scene.
 
 After spending reputation, the character's reputation score with that faction is reduced by the amount spent.
+
+> Jax needed the Union foreman to "lose" a valuable shipping container, a very risky ask. His reputation with the Union stood at a solid +4. To improve his odds, Jax's player said, "This is a crucial roll. I'm going to spend 1 point of my reputation to call in a favor." The GM updated the character sheet. "Okay, your reputation with the Union is now +3. For this one check, you'll get a +1 bonus for your high reputation, plus an additional +1 for spending the point. You get a total of +2 to your social check."
+>
 
 ### 8.2.6. Reputation Actions
 
@@ -162,3 +168,6 @@ Social combat is a simple gloss on the Contested Action rules found in [the Acti
       - If the initiating character fails the contested action, they lose one point of reputation with the targeted faction as their attempts to slander another are seen as desperate or unseemly.
 
       - If the initiating character succeeds, the target character loses one point of reputation with the targeted faction as their standing has been successfully undermined.
+
+> Jax's rival, Silk, decided to undermine his standing with the Dockworkers' Union. She initiated social combat, starting a whisper campaign. This resolved as a Contested Action. Silk used her **Social (Deception)** of 12, while Jax defended with his **Social (Diplomacy)** of 10. His +3 reputation with the Union gave him a +1 bonus, for a target of 11. Silk rolled an 8 (Standard Success), while Jax rolled a 12 (Marginal Failure). The GM delivered the outcome: "Silk, your rumors are subtle but effective. Jax, you fail to counter them. Your reputation with the Dockworkers' Union drops by one point, from +3 to +2."
+>

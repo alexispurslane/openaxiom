@@ -109,6 +109,10 @@ This free attack:
 
 This rule represents how difficult it is to simply walk away from an armed opponent without dealing with them first. The zone of control mechanic adds tactical depth to positioning and makes retreats more strategically meaningful.
 
+#+BEGIN_QUOTE
+The warehouse battle was a tactical puzzle. Kaelen stood adjacent to one pirate, while his ally Anya flanked the same enemy from the opposite side. This gave Kaelen a +1 bonus on his attack. He spent 6 AP to attack, landing a solid hit. With 3 AP remaining, he declared he was moving back. But as he tried to leave the hex adjacent to the pirate, the GM interjected, "Not so fast. You're leaving his Zone of Control. Before you can move, the pirate you just stabbed takes a free swing at you as you try to disengage."
+#+END_QUOTE
+
 ** Vehicles
 :PROPERTIES:
 :ID:       1V2E3H4I-5C6L-7E8S-9R0U-1L2E3V4E5H6I
@@ -173,3 +177,7 @@ Attacks against vehicles directly are not possible in this system. Instead, char
 Vehicles can be used to ram enemies. This does an amount of damage points determined by the vehicle's size plus its current speed, where Small=5, Medium=10, Large=15, XL=20. The target can make a defense roll (such as a skill check against *Physical (Dodge)*) as normal, even though the vehicle does not make a combat roll or roll for damage.
 
 XL vehicles can also be used to knock down walls, but this reduces the speed of that vehicle back down to one.
+
+#+BEGIN_QUOTE
+Jax was in a desperate chase, his armored car's speed at a blistering 15 hexes per turn. A sharp corner loomed. On his turn, he took two movement actions. First, he slammed on the brakes, using his car's Acceleration Rate of 3 to reduce his speed to 12. For his second action, he wrenched the wheel, using his Maneuverability of 2 to change his car's facing by two hex sides. The GM resolved the turn: "You screech around the corner, successfully changing your facing. Now, you must move your new speed of 12 hexes in that new direction."
+#+END_QUOTE
