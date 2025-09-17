@@ -15,11 +15,23 @@ The following sections detail how actions are resolved in various circumstances:
 #+ATTR_HTML: :class section-icon
 [[file:static/actions.svg]]
 
-The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the result to a target number. The player rolls 3d6 and sums the results. If the total is less than or equal to the target number, the action succeeds. If the total is greater than the target number, the action fails.
-
-**Restriction on Repeating Skill Checks**: Players cannot make the same skill check twice in a row without at least 3 turns between them or a change in circumstance (as determined by the Game Master). This prevents characters from simply retrying the same action indefinitely until they succeed, encouraging creative problem-solving and narrative progression.
+The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the result to a target number. The player rolls 3d6 and sums the results. If the total is less than or equal to the target number, the action succeeds. If the total is greater than the target number, the action fails. The target number is almost always determined by the character's relevant skill values, modified by the difficulty of the check. This is the inverse of a game system like D&D, where the target number is fixed, and then the roll is modified by your skill level.
 
 This simple mechanic underlies all character actions in the game. The target number is determined by the character's relevant skill value, modified by applicable traits and situational factors as determined by the Game Master. Characters may also receive temporary modifiers from systems like *Momentum*, which can provide a +1 bonus to the character's skill value for the purpose of determining the target number for any action in the same scene.
+
+** Restriction on Repeating Skill Checks
+:PROPERTIES:
+:ID:       4CC1FE89-BBE8-4F2E-8E26-2FA8A91018DB
+:END:
+
+Players cannot make the same skill check twice in a row without at least 3 turns between them or a change in circumstance (as determined by the Game Master). This prevents characters from simply retrying the same action indefinitely until they succeed, encouraging creative problem-solving and narrative progression.
+
+** Skill Selection
+:PROPERTIES:
+:ID:       668D6A68-158C-454E-BD7F-36F7AB5C9197
+:END:
+
+The Game Master provides a specific list of skills that are available in their game world. When determining which skill to use for a skill check, players must always use the most specific applicable skill from the GM's provided list. For example, if a GM's list includes both *Piloting* and *Piloting (Starship)*, and a character is attempting to pilot a starship, they must use *Piloting (Starship)* rather than the more general *Piloting* skill, even if they have a higher value in the general skill.
 
 ** Determining Target Numbers
 :PROPERTIES:

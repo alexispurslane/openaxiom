@@ -21,6 +21,8 @@ Skills are named to reflect their scope and specialization. Skills can be organi
 
 When a character attempts a task requiring a specific skill the character does not possess, the character can use a more general skill from the same hierarchy. However, using a general skill for a more specific task incurs a disadvantage. A character using a general skill for a more specific skill suffers a -1 disadvantage for each level of specialization their more general skill is missing. For example, using *Piloting* for a *Piloting (Starship)* task incurs a -1 disadvantage, while using *Piloting* for a *Piloting (Starship) (Freighter)* task incurs a -2 disadvantage. Rule of thumb: count the number of parenthesized expressions to see what the disadvantage should be.
 
+*GM-Provided Skill Lists*: The Game Master is responsible for providing players with a specific list of skills that are available in their game world. This list serves as the canonical set of skills that can be used for skill checks. Players must always use the most specific applicable skill from this list when making skill checks. For example, if a GM's list includes both *Investigation* and *Investigation (Forensics)*, and a character is examining a crime scene, they must use *Investigation (Forensics)* rather than the more general *Investigation* skill.
+
 ** Skill Proficiency Value
 :PROPERTIES:
 :ID:       41334204-2F08-4273-B7FA-FDC34DE4A68F
@@ -114,10 +116,11 @@ Traits can also be designated as "Special" traits. These traits introduce simple
 When defining traits, use the following standardized format to ensure clarity and consistency. This format should be used for all traits, whether they are from official trait packs or custom creations.
 
 #+ATTR_HTML: :class trait-definition
-| Trait Name | Category |
-|------------|----------|
-| Skills Affected       | [List of skills affected by this trait] |
-| Effect                | [Description of the mechanical effect of this trait] |
+| Trait Name      | Category                                                    |
+|-----------------+-------------------------------------------------------------|
+| Skills Affected | [List of skills affected by this trait]                     |
+| CP Cost         | [constant CP cost, or CP cost range for non-Special traits] |
+| Effect          | [Description of the mechanical effect of this trait]        |
 
 Example:
 

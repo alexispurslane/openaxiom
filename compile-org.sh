@@ -48,8 +48,11 @@ convert_files() {
     # Extract the title from the org file
     title=$(grep "^#+TITLE:" "$infile" | sed 's/^#+TITLE:[[:space:]]*//')
 
-    # Convert the file using pandoc with our custom heading numbering filter
-    pandoc --from=org --to=markdown_mmd-mmd_header_identifiers --lua-filter=number_sections.lua --output="$outfile" "$infile"
+    # Convert the file using pandoc with our custom heading numbering filter and custom markdown writer
+    tmpfile=$(mktemp)
+    pandoc --from=org --to=markdown_mmd-mmd_header_identifiers --lua-filter=number_sections.lua --output="$tmpfile" "$infile"
+    pandoc "$tmpfile" -t ./custom_markdown_writer.lua --output="$outfile"
+    rm "$tmpfile"
 
     echo "Converted $infile -> $outfile"
   done

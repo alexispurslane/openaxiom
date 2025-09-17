@@ -67,18 +67,5 @@ function Header(el)
     return el
 end
 
-function RawBlock (el)
-  -- 1. Check if the format of the RawBlock is exactly 'html'.
-  if el.format == 'html' then
-    -- 2. If it is, we return a new RawBlock. We explicitly specify the
-    --    format as 'html' and use the original text content.
-    --    This tells the Markdown writer to treat this as a literal
-    --    passthrough block, which avoids the newline encoding (`&#10;`).
-    return pandoc.RawBlock('html', el.text)
-  end
-
-  -- 3. If the RawBlock is not for the 'html' format (e.g., 'latex'),
-  --    we leave it unchanged by returning `nil`. Pandoc will then
-  --    use the default behavior for that block.
-  return nil
-end
+-- Remove all the list indentation code since it was adding spaces after bullet points
+-- which is not what we want

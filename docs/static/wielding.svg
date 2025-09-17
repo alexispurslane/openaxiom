@@ -1,0 +1,18 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Two hands gripping weapons, representing wielding. -->
+  <defs>
+    <style>
+      .weapon { fill: #4285F4; }
+      .hand { fill: #E8EAED; }
+    </style>
+  </defs>
+  <!-- Left hand gripping a sword -->
+  <rect x="20" y="40" width="6" height="30" rx="3" class="weapon"/>
+  <path d="M 15 70 Q 20 75 25 70 Q 23 72 20 72 Z" class="hand"/>
+  <!-- Right hand gripping a sword -->
+  <rect x="60" y="40" width="6" height="30" rx="3" class="weapon"/>
+  <path d="M 55 70 Q 60 75 65 70 Q 63 72 60 72 Z" class="hand"/>
+  <!-- Simple representation of hands -->
+  <circle cx="23" cy="75" r="5" class="hand"/>
+  <circle cx="63" cy="75" r="5" class="hand"/>
+</svg>
