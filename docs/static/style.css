@@ -38,6 +38,11 @@ body {
     overflow-wrap: break-word;
 }
 
+/* Allow body to accommodate wide content */
+body.wide-content-enabled {
+    overflow-x: hidden;
+}
+
 main, .wy-nav-content {
     max-width: 65ch;
     margin: 0 auto;
@@ -50,6 +55,14 @@ img {
     height: auto;
     display: block;
     margin: 1em 0;
+}
+
+/* SVG section icons */
+.section-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 1em auto;
 }
 
 /* SVG section icons */
@@ -346,12 +359,23 @@ header nav strong {
     margin-top: 1em; /* Additional top margin for better spacing */
 }
 
+/* Allow wide content in ReadTheDocs theme */
+.wy-nav-content.wide-content-enabled {
+    max-width: none;
+    overflow-x: hidden;
+}
+
 main {
     max-width: 65ch;
     margin: 0 auto;
     padding: 2em;
     padding-top: 6em; /* Add padding to account for fixed navbar */
     margin-top: 1em; /* Additional top margin for better spacing */
+}
+
+/* Allow wide content in main element */
+main.wide-content-enabled {
+    max-width: none;
 }
 
 #TOC ul {
@@ -487,6 +511,7 @@ table th {
     background-color: #f0f0f0;
 }
 
+
 /* Trait definition table styling */
 table.trait-definition {
     background-color: #f0f0f0;
@@ -495,6 +520,14 @@ table.trait-definition {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 1em 0;
     border-collapse: separate;
+    /* Keep trait definitions at normal width */
+    width: 100%;
+    max-width: 100%;
+    position: static;
+    left: auto;
+    right: auto;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 table.trait-definition thead tr {
@@ -520,6 +553,11 @@ table.trait-definition tbody td:first-child {
 table.trait-definition td {
     border: none;
     padding: 0.3em 0.5em;
+}
+
+/* Allow tables to be full width on wider screens */
+@media (min-width: 1200px) {
+    
 }
 
 /* Print styles */
@@ -696,6 +734,26 @@ h4, h5, h6 {
     text-align: left !important;
 }
 
-.wy-menu-vertical a {
-    text-align: left !important;
+@media (min-width: 1200px) {
+    .wy-table-responsive {
+        position: relative;
+        overflow: visible;
+    }
+    .wy-table-responsive table {
+        display: table !important;
+        /* 1. Set the width relative to the viewport */
+        width: 80vw !important;
+        table-layout: fixed; 
+
+        /* 2. Position the element */
+        position: relative; /* Use 'relative' to not take it out of the document flow */
+        left: 50%;
+
+        /* 3. Use transform to shift it back, centering it perfectly */
+        transform: translateX(-50%);
+    }
+}
+
+.document {
+    position: relative;
 }

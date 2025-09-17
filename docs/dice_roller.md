@@ -1,24 +1,20 @@
 # 11. Appendix II - Dice Roller
 
-<img src="static/dice_roller.svg" class="section-icon" />
+![](static/dice_roller.svg)
 
-This page provides a tool for rolling any number of dice with any number
-of sides. The default roll is 3d6, which is commonly used for skill
-checks in OpenAxiom. When making a skill check, you roll 3d6 and compare
-the result to your skill level plus any relevant modifiers.
+This page provides a tool for rolling any number of dice with any number of sides. The default roll is 3d6, which is commonly used for skill checks in OpenAxiom. When making a skill check, you roll 3d6 and compare the result to your skill level plus any relevant modifiers.
 
 ## 11.1. Using the Dice Roller
 
-Enter the number of dice and the number of sides per die in the format
-"XdY" where X is the number of dice and Y is the number of sides. For
-example:
+Enter the number of dice and the number of sides per die in the format "XdY" where X is the number of dice and Y is the number of sides. For example:
 
 - 3d6 rolls three six-sided dice (standard skill check)
+
 - 2d10 rolls two ten-sided dice
+
 - 1d20 rolls one twenty-sided die
 
-For 3d6 skill checks, enter your skill value in the skill test field to
-see how your roll compares.
+For 3d6 skill checks, enter your skill value in the skill test field to see how your roll compares.
 
 ## 11.2. Dice Roller Tool
 
