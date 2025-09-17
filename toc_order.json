@@ -1,6 +1,6 @@
 {
   "files": [
-    "openaxiom_manual.org",
+    "index.org",
     "character_creation.org",
     "character_mechanics.org",
     "core_game_loop.org",
@@ -9,6 +9,7 @@
     "channeling.org",
     "social_relations.org",
     "game_mastering.org",
-    "advanced.org"
+    "advanced.org",
+    "dice_roller.org"
   ]
 }

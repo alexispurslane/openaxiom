@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Appendix I - Advanced Rules - OpenAxiom TTRPG SRD</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="static/style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Appendix I - Advanced Rules";
+        var mkdocs_page_input_path = "advanced.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="index.html" class="icon icon-home"> OpenAxiom TTRPG SRD
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_creation.html">Character Creation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="character_mechanics.html">Character Mechanics</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="core_game_loop.html">Core Game Loop</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="logic_of_action.html">Logic of Action</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="combat.html">Combat</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="channeling.html">Channeling</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="social_relations.html">Social Relations</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="game_mastering.html">Game Mastering</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Appendix I - Advanced Rules</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#101-advanced-combat-rules">10.1. Advanced Combat Rules</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1011-spatial-relations">10.1.1. Spatial Relations</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#10111-setting-up-the-battlefield">10.1.1.1. Setting Up the Battlefield</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10112-posture-system">10.1.1.2. Posture System</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10113-movement">10.1.1.3. Movement</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10114-line-of-sight">10.1.1.4. Line of Sight</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10115-range">10.1.1.5. Range</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10116-flanking">10.1.1.6. Flanking</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10117-zone-of-control">10.1.1.7. Zone of Control</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#1012-vehicles">10.1.2. Vehicles</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#10121-vehicle-statistics">10.1.2.1. Vehicle Statistics</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10122-steering-and-movement">10.1.2.2. Steering and Movement</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10123-using-vehicles-in-combat">10.1.2.3. Using Vehicles in Combat</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="dice_roller.html">Appendix II - Die Roller Tool</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OpenAxiom TTRPG SRD</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Appendix I - Advanced Rules</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="10-appendix-i-advanced-rules">10. Appendix I - Advanced Rules</h1>
+<p>This chapter is a compendium of extra, optional rules to add on to the
+various modular subsystems of OpenAxiom, for Game Masters who want even
+more tactical choice, mechanical variety, and simulation.</p>
+<h2 id="101-advanced-combat-rules">10.1. Advanced Combat Rules</h2>
+<p>The following are an optional toolkit of combat rules that GMs can
+assemble in order to account for various different situations or
+preferred combat playstyles, or use as references for designing their
+own optional combat mechanics for their own setting packs.</p>
+<h3 id="1011-spatial-relations">10.1.1. Spatial Relations</h3>
+<p><img src="static/spatial_relations.svg" class="section-icon" /></p>
+<p>More advanced players who want more interesting tactical opportunities
+may introduce a hexagonal grid when players enter combat to structure
+character, NPC, and enemy spatial relations. This optional system adds
+tactical depth by making positioning and movement important factors in
+combat. This set of rules is an example of how totally new dimensions of
+combat can be modularly added to the game and well-integrated with
+existing systems.</p>
+<h4 id="10111-setting-up-the-battlefield">10.1.1.1. Setting Up the Battlefield</h4>
+<p>In hex-based tactical combat, the battlefield is divided into hexagonal
+tiles, with each tile representing a specific type of terrain. Players,
+NPCs, and enemies are represented by counters or miniatures that are
+placed on these hex tiles. Each hex tile has a terrain type that affects
+movement costs and combat, as detailed in the terrain table below.</p>
+<p>All players must start wherever the Game Master decides they should
+start on the grid. The Game Master also places all non-player characters
+and enemies on the grid according to the tactical situation. Each hex on
+the map can be one of several terrain types, each with different
+properties:</p>
+<table>
+<thead>
+<tr>
+<th>Terrain Type</th>
+<th>Movement Cost</th>
+<th>Combat Effects</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Floor</td>
+<td>Normal</td>
+<td>None</td>
+<td>Standard terrain with no special properties</td>
+</tr>
+<tr>
+<td>Wall</td>
+<td>Impassable</td>
+<td>Blocks movement and line of sight</td>
+<td>Solid barriers that cannot be moved through</td>
+</tr>
+<tr>
+<td>Difficult Terrain</td>
+<td>+1 to +3 movement</td>
+<td>As determined by the Game Master</td>
+<td>Environmental features like trees, bushes, water, etc.</td>
+</tr>
+<tr>
+<td>High Ground</td>
+<td>Normal</td>
+<td>+1 to +3 bonus to ranged combat skills</td>
+<td>Elevated positions that grant tactical advantages</td>
+</tr>
+<tr>
+<td>Cover</td>
+<td>Normal</td>
+<td>-1 penalty to ranged attacks through it</td>
+<td>Provides partial protection without blocking movement or line of sight</td>
+</tr>
+<tr>
+<td>Unstable Terrain</td>
+<td>Normal</td>
+<td>Requires Physical (Acrobatics) check to avoid falling prone</td>
+<td>Surfaces that are slippery, loose, or otherwise unstable. The Physical (Acrobatics) check must be made whenever a character moves into a hex of this type.</td>
+</tr>
+<tr>
+<td>Damaging Terrain</td>
+<td>Normal</td>
+<td>Causes fixed HP damage to both legs</td>
+<td>Surfaces that cause damage. Fixed HP damage is applied to both legs whenever a character moves into a hex of this type.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that posture and cover penalties stack. For example, a character
+laying down (-2 penalty) behind cover (-1 penalty) would have a total -3
+penalty to ranged attacks targeting them.</p>
+<p>Specific examples of all types of terrain (both special and not) are
+determined automatically by the setting and location, but all
+conceivable types of gameplay-relevant terrain should fall into one of
+these categories.</p>
+<h4 id="10112-posture-system">10.1.1.2. Posture System</h4>
+<p>Characters can adopt different postures during combat to gain defensive
+advantages at the cost of mobility. The posture system provides tactical
+options for players who want to trade movement for protection:</p>
+<table>
+<thead>
+<tr>
+<th>Posture</th>
+<th>Movement Restriction</th>
+<th>Ranged Combat Defense Bonus</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standing</td>
+<td>Normal movement</td>
+<td>None</td>
+<td>Standard posture with no restrictions or bonuses</td>
+</tr>
+<tr>
+<td>Crouching</td>
+<td>Only one hex per turn</td>
+<td>-1 modifier to hit</td>
+<td>Lower profile provides minor protection against ranged attacks</td>
+</tr>
+<tr>
+<td>Laying Down</td>
+<td>Cannot move</td>
+<td>-2 modifier to hit</td>
+<td>Maximum protection against ranged attacks at the cost of mobility</td>
+</tr>
+</tbody>
+</table>
+<p>Characters can change their posture as a minor action on their turn.
+This allows them to adapt their tactics based on the current situation,
+such as taking cover when under heavy ranged fire or standing up to move
+more freely.</p>
+<h4 id="10113-movement">10.1.1.3. Movement</h4>
+<p>Moving is considered a minor action that costs 3 action points. Players
+may move up to their best fleetness/quickness related <strong>Physical</strong> skill
+(such as <strong>Physical (Running)</strong> or <strong>Physical (Acrobatics)</strong>) minus 5
+(minimum of 1) as their movement distance. Since moving is a minor
+action, players with sufficient action points could potentially move
+multiple times during their turn, or move and still take a major action.
+Moving through difficult terrain costs additional movement points as
+determined by the terrain table above.</p>
+<h4 id="10114-line-of-sight">10.1.1.4. Line of Sight</h4>
+<p>Players who use ranged weapons must have a <strong>line of sight</strong> to the
+opponents they wish to attack. Only walls block movement and line of
+sight. Trees, bushes, and other environmental features count as walls in
+outdoor settings for the purpose of blocking line of sight. Characters
+can see and attack through other characters, but must make their combat
+skill check at a -2 disadvantage per character they're attacking
+through.</p>
+<h4 id="10115-range">10.1.1.5. Range</h4>
+<p>Any ranged item designed to be used with the spatial relations rules
+should come with a specified range. Players only need line of sight and
+a successful skill check to hit something within the range of their
+ranged weapon. <strong>For targets beyond the weapon's range, players get a -1
+penalty to their skill check for every hex beyond their range they
+aim.</strong></p>
+<h4 id="10116-flanking">10.1.1.6. Flanking</h4>
+<p>When attacking an enemy in melee combat, positioning can provide
+significant tactical advantages. If one or more of a character's allies
+are adjacent to an enemy that the character is attacking, this is
+considered <strong>flanking</strong>.</p>
+<p>Flanking provides the following benefits:</p>
+<ul>
+<li>The attacking character receives a +1 bonus to all attack skill checks
+  against the flanked enemy</li>
+<li>The flanked enemy receives a -1 penalty to all of their attack skill
+  checks</li>
+</ul>
+<p>Flanking represents the tactical advantage of having multiple attackers
+positioned around an enemy, making it difficult for the target to defend
+against attacks from multiple directions simultaneously. This bonus
+applies to all melee attacks, and the penalty applies to all attacks
+made by the flanked character until the flanking conditions change
+(either the allies move away or the target moves).</p>
+<h4 id="10117-zone-of-control">10.1.1.7. Zone of Control</h4>
+<p>Each character exerts control over the area immediately surrounding
+them. The six hexes adjacent to any character constitute their <strong>zone of
+control</strong>. This represents the area that a character can effectively
+threaten with their presence and weapons.</p>
+<p>When an opponent enters a character's zone of control, that opponent is
+considered <strong>engaged</strong> with the character. If the opponent attempts to
+leave the zone of control without first knocking the controlling
+character unconscious or killing them, the controlling character may
+make a free attack against the fleeing opponent as they attempt to
+escape.</p>
+<p>This free attack:</p>
+<ul>
+<li>Is made immediately when the opponent attempts to leave the zone of
+  control</li>
+<li>Does not consume the controlling character's major or minor action</li>
+<li>Must be declared before the opponent's movement is resolved</li>
+<li>Uses the controlling character's relevant combat skill</li>
+<li>Is resolved as a normal attack sequence (declare, roll, determine,
+  damage, armor, apply)</li>
+</ul>
+<p>This rule represents how difficult it is to simply walk away from an
+armed opponent without dealing with them first. The zone of control
+mechanic adds tactical depth to positioning and makes retreats more
+strategically meaningful.</p>
+<h3 id="1012-vehicles">10.1.2. Vehicles</h3>
+<p><img src="static/vehicles.svg" class="section-icon" /></p>
+<p>This advanced combat rule requires the <span class="spurious-link"
+target="* Spatial Relations"><em>Spatial Relations</em></span> rules to be in
+use.</p>
+<p>Vehicles add a new layer of tactical complexity to combat encounters.
+Whether it's a high-speed chase through a futuristic city or a naval
+battle between warships, vehicles require different handling than
+regular characters.</p>
+<h4 id="10121-vehicle-statistics">10.1.2.1. Vehicle Statistics</h4>
+<p>Every vehicle has several key statistics:</p>
+<ul>
+<li>
+<p><strong>Size</strong>: Determines how many characters a vehicle can hold:</p>
+</li>
+<li>
+<p>Small (S): One character riding on the outside</p>
+</li>
+<li>Medium (M): One character riding on the inside</li>
+<li>Large (L): Four characters riding on the inside</li>
+<li>
+<p>Extra Large (XL): Six characters riding on the inside</p>
+</li>
+<li>
+<p><strong>Acceleration Rate</strong>: A constant value measured in hexes,
+  representing how many hexes the vehicle can add to its current speed
+  each turn. This value also determines how many hexes the vehicle can
+  subtract from its current speed each turn when braking. For example, a
+  vehicle with an acceleration rate of 2 can increase or decrease its
+  speed by up to 2 hexes per turn.</p>
+</li>
+<li>
+<p><strong>Maneuverability</strong>: A constant rating that determines how many hex
+  sides the vehicle can turn each turn. For example, a vehicle with a
+  maneuverability of 2 can change its facing by up to 2 hex sides per
+  turn.</p>
+</li>
+<li>
+<p><strong>Damage Resistance (DR)</strong>: A constant value that reduces damage taken
+  by anyone inside the vehicle. Characters riding inside a vehicle apply
+  this DR in addition to any armor they are wearing when determining
+  damage taken from attacks.</p>
+</li>
+</ul>
+<p>Vehicles also have variable values that are tracked during play:</p>
+<ul>
+<li>
+<p><strong>Speed</strong>: A variable value that changes over time and represents the
+  number of hexes a vehicle moves on its turn, as long as this value is
+  greater than zero. Vehicles must move this many hexes in the direction
+  they are currently facing. Represented using a d100.</p>
+</li>
+<li>
+<p><strong>Facing</strong>: The current hex side the vehicle is pointed, which
+  determines the direction of movement. Represented by the direction the
+  vehicle token or mini is pointing in.</p>
+</li>
+</ul>
+<h4 id="10122-steering-and-movement">10.1.2.2. Steering and Movement</h4>
+<p>Vehicles have two primary movement actions that each cost 3 Action
+Points:</p>
+<ul>
+<li>
+<p><strong>Accelerating or Braking</strong>: Vehicles can accelerate or brake by up to
+  their acceleration rate in hexes per turn. Acceleration increases the
+  vehicle's speed, while braking decreases it. A vehicle's speed can
+  never be reduced below zero.</p>
+</li>
+<li>
+<p><strong>Turning</strong>: Vehicles can change their facing by up to their
+  maneuverability rating in hex sides per turn.</p>
+</li>
+</ul>
+<p>When steering, the vehicle's facing changes first, and then the vehicle
+moves in that new direction. This means that players can plan their
+turns by first deciding how much to turn, then moving the appropriate
+number of hexes in that direction.</p>
+<p>Vehicles must move a number of hexes equal to their current speed on
+each turn, as long as their speed is greater than zero. This movement is
+mandatory and must be in the direction the vehicle is currently facing.
+Players cannot choose to move fewer hexes than their current speed.</p>
+<h4 id="10123-using-vehicles-in-combat">10.1.2.3. Using Vehicles in Combat</h4>
+<p>Characters operating vehicles use the vehicle's movement rules instead
+of their own. Any characters riding in the vehicle move with it
+automatically.</p>
+<p>Attacks against vehicles directly are not possible in this system.
+Instead, characters must target those inside the vehicle, and vehicles
+act as simple pieces of armor for the characters inside the vehicle, but
+not outside.</p>
+<p>Vehicles can be used to ram enemies. This does an amount of damage
+points determined by the vehicle's size plus its current speed, where
+Small=5, Medium=10, Large=15, XL=20. The target can make a defense roll
+(such as a skill check against <strong>Physical (Dodge)</strong>) as normal, even
+though the vehicle does not make a combat roll or roll for damage.</p>
+<p>XL vehicles can also be used to knock down walls, but this reduces the
+speed of that vehicle back down to one.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="game_mastering.html" class="btn btn-neutral float-left" title="Game Mastering"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="dice_roller.html" class="btn btn-neutral float-right" title="Appendix II - Die Roller Tool">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="game_mastering.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="dice_roller.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

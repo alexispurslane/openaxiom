@@ -31,7 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> OpenAxiom TTRPG SRD
+          <a href="index.html" class="icon icon-home"> OpenAxiom TTRPG SRD
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -41,7 +41,7 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="openaxiom_manual.html">Introduction</a>
+                <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a>
                 </li>
               </ul>
               <ul>
@@ -55,21 +55,21 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Core Game Loop</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#units-of-time">Units of Time</a>
+    <li class="toctree-l2"><a class="reference internal" href="#41-units-of-time">4.1. Units of Time</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#tactical-time">Tactical Time</a>
+    <li class="toctree-l2"><a class="reference internal" href="#42-tactical-time">4.2. Tactical Time</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#initiative">Initiative</a>
+    <li class="toctree-l3"><a class="reference internal" href="#421-initiative">4.2.1. Initiative</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#action-points">Action Points</a>
+    <li class="toctree-l3"><a class="reference internal" href="#422-action-points">4.2.2. Action Points</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#triggers">Triggers</a>
+    <li class="toctree-l3"><a class="reference internal" href="#423-triggers">4.2.3. Triggers</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#scene-time">Scene Time</a>
+    <li class="toctree-l2"><a class="reference internal" href="#43-scene-time">4.3. Scene Time</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#rests">Rests</a>
+    <li class="toctree-l2"><a class="reference internal" href="#44-rests">4.4. Rests</a>
     </li>
     </ul>
                 </li>
@@ -94,6 +94,14 @@
                 <li class="toctree-l1"><a class="reference internal" href="game_mastering.html">Game Mastering</a>
                 </li>
               </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="advanced.html">Appendix I - Advanced Rules</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="dice_roller.html">Appendix II - Die Roller Tool</a>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
@@ -101,13 +109,13 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">OpenAxiom TTRPG SRD</a>
+          <a href="index.html">OpenAxiom TTRPG SRD</a>
         
       </nav>
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+    <li><a href="index.html" class="icon icon-home" aria-label="Docs"></a></li>
       <li class="breadcrumb-item active">Core Game Loop</li>
     <li class="wy-breadcrumbs-aside">
     </li>
@@ -117,7 +125,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="core-game-loop">Core Game Loop</h1>
+                <h1 id="4-core-game-loop">4. Core Game Loop</h1>
 <p>OpenAxiom uses two distinct types of game time to create a dynamic and
 flexible gameplay experience: tactical time and scene time. These
 different pacing mechanisms allow the game to shift between intense,
@@ -125,7 +133,7 @@ structured sequences and free-flowing narrative moments as needed.</p>
 <p>The transition between tactical and scene time is a binary decision made
 by the Game Master based on the needs of the narrative and the intensity
 of the situation.</p>
-<h2 id="units-of-time">Units of Time</h2>
+<h2 id="41-units-of-time">4.1. Units of Time</h2>
 <p>There are five main units of time in OpenAxiom. Here they are, in order
 of granularity:</p>
 <ol>
@@ -144,12 +152,12 @@ of granularity:</p>
 <li><strong>Campaign</strong>: a full narrative with a beginning, middle, and end,
     composed of sessions.</li>
 </ol>
-<h2 id="tactical-time">Tactical Time</h2>
+<h2 id="42-tactical-time">4.2. Tactical Time</h2>
 <p>Tactical time is used during combat encounters, chases, or any situation
 where precise timing and turn order are important. During tactical time,
 all participants (players, NPCs, and enemies) take turns in a specific
 order determined by initiative rolls.</p>
-<h3 id="initiative">Initiative</h3>
+<h3 id="421-initiative">4.2.1. Initiative</h3>
 <p>At the start of tactical time, all participants roll 3d6. Turns are
 taken in order from lowest to highest roll. In the case of ties,
 participants with the same roll go in clockwise order from the Game
@@ -157,7 +165,7 @@ Master.</p>
 <p>Each full cycle through all participants constitutes one round of
 tactical time. Participants retain their initiative order throughout the
 encounter unless specific game effects modify it.</p>
-<h3 id="action-points">Action Points</h3>
+<h3 id="422-action-points">4.2.2. Action Points</h3>
 <p>In tactical time, each participant has a pool of action points (AP) they
 can spend on various actions during their turn. Characters start each
 turn with action points equal to their best Physical skill related to
@@ -187,8 +195,12 @@ that they can afford. Actions have varying costs:</p>
 </li>
 </ol>
 <p>Participants can spend any or all of their action points during their
-turn. Unused action points are normally lost at the end of the turn and
-do not carry over to future turns.</p>
+turn. Unused Action Points are typically lost at the end of your turn.
+However, you may declare at the start of your turn that you are
+reserving a specific number of AP for a Trigger. This reserved AP is not
+lost at the end of your turn but is instead lost <em>before your next turn</em>
+(so after an entire round has passed) if the Trigger is not activated
+before then.</p>
 <p>For example, a character with 9 action points could:</p>
 <ol>
 <li>Take one major action (6 AP) and one minor action (3 AP) for a total
@@ -200,7 +212,7 @@ do not carry over to future turns.</p>
 <p>Players who wish to set triggers (see Triggers section) must
 deliberately take fewer actions during their turn to maintain a reserve
 of unused AP that can be used for triggered actions.</p>
-<h3 id="triggers">Triggers</h3>
+<h3 id="423-triggers">4.2.3. Triggers</h3>
 <p>Players can specify triggers for their actions. A trigger is an if-else
 condition where if the condition is met, the player's character takes an
 action before anyone else can act.</p>
@@ -245,7 +257,7 @@ reserve, effectively "banking" AP for potential triggers.</p>
 </ol>
 </li>
 </ol>
-<h2 id="scene-time">Scene Time</h2>
+<h2 id="43-scene-time">4.3. Scene Time</h2>
 <p>Scene time is used for exploration, roleplaying, investigation, and
 other non-combat situations. During scene time, gameplay is completely
 free-flowing:</p>
@@ -258,7 +270,7 @@ free-flowing:</p>
 <p>Scene time is ideal for conversations, exploration, research, and other
 activities where the structured pace of tactical time would be
 unnecessarily restrictive.</p>
-<h2 id="rests">Rests</h2>
+<h2 id="44-rests">4.4. Rests</h2>
 <p>Rests represent periods when characters take time to recover from
 exertion, heal injuries, and restore their mental and physical
 well-being. The Game Master decides when rests occur based on the

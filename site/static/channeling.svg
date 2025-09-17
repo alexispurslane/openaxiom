@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6a5acd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4169e1;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4169e1;stop-opacity:0.2" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Central energy source -->
+  <circle cx="50" cy="50" r="15" fill="url(#energyGradient)" />
+  <circle cx="50" cy="50" r="15" fill="url(#centerGlow)" />
+  
+  <!-- Flowing energy lines -->
+  <path d="M50 35 Q60 25 70 35 Q80 45 70 55 Q80 65 70 75 Q60 85 50 75 Q40 85 30 75 Q20 65 30 55 Q20 45 30 35 Q40 25 50 35" 
+        fill="none" stroke="url(#energyGradient)" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Outer energy particles -->
+  <circle cx="30" cy="25" r="2" fill="#6a5acd" />
+  <circle cx="70" cy="25" r="2" fill="#6a5acd" />
+  <circle cx="25" cy="50" r="2" fill="#4169e1" />
+  <circle cx="75" cy="50" r="2" fill="#4169e1" />
+  <circle cx="30" cy="75" r="2" fill="#6a5acd" />
+  <circle cx="70" cy="75" r="2" fill="#6a5acd" />
+  
+  <!-- Channeling flow lines -->
+  <path d="M50 15 L50 35" stroke="url(#energyGradient)" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M50 65 L50 85" stroke="url(#energyGradient)" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M15 50 L35 50" stroke="url(#energyGradient)" stroke-width="1.5" stroke-linecap="round" />
+  <path d="M65 50 L85 50" stroke="url(#energyGradient)" stroke-width="1.5" stroke-linecap="round" />
+</svg>

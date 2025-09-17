@@ -98,7 +98,7 @@ h2 {
 
 h3 {
     font-family: 'Lora', serif;
-    font-size: 1.2em;
+    font-size: 1.7em; /* Increased from 1.2em */
     color: #333333;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;
@@ -116,23 +116,16 @@ h3 {
 
 h4 {
     font-family: 'Lora', serif;
-    font-size: 1.3em;
-    color: #333333;
+    font-size: 1.3em; /* Decreased from 1.3em */
+    color: #d63031;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;
     text-align: left;
-    position: relative;
-    padding: 0.2em 1em;
-    background: linear-gradient(120deg, #ff6b6b 0%, #d63031 100%);
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: inline-block;
 }
 
 h5 {
     font-family: 'Lora', serif;
-    font-size: 1.1em;
+    font-size: 1.2em; /* Increased from 1.1em */
     color: #333333;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;
@@ -148,7 +141,7 @@ h5 {
 
 h6 {
     font-family: 'Lora', serif;
-    font-size: 1em;
+    font-size: 1.1em; /* Increased from 1em */
     color: #333333;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;
@@ -661,4 +654,48 @@ table.trait-definition td {
 
 .wy-table-bordered-all, .wy-table-bordered-all tbody > tr > td, .wy-table-bordered-all thead > tr > th {
     border: 1px solid #ddd;
+}
+
+/* Fix search bar corners to be rounded rectangles */
+.wy-side-nav-search input[type="text"] {
+    border-radius: 4px !important; /* Changed from fully rounded to subtle rounded corners */
+}
+
+/* Fix heading link text color to be readable */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: white !important; /* Use white text for links in headings to contrast with the red background */
+    text-decoration: none;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    text-decoration: underline;
+}
+
+/* Fix consequences heading placement */
+/* Ensure headings are displayed as blocks to prevent inline issues */
+h1, h2, h3, h4, h5, h6 {
+    display: block !important;
+    left: auto !important;
+    transform: none !important;
+    text-align: center !important;
+}
+
+/* Special handling for h4-h6 which should be left-aligned */
+h4, h5, h6 {
+    text-align: left !important;
+}
+
+/* Ensure section icons are properly spaced */
+.section-icon {
+    display: block !important;
+    margin: 1em auto !important;
+}
+
+/* Fix readthedocs navbar text alignment to be left-aligned */
+.wy-nav-side, .wy-nav-side * {
+    text-align: left !important;
+}
+
+.wy-menu-vertical a {
+    text-align: left !important;
 }
