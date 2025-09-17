@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 520" font-family="sans-serif">
+  <title>Diagram of Body Part Hit Locations and Modifiers</title>
+  <style>
+    .figure { stroke: #000; stroke-width: 2px; fill: none; }
+    .line { stroke: #000; stroke-width: 1px; }
+    .label { font-size: 16px; font-weight: bold; }
+    .data { font-size: 14px; }
+  </style>
+
+  <!-- Figure -->
+  <g class="figure">
+    <!-- Head -->
+    <circle cx="250" cy="90" r="30"/>
+    <!-- Torso -->
+    <path d="M 220,120 L 210,270 L 290,270 L 280,120 Z"/>
+    <!-- Arms -->
+    <path d="M 220,125 L 190,250 L 210,270"/>
+    <path d="M 280,125 L 310,250 L 290,270"/>
+    <!-- Legs -->
+    <path d="M 210,270 L 190,450 L 230,450"/>
+    <path d="M 290,270 L 310,450 L 270,450"/>
+  </g>
+
+  <!-- Data Callouts -->
+
+  <!-- Head -->
+  <g text-anchor="middle">
+    <line class="line" x1="250" y1="60" x2="250" y2="40"/>
+    <text x="250" y="35">
+      <tspan class="label" x="250" dy="-1.2em">HEAD</tspan>
+      <tspan class="data" x="250" dy="1.4em">HP: 1/2 STR</tspan>
+      <tspan class="data" x="250" dy="1.2em">MOD: -3</tspan>
+    </text>
+  </g>
+
+  <!-- Torso -->
+  <g text-anchor="start">
+    <line class="line" x1="285" y1="200" x2="330" y2="200"/>
+    <text x="335" y="190">
+      <tspan class="label">TORSO</tspan>
+      <tspan class="data" x="335" dy="1.4em">HP: FULL STR</tspan>
+      <tspan class="data" x="335" dy="1.2em">MOD: +0</tspan>
+    </text>
+  </g>
+
+  <!-- Arm -->
+  <g text-anchor="end">
+    <line class="line" x1="195" y1="180" x2="150" y2="180"/>
+    <text x="145" y="170">
+      <tspan class="label">ARM</tspan>
+      <tspan class="data" x="145" dy="1.4em">HP: 2/3 STR</tspan>
+      <tspan class="data" x="145" dy="1.2em">MOD: -2</tspan>
+    </text>
+  </g>
+
+  <!-- Leg -->
+  <g text-anchor="end">
+    <line class="line" x1="195" y1="360" x2="150" y2="360"/>
+    <text x="145" y="350">
+      <tspan class="label">LEG</tspan>
+      <tspan class="data" x="145" dy="1.4em">HP: 2/3 STR</tspan>
+      <tspan class="data" x="145" dy="1.2em">MOD: -2</tspan>
+    </text>
+  </g>
+
+</svg>
