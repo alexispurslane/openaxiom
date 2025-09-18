@@ -11,6 +11,8 @@ nav:
   - Game Mastering: game_mastering.md
   - Appendix I - Advanced Rules: advanced.md
   - Appendix II - Die Roller Tool: dice_roller.md
+  - Packs:
+    - General Pack: packs/general.md
 theme:
   name: readthedocs
 plugins:

@@ -38,21 +38,66 @@ The Game Master provides a specific list of skills that are available in their g
 :ID:       7E9F3A2B-5C0D-4E8F-9A3B-6C0D5E9F2A4B
 :END:
 
-The base target number for any skill check is the character's skill value. A character with *Piloting (Starship)* at 12 would have a target number of 12 for starship piloting checks.
+The target number for any skill check is determined by three factors:
 
-The target number is then modified by applicable character traits and situational factors as determined by the Game Master. Applicable traits always modify the target number, while situational adjustments typically range from -3 to +3, representing extremely easy to extremely difficult circumstances. Trait modifiers will vary based on the specific traits the character possesses and how they apply to the situation. The following table provides guidelines for determining appropriate modifiers, showing what the resulting target number would be for a character with the default skill level of 9:
+1. *Skill value*: The base value of the most specific relevant skill on the part of the player making the check. This represents the character's competency in performing the desired action, and as such is the core mechanic of the logic of action.
 
-#+ATTR_HTML: :class difficulty-modifier-table
-| Difficulty        | Modifier | Target Number (Skill 9) | Description                                                         |
-|-------------------+----------+-------------------------+---------------------------------------------------------------------|
-| Very Easy         |       +3 |                      12 | Tasks that should almost always succeed for competent characters.   |
-| Easy              |       +2 |                      11 | Tasks that are straightforward for characters with relevant skills. |
-| Moderate          |       +1 |                      10 | Tasks of average difficulty for characters with relevant skills.    |
-| Medium            |        0 |                       9 | No modifier for tasks of standard difficulty.                       |
-| Hard              |       -1 |                       8 | Tasks that challenge even skilled characters.                       |
-| Very Hard         |       -2 |                       7 | Tasks that are difficult even for experts.                          |
-| Nearly Impossible |       -3 |                       6 | Tasks that border on the impossible.                                |
+2. *Trait modifiers*: Any modifiers applied by the player's traits to the skill value. Adding these forms the *effective skill value*. This represents the inherent abilities or disabilities the character might have that effect their ability to carry out whatever action they're attempting. These are almost just as important as the character's skill value in the relevant action.
 
+3. *Difficulty modifiers*: These represent the inherent difficulty of the task, but also situational, environmental factors, such as whether it's raining while a player is trying to run. These values typically range from -10 to +10, representing extremely easy at +10, to average difficulty at 0, to extremely difficult at -10.
+
+Here's a table that can provide a general guideline for eyeballing the difficulty of different degrees of difficulty modifiers:
+
+#+ATTR_HTML: :class difficulty-modifiers-table
+| Difficulty Modifier | Task Description | Examples |
+|---------------------|------------------|----------|
+| +10 | Trivial/Easy | Walking on a flat, stable surface; recalling common knowledge; lifting a feather |
+| +5 to +9 | Very Easy | Walking carefully on a stable surface; recalling recently learned information; lifting a light object |
+| +1 to +4 | Easy | Simple conversation; basic arithmetic; lifting a moderately heavy object |
+| 0 | Average/Nominal | Standard conversation; routine tasks; lifting a heavy object |
+| -1 to -4 | Hard | Running while injured; solving a moderately complex puzzle; lifting a very heavy object |
+| -5 to -9 | Very Hard | Performing delicate surgery in poor conditions; hacking a sophisticated system; lifting an extremely heavy object |
+| -10 | Extremely Hard/Nearly Impossible | Performing brain surgery in a moving vehicle; hacking a military-grade system; lifting something beyond human capability |
+
+This table can also be used as a reference when determining the part of the difficulty modifier determined by the /inherent/ complexity of the task at hand.
+
+The table below provides specific examples of common /situational/ modifiers that can be applied based on environmental conditions, physical state, equipment, social context, and task complexity, that could be added to the difficulty modifier on top of the inherent task complexity. Multiple factors can stack, but the GM should use discretion to avoid excessive modifiers that might make tasks impossible or trivial, generally capping total situational modifiers at ±5 to maintain game balance.
+
+#+ATTR_HTML: :class situational-factors-table
+| Situational Factor | Modifier | Description |
+|--------------------|----------|-------------|
+| *Environmental Conditions* | | |
+| Bright sunlight/glare | -1 | Squinting or difficulty seeing clearly |
+| Dim light | -2 | Reduced visibility without night vision |
+| Complete darkness | -4 | No visibility without special aids |
+| Rain/sleet | -1 to -2 | Slippery conditions and reduced visibility |
+| Heavy rain/storm | -3 | Severely impaired vision and movement |
+| Extreme cold | -2 | Reduced dexterity and stamina |
+| Extreme heat | -2 | Reduced stamina and focus |
+| High winds | -1 to -2 | Difficulty with balance and precision |
+| Zero gravity | -3 | Unfamiliar movement and positioning |
+| Underwater | -3 to -5 | Resistance and visibility issues |
+| *Physical State* | | |
+| Fatigued/tired | -2 | Reduced stamina and focus |
+| Rushing/under time pressure | -1 to -3 | Hurrying leads to mistakes |
+| Careful/extra time taken | +1 to +3 | Taking time improves precision |
+| *Equipment/Tools* | | |
+| Improvised tools | -2 to -4 | Makes the task more difficult |
+| No tools | -3 to -5 | Performing task without proper equipment |
+| High-quality tools | +2 to +4 | Superior equipment aids performance |
+| Faulty/damaged equipment | -2 to -3 | Equipment hampers performance |
+| *Social Context* | | |
+| Friendly/helpful observers | +1 | Encouragement boosts confidence |
+| Hostile/hostile observers | -1 to -2 | Pressure affects performance |
+| Neutral/uninterested observers | 0 | No significant effect |
+| *Task Complexity* | | |
+| Distracted/divided attention | -2 | Multitasking reduces focus |
+| Focused/single task | +1 | Concentration improves performance |
+| Complex multi-step task | -2 to -4 | Many parts increase chance of error |
+| Familiar routine task | +2 | Experience makes it easier |
+| Completely new/unfamiliar | -3 | Lack of experience hampers performance |
+
+Not every factor above needs to be applied to every check. The Game Master should instead use these examples as a guideline for adjusting difficulty based on situational factors, focusing only on the most relevant modifiers for the specific situation.
 
 ** Momentum
 :PROPERTIES:

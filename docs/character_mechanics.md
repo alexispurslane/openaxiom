@@ -6,11 +6,11 @@ This document becomes the GM's primary in-game reference for how a character fun
 
 ![](static/skills.svg)
 
-A skill represents anything a character can do or be. This includes physical abilities like strength or swimming, and mental aptitudes such as various forms of intelligence. Skills are trainable, meaning a character's proficiency can improve over time. Skills have a name and a numerical value, indicating proficiency.
+A skill represents anything a character can do or be. This includes physical abilities like strength or swimming, and mental aptitudes such as various forms of intelligence. Skills are trainable, meaning a character's proficiency can improve over time. Skills have a name, denoting the skill's scope, and a numerical value, indicating proficiency.
 
 ### 3.1.1. Skill Naming and Hierarchy
 
-Skills are named to reflect their scope and specialization. Skills can be organized into a hierarchical tree. A general skill can have more specific versions. The naming format for specific skills uses parentheses. For example, a general skill like **Piloting** can have a more specific version like **Piloting (Starship)**. This can extend further, such as **Piloting (Starship) (Freighter)**. The game master determines the specific skills that exist in a game world, although players can suggest new skills, or new specializations of skills, as long as the GM agrees.
+Skills are named to reflect their scope and specialization. Skills are organized into a hierarchical tree with multiple root nodes, so general skill can have more specific versions. The naming format for specific skills uses parentheses. For example, a general skill like **Piloting** can have a more specific version like **Piloting (Starship)**. This can extend further, such as **Piloting (Starship) (Freighter)**. The game master determines the specific skills that exist in a game world, although players can suggest new skills, or new specializations of skills, as long as the GM agrees.
 
 When a character attempts a task requiring a specific skill the character does not possess, the character can use a more general skill from the same hierarchy. However, using a general skill for a more specific task incurs a disadvantage. A character using a general skill for a more specific skill suffers a -1 disadvantage for each level of specialization their more general skill is missing. For example, using **Piloting** for a **Piloting (Starship)** task incurs a -1 disadvantage, while using **Piloting** for a **Piloting (Starship) (Freighter)** task incurs a -2 disadvantage. Rule of thumb: count the number of parenthesized expressions to see what the disadvantage should be.
 
@@ -41,7 +41,7 @@ The following table provides a qualitative evaluation of skill levels based on t
 | 17 | 99.54% | Masterful | Virtually flawless. Represents pinnacle of human capability. |
 | 18 | 100.00% | Legendary | Automatic success. Character cannot fail under normal conditions. |
 
-Note that these probabilities and qualitative levels apply to tasks of average difficulty. Tasks that are easier or harder than average will have correspondingly higher or lower success probabilities. A skill of 18 still represents the pinnacle of human capability rather than supernatural power.
+Note that these probabilities and qualitative levels apply to tasks of *average* difficulty. To map tasks of higher or lower difficulty onto this table, to figure out how a character's effective skill measures up *to the task at hand*, just add or subtract the difficulty modifier from their skill and only then compare it to this table. For instance, if a character has a skill of 23, but the difficulty modifier is -10, then relative to the task at hand their skill would be 13, or Very Good.
 
 ## 3.2. Traits
 
@@ -51,15 +51,15 @@ A trait is a passive effect, representng inherent advantages or disadvantages a 
 
 ### 3.2.1. Trait Value
 
-Each trait is inherently either positive (a boost) or negative (a hindrance). During character creation, the player chooses a numerical value for the trait, which determines both the trait's effect on skills and its character point cost. For positive traits, the player chooses a positive value (e.g., from +1 to +5) and spends that many character points. For negative traits, the player chooses a negative value (e.g., from -1 to -5) and gains that many character points.
+Each non-Special trait is inherently either positive (a boost) or negative (a hindrance). During character creation, the player chooses a numerical value for the trait, which determines both the trait's effect on skills and its character point cost. For positive traits, the player chooses a positive value (e.g., from +1 to +5) and spends that many character points. For negative traits, the player chooses a negative value (e.g., from -1 to -5) and gains that many character points.
 
-The value of the trait directly determines the size of its effect in the case of broad and narrow skill-based traits. For example, a +3 trait provides a +3 bonus to affected skills, while a -2 trait imposes a -2 penalty. With special traits, the value indicates generally how much the special ability or rule is worth, but doesn't necessarily mechanically feed in.
-
-For example:
+The value of the trait directly determines the size of its effect in the case of broad and narrow skill-based traits. For example:
 
 - A player might choose the **Photographic Memory** trait at +3, spending 3 character points
 
 - A player might choose the **Absent-Minded** trait at -2, gaining 2 character points
+
+Special traits, on the other hand, come with fixed costs, as they typically introduce special rules or effects that are not easily dialed up and down linearly like regular traits are.
 
 **Warning:** Game Masters should be aware that extreme trait values like +5 or -5 represent a 50% swing in success rates, which can have a massive effect on characters. Players are strongly encouraged to talk to their GMs before taking any such extreme traits to ensure they fit the campaign and won't unbalance the game.
 
@@ -75,26 +75,27 @@ Traits are categorized based on how they affect skills. Understanding these cate
 
 Broad traits affect one or more top-level general skill categories. These traits have wide-ranging effects across many related skills. For example, a **Natural Leader** trait might affect the entire **Social** skill category, providing bonuses to **Social (Diplomacy)**, **Social (Command)**, **Social (Intimidation)**, and any other skills that fall under the **Social** umbrella.
 
-Broad traits represent fundamental aspects of a character's personality or physiology that affect large areas of their capabilities. They're typically more impactful than narrow traits but also more balanced in their effects.
+Broad traits represent fundamental aspects of a character's personality or physiology that affect large areas of their capabilities. They're typically more impactful than narrow traits but also more balanced in their effects. Since specific skills are more commonly directly used in skill checks, and Broad traits only effect general skills, Broad traits — as well as general skills themselves — can be thought of as the closest thing in OpenAxiom to traditional character attributes like STR and DEX, but there are mechanical differences.
 
 #### 3.2.2.2. Narrow Traits
 
 Narrow traits affect one or more first-level specialized skills. These traits have more focused effects on specific areas of expertise. For example, **Perfect Pitch** affects **Art (Music)** specifically, rather than all **Art** skills. Similarly, **Keen Eyesight** might affect **Perception (Visual)** but not other perception skills.
 
-Narrow traits represent specific talents or limitations that only apply to particular skill areas. They're more specialized than broad traits and typically have more pronounced effects within their limited scope.
+Narrow traits represent specific talents or limitations that only apply to particular skill areas. They're more specialized than broad traits and typically have more pronounced effects within their limited scope. These are less like character attributes, and more like a character having an inbuilt talent for something or even savant status with it, and/or having been trainted in it since birth.
 
-#### 3.2.2.3. Situational Traits
-
-Situational traits can be either broad or narrow but only activate under specific conditions defined by the trait. For example, **Night Vision** is a narrow situational trait that only applies to perception skills when in low-light conditions. **Cold Tolerance** might be a broad situational trait that affects all physical skills but only in freezing environments. The Game Master determines when situational traits activate based on the narrative circumstances.
-
-Situational traits represent abilities or limitations that only matter in specific contexts. They add flavor and tactical depth to characters without constantly affecting gameplay.
-
-#### 3.2.2.4. Special Traits
+#### 3.2.2.3. Special Traits
 
 Traits can also be designated as "Special" traits. These traits introduce simple new rules that layer on top of, but do not replace, core game mechanics. Like the way cards in some deck-building games introduce custom rules, Special traits add unique mechanical effects to a character that go beyond simple skill bonuses or penalties. For example, a **Second Wind** trait might allow a character to recover some health once per session, or a **Lucky Charm** trait might allow rerolling a failed skill check once per game session.
 
-> The medical bay is chaos. Emergency lights cast long, dancing shadows as Dr. Aris Thorne prepares for emergency surgery. The GM sets the scene: "Aris, the lights are failing. Your innate **Composure** (+2 to all Medicine) helps you stay calm amidst the panic. However, your **Shaky Hands** (-3 to Surgery) are a real problem for this delicate work. Luckily, your **Night Vision** augments (+1 in low-light) allow you to see just enough to operate. Let's calculate your final target number."
+#### 3.2.2.4. Situational Traits
+
+Situational traits can be broad, or narrow, or special, but only activate under specific conditions defined by the trait. For example, **Night Vision** is a narrow situational trait that only applies to perception skills when in low-light conditions. **Cold Tolerance** might be a broad situational trait that affects all physical skills but only in freezing environments. The Game Master determines when situational traits activate based on the narrative circumstances.
+
+Situational traits represent abilities or limitations that only matter in specific contexts. They add flavor and tactical depth to characters without constantly affecting gameplay.
+
+> The medical bay is chaos. Emergency lights cast long, dancing shadows as Dr. Aris Thorne prepares for emergency surgery. The GM sets the scene: "Aris, the lights are failing. Your innate **Doctor's Composure** (+2 to all Medicine) helps you stay calm amidst the panic. However, your **Shaky Hands** (-3 to Surgery) are a real problem for this delicate work. Luckily, your **Night Vision** augments (+1 in low-light) allow you to see just enough to operate. Let's calculate your final target number."
 >
+> - **Calculation:** 13 (Base Skill) + 2 (Broad Trait) - 3 (Narrow Trait) + 1 (Situational Trait) = 13.
 
 ### 3.2.3. Standard Trait Definition Format
 
@@ -184,8 +185,6 @@ Other than these size and slot requirements, inventory is very simple. Players c
 
 Items that are particularly large, bulky, or numerous may require special consideration from the Game Master, but in general, players should be able to carry a reasonable amount of equipment based on their character's physical capabilities.
 
-When characters drop items due to crippling injuries or player choice during combat, especially when using the spatial relations system, these items are placed on the hex occupied by the character. Other characters can only pick up these dropped items if they are positioned on the same hex. This adds a tactical element to item management during combat, as players must consider not only their own positioning but also the potential value of items dropped by allies or enemies.
-
 ### 3.3.2. How Items Affect Characters
 
 The way items affect characters falls into one of three categories, with an additional modifier for situational items:
@@ -200,11 +199,14 @@ The most basic types of items are "skill checks in a box." These items list one 
 
 #### 3.3.2.2. Skill Prerequisite Items
 
-The next level of complexity includes skill prerequisite items. These items are specified as required by a skill to perform that skill effectively. This is usually specified in resource packs, but the ultimate decision is up to the GM. For example, a lockpick set might be required for **Physical (Lockpicking)** checks, or a computer might be required for **Computers (Hacking)** checks. Without these prerequisite items, characters are fully unable to attempt certain skill checks.
+The next level of complexity includes skill prerequisite items. These items are specified as required by a skill to perform that skill effectively. This is usually specified in resource packs, but the ultimate decision is up to the GM. For example, a lockpick set might be required for **Physical (Lockpicking)** checks, or a computer might be required for **Computers (Hacking)** checks.
+
+Such prerequisite items are not strictly necessary, but working without them will add a "No tools" penalty, whereas attempting to use a **Crafting** skill check to jerry-rig the necessary tools, if it succeeds, will result in a "Improvised tools" penalty. The quality of the tools can also effect what penalties apply to the relevant skill check. For more, see [the Determining Target Numbers section of the Logic of Action chapter](logic_of_action.md#513-determining-target-numbers).
 
 | Professional Lockpick Set | Prerequisite |
 |--------|--------|
 | Required For | Physical (Lockpicking) |
+| Quality | High/Normal/Faulty |
 
 #### 3.3.2.3. Special Items
 
@@ -232,15 +234,15 @@ Lore items are usually Small in size, at max Medium, and don't convey any mechan
 
 #### 3.3.2.6. Weapon and Armor Properties
 
-Weapons and armor are Special items that can have additional mechanical properties beyond their basic category. These properties can be added as rows to the item cards.
+Weapons and armor are Special items that can have additional mechanical properties beyond their basic category. These properties can be added as rows to the item cards.The items are as follows:
 
-Weapons have a Required Skill property indicating the minimum skill level needed to use the weapon effectively. If a character's skill level is below this requirement, they must pay additional action points to make attacks with the weapon (see combat rules). For example, a masterwork sword might have "Required Skill: 12" indicating it requires a Combat (Melee) skill of at least 12 to use without penalty.
+- **Required Skill**: Weapons have a Required Skill property indicating the minimum skill level needed to use the weapon effectively. If a character's skill level is below this requirement, they must pay additional action points to make attacks with the weapon (see combat rules). For example, a masterwork sword might have "Required Skill: 12" indicating it requires a Combat (Melee) skill of at least 12 to use without penalty.
 
-Weapons may have a Damage property indicating the dice rolled to determine how much harm they inflict. For example, a sword might have "Damage: 2d6" indicating it rolls two six-sided dice for damage.
+- **Damage**: Weapons also have a Damage property indicating the dice rolled to determine how much harm they inflict. For example, a sword might have "Damage: 2d6" indicating it rolls two six-sided dice for damage.
 
-Ranged weapons may have a Range property indicating the distance at which they remain effective. For example, a bow might have "Range: 10" indicating it can effectively target opponents within 10 hexes.
+- **Range**: Ranged weapons may have a Range property indicating the distance at which they remain effective. For example, a bow might have "Range: 10" indicating it can effectively target opponents within 10 hexes.
 
-Armor may have a Damage Resistance property that reduces the amount of harm the wearer takes from attacks. For example, leather armor might have "Damage Resistance: 2" indicating it reduces incoming damage by 2 points.
+- **Damage Resistance**: Armor may have a Damage Resistance property that reduces the amount of harm the wearer takes from attacks. For example, leather armor might have "Damage Resistance: 2" indicating it reduces incoming damage by 2 points.
 
 These properties should be added as rows to the item card format, as shown in the example below:
 
@@ -323,7 +325,7 @@ Each harm tracker progresses through four distinct levels, with corresponding pe
 
 - **Wrecked (Level 3)**: The character endures severe trauma that gravely hampers their effectiveness. Applies a -3 penalty to all affected skills.
 
-- **Incapacitated (Level 4)**: The character is completely unable to function and must sit out the scene. The character cannot take actions requiring that type of effort.
+- **Incapacitated (Level 4)**: The character is completely unable to function in that way, and cannot take actions requiring that type of effort.
 
 When a harm tracker applies a penalty to a general skill, it also applies to any more specific sub-skills under that general skill. For example, if Physical harm affects **Combat**, it also affects **Combat (Melee)** and **Combat (Ranged)**.
 
@@ -387,7 +389,11 @@ Story points can be saved and accumulated over multiple sessions. They do not ne
 
 Any amount of story points can be applied to skills the character already has. Increasing a skill's value requires more story points as the skill becomes more proficient. Each improvement follows a simple step progression: the first time a skill is improved (when it's initially unlocked) costs 1 story point, the second improvement costs 2 story points, the third costs 3 story points, and so on.
 
-The formula for determining the cost to improve a skill to the next level is: next level cost = new value - 9
+The formula for determining the cost to improve a skill to the next level is:
+
+``` next level cost = new value - 9 ```
+
+Here's a quick reference table for the first few skill levels:
 
 | Skill Value | Cost From Previous |
 |--------|--------|
@@ -405,7 +411,9 @@ This is the primary method for making existing capabilities more powerful.
 
 As characters improve their skills, their tactical capabilities in combat also increase. In particular, a character's maximum action points (AP) available each turn in tactical combat is determined by their best Physical skill related to dexterity or speed. When a character improves any of these skills, their available AP increases accordingly, allowing them to take more actions during their turn.
 
-Reaching the pinnacle of skill mastery is an extraordinary feat. A character starting with a skill at the default "unlocked" level of 10 would need to spend a total of 44 story points to advance that skill all the way to 18 (Legendary). This represents a significant investment of time and effort, as characters typically earn only 3-6 story points per session. It would take roughly 7-15 sessions of maximum story point earnings to reach Legendary status in a single skill, reinforcing that true mastery requires tremendous dedication and perseverance.
+Reaching the pinnacle of human skill mastery is an extraordinary feat. A character starting with a skill at the default "unlocked" level of 10 would need to spend a total of 44 story points to advance that skill all the way to 18 (Legendary). This represents a significant investment of time and effort, as characters typically earn only 3-6 story points per session. It would take roughly 7-15 sessions of story point earnings to reach Legendary status in a single skill, reinforcing that true mastery requires tremendous dedication and perseverance.
+
+To reach the full limit of skill value, truly supernatural abilities, it would take 189 story points, or **32-63 sessions** of skill point earnings spent on nothing else, which means that either campaigns must start out at an intentional, agreed-upon high level of character power (so that players can buy up the skills at a much cheaper cost using character points), or that more grounded starting characters have a lot of room to grow for years-long campaigns!
 
 The graph below shows how a character's success rate increases over time when spending 3 story points per session to improve a skill (with story point accumulation):
 
@@ -491,13 +499,3 @@ The process has three steps:
 >
 > In the campaign's climax, Jax's nemesis is escaping. Jax has one shot. The GM declares it a "pivotal story moment." Sarah rolls for her **Combat (Ranged)** check and gets a 4—a Critical Success! The shot is perfect. At the session's end, the GM awards 6 SP. Sarah sees her chance. "Since I got that critical success, I want to attempt a Crucible Roll to gain a new trait. I'll call it **Deadeye**." She commits all 6 SP, knowing the extra 1 point is a lost 'ante' for this high-stakes roll. She rolls 3d6 and gets a 12—a solid success. The GM smiles. "Your focus pays off. You gain the new positive trait **Deadeye** at a value of +5."
 >
-
-## 3.7. Advancement in Play: The Story of Jax
-
-After a tense session where Jax successfully infiltrated a corporate server farm, the GM awards him 4 Story Points (SP).
-
-**Improving a Skill** Jax's life depended on his stealth. Sarah decides to invest in what works. "I'm spending all 4 of my Story Points to increase Jax's **Physical (Stealth)**," she declares. The cost to go from 12 to 13 is 4 SP (13 - 9 = 4), a perfect fit. Jax is now even harder to pin down.
-
-**Overcoming a Trait** Months later, after many close calls involving technology, Jax has 3 SP saved up. Sarah decides it's time he started confronting his fears. "I want to work on Jax's **Technophobia**," she tells the GM. "It's at -3, so I'll spend 3 story points to reduce its penalty to -2." Jax is still wary, but the crippling fear is beginning to subside.
-
-**Gaining a Trait** In the campaign's climax, Jax's nemesis is escaping. Jax has one shot. The GM declares it a "pivotal story moment." Sarah rolls for her **Combat (Ranged)** check and gets a 4—a Critical Success! The shot is perfect. At the session's end, the GM awards 6 SP. Sarah sees her chance. "Since I got that critical success, I want to attempt a Crucible Roll to gain a new trait. I'll call it **Deadeye**." She commits all 6 SP, knowing the extra 1 point is a lost 'ante' for this high-stakes roll. She rolls 3d6 and gets a 12—a solid success. The GM smiles. "Your focus pays off. You gain the new positive trait **Deadeye** at a value of +5."

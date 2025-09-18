@@ -60,6 +60,8 @@ Weapons must be claimed to be wielded prior to the beginning of tactical time. C
 
 Each attack with a weapon costs a Major Action, as described in the Attack Sequence section.
 
+Attacks cannot be made without the weapon relevant to the skill being used to attack, if there is one, unlike most skill prerequisite items: you can't attack with a bow if you don't have a bow.
+
 ## 6.3. Beyond Attacks: Other Combat Actions
 
 While the attack sequence focuses on making attacks, combat encounters often involve much more than just hitting opponents. Players can use their Major Actions during combat to perform a wide variety of activities that make sense in the situation.

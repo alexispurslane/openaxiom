@@ -60,7 +60,7 @@ If an ability targets another character who is aware of the attempt, the target 
 
 - **Critical Success:** The defender not only overcomes the ability, but turns it back on the channeler. The ability fails, and the channeler must immediately roll on the Resonance Cascade table.
 
-> The corporate guard stood between the psychic Eva and the console she needed to reach. She focused her will, intending to use **Psychic Push**. This was a Contested Action. Eva's power was an automatic **Standard Success**. The guard, aware of the mental assault, braced himself and rolled against his **Physical (Strength)** of 12. He got an 8—an Exceptional Success. The GM described the result: "Your psychic force slams into the guard, but he stands firm as if rooted to the floor. The energy rebounds, jolting you with feedback. You gain one level of Flux."
+> The corporate guard stood between the psychic Eva and the console she needed to reach. She focused her will, intending to use **Psychic Push**. This was a Contested Action. Eva's power was an automatic **Standard Success**. The guard, aware of the mental assault, braced himself and rolled against his **Physical (Strength)** of 12. He got a 6 — an Exceptional Success. The GM described the result: "Your psychic force slams into the guard, but he stands firm as if rooted to the floor. The energy rebounds, jolting you with feedback. You gain one level of Flux."
 >
 
 The format for defining a Channeling ability is as follows:

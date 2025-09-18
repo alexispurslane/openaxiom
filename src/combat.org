@@ -60,12 +60,13 @@ It was Kaelen's turn. He lunged at the pirate in front of him, combat knife a si
 #+ATTR_HTML: :class section-icon
 [[file:static/wielding.svg]]
 
-Characters may only wield a number of weapons equal to their number of non-crippled arms. For most characters, this means they can wield up to two weapons (one in each hand). If a character has a crippled arm, they can only wield one weapon. If both arms are crippled, they cannot wield any weapons. 
+Characters may only wield a number of weapons equal to their number of non-crippled arms. For most characters, this means they can wield up to two weapons (one in each hand). If a character has a crippled arm, they can only wield one weapon. If both arms are crippled, they cannot wield any weapons.
 
 Weapons must be claimed to be wielded prior to the beginning of tactical time. Changing which weapons are being wielded requires a Major Action during tactical time. A character cannot attack with a weapon that is not currently wielded.
 
 Each attack with a weapon costs a Major Action, as described in the Attack Sequence section.
 
+Attacks cannot be made without the weapon relevant to the skill being used to attack, if there is one, unlike most skill prerequisite items: you can't attack with a bow if you don't have a bow.
 
 * Beyond Attacks: Other Combat Actions
 :PROPERTIES:

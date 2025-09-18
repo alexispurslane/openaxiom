@@ -56,7 +56,11 @@ Players who use ranged weapons must have a **line of sight** to the opponents th
 
 Any ranged item designed to be used with the spatial relations rules should come with a specified range. Players only need line of sight and a successful skill check to hit something within the range of their ranged weapon. **For targets beyond the weapon's range, players get a -1 penalty to their skill check for every hex beyond their range they aim.**
 
-#### 10.1.1.6. Flanking
+#### 10.1.1.6. Items
+
+When characters drop items due to crippling injuries or player choice during combat, these items are placed on the hex occupied by the character. Other characters can only pick up these dropped items if they are positioned on the same hex. This adds a tactical element to item management during combat, as players must consider not only their own positioning but also the potential value of items dropped by allies or enemies.
+
+#### 10.1.1.7. Flanking
 
 When attacking an enemy in melee combat, positioning can provide significant tactical advantages. If one or more of a character's allies are adjacent to an enemy that the character is attacking, this is considered **flanking**.
 
@@ -68,7 +72,7 @@ Flanking provides the following benefits:
 
 Flanking represents the tactical advantage of having multiple attackers positioned around an enemy, making it difficult for the target to defend against attacks from multiple directions simultaneously. This bonus applies to all melee attacks, and the penalty applies to all attacks made by the flanked character until the flanking conditions change (either the allies move away or the target moves).
 
-#### 10.1.1.7. Zone of Control
+#### 10.1.1.8. Zone of Control
 
 Each character exerts control over the area immediately surrounding them. The six hexes adjacent to any character constitute their **zone of control**. This represents the area that a character can effectively threaten with their presence and weapons.
 

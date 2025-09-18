@@ -18,7 +18,7 @@ This field outlines a character's past experiences and background. It can includ
 
 ## 2.2. Character Points Pool
 
-Now that your character has an appearance and backstory, it's time to choose **skills** and **traits**, which are the main *mechanical* features of a character in OpenAxiom. Yes, that's right: OpenAxiom **does not have character attributes, races, or classes!**
+Now that your character has an appearance and backstory, it's time to choose **skills** and **traits**, which are the main *mechanical* features of a character in OpenAxiom. Yes, that's right: not only does OpenAxiom not have character races or classes, it **entirely lacks character attributes** (such as STR, DEX, INT, etc) too!
 
 OpenAxiom uses a point-based character creation system for determining a character's starting skills and traits. Each player starts with a pool of character points, which represents the default human level of capability. The Game Master may adjust this pool up or down depending on the campaign's power level, typically ranging from 3-7 points, with 5 representing the average capabilities of an average human.
 
@@ -30,9 +30,9 @@ Character points can be spent in three ways:
 
 3. **Purchasing negative traits** (gains 1 point per trait level)
 
-Skills, positive traits, and negative traits all cost points at a 1:1 ratio, making them equally valuable in character creation.
+Skills, positive traits, and negative traits all cost points at a 1:1 ratio, making them equally valuable in character creation. They are chosen from lists provided by the GM for the setting, genre, and tone of the campaign. Players can spend multiple character points on a single skill to increase it by more than one level. However, players may not reduce skills below the default value of 9 to gain additional character points. This prevents players from creating dump stats to gain an excessive number of character points.
 
-Players can spend multiple character points on a single skill to increase it by more than one level. For example, a player could spend 3 points to increase a skill from 9 to 12, or 5 points to increase a skill from 9 to 14.
+**Each chosen skill, positive trait, and negative trait must be justified by a one-sentence appeal to the character's Appearance and History sections.**
 
 For example, a player with 5 character points could:
 
@@ -40,34 +40,22 @@ For example, a player with 5 character points could:
 
 - Or buy a skill at 12 (costs 3 points) and a +2 positive trait (costs 2 points), using all 5 points
 
-- Or buy a skill at 11 (costs 2 points), a +2 positive trait (costs 2 points), and a -3 negative trait (gains 3 points), for a total cost of 1 point, leaving 4 points remaining
+- Or buy a skill at 11 (costs 2 points), a +2 positive trait (costs 2 points), and a -3 negative trait (gains 3 points), leaving 4 points for a very big positive trait
 
 - Or distribute points across many smaller improvements
 
 > Ben wants to create a brilliant but frail academic. Starting with 5 Character Points, he decides to lean into this concept. To represent his character's physical weakness, he takes the **Frail** negative trait at a value of -4. This immediately gives him 4 extra CP, boosting his pool to a total of 9. He then invests heavily in his character's intellect, spending 5 CP to raise his **Investigation** skill from 9 to a formidable 14. With his remaining 4 CP, he purchases the **Photographic Memory** positive trait at +4, perfectly capturing the image of a scholar with a mind like a steel trap but a body like glass.
 >
 
-Players may not reduce skills below the default value of 9 to gain additional character points. This prevents players from creating dump stats to gain an excessive number of character points.
-
-**Each chosen skill, positive trait, and negative trait must be justified by a one-sentence appeal to the character's Appearance and History sections.** The Game Master must approve this justification.
-
 ## 2.3. Skills
 
-A skill represents anything a character can do or be. This includes physical abilities like strength or swimming, and mental aptitudes such as various forms of intelligence. Skills are trainable, meaning a character's proficiency can improve over time. Skills have a name and a numerical value, indicating proficiency. Any skill not explicitly listed on a character's sheet has the default value of 9.
+A skill represents anything a character can do or be. This includes physical abilities like strength or swimming, and mental aptitudes such as various forms of intelligence. Skills are trainable, meaning a character's proficiency can improve over time. Skills have a name, indicating the scope and applicability of the skill, and a numerical value, indicating the character's proficiency with it. Any *general* skill not explicitly listed on a character's sheet has the default value of 9 (for more on this, see [Character Mechanics](character_mechanics.md)).
 
-Skills in OpenAxiom range from 3 to 18, matching the possible range of a 3d6 roll. This range represents the full spectrum of human capability:
+Effective skill values (which are a combination of skill values, trait values, and any other bonuses or penalties in play) in OpenAxiom are theoretically infinite, but a player's actual skill value must range from 0 to 28, representing the full spectrum of capability in a 3d6 ± 10 system. All skills start at the default value of 9. Players can increase skills above 9 using their character points, but cannot decrease skills below 9 to gain additional points, although skills may be reduced below 9 by negative traits.
 
-- 3: **Hopeless** - Virtually no chance of success
+Players may choose specific skills without choosing the more general version. For example, a character can have **Piloting (Starship)** without having **Piloting**. When a character has a specific skill but not its more general version, they can only use that specific skill for tasks that match it exactly, or are sub-specialties of it (such as **Piloting (Starship) (Freighter)**). They cannot use it as a substitute for other specializations of the same general skill, or for the general skill itself.
 
-- 9: **Average** - Baseline human capability
-
-- 18: **Legendary** - Automatic success under normal conditions
-
-All skills start at the default value of 9. Players can increase skills above 9 using their character points, but cannot decrease skills below 9 to gain additional points.
-
-Players may choose specific skills without choosing the more general version. For example, a character can have **Piloting (Starship)** without having **Piloting**. When a character has a specific skill but not its more general version, they can only use that specific skill for tasks that match it exactly. They cannot use it as a substitute for other specializations of the same general skill.
-
-The Game Master provides a specific list of skills that are available in their game world. Players must always use the most specific applicable skill from this list when making skill checks. For example, if a GM's list includes both **Physical (Stealth)** and **Physical (Stealth) (Urban)**, and a character is attempting to hide in an urban environment, they must use **Physical (Stealth) (Urban)** rather than the more general **Physical (Stealth)** skill.
+The Game Master provides a list of skills that are available in their game world. Players must always use the most specific applicable skill from this list when making skill checks. For example, if a GM's list includes both **Physical (Stealth)** and **Physical (Stealth) (Urban)**, and a character is attempting to hide in an urban environment, they must use **Physical (Stealth) (Urban)** rather than the more general **Physical (Stealth)** skill.
 
 ## 2.4. Trait Selection
 
@@ -77,9 +65,9 @@ During character creation, players may also use their character points pool to p
 
 All traits are inherently either **positive** (a boost) or **negative** (a hindrance). However, **traits do not have an inherent value by default.**
 
-Instead, players choose the value of each trait they want to take, and then spend or gain that many character points accordingly. For positive traits, the player chooses a value and spends that many character points from their pool. For negative traits, the player chooses a value and gains that many character points to their pool.
+Instead, players choose the value of each trait they want to take (known as the **trait level**), and then spend or gain that many character points accordingly. For positive traits, the player chooses a value and spends that many character points from their pool. For negative traits, the player chooses a value and gains that many character points to their pool.
 
-Each chosen trait must be justified by a one-sentence appeal to the character's Appearance and History sections. The Game Master must approve this justification.
+Each chosen trait must be justified by a one-sentence appeal to the character's Appearance and History sections, just like with skills.
 
 ### 2.4.2. Trait Categories
 
@@ -89,7 +77,7 @@ Traits are divided into four categories that determine how and when they apply:
 
 - **Narrow Traits**: Affect specific skills (like just **Art (Music)**) and represent specialized talents or limitations.
 
-- **Situational Traits**: Only apply under specific conditions (like in darkness or extreme cold) as determined by the GM.
+- **Situational Traits**: Only apply under specific conditions (like in darkness or extreme cold).
 
 - **Special Traits**: Add unique game rules beyond simple bonuses, such as special abilities or rerolls.
 
@@ -100,15 +88,15 @@ There are several important tradeoffs between skills and traits. The following t
 | Aspect | Skills | Traits |
 |--------|--------|--------|
 | Improvement | Can change and improve over time | Static and cannot be improved |
-| Maximum Value | Cap at 18 | Can stack on top of skills for a maximum of 23 |
 | Scope | Affects only the specific skill | Can apply to many skills at once |
-| Bonus Size | Can give a much larger bonus in particular skills (up to +9) | Capped at +5 per trait |
+| Maximum Value | 28 | Traits stack even on top of maximum-valued skills for a larger effective skill value, so the maximum value of a skill via traits is 33 |
+| Bonus Size | Can give a much larger bonus in particular skills (up to +9) | Capped at +5 per trait, and only the highest trait bonus applies |
 | Special Effects | Simple numerical bonuses | Can introduce new rules and special abilities |
-| Negative Effects | None | Can impose penalties or limitations |
+| Negative Effects | None | Can impose penalties or limitations, but gain you CP in return |
 
-Moreover, while positive skill improvement can overcome negative traits to a certain degree, skill values cap out eventually, meaning that characters with negative traits will not only start out with a disadvantage, but also eventually fall behind those without such traits who can reach the full cap without a negative modifier. This means that negative traits create a permanent disadvantage that becomes more pronounced at the extremes of character development. Therefore, it is recommended to work *with* negative traits, not against them.
+Moreover, while positive skill improvement can overcome negative traits to a certain degree, skill values cap out eventually, meaning that characters with negative traits will not only start out with a disadvantage, but also eventually fall behind those without such traits who can reach the full cap without a negative modifier. Additionally, extra points must be spent to overcome a trait, that other characters could instead spend on other things, or spend on improving the relevant skills faster. This means that negative traits create a permanent disadvantage that becomes more pronounced at the extremes of character development, and is also visible in character progression. Therefore, it is recommended to work *with* negative traits, not against them.
 
-For example, a character with a trait that applies a -5 penalty to **Mental (Reasoning)** can spend all their available character points (5 CP gained from the negative trait + the 5 starting CP) to .increase that skill to the maximum possible value of 18 (costing 9 of their 10 available points), but it will effectively be only 13 thanks to the negative trait, whereas a character with no such disability can reach 18, and a character with a relevant positive trait can reach 23. Therefore, while spending *some* skill points on that skill, to get it back up to a reasonable level to compensate for the negative trait, makes sense, spending all 10 skill points was a waste of time for the character. Those points could have been more effectively spent elsewhere.
+For example, a character with a trait that applies a -5 penalty to **Mental (Reasoning)** can spend all their available character points (5 CP gained from the negative trait + the 5 starting CP) to increase that skill to 19, but it will effectively be only 14 thanks to the negative trait, whereas a character with no such disability can reach 14 just by directly spending the points. So pushing back on the trait essentially wastes character points undoing the effect of the trait. Moreover, at the high end, a character with such a negative trait could reach a skill value of 28, but the effective skill value would only be 23, whereas a character without such a negative trait could reach 28, and a character with a positive trait could reach 33.
 
 ### 2.4.4. Traits and Lore Items
 
@@ -142,11 +130,9 @@ During character creation, players should consider which faction their character
 
 This choice helps inform the character's background and can suggest appropriate skills and traits. For example, a character from a scholarly faction might have high **Languages** or **Investigation** skills, while one from a criminal faction might excel in **Social (Deception)** or **Physical (Stealth)**.
 
-Players should consult with their Game Master to determine what factions are appropriate for the story and setting. The GM may have specific factions in mind for the campaign, or may allow players to propose their own.
-
 Characters start with a reputation score of 3 with their chosen primary home faction, representing their familiarity and standing within their own community. As the character encounters members of other factions during play, their reputation with those factions will be tracked separately, starting at 0 for neutral first encounters.
 
-The Game Master should use the expanded faction relationship system where initial reputation with new factions is determined by the character's existing relationships. See the Social Relations chapter for details on this core rule.
+The Game Master should use the expanded faction relationship system where initial reputation with new factions is determined by the character's existing relationships. See the [Social Relations chapter](social_relations.md) for details on this core rule.
 
 ## 2.7. Full Walkthrough Example: Creating Jax
 
@@ -156,9 +142,10 @@ The Game Master should use the expanded faction relationship system where initia
 >
 > First, she breathes life into her character, Jax, by defining his story.
 >
-> - **Appearance:** She pictures him clearly: **"Jax is a lanky man in his late twenties, with a mess of dark hair that's perpetually damp with rain or sweat. His face is sharp and angular, but his most notable features are his cybernetic eyes, which glow with a faint blue light, and the worn, synth-leather duster he always wears to hide the cheap chrome of his prosthetic left arm."**
+> - **Appearance:** She pictures him clearly: "Jax is a lanky man in his late twenties, with a mess of dark hair that's perpetually damp with rain or sweat. His face is sharp and angular, but his most notable features are his cybernetic eyes, which glow with a faint blue light, and the worn, synth-leather duster he always wears to hide the cheap chrome of his prosthetic left arm."
 >
-> - **History:** She writes a backstory to anchor his skills and fears: **"Jax grew up an orphan on the neon-drenched streets of Neo-Kyoto, making a living by running data and contraband for minor league gangs. A botched delivery job cost him his arm and nearly his life. He was saved by a back-alley cyber-doc who replaced the limb with a clunky, second-hand prosthetic. The experience left him with a deep-seated fear of faulty technology and a determination to get by on his wits and reflexes, rather than trusting in implants that could fail him again."**
+> - **History:** She writes a backstory to anchor his skills and fears: "Jax grew up an orphan on the neon-drenched streets of Neo-Kyoto, making a living by running data and contraband for minor league gangs. A botched delivery job cost him his arm and nearly his life. He was saved by a back-alley cyber-doc who replaced the limb with a clunky, second-hand prosthetic. The experience left him with a deep-seated fear of faulty technology and a determination to get by on his wits and reflexes, rather than trusting in implants that could fail him again."
+>
 > **2. Allocating Character Points**
 >
 > The GM has given everyone a pool of 5 Character Points (CP). Sarah plans how to spend them to reflect Jax's history.
@@ -182,6 +169,8 @@ The Game Master should use the expanded faction relationship system where initia
 > - Finally, she spends those 3 points on a positive trait reflecting his cyber-eyes. She chooses the **Narrow** trait **Keen Eyesight** at a +3 value.
 >
 >      - **Justification:** "His appearance notes his advanced cybernetic eyes, which would logically grant him superior vision for spotting details others might miss."
+> <br/>
+>
 > **4. Final Touches**
 >
 > Jax automatically starts with his worn duster and a cheap data-slate as lore items. His highest strength-related skill is **Physical** (default 9), granting him 9 inventory slots. For his faction, Sarah and the GM agree he belongs to the "Street Runners," giving him an initial reputation of 3 with his peers. Jax is ready to hit the streets of Neo-Kyoto.
