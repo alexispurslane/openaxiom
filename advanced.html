@@ -93,9 +93,11 @@
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#10115-range">10.1.1.5. Range</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#10116-flanking">10.1.1.6. Flanking</a>
+    <li class="toctree-l4"><a class="reference internal" href="#10116-items">10.1.1.6. Items</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#10117-zone-of-control">10.1.1.7. Zone of Control</a>
+    <li class="toctree-l4"><a class="reference internal" href="#10117-flanking">10.1.1.7. Flanking</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#10118-zone-of-control">10.1.1.8. Zone of Control</a>
     </li>
         </ul>
     </li>
@@ -117,6 +119,11 @@
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="dice_roller.html">Appendix II - Die Roller Tool</a>
                 </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Packs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="packs/general.html">General Pack</a>
+                  </li>
               </ul>
       </div>
     </div>
@@ -142,34 +149,15 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="10-appendix-i-advanced-rules">10. Appendix I - Advanced Rules</h1>
-<p>This chapter is a compendium of extra, optional rules to add on to the
-various modular subsystems of OpenAxiom, for Game Masters who want even
-more tactical choice, mechanical variety, and simulation.</p>
+<p>This chapter is a compendium of extra, optional rules to add on to the various modular subsystems of OpenAxiom, for Game Masters who want even more tactical choice, mechanical variety, and simulation.</p>
 <h2 id="101-advanced-combat-rules">10.1. Advanced Combat Rules</h2>
-<p>The following are an optional toolkit of combat rules that GMs can
-assemble in order to account for various different situations or
-preferred combat playstyles, or use as references for designing their
-own optional combat mechanics for their own setting packs.</p>
+<p>The following are an optional toolkit of combat rules that GMs can assemble in order to account for various different situations or preferred combat playstyles, or use as references for designing their own optional combat mechanics for their own setting packs.</p>
 <h3 id="1011-spatial-relations">10.1.1. Spatial Relations</h3>
-<p><img src="static/spatial_relations.svg" class="section-icon" /></p>
-<p>More advanced players who want more interesting tactical opportunities
-may introduce a hexagonal grid when players enter combat to structure
-character, NPC, and enemy spatial relations. This optional system adds
-tactical depth by making positioning and movement important factors in
-combat. This set of rules is an example of how totally new dimensions of
-combat can be modularly added to the game and well-integrated with
-existing systems.</p>
+<p><img alt="" src="static/spatial_relations.svg" /></p>
+<p>More advanced players who want more interesting tactical opportunities may introduce a hexagonal grid when players enter combat to structure character, NPC, and enemy spatial relations. This optional system adds tactical depth by making positioning and movement important factors in combat. This set of rules is an example of how totally new dimensions of combat can be modularly added to the game and well-integrated with existing systems.</p>
 <h4 id="10111-setting-up-the-battlefield">10.1.1.1. Setting Up the Battlefield</h4>
-<p>In hex-based tactical combat, the battlefield is divided into hexagonal
-tiles, with each tile representing a specific type of terrain. Players,
-NPCs, and enemies are represented by counters or miniatures that are
-placed on these hex tiles. Each hex tile has a terrain type that affects
-movement costs and combat, as detailed in the terrain table below.</p>
-<p>All players must start wherever the Game Master decides they should
-start on the grid. The Game Master also places all non-player characters
-and enemies on the grid according to the tactical situation. Each hex on
-the map can be one of several terrain types, each with different
-properties:</p>
+<p>In hex-based tactical combat, the battlefield is divided into hexagonal tiles, with each tile representing a specific type of terrain. Players, NPCs, and enemies are represented by counters or miniatures that are placed on these hex tiles. Each hex tile has a terrain type that affects movement costs and combat, as detailed in the terrain table below.</p>
+<p>All players must start wherever the Game Master decides they should start on the grid. The Game Master also places all non-player characters and enemies on the grid according to the tactical situation. Each hex on the map can be one of several terrain types, each with different properties:</p>
 <table>
 <thead>
 <tr>
@@ -224,17 +212,10 @@ properties:</p>
 </tr>
 </tbody>
 </table>
-<p>Note that posture and cover penalties stack. For example, a character
-laying down (-2 penalty) behind cover (-1 penalty) would have a total -3
-penalty to ranged attacks targeting them.</p>
-<p>Specific examples of all types of terrain (both special and not) are
-determined automatically by the setting and location, but all
-conceivable types of gameplay-relevant terrain should fall into one of
-these categories.</p>
+<p>Note that posture and cover penalties stack. For example, a character laying down (-2 penalty) behind cover (-1 penalty) would have a total -3 penalty to ranged attacks targeting them.</p>
+<p>Specific examples of all types of terrain (both special and not) are determined automatically by the setting and location, but all conceivable types of gameplay-relevant terrain should fall into one of these categories.</p>
 <h4 id="10112-posture-system">10.1.1.2. Posture System</h4>
-<p>Characters can adopt different postures during combat to gain defensive
-advantages at the cost of mobility. The posture system provides tactical
-options for players who want to trade movement for protection:</p>
+<p>Characters can adopt different postures during combat to gain defensive advantages at the cost of mobility. The posture system provides tactical options for players who want to trade movement for protection:</p>
 <table>
 <thead>
 <tr>
@@ -265,173 +246,117 @@ options for players who want to trade movement for protection:</p>
 </tr>
 </tbody>
 </table>
-<p>Characters can change their posture as a minor action on their turn.
-This allows them to adapt their tactics based on the current situation,
-such as taking cover when under heavy ranged fire or standing up to move
-more freely.</p>
+<p>Characters can change their posture as a minor action on their turn. This allows them to adapt their tactics based on the current situation, such as taking cover when under heavy ranged fire or standing up to move more freely.</p>
 <h4 id="10113-movement">10.1.1.3. Movement</h4>
-<p>Moving is considered a minor action that costs 3 action points. Players
-may move up to their best fleetness/quickness related <strong>Physical</strong> skill
-(such as <strong>Physical (Running)</strong> or <strong>Physical (Acrobatics)</strong>) minus 5
-(minimum of 1) as their movement distance. Since moving is a minor
-action, players with sufficient action points could potentially move
-multiple times during their turn, or move and still take a major action.
-Moving through difficult terrain costs additional movement points as
-determined by the terrain table above.</p>
+<p>Moving is considered a minor action that costs 3 action points. Players may move up to their best fleetness/quickness related <strong>Physical</strong> skill (such as <strong>Physical (Running)</strong> or <strong>Physical (Acrobatics)</strong>) minus 5 (minimum of 1) as their movement distance. Since moving is a minor action, players with sufficient action points could potentially move multiple times during their turn, or move and still take a major action. Moving through difficult terrain costs additional movement points as determined by the terrain table above.</p>
 <h4 id="10114-line-of-sight">10.1.1.4. Line of Sight</h4>
-<p>Players who use ranged weapons must have a <strong>line of sight</strong> to the
-opponents they wish to attack. Only walls block movement and line of
-sight. Trees, bushes, and other environmental features count as walls in
-outdoor settings for the purpose of blocking line of sight. Characters
-can see and attack through other characters, but must make their combat
-skill check at a -2 disadvantage per character they're attacking
-through.</p>
+<p>Players who use ranged weapons must have a <strong>line of sight</strong> to the opponents they wish to attack. Only walls block movement and line of sight. Trees, bushes, and other environmental features count as walls in outdoor settings for the purpose of blocking line of sight. Characters can see and attack through other characters, but must make their combat skill check at a -2 disadvantage per character they're attacking through.</p>
 <h4 id="10115-range">10.1.1.5. Range</h4>
-<p>Any ranged item designed to be used with the spatial relations rules
-should come with a specified range. Players only need line of sight and
-a successful skill check to hit something within the range of their
-ranged weapon. <strong>For targets beyond the weapon's range, players get a -1
-penalty to their skill check for every hex beyond their range they
-aim.</strong></p>
-<h4 id="10116-flanking">10.1.1.6. Flanking</h4>
-<p>When attacking an enemy in melee combat, positioning can provide
-significant tactical advantages. If one or more of a character's allies
-are adjacent to an enemy that the character is attacking, this is
-considered <strong>flanking</strong>.</p>
+<p>Any ranged item designed to be used with the spatial relations rules should come with a specified range. Players only need line of sight and a successful skill check to hit something within the range of their ranged weapon. <strong>For targets beyond the weapon's range, players get a -1 penalty to their skill check for every hex beyond their range they aim.</strong></p>
+<h4 id="10116-items">10.1.1.6. Items</h4>
+<p>When characters drop items due to crippling injuries or player choice during combat, these items are placed on the hex occupied by the character. Other characters can only pick up these dropped items if they are positioned on the same hex. This adds a tactical element to item management during combat, as players must consider not only their own positioning but also the potential value of items dropped by allies or enemies.</p>
+<h4 id="10117-flanking">10.1.1.7. Flanking</h4>
+<p>When attacking an enemy in melee combat, positioning can provide significant tactical advantages. If one or more of a character's allies are adjacent to an enemy that the character is attacking, this is considered <strong>flanking</strong>.</p>
 <p>Flanking provides the following benefits:</p>
 <ul>
-<li>The attacking character receives a +1 bonus to all attack skill checks
-  against the flanked enemy</li>
-<li>The flanked enemy receives a -1 penalty to all of their attack skill
-  checks</li>
+<li>
+<p>The attacking character receives a +1 bonus to all attack skill checks against the flanked enemy</p>
+</li>
+<li>
+<p>The flanked enemy receives a -1 penalty to all of their attack skill checks</p>
+</li>
 </ul>
-<p>Flanking represents the tactical advantage of having multiple attackers
-positioned around an enemy, making it difficult for the target to defend
-against attacks from multiple directions simultaneously. This bonus
-applies to all melee attacks, and the penalty applies to all attacks
-made by the flanked character until the flanking conditions change
-(either the allies move away or the target moves).</p>
-<h4 id="10117-zone-of-control">10.1.1.7. Zone of Control</h4>
-<p>Each character exerts control over the area immediately surrounding
-them. The six hexes adjacent to any character constitute their <strong>zone of
-control</strong>. This represents the area that a character can effectively
-threaten with their presence and weapons.</p>
-<p>When an opponent enters a character's zone of control, that opponent is
-considered <strong>engaged</strong> with the character. If the opponent attempts to
-leave the zone of control without first knocking the controlling
-character unconscious or killing them, the controlling character may
-make a free attack against the fleeing opponent as they attempt to
-escape.</p>
+<p>Flanking represents the tactical advantage of having multiple attackers positioned around an enemy, making it difficult for the target to defend against attacks from multiple directions simultaneously. This bonus applies to all melee attacks, and the penalty applies to all attacks made by the flanked character until the flanking conditions change (either the allies move away or the target moves).</p>
+<h4 id="10118-zone-of-control">10.1.1.8. Zone of Control</h4>
+<p>Each character exerts control over the area immediately surrounding them. The six hexes adjacent to any character constitute their <strong>zone of control</strong>. This represents the area that a character can effectively threaten with their presence and weapons.</p>
+<p>When an opponent enters a character's zone of control, that opponent is considered <strong>engaged</strong> with the character. If the opponent attempts to leave the zone of control without first knocking the controlling character unconscious or killing them, the controlling character may make a free attack against the fleeing opponent as they attempt to escape.</p>
 <p>This free attack:</p>
 <ul>
-<li>Is made immediately when the opponent attempts to leave the zone of
-  control</li>
-<li>Does not consume the controlling character's major or minor action</li>
-<li>Must be declared before the opponent's movement is resolved</li>
-<li>Uses the controlling character's relevant combat skill</li>
-<li>Is resolved as a normal attack sequence (declare, roll, determine,
-  damage, armor, apply)</li>
+<li>
+<p>Is made immediately when the opponent attempts to leave the zone of control</p>
+</li>
+<li>
+<p>Does not consume the controlling character's major or minor action</p>
+</li>
+<li>
+<p>Must be declared before the opponent's movement is resolved</p>
+</li>
+<li>
+<p>Uses the controlling character's relevant combat skill</p>
+</li>
+<li>
+<p>Is resolved as a normal attack sequence (declare, roll, determine, damage, armor, apply)</p>
+</li>
 </ul>
-<p>This rule represents how difficult it is to simply walk away from an
-armed opponent without dealing with them first. The zone of control
-mechanic adds tactical depth to positioning and makes retreats more
-strategically meaningful.</p>
+<p>This rule represents how difficult it is to simply walk away from an armed opponent without dealing with them first. The zone of control mechanic adds tactical depth to positioning and makes retreats more strategically meaningful.</p>
+<blockquote>
+<p>The warehouse battle was a tactical puzzle. Kaelen stood adjacent to one pirate, while his ally Anya flanked the same enemy from the opposite side. This gave Kaelen a +1 bonus on his attack. He spent 6 AP to attack, landing a solid hit. With 3 AP remaining, he declared he was moving back. But as he tried to leave the hex adjacent to the pirate, the GM interjected, "Not so fast. You're leaving his Zone of Control. Before you can move, the pirate you just stabbed takes a free swing at you as you try to disengage."
+</p>
+</blockquote>
 <h3 id="1012-vehicles">10.1.2. Vehicles</h3>
-<p><img src="static/vehicles.svg" class="section-icon" /></p>
-<p>This advanced combat rule requires the <span class="spurious-link"
-target="* Spatial Relations"><em>Spatial Relations</em></span> rules to be in
-use.</p>
-<p>Vehicles add a new layer of tactical complexity to combat encounters.
-Whether it's a high-speed chase through a futuristic city or a naval
-battle between warships, vehicles require different handling than
-regular characters.</p>
+<p><img alt="" src="static/vehicles.svg" /></p>
+<p>This advanced combat rule requires the <em>Spatial Relations</em> rules to be in use.</p>
+<p>Vehicles add a new layer of tactical complexity to combat encounters. Whether it's a high-speed chase through a futuristic city or a naval battle between warships, vehicles require different handling than regular characters.</p>
 <h4 id="10121-vehicle-statistics">10.1.2.1. Vehicle Statistics</h4>
 <p>Every vehicle has several key statistics:</p>
 <ul>
 <li>
 <p><strong>Size</strong>: Determines how many characters a vehicle can hold:</p>
-</li>
+<ul>
 <li>
 <p>Small (S): One character riding on the outside</p>
 </li>
-<li>Medium (M): One character riding on the inside</li>
-<li>Large (L): Four characters riding on the inside</li>
+<li>
+<p>Medium (M): One character riding on the inside</p>
+</li>
+<li>
+<p>Large (L): Four characters riding on the inside</p>
+</li>
 <li>
 <p>Extra Large (XL): Six characters riding on the inside</p>
 </li>
-<li>
-<p><strong>Acceleration Rate</strong>: A constant value measured in hexes,
-  representing how many hexes the vehicle can add to its current speed
-  each turn. This value also determines how many hexes the vehicle can
-  subtract from its current speed each turn when braking. For example, a
-  vehicle with an acceleration rate of 2 can increase or decrease its
-  speed by up to 2 hexes per turn.</p>
+</ul>
 </li>
 <li>
-<p><strong>Maneuverability</strong>: A constant rating that determines how many hex
-  sides the vehicle can turn each turn. For example, a vehicle with a
-  maneuverability of 2 can change its facing by up to 2 hex sides per
-  turn.</p>
+<p><strong>Acceleration Rate</strong>: A constant value measured in hexes, representing how many hexes the vehicle can add to its current speed each turn. This value also determines how many hexes the vehicle can subtract from its current speed each turn when braking. For example, a vehicle with an acceleration rate of 2 can increase or decrease its speed by up to 2 hexes per turn.</p>
 </li>
 <li>
-<p><strong>Damage Resistance (DR)</strong>: A constant value that reduces damage taken
-  by anyone inside the vehicle. Characters riding inside a vehicle apply
-  this DR in addition to any armor they are wearing when determining
-  damage taken from attacks.</p>
+<p><strong>Maneuverability</strong>: A constant rating that determines how many hex sides the vehicle can turn each turn. For example, a vehicle with a maneuverability of 2 can change its facing by up to 2 hex sides per turn.</p>
+</li>
+<li>
+<p><strong>Damage Resistance (DR)</strong>: A constant value that reduces damage taken by anyone inside the vehicle. Characters riding inside a vehicle apply this DR in addition to any armor they are wearing when determining damage taken from attacks.</p>
 </li>
 </ul>
 <p>Vehicles also have variable values that are tracked during play:</p>
 <ul>
 <li>
-<p><strong>Speed</strong>: A variable value that changes over time and represents the
-  number of hexes a vehicle moves on its turn, as long as this value is
-  greater than zero. Vehicles must move this many hexes in the direction
-  they are currently facing. Represented using a d100.</p>
+<p><strong>Speed</strong>: A variable value that changes over time and represents the number of hexes a vehicle moves on its turn, as long as this value is greater than zero. Vehicles must move this many hexes in the direction they are currently facing. Represented using a d100.</p>
 </li>
 <li>
-<p><strong>Facing</strong>: The current hex side the vehicle is pointed, which
-  determines the direction of movement. Represented by the direction the
-  vehicle token or mini is pointing in.</p>
+<p><strong>Facing</strong>: The current hex side the vehicle is pointed, which determines the direction of movement. Represented by the direction the vehicle token or mini is pointing in.</p>
 </li>
 </ul>
 <h4 id="10122-steering-and-movement">10.1.2.2. Steering and Movement</h4>
-<p>Vehicles have two primary movement actions that each cost 3 Action
-Points:</p>
+<p>Vehicles have two primary movement actions that each cost 3 Action Points:</p>
 <ul>
 <li>
-<p><strong>Accelerating or Braking</strong>: Vehicles can accelerate or brake by up to
-  their acceleration rate in hexes per turn. Acceleration increases the
-  vehicle's speed, while braking decreases it. A vehicle's speed can
-  never be reduced below zero.</p>
+<p><strong>Accelerating or Braking</strong>: Vehicles can accelerate or brake by up to their acceleration rate in hexes per turn. Acceleration increases the vehicle's speed, while braking decreases it. A vehicle's speed can never be reduced below zero.</p>
 </li>
 <li>
-<p><strong>Turning</strong>: Vehicles can change their facing by up to their
-  maneuverability rating in hex sides per turn.</p>
+<p><strong>Turning</strong>: Vehicles can change their facing by up to their maneuverability rating in hex sides per turn.</p>
 </li>
 </ul>
-<p>When steering, the vehicle's facing changes first, and then the vehicle
-moves in that new direction. This means that players can plan their
-turns by first deciding how much to turn, then moving the appropriate
-number of hexes in that direction.</p>
-<p>Vehicles must move a number of hexes equal to their current speed on
-each turn, as long as their speed is greater than zero. This movement is
-mandatory and must be in the direction the vehicle is currently facing.
-Players cannot choose to move fewer hexes than their current speed.</p>
+<p>When steering, the vehicle's facing changes first, and then the vehicle moves in that new direction. This means that players can plan their turns by first deciding how much to turn, then moving the appropriate number of hexes in that direction.</p>
+<p>Vehicles must move a number of hexes equal to their current speed on each turn, as long as their speed is greater than zero. This movement is mandatory and must be in the direction the vehicle is currently facing. Players cannot choose to move fewer hexes than their current speed.</p>
 <h4 id="10123-using-vehicles-in-combat">10.1.2.3. Using Vehicles in Combat</h4>
-<p>Characters operating vehicles use the vehicle's movement rules instead
-of their own. Any characters riding in the vehicle move with it
-automatically.</p>
-<p>Attacks against vehicles directly are not possible in this system.
-Instead, characters must target those inside the vehicle, and vehicles
-act as simple pieces of armor for the characters inside the vehicle, but
-not outside.</p>
-<p>Vehicles can be used to ram enemies. This does an amount of damage
-points determined by the vehicle's size plus its current speed, where
-Small=5, Medium=10, Large=15, XL=20. The target can make a defense roll
-(such as a skill check against <strong>Physical (Dodge)</strong>) as normal, even
-though the vehicle does not make a combat roll or roll for damage.</p>
-<p>XL vehicles can also be used to knock down walls, but this reduces the
-speed of that vehicle back down to one.</p>
+<p>Characters operating vehicles use the vehicle's movement rules instead of their own. Any characters riding in the vehicle move with it automatically.</p>
+<p>Attacks against vehicles directly are not possible in this system. Instead, characters must target those inside the vehicle, and vehicles act as simple pieces of armor for the characters inside the vehicle, but not outside.</p>
+<p>Vehicles can be used to ram enemies. This does an amount of damage points determined by the vehicle's size plus its current speed, where Small=5, Medium=10, Large=15, XL=20. The target can make a defense roll (such as a skill check against <strong>Physical (Dodge)</strong>) as normal, even though the vehicle does not make a combat roll or roll for damage.</p>
+<p>XL vehicles can also be used to knock down walls, but this reduces the speed of that vehicle back down to one.</p>
+<blockquote>
+<p>Jax was in a desperate chase, his armored car's speed at a blistering 15 hexes per turn. A sharp corner loomed. On his turn, he took two movement actions. First, he slammed on the brakes, using his car's Acceleration Rate of 3 to reduce his speed to 12. For his second action, he wrenched the wheel, using his Maneuverability of 2 to change his car's facing by two hex sides. The GM resolved the turn: "You screech around the corner, successfully changing your facing. Now, you must move your new speed of 12 hexes in that new direction."
+</p>
+</blockquote>
               
             </div>
           </div><footer>

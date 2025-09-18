@@ -65,23 +65,25 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#61-the-attack-sequence">6.1. The Attack Sequence</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#62-beyond-attacks-other-combat-actions">6.2. Beyond Attacks: Other Combat Actions</a>
+    <li class="toctree-l2"><a class="reference internal" href="#62-wielding-weapons">6.2. Wielding Weapons</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#63-the-injury-system">6.3. The Injury System</a>
+    <li class="toctree-l2"><a class="reference internal" href="#63-beyond-attacks-other-combat-actions">6.3. Beyond Attacks: Other Combat Actions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#64-the-injury-system">6.4. The Injury System</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#631-health-body-locations">6.3.1. Health &amp; Body Locations</a>
+    <li class="toctree-l3"><a class="reference internal" href="#641-health-body-locations">6.4.1. Health &amp; Body Locations</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#632-consequences-of-injury">6.3.2. Consequences of Injury</a>
+    <li class="toctree-l3"><a class="reference internal" href="#642-consequences-of-injury">6.4.2. Consequences of Injury</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#6321-crippling-injury">6.3.2.1. Crippling Injury</a>
+    <li class="toctree-l4"><a class="reference internal" href="#6421-crippling-injury">6.4.2.1. Crippling Injury</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#6322-critical-success-on-attack">6.3.2.2. Critical Success on Attack</a>
+    <li class="toctree-l4"><a class="reference internal" href="#6422-critical-success-on-attack">6.4.2.2. Critical Success on Attack</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#6323-systemic-shock">6.3.2.3. Systemic Shock</a>
+    <li class="toctree-l4"><a class="reference internal" href="#6423-systemic-shock">6.4.2.3. Systemic Shock</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#6324-defeat-and-death">6.3.2.4. Defeat and Death</a>
+    <li class="toctree-l4"><a class="reference internal" href="#6424-defeat-and-death">6.4.2.4. Defeat and Death</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#6325-non-harm-tracker-status-effects">6.3.2.5. Non-Harm-Tracker Status Effects</a>
+    <li class="toctree-l4"><a class="reference internal" href="#6425-non-harm-tracker-status-effects">6.4.2.5. Non-Harm-Tracker Status Effects</a>
     </li>
         </ul>
     </li>
@@ -110,6 +112,11 @@
                 <li class="toctree-l1"><a class="reference internal" href="dice_roller.html">Appendix II - Die Roller Tool</a>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Packs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="packs/general.html">General Pack</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
@@ -134,132 +141,121 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="6-combat">6. Combat</h1>
-<p><img src="static/combat.svg" class="section-icon" /></p>
-<p>Combat situations arise naturally in many genres and settings. OpenAxiom
-recognizes that violence is sometimes necessary in fiction, and that in
-fact it is often a key aspect of why people enjoy TTRPGs, and so
-provides mechanics that make these scenes engaging and meaningful,
-providing enough simulationist crunch to add consistent and serious
-consequences and interesting tactical choices.</p>
-<p>At the same time, OpenAxiom recognizes that combat may not be the goal
-of some tables. As a result, the combat system is designed to be
-optional, not strictly necessary to character progression or
-development. Game Masters <strong>may choose to avoid the combat rules
-entirely if they wish!</strong> These are designed for tables that <em>like</em>
-combat. If your table wants to focus on narrative, it can simply focus
-on the core <a href="character_mechanics.html">character mechanics</a> and <a href="logic_of_action.html">logic of
-action</a> rules, using Contested Actions or Contested
-Extended Actions to simulate combat when needed. This is why the health
-and body locations system is specified <em>here</em>, and not in the character
-mechanics section.</p>
-<p>When characters enter combat, the game shifts to the Tactical Time round
-structure as defined in the <a href="core_game_loop.org">core game loop</a>. This
-shift to Tactical Time is mandatory during combat encounters, ensuring
-that all actions occur in a consistent and fair sequence. During
-Tactical Time, each character takes turns performing actions, with
-initiative determined by relevant skills and traits. This system allows
-for detailed resolution of combat actions while maintaining the pace and
-excitement of violent confrontation.</p>
+<p><img alt="" src="static/combat.svg" /></p>
+<p>Combat situations arise naturally in many genres and settings. OpenAxiom recognizes that violence is sometimes necessary in fiction, and that in fact it is often a key aspect of why people enjoy TTRPGs, and so provides mechanics that make these scenes engaging and meaningful, providing enough simulationist crunch to add consistent and serious consequences and interesting tactical choices.</p>
+<p>At the same time, OpenAxiom recognizes that combat may not be the goal of some tables. As a result, the combat system is designed to be optional, not strictly necessary to character progression or development. Game Masters <strong>may choose to avoid the combat rules entirely if they wish!</strong> These are designed for tables that <em>like</em> combat. If your table wants to focus on narrative, it can simply focus on the core <a href="character_mechanics.html">character mechanics</a> and <a href="logic_of_action.html">logic of action</a> rules, using Contested Actions or Contested Extended Actions to simulate combat when needed. This is why the health and body locations system is specified <em>here</em>, and not in the character mechanics section.</p>
+<p>When characters enter combat, the game shifts to the Tactical Time round structure as defined in the <a href="core_game_loop.org">core game loop</a>. This shift to Tactical Time is mandatory during combat encounters, ensuring that all actions occur in a consistent and fair sequence. During Tactical Time, each character takes turns performing actions, with initiative determined by relevant skills and traits. This system allows for detailed resolution of combat actions while maintaining the pace and excitement of violent confrontation.</p>
 <h2 id="61-the-attack-sequence">6.1. The Attack Sequence</h2>
-<p><img src="static/combat_sequence.svg" class="section-icon" /></p>
-<p>When characters enter combat, the game shifts to the Tactical Time round
-structure as defined in the <a href="core_game_loop.html">core game loop</a>. The
-full sequence of play during a round in combat is defined there,
-including how initiative is determined and how players take turns
-performing actions. This section describes only the sequence of steps
-required to perform the "Attack" Major Action under Tactical Time.
-Remember that attacking is just one of many possible Major Actions you
-can take during your turn in combat.</p>
-<p>All weapons have a required skill level that must be met or exceeded to
-use them effectively. The action point cost to make an attack with a
-weapon is the standard 6 AP for a Major Action plus the additional cost
-based on skill difference. This additional cost is determined by
-subtracting the character's skill level from the weapon's required skill
-level, with a minimum additional cost of 0 AP. For example, if a
-character has a <strong>Combat (Melee) (Sword)</strong> skill of 12 and the sword
-requires a skill level of 10, the attack would cost 6 AP (6 + 10 - 12 =
-6 + -2, minimum 0 = 6). If the character's skill is significantly lower
-than the weapon's requirement, the attack costs more AP. For instance,
-if the character has a skill of 8 and the weapon requires 10, the attack
-would cost 8 AP (6 + 10 - 8 = 8).</p>
-<p>The sequence of steps required to do the "Attack" Major Action under
-Tactical Time follows this sequence:</p>
+<p><img alt="" src="static/combat_sequence.svg" /></p>
+<p>When characters enter combat, the game shifts to the Tactical Time round structure as defined in the <a href="core_game_loop.html">core game loop</a>. The full sequence of play during a round in combat is defined there, including how initiative is determined and how players take turns performing actions. This section describes only the sequence of steps required to perform the "Attack" Major Action under Tactical Time. Remember that attacking is just one of many possible Major Actions you can take during your turn in combat.</p>
+<p>All weapons have a required skill level that must be met or exceeded to use them effectively. The action point cost to make an attack with a weapon is the standard 6 AP for a Major Action plus the additional cost based on skill difference. This additional cost is determined by subtracting the character's skill level from the weapon's required skill level, with a minimum additional cost of 0 AP. For example, if a character has a <strong>Combat (Melee) (Sword)</strong> skill of 12 and the sword requires a skill level of 10, the attack would cost 6 AP (6 + 10 - 12 = 6 + -2, minimum 0 = 6). If the character's skill is significantly lower than the weapon's requirement, the attack costs more AP. For instance, if the character has a skill of 8 and the weapon requires 10, the attack would cost 8 AP (6 + 10 - 8 = 8).</p>
+<p>For rules on how many weapons a character can wield and how to change wielded weapons, see the <a href="#wielding-weapons">Wielding Weapons</a> section.</p>
+<p>The sequence of steps required to do the "Attack" Major Action under Tactical Time follows this sequence:</p>
 <ol>
 <li>
-<p><strong>Declare</strong>: The attacker declares their attack, specifying their
-    target, the location they are aiming for, and the weapon they are
-    using.</p>
+<p><strong>Declare</strong>: The attacker declares their attack, specifying their target, the location they are aiming for, and the weapon or type of attack they are using. Players cannot attack with weapons that are not currently wielded.</p>
 </li>
 <li>
-<p><strong>Calculate Cost</strong>: The action point cost of the attack is
-    calculated (6 AP base + weapon's required skill - character's skill,
-    minimum 0 additional cost).</p>
+<p><strong>Calculate Cost</strong>: The action point cost of the attack is calculated (6 AP base + weapon's required skill - character's skill, minimum 0 additional cost).</p>
 </li>
 <li>
-<p><strong>Roll</strong>: The attacker makes their <strong>Combat</strong> skill check. The
-    defender makes a relevant defense check (e.g., <strong>Physical
-    (Dodge)</strong>).</p>
+<p><strong>Roll</strong>: The attacker makes their <strong>Combat</strong> skill check. The defender makes a relevant defense check (e.g., <strong>Physical (Dodge)</strong>).</p>
 </li>
 <li>
-<p><strong>Determine</strong>: The outcome is determined by comparing the Degrees of
-    Success. The attack hits if the attacker achieves a higher degree of
-    success.</p>
+<p><strong>Determine</strong>: The outcome is determined by comparing the Degrees of Success. The attack hits if the attacker achieves a higher degree of success.</p>
 </li>
 <li>
 <p><strong>Damage</strong>: On a hit, the attacker rolls their weapon's damage.</p>
 </li>
 <li>
-<p><strong>Armor</strong>: The target subtracts the Damage Resistance (DR) value of
-    the armor covering the specific location hit from the total damage.</p>
+<p><strong>Armor</strong>: The target subtracts the Damage Resistance (DR) value of the armor covering the specific location hit from the total damage.</p>
 </li>
 <li>
-<p><strong>Apply</strong>: The final damage is subtracted from the HP of the
-    location that was hit.</p>
+<p><strong>Apply</strong>: The final damage is subtracted from the HP of the location that was hit.</p>
 </li>
 </ol>
-<h2 id="62-beyond-attacks-other-combat-actions">6.2. Beyond Attacks: Other Combat Actions</h2>
-<p>While the attack sequence focuses on making attacks, combat encounters
-often involve much more than just hitting opponents. Players can use
-their Major Actions during combat to perform a wide variety of
-activities that make sense in the situation.</p>
+<blockquote>
+<p>It was Kaelen's turn. He lunged at the pirate in front of him, combat knife a silver blur.</p>
+<ol>
+<li>
+<p><strong>Declare:</strong> "I'm attacking the pirate with my knife, aiming for his Torso!"</p>
+</li>
+<li>
+<p><strong>Calculate Cost:</strong> His skill of 13 easily met the knife's requirement of 9, so the attack cost the standard 6 AP.</p>
+</li>
+<li>
+<p><strong>Roll:</strong> Kaelen rolled a 7 against his target of 13—an Exceptional Success. The pirate rolled a 9 against his Dodge of 10—a Standard Success.</p>
+</li>
+<li>
+<p><strong>Determine:</strong> Kaelen's higher degree of success meant a clean hit.</p>
+</li>
+<li>
+<p><strong>Damage:</strong> His knife deals 1d6 damage; he rolled a 5.</p>
+</li>
+<li>
+<p><strong>Armor:</strong> The pirate's armored clothing had a DR of 2, reducing the damage to 3.</p>
+</li>
+<li>
+<p><strong>Apply:</strong> The GM narrated, "Your blade slips past his guard, and he grunts as it sinks into his side, dealing 3 points of damage to his Torso."</p>
+</li>
+</ol>
+</blockquote>
+<h2 id="62-wielding-weapons">6.2. Wielding Weapons</h2>
+<p><img alt="" src="static/wielding.svg" /></p>
+<p>Characters may only wield a number of weapons equal to their number of non-crippled arms. For most characters, this means they can wield up to two weapons (one in each hand). If a character has a crippled arm, they can only wield one weapon. If both arms are crippled, they cannot wield any weapons.</p>
+<p>Weapons must be claimed to be wielded prior to the beginning of tactical time. Changing which weapons are being wielded requires a Major Action during tactical time. A character cannot attack with a weapon that is not currently wielded.</p>
+<p>Each attack with a weapon costs a Major Action, as described in the Attack Sequence section.</p>
+<p>Attacks cannot be made without the weapon relevant to the skill being used to attack, if there is one, unlike most skill prerequisite items: you can't attack with a bow if you don't have a bow.</p>
+<h2 id="63-beyond-attacks-other-combat-actions">6.3. Beyond Attacks: Other Combat Actions</h2>
+<p>While the attack sequence focuses on making attacks, combat encounters often involve much more than just hitting opponents. Players can use their Major Actions during combat to perform a wide variety of activities that make sense in the situation.</p>
 <p>Examples of other combat actions include:</p>
 <ul>
-<li>Shoving an opponent to push them backward or knock them prone</li>
-<li>Hiding behind cover or ducking behind an obstacle</li>
-<li>Attempting to disarm an opponent's weapon</li>
-<li>Climbing onto a ledge or structure for tactical advantage</li>
-<li>Binding a wound during a lull in the fighting</li>
-<li>Shouting commands to allies or intimidating enemies</li>
-<li>Searching a fallen opponent for items</li>
-<li>Activating a special ability or item</li>
+<li>
+<p>Shoving an opponent to push them backward or knock them prone</p>
+</li>
+<li>
+<p>Hiding behind cover or ducking behind an obstacle</p>
+</li>
+<li>
+<p>Attempting to disarm an opponent's weapon</p>
+</li>
+<li>
+<p>Climbing onto a ledge or structure for tactical advantage</p>
+</li>
+<li>
+<p>Binding a wound during a lull in the fighting</p>
+</li>
+<li>
+<p>Shouting commands to allies or intimidating enemies</p>
+</li>
+<li>
+<p>Searching a fallen opponent for items</p>
+</li>
+<li>
+<p>Activating a special ability or item</p>
+</li>
 </ul>
-<p>When a player wants to perform an action that isn't covered by the
-standard attack sequence, they simply describe what they want to do and
-ask the Game Master. The Game Master will determine what type of skill
-check is appropriate based on the situation:</p>
+<p>When a player wants to perform an action that isn't covered by the standard attack sequence, they simply describe what they want to do and ask the Game Master. The Game Master will determine what type of skill check is appropriate based on the situation:</p>
 <ul>
-<li>Simple Action: For straightforward tasks that don't require opposition</li>
-<li>Contested Action: For actions that directly oppose another character's
-  efforts</li>
-<li>Extended Action: For tasks that require time and sustained effort</li>
-<li>Contested Extended Action: For ongoing struggles between characters</li>
+<li>
+<p>Simple Action: For straightforward tasks that don't require opposition</p>
+</li>
+<li>
+<p>Contested Action: For actions that directly oppose another character's efforts</p>
+</li>
+<li>
+<p>Extended Action: For tasks that require time and sustained effort</p>
+</li>
+<li>
+<p>Contested Extended Action: For ongoing struggles between characters</p>
+</li>
 </ul>
-<p>This approach provides much less to remember than traditional move lists
-while maintaining the simulational crunch players enjoy. It also allows
-for greater creativity and flexibility in combat situations, as players
-aren't limited to a predefined set of actions.</p>
-<h2 id="63-the-injury-system">6.3. The Injury System</h2>
-<p>The injury system determines <em>what actually happens</em> when a character
-takes damage. It represents different body parts separately, with
-different mechanical effects as a result of attacking them, to provide
-more interesting mechanical choices.</p>
-<h3 id="631-health-body-locations">6.3.1. Health &amp; Body Locations</h3>
+<p>This approach provides much less to remember than traditional move lists while maintaining the simulational crunch players enjoy. It also allows for greater creativity and flexibility in combat situations, as players aren't limited to a predefined set of actions.</p>
+<h2 id="64-the-injury-system">6.4. The Injury System</h2>
+<p>The injury system determines <em>what actually happens</em> when a character takes damage. It represents different body parts separately, with different mechanical effects as a result of attacking them, to provide more interesting mechanical choices.</p>
+<h3 id="641-health-body-locations">6.4.1. Health &amp; Body Locations</h3>
 <p><img alt="" src="static/body_locations.svg" /></p>
-<p>Characters have six body locations, each with its own pool of Hit Points
-(HP). HP is calculated from the character's <strong>Physical (Strength)</strong>,
-<strong>Physical (Endurance)</strong>, <strong>Constitution</strong>, or other skill values,
-whichever is highest. The difficulty modifier applies to the attacker's
-combat skill value when targeting that specific location.</p>
+<p>Characters have six body locations, each with its own pool of Hit Points (HP). HP is calculated from the character's <strong>Physical (Strength)</strong>, <strong>Physical (Endurance)</strong>, <strong>Constitution</strong>, or other skill values, whichever is highest. The difficulty modifier applies to the attacker's combat skill value when targeting that specific location.</p>
 <table>
 <thead>
 <tr>
@@ -296,10 +292,7 @@ combat skill value when targeting that specific location.</p>
 </tr>
 </tbody>
 </table>
-<p>The following table provides a quick reference for the HP values of each
-body location for characters with <strong>Physical (Strength)</strong> skills ranging
-from 9 to 18. This is purely for convenience; the actual rule is still
-the calculation in the body part table above.</p>
+<p>The following table provides a quick reference for the HP values of each body location for characters with <strong>Physical (Strength)</strong> skills ranging from 9 to 18. This is purely for convenience; the actual rule is still the calculation in the body part table above.</p>
 <table>
 <thead>
 <tr>
@@ -394,17 +387,13 @@ the calculation in the body part table above.</p>
 </tr>
 </tbody>
 </table>
-<p>The following graph visualizes how a character's total HP and HP per
-body part increase as their <strong>Physical (Strength)</strong> skill improves:</p>
-<p><img src="static/health_vs_skill.svg" class="health-vs-skill-graph" /></p>
-<h3 id="632-consequences-of-injury">6.3.2. Consequences of Injury</h3>
-<p><img src="static/consequences_of_injury.svg" class="section-icon" /></p>
-<p>Damage to local HP pools does not immediately do anything. However, over
-time, as injuries to various parts of the body add up, global effects
-begin to take place.</p>
-<h4 id="6321-crippling-injury">6.3.2.1. Crippling Injury</h4>
-<p>When a location's HP is reduced to <strong><em>*0 or below</em></strong>*, it is Crippled.
-This has the following effects:</p>
+<p>The following graph visualizes how a character's total HP and HP per body part increase as their <strong>Physical (Strength)</strong> skill improves:</p>
+<p><img alt="" src="static/health_vs_skill.svg" /></p>
+<h3 id="642-consequences-of-injury">6.4.2. Consequences of Injury</h3>
+<p><img alt="" src="static/consequences_of_injury.svg" /></p>
+<p>Damage to local HP pools does not immediately do anything. However, over time, as injuries to various parts of the body add up, global effects begin to take place.</p>
+<h4 id="6421-crippling-injury">6.4.2.1. Crippling Injury</h4>
+<p>When a location's HP is reduced to <strong>0 or below</strong>, it is Crippled. This has the following effects:</p>
 <table>
 <thead>
 <tr>
@@ -439,87 +428,55 @@ This has the following effects:</p>
 </tr>
 </tbody>
 </table>
-<p>A limb may go into the negative HP levels as well. This does not make
-the crippling worse, but it can have other consequences, as described in
-the Systemic Shock section.</p>
-<h4 id="6322-critical-success-on-attack">6.3.2.2. Critical Success on Attack</h4>
-<p>When an attacker scores a Critical Success, they deal damage as normal.
-In addition, the target's <strong>Physical</strong> Harm Tracker immediately
-increases by one level. This is independent of and can stack with Harm
-gained from a Crippling Injury on the same attack.</p>
-<h4 id="6323-systemic-shock">6.3.2.3. Systemic Shock</h4>
-<p>Systemic shock occurs whenever a character's total HP pool is decreased
-by another half of their total original HP pool. The character's
-<strong>Physical</strong> Harm Tracker increases by one level for every half of their
-total original HP pool that they lose.</p>
-<p>For example, a character with average <strong>Physical (Strength)</strong> of 9 would
-have a total of 38 HP across all locations (9 Torso + 5 Head + 6 Left
-Arm + 6 Right Arm + 6 Left Leg + 6 Right Leg). This character would
-experience systemic shock and gain one level on their <strong>Physical</strong> Harm
-Tracker for every 19 HP they lose from their original total:</p>
+<p>A limb may go into the negative HP levels as well. This does not make the crippling worse, but it can have other consequences, as described in the Systemic Shock section.</p>
+<h4 id="6422-critical-success-on-attack">6.4.2.2. Critical Success on Attack</h4>
+<p>When an attacker scores a Critical Success, they deal damage as normal. In addition, the target's <strong>Physical</strong> Harm Tracker immediately increases by one level. This is independent of and can stack with Harm gained from a Crippling Injury on the same attack.</p>
+<h4 id="6423-systemic-shock">6.4.2.3. Systemic Shock</h4>
+<p>Systemic shock occurs whenever a character's total HP pool is decreased by another half of their total original HP pool. The character's <strong>Physical</strong> Harm Tracker increases by one level for every half of their total original HP pool that they lose.</p>
+<p>For example, a character with average <strong>Physical (Strength)</strong> of 9 would have a total of 38 HP across all locations (9 Torso + 5 Head + 6 Left Arm + 6 Right Arm + 6 Left Leg + 6 Right Leg). This character would experience systemic shock and gain one level on their <strong>Physical</strong> Harm Tracker for every 19 HP they lose from their original total:</p>
 <ul>
-<li>At 38-20 HP remaining (0-18 HP lost): No systemic shock</li>
-<li>At 19-1 HP remaining (19-37 HP lost): First systemic shock (+1 to
-  <strong>Physical</strong> Harm Tracker)</li>
-<li>At 0 HP remaining (38+ HP lost): Second systemic shock (+2 to
-  <strong>Physical</strong> Harm Tracker)</li>
+<li>
+<p>At 38-20 HP remaining (0-18 HP lost): No systemic shock</p>
+</li>
+<li>
+<p>At 19-1 HP remaining (19-37 HP lost): First systemic shock (+1 to <strong>Physical</strong> Harm Tracker)</p>
+</li>
+<li>
+<p>At 0 HP remaining (38+ HP lost): Second systemic shock (+2 to <strong>Physical</strong> Harm Tracker)</p>
+</li>
 </ul>
-<h4 id="6324-defeat-and-death">6.3.2.4. Defeat and Death</h4>
+<h4 id="6424-defeat-and-death">6.4.2.4. Defeat and Death</h4>
 <p>A character is taken out of a fight under the following conditions:</p>
 <ul>
 <li>
 <p><strong>Incapacitated</strong>: Their <strong>Physical</strong> Harm Tracker reaches Level 4.</p>
 </li>
 <li>
-<p><strong>Unconscious</strong>: Their Head or Torso is Crippled, and they fail the
-  subsequent <strong>Physical (Endurance)</strong> check.</p>
+<p><strong>Unconscious</strong>: Their Head or Torso is Crippled, and they fail the subsequent <strong>Physical (Endurance)</strong> check.</p>
 </li>
 <li>
-<p><strong>Killed</strong>: Their Head or Torso HP is reduced to a negative value
-  equal to its starting maximum (e.g., -5 HP for a 5 HP Head).</p>
+<p><strong>Killed</strong>: Their Head or Torso HP is reduced to a negative value equal to its starting maximum (e.g., -5 HP for a 5 HP Head).</p>
 </li>
 </ul>
-<p>In the former two cases, staying alive becomes an Extended Action
-against their <strong>Physical (Strength)</strong> skill that lasts as many turns as
-the tactical combat scene, instead of a set number of turns. While/if
-they succeed, they get to continue being only unconscious until the
-combat scene ends. If they fail, they die.</p>
-<h4 id="6325-non-harm-tracker-status-effects">6.3.2.5. Non-Harm-Tracker Status Effects</h4>
-<p>While the harm tracker system covers generalized status effects that
-affect broad categories of skills, some specific status effects operate
-outside this system. These non-harm-tracker-based status effects are
-simpler and more focused in their mechanical impact. There are three
-primary types:</p>
+<p>In the former two cases, staying alive becomes an Extended Action against their <strong>Physical (Strength)</strong> skill that lasts as many turns as the tactical combat scene, instead of a set number of turns. While/if they succeed, they get to continue being only unconscious until the combat scene ends. If they fail, they die.</p>
+<blockquote>
+<p>The pirate, with a Strength of 10, had only 3 HP left on his Torso. Kaelen's 3-damage strike was devastating. "That hit reduces his Torso HP to 0," the GM announced. "That location is now <strong>Crippled</strong>. His <strong>Physical</strong> Harm Tracker increases to Level 1, giving him a -1 penalty to all physical actions. He also needs to make an Endurance check to stay conscious." The pirate passed the check, grimacing in pain but remaining on his feet. The pirate had lost 18 HP total in the fight, just shy of the 21.5 needed to trigger Systemic Shock. For now, he was merely wounded, not yet in shock.
+</p>
+</blockquote>
+<h4 id="6425-non-harm-tracker-status-effects">6.4.2.5. Non-Harm-Tracker Status Effects</h4>
+<p>While the harm tracker system covers generalized status effects that affect broad categories of skills, some specific status effects operate outside this system. These non-harm-tracker-based status effects are simpler and more focused in their mechanical impact. There are three primary types:</p>
 <ol>
 <li>
-<p><strong>Continuous HP Drain</strong>: Effects like bleeding or poison that
-    continuously drain HP from a specific body location. Unlike harm
-    trackers which apply penalties to skill checks, these effects
-    directly reduce the HP pool of the affected limb. For example, a
-    bleeding arm would lose a set amount of HP each round until the
-    bleeding is stopped. Note that all normal effects of HP loss still
-    apply to continuous HP drain, including systemic shock when total HP
-    loss reaches certain thresholds and checks for whether the limb
-    becomes crippled when its HP reaches 0 or below.</p>
+<p><strong>Continuous HP Drain</strong>: Effects like bleeding or poison that continuously drain HP from a specific body location. Unlike harm trackers which apply penalties to skill checks, these effects directly reduce the HP pool of the affected limb. For example, a bleeding arm would lose a set amount of HP each round until the bleeding is stopped. Note that all normal effects of HP loss still apply to continuous HP drain, including systemic shock when total HP loss reaches certain thresholds and checks for whether the limb becomes crippled when its HP reaches 0 or below.</p>
 </li>
 <li>
-<p><strong>Movement Speed Detriment</strong>: Effects that reduce a character's
-    movement speed, such as being entangled or slowed. These effects set
-    a specific detriment to the character's normal movement allowance,
-    reducing how many hexes they can move on their turn.</p>
+<p><strong>Movement Speed Detriment</strong>: Effects that reduce a character's movement speed, such as being entangled or slowed. These effects set a specific detriment to the character's normal movement allowance, reducing how many hexes they can move on their turn.</p>
 </li>
 <li>
-<p><strong>Weapon Range Detriment</strong>: Effects that reduce the effective range
-    of a character's weapons, such as poor visibility or unstable
-    footing. These effects set a specific detriment to the weapon's
-    normal range, reducing the distance at which the weapon remains
-    effective.</p>
+<p><strong>Weapon Range Detriment</strong>: Effects that reduce the effective range of a character's weapons, such as poor visibility or unstable footing. These effects set a specific detriment to the weapon's normal range, reducing the distance at which the weapon remains effective.</p>
 </li>
 </ol>
-<p>These status effects represent specific, concrete mechanical impacts
-rather than the generalized skill penalties of harm trackers, providing
-more precise simulation of certain conditions that affect characters in
-combat.</p>
+<p>These status effects represent specific, concrete mechanical impacts rather than the generalized skill penalties of harm trackers, providing more precise simulation of certain conditions that affect characters in combat.</p>
               
             </div>
           </div><footer>

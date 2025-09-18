@@ -61,25 +61,27 @@
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#51-actions">5.1. Actions</a>
         <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#511-determining-target-numbers">5.1.1. Determining Target Numbers</a>
+    <li class="toctree-l3"><a class="reference internal" href="#511-restriction-on-repeating-skill-checks">5.1.1. Restriction on Repeating Skill Checks</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#512-momentum">5.1.2. Momentum</a>
+    <li class="toctree-l3"><a class="reference internal" href="#512-skill-selection">5.1.2. Skill Selection</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#513-contested-actions">5.1.3. Contested Actions</a>
+    <li class="toctree-l3"><a class="reference internal" href="#513-determining-target-numbers">5.1.3. Determining Target Numbers</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#514-contested-extended-actions">5.1.4. Contested Extended Actions</a>
+    <li class="toctree-l3"><a class="reference internal" href="#514-momentum">5.1.4. Momentum</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#515-contested-actions">5.1.5. Contested Actions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#516-contested-extended-actions">5.1.6. Contested Extended Actions</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#5141-initiating-a-contested-extended-action">5.1.4.1. Initiating a Contested Extended Action</a>
+    <li class="toctree-l4"><a class="reference internal" href="#5161-initiating-a-contested-extended-action">5.1.6.1. Initiating a Contested Extended Action</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#5142-maintaining-a-contested-extended-action">5.1.4.2. Maintaining a Contested Extended Action</a>
+    <li class="toctree-l4"><a class="reference internal" href="#5162-maintaining-a-contested-extended-action">5.1.6.2. Maintaining a Contested Extended Action</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#515-group-actions">5.1.5. Group Actions</a>
+    <li class="toctree-l3"><a class="reference internal" href="#517-group-actions">5.1.7. Group Actions</a>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#516-extended-actions">5.1.6. Extended Actions</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#517-logic-of-action-examples">5.1.7. Logic of Action Examples</a>
+    <li class="toctree-l3"><a class="reference internal" href="#518-extended-actions">5.1.8. Extended Actions</a>
     </li>
         </ul>
     </li>
@@ -130,6 +132,11 @@
                 <li class="toctree-l1"><a class="reference internal" href="dice_roller.html">Appendix II - Die Roller Tool</a>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Packs</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="packs/general.html">General Pack</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
@@ -154,294 +161,437 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="5-logic-of-action">5. Logic of Action</h1>
-<p><img src="static/logic_of_action.svg" class="section-icon" /></p>
-<p>This section describes the decision resolution mechanism for actions in
-OpenAxiom. When a character attempts an action with a meaningful chance
-of failure, the player and Game Master use the logic of action to
-determine the outcome. This system provides a consistent framework for
-resolving uncertainty while maintaining narrative flow.</p>
-<p>The following sections detail how actions are resolved in various
-circumstances:</p>
+<p><img alt="" src="static/logic_of_action.svg" /></p>
+<p>This section describes the decision resolution mechanism for actions in OpenAxiom. When a character attempts an action with a meaningful chance of failure, the player and Game Master use the logic of action to determine the outcome. This system provides a consistent framework for resolving uncertainty while maintaining narrative flow.</p>
+<p>The following sections detail how actions are resolved in various circumstances:</p>
 <h2 id="51-actions">5.1. Actions</h2>
-<p><img src="static/actions.svg" class="section-icon" /></p>
-<p>The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the
-result to a target number. The player rolls 3d6 and sums the results. If
-the total is less than or equal to the target number, the action
-succeeds. If the total is greater than the target number, the action
-fails.</p>
-<p><strong><em>*Restriction on Repeating Skill Checks</em></strong>*: Players cannot make the
-same skill check twice in a row without at least 3 turns between them or
-a change in circumstance (as determined by the Game Master). This
-prevents characters from simply retrying the same action indefinitely
-until they succeed, encouraging creative problem-solving and narrative
-progression.</p>
-<p>This simple mechanic underlies all character actions in the game. The
-target number is determined by the character's relevant skill value,
-modified by applicable traits and situational factors as determined by
-the Game Master. Characters may also receive temporary modifiers from
-systems like <strong>Momentum</strong>, which can provide a +1 bonus to the
-character's skill value for the purpose of determining the target number
-for any action in the same scene.</p>
-<h3 id="511-determining-target-numbers">5.1.1. Determining Target Numbers</h3>
-<p>The base target number for any skill check is the character's skill
-value. A character with <strong>Piloting (Starship)</strong> at 12 would have a
-target number of 12 for starship piloting checks.</p>
-<p>The target number is then modified by applicable character traits and
-situational factors as determined by the Game Master. Applicable traits
-always modify the target number, while situational adjustments typically
-range from -3 to +3, representing extremely easy to extremely difficult
-circumstances. Trait modifiers will vary based on the specific traits
-the character possesses and how they apply to the situation. The
-following table provides guidelines for determining appropriate
-modifiers, showing what the resulting target number would be for a
-character with the default skill level of 9:</p>
+<p><img alt="" src="static/actions.svg" /></p>
+<p>The fundamental mechanic in OpenAxiom is rolling 3d6 and comparing the result to a target number. The player rolls 3d6 and sums the results. If the total is less than or equal to the target number, the action succeeds. If the total is greater than the target number, the action fails. The target number is almost always determined by the character's relevant skill values, modified by the difficulty of the check. This is the inverse of a game system like D&amp;D, where the target number is fixed, and then the roll is modified by your skill level.</p>
+<p>This simple mechanic underlies all character actions in the game. The target number is determined by the character's relevant skill value, modified by applicable traits and situational factors as determined by the Game Master. Characters may also receive temporary modifiers from systems like <strong>Momentum</strong>, which can provide a +1 bonus to the character's skill value for the purpose of determining the target number for any action in the same scene.</p>
+<h3 id="511-restriction-on-repeating-skill-checks">5.1.1. Restriction on Repeating Skill Checks</h3>
+<p>Players cannot make the same skill check twice in a row without at least 3 turns between them or a change in circumstance (as determined by the Game Master). This prevents characters from simply retrying the same action indefinitely until they succeed, encouraging creative problem-solving and narrative progression.</p>
+<h3 id="512-skill-selection">5.1.2. Skill Selection</h3>
+<p>The Game Master provides a specific list of skills that are available in their game world. When determining which skill to use for a skill check, players must always use the most specific applicable skill from the GM's provided list. For example, if a GM's list includes both <strong>Piloting</strong> and <strong>Piloting (Starship)</strong>, and a character is attempting to pilot a starship, they must use <strong>Piloting (Starship)</strong> rather than the more general <strong>Piloting</strong> skill, even if they have a higher value in the general skill.</p>
+<h3 id="513-determining-target-numbers">5.1.3. Determining Target Numbers</h3>
+<p>The target number for any skill check is determined by three factors:</p>
+<ol>
+<li>
+<p><strong>Skill value</strong>: The base value of the most specific relevant skill on the part of the player making the check. This represents the character's competency in performing the desired action, and as such is the core mechanic of the logic of action.</p>
+</li>
+<li>
+<p><strong>Trait modifiers</strong>: Any modifiers applied by the player's traits to the skill value. Adding these forms the <strong>effective skill value</strong>. This represents the inherent abilities or disabilities the character might have that effect their ability to carry out whatever action they're attempting. These are almost just as important as the character's skill value in the relevant action.</p>
+</li>
+<li>
+<p><strong>Difficulty modifiers</strong>: These represent the inherent difficulty of the task, but also situational, environmental factors, such as whether it's raining while a player is trying to run. These values typically range from -10 to +10, representing extremely easy at +10, to average difficulty at 0, to extremely difficult at -10.</p>
+</li>
+</ol>
+<p>Here's a table that can provide a general guideline for eyeballing the difficulty of different degrees of difficulty modifiers:</p>
 <table>
 <thead>
 <tr>
-<th>Difficulty</th>
+<th>Difficulty Modifier</th>
+<th>Task Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+10</td>
+<td>Trivial/Easy</td>
+<td>Walking on a flat, stable surface; recalling common knowledge; lifting a feather</td>
+</tr>
+<tr>
+<td>+5 to +9</td>
+<td>Very Easy</td>
+<td>Walking carefully on a stable surface; recalling recently learned information; lifting a light object</td>
+</tr>
+<tr>
+<td>+1 to +4</td>
+<td>Easy</td>
+<td>Simple conversation; basic arithmetic; lifting a moderately heavy object</td>
+</tr>
+<tr>
+<td>0</td>
+<td>Average/Nominal</td>
+<td>Standard conversation; routine tasks; lifting a heavy object</td>
+</tr>
+<tr>
+<td>-1 to -4</td>
+<td>Hard</td>
+<td>Running while injured; solving a moderately complex puzzle; lifting a very heavy object</td>
+</tr>
+<tr>
+<td>-5 to -9</td>
+<td>Very Hard</td>
+<td>Performing delicate surgery in poor conditions; hacking a sophisticated system; lifting an extremely heavy object</td>
+</tr>
+<tr>
+<td>-10</td>
+<td>Extremely Hard/Nearly Impossible</td>
+<td>Performing brain surgery in a moving vehicle; hacking a military-grade system; lifting something beyond human capability</td>
+</tr>
+</tbody>
+</table>
+<p>This table can also be used as a reference when determining the part of the difficulty modifier determined by the <em>inherent</em> complexity of the task at hand.</p>
+<p>The table below provides specific examples of common <em>situational</em> modifiers that can be applied based on environmental conditions, physical state, equipment, social context, and task complexity, that could be added to the difficulty modifier on top of the inherent task complexity. Multiple factors can stack, but the GM should use discretion to avoid excessive modifiers that might make tasks impossible or trivial, generally capping total situational modifiers at ±5 to maintain game balance.</p>
+<table>
+<thead>
+<tr>
+<th>Situational Factor</th>
 <th>Modifier</th>
-<th>Target Number (Skill 9)</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Very Easy</td>
-<td>+3</td>
-<td>12</td>
-<td>Tasks that should almost always succeed for competent characters.</td>
+<td><strong>Environmental Conditions</strong></td>
+<td></td>
+<td></td>
 </tr>
 <tr>
-<td>Easy</td>
-<td>+2</td>
-<td>11</td>
-<td>Tasks that are straightforward for characters with relevant skills.</td>
-</tr>
-<tr>
-<td>Moderate</td>
-<td>+1</td>
-<td>10</td>
-<td>Tasks of average difficulty for characters with relevant skills.</td>
-</tr>
-<tr>
-<td>Medium</td>
-<td>0</td>
-<td>9</td>
-<td>No modifier for tasks of standard difficulty.</td>
-</tr>
-<tr>
-<td>Hard</td>
+<td>Bright sunlight/glare</td>
 <td>-1</td>
-<td>8</td>
-<td>Tasks that challenge even skilled characters.</td>
+<td>Squinting or difficulty seeing clearly</td>
 </tr>
 <tr>
-<td>Very Hard</td>
+<td>Dim light</td>
 <td>-2</td>
-<td>7</td>
-<td>Tasks that are difficult even for experts.</td>
+<td>Reduced visibility without night vision</td>
 </tr>
 <tr>
-<td>Nearly Impossible</td>
+<td>Complete darkness</td>
+<td>-4</td>
+<td>No visibility without special aids</td>
+</tr>
+<tr>
+<td>Rain/sleet</td>
+<td>-1 to -2</td>
+<td>Slippery conditions and reduced visibility</td>
+</tr>
+<tr>
+<td>Heavy rain/storm</td>
 <td>-3</td>
-<td>6</td>
-<td>Tasks that border on the impossible.</td>
+<td>Severely impaired vision and movement</td>
+</tr>
+<tr>
+<td>Extreme cold</td>
+<td>-2</td>
+<td>Reduced dexterity and stamina</td>
+</tr>
+<tr>
+<td>Extreme heat</td>
+<td>-2</td>
+<td>Reduced stamina and focus</td>
+</tr>
+<tr>
+<td>High winds</td>
+<td>-1 to -2</td>
+<td>Difficulty with balance and precision</td>
+</tr>
+<tr>
+<td>Zero gravity</td>
+<td>-3</td>
+<td>Unfamiliar movement and positioning</td>
+</tr>
+<tr>
+<td>Underwater</td>
+<td>-3 to -5</td>
+<td>Resistance and visibility issues</td>
+</tr>
+<tr>
+<td><strong>Physical State</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Fatigued/tired</td>
+<td>-2</td>
+<td>Reduced stamina and focus</td>
+</tr>
+<tr>
+<td>Rushing/under time pressure</td>
+<td>-1 to -3</td>
+<td>Hurrying leads to mistakes</td>
+</tr>
+<tr>
+<td>Careful/extra time taken</td>
+<td>+1 to +3</td>
+<td>Taking time improves precision</td>
+</tr>
+<tr>
+<td><strong>Equipment/Tools</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Improvised tools</td>
+<td>-2 to -4</td>
+<td>Makes the task more difficult</td>
+</tr>
+<tr>
+<td>No tools</td>
+<td>-3 to -5</td>
+<td>Performing task without proper equipment</td>
+</tr>
+<tr>
+<td>High-quality tools</td>
+<td>+2 to +4</td>
+<td>Superior equipment aids performance</td>
+</tr>
+<tr>
+<td>Faulty/damaged equipment</td>
+<td>-2 to -3</td>
+<td>Equipment hampers performance</td>
+</tr>
+<tr>
+<td><strong>Social Context</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Friendly/helpful observers</td>
+<td>+1</td>
+<td>Encouragement boosts confidence</td>
+</tr>
+<tr>
+<td>Hostile/hostile observers</td>
+<td>-1 to -2</td>
+<td>Pressure affects performance</td>
+</tr>
+<tr>
+<td>Neutral/uninterested observers</td>
+<td>0</td>
+<td>No significant effect</td>
+</tr>
+<tr>
+<td><strong>Task Complexity</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Distracted/divided attention</td>
+<td>-2</td>
+<td>Multitasking reduces focus</td>
+</tr>
+<tr>
+<td>Focused/single task</td>
+<td>+1</td>
+<td>Concentration improves performance</td>
+</tr>
+<tr>
+<td>Complex multi-step task</td>
+<td>-2 to -4</td>
+<td>Many parts increase chance of error</td>
+</tr>
+<tr>
+<td>Familiar routine task</td>
+<td>+2</td>
+<td>Experience makes it easier</td>
+</tr>
+<tr>
+<td>Completely new/unfamiliar</td>
+<td>-3</td>
+<td>Lack of experience hampers performance</td>
 </tr>
 </tbody>
 </table>
-<h3 id="512-momentum">5.1.2. Momentum</h3>
-<p>Additional modifiers may come from temporary conditions such as
-<strong>Momentum</strong>, which can provide a +1 bonus to the character's skill
-value for the purpose of determining the target number for any
-subsequent action in the same scene.</p>
-<p><strong>Momentum</strong> is a simple resource that characters either have or don't
-have. When a character has <strong>Momentum</strong>, they <em>must</em> spend it to gain
-the +1 bonus within the same scene.</p>
-<h3 id="513-contested-actions">5.1.3. Contested Actions</h3>
-<p>When two characters directly oppose each other in an action, such as in
-a contest of strength or a race, both characters make skill checks as
-the initiating character's major action for their turn. The winner is
-determined by comparing the degree of success each character achieves,
-not by comparing the numerical results of their dice rolls.</p>
+<p>Not every factor above needs to be applied to every check. The Game Master should instead use these examples as a guideline for adjusting difficulty based on situational factors, focusing only on the most relevant modifiers for the specific situation.</p>
+<h3 id="514-momentum">5.1.4. Momentum</h3>
+<p>Additional modifiers may come from temporary conditions such as <strong>Momentum</strong>, which can provide a +1 bonus to the character's skill value for the purpose of determining the target number for any subsequent action in the same scene.</p>
+<p><strong>Momentum</strong> is a simple resource that characters either have or don't have. When a character has <strong>Momentum</strong>, they <em>must</em> spend it to gain the +1 bonus within the same scene.</p>
+<h3 id="515-contested-actions">5.1.5. Contested Actions</h3>
+<p>When two characters directly oppose each other in an action, such as in a contest of strength or a race, both characters make skill checks as the initiating character's major action for their turn. The winner is determined by comparing the degree of success each character achieves, not by comparing the numerical results of their dice rolls.</p>
 <p>The resolution follows this cascading logic:</p>
 <ol>
-<li>Each character independently determines their degree of success by
-    consulting the Degrees of Success and Failure table based on their
-    roll result and target number</li>
-<li>Compare the qualitative outcomes: Critical Success &gt; Exceptional
-    Success &gt; Standard Success &gt; Marginal Failure &gt; Exceptional
-    Failure &gt; Critical Failure</li>
-<li>The character with the higher degree of success wins the opposed
-    action</li>
-<li>If both characters achieve the same degree of success, the character
-    with the higher skill value wins</li>
-<li>If both characters have the same skill value and achieve the same
-    degree of success, the Game Master may call for additional rolls or
-    determine the outcome narratively</li>
+<li>
+<p>Each character independently determines their degree of success by consulting the Degrees of Success and Failure table based on their roll result and target number</p>
+</li>
+<li>
+<p>Compare the qualitative outcomes: Critical Success &gt; Exceptional Success &gt; Standard Success &gt; Marginal Failure &gt; Exceptional Failure &gt; Critical Failure</p>
+</li>
+<li>
+<p>The character with the higher degree of success wins the opposed action</p>
+</li>
+<li>
+<p>If both characters achieve the same degree of success, the character with the higher skill value wins</p>
+</li>
+<li>
+<p>If both characters have the same skill value and achieve the same degree of success, the Game Master may call for additional rolls or determine the outcome narratively</p>
+</li>
 </ol>
-<p>This approach ensures that characters with higher skills have a better
-chance of success while still allowing for dramatic upsets when a
-lower-skilled character achieves a better degree of success.</p>
-<h3 id="514-contested-extended-actions">5.1.4. Contested Extended Actions</h3>
-<p><img src="static/contested_extended_actions.svg" class="section-icon" /></p>
-<p>A contested extended action represents ongoing struggles between two
-characters that require sustained effort to maintain, such as grappling,
-arm wrestling, or staring contests. These actions work differently from
-regular extended actions in that they involve direct opposition between
-two characters over multiple turns.</p>
-<p>When initiating a contested extended action, the player must specify
-what they want to achieve with the action. This specification determines
-both the skill used and the effect that occurs while the action is
-maintained. The specific effects are determined by the Game Master based
-on the declared goal and the skill used.</p>
-<h4 id="5141-initiating-a-contested-extended-action">5.1.4.1. Initiating a Contested Extended Action</h4>
+<p>This approach ensures that characters with higher skills have a better chance of success while still allowing for dramatic upsets when a lower-skilled character achieves a better degree of success.</p>
+<h3 id="516-contested-extended-actions">5.1.6. Contested Extended Actions</h3>
+<p><img alt="" src="static/contested_extended_actions.svg" /></p>
+<p>A contested extended action represents ongoing struggles between two characters that require sustained effort to maintain, such as grappling, arm wrestling, or staring contests. These actions work differently from regular extended actions in that they involve direct opposition between two characters over multiple turns.</p>
+<p>When initiating a contested extended action, the player must specify what they want to achieve with the action. This specification determines both the skill used and the effect that occurs while the action is maintained. The specific effects are determined by the Game Master based on the declared goal and the skill used.</p>
+<h4 id="5161-initiating-a-contested-extended-action">5.1.6.1. Initiating a Contested Extended Action</h4>
 <ol>
-<li><strong><em>*Declaration</em></strong>*<ul>
-<li>A character declares they are attempting to initiate a contested
-  extended action against a specific opponent</li>
-<li>The player specifies what they want to achieve, which determines
-  both the skill used and the effect that occurs while the action is
-  maintained</li>
+<li>
+<p><strong>Declaration</strong></p>
+<ul>
+<li>
+<p>A character declares they are attempting to initiate a contested extended action against a specific opponent</p>
+</li>
+<li>
+<p>The player specifies what they want to achieve, which determines both the skill used and the effect that occurs while the action is maintained</p>
+</li>
 </ul>
 </li>
-<li><strong><em>*Initial Contest</em></strong>*<ul>
-<li>The initating character makes a contested skill check against
-  their target, as normal</li>
-<li>The skill used should be appropriate to the declared goal</li>
+<li>
+<p><strong>Initial Contest</strong></p>
+<ul>
+<li>
+<p>The initating character makes a contested skill check against their target, as normal</p>
+</li>
+<li>
+<p>The skill used should be appropriate to the declared goal</p>
+</li>
 </ul>
 </li>
-<li><strong><em>*Resolution</em></strong>*<ul>
-<li>If the initiating character succeeds against their opponent, the
-  contested extended action is initiated and the declared effect
-  begins</li>
-<li>If the initiating character fails, the contested extended action
-  does not begin</li>
+<li>
+<p><strong>Resolution</strong></p>
+<ul>
+<li>
+<p>If the initiating character succeeds against their opponent, the contested extended action is initiated and the declared effect begins</p>
+</li>
+<li>
+<p>If the initiating character fails, the contested extended action does not begin</p>
+</li>
 </ul>
 </li>
 </ol>
-<h4 id="5142-maintaining-a-contested-extended-action">5.1.4.2. Maintaining a Contested Extended Action</h4>
-<p>Once initiated, maintaining a contested extended action requires ongoing
-effort:</p>
+<h4 id="5162-maintaining-a-contested-extended-action">5.1.6.2. Maintaining a Contested Extended Action</h4>
+<p>Once initiated, maintaining a contested extended action requires ongoing effort:</p>
 <ol>
-<li><strong><em>*On the Initiating Character's Turn:</em></strong>*<ul>
-<li>The initiating character must declare they are maintaining the
-  contested extended action</li>
-<li>If the initiating character does not declare this, the contested
-  extended action ends</li>
-<li>The opponent is released on their next turn and may act normally</li>
-<li>The initiating character can resume taking normal actions on their
-  subsequent turn</li>
-<li>The initiating character may not take normal actions on the same
-  turn as they released a contested action</li>
-<li>If the initiating character chooses to maintain the contested
-  extended action, they must make another contested action against
-  the same opponent as their major action</li>
+<li>
+<p><strong>On the Initiating Character's Turn:</strong></p>
+<ul>
+<li>
+<p>The initiating character must declare they are maintaining the contested extended action</p>
+</li>
+<li>
+<p>If the initiating character does not declare this, the contested extended action ends</p>
+</li>
+<li>
+<p>The opponent is released on their next turn and may act normally</p>
+</li>
+<li>
+<p>The initiating character can resume taking normal actions on their subsequent turn</p>
+</li>
+<li>
+<p>The initiating character may not take normal actions on the same turn as they released a contested action</p>
+</li>
+<li>
+<p>If the initiating character chooses to maintain the contested extended action, they must make another contested action against the same opponent as their major action</p>
+</li>
 </ul>
 </li>
-<li><strong><em>*On the Opponent's Turn:</em></strong>*<ul>
-<li>The opponent may take other actions during their turn if the type
-  of contested action does not prevent them from doing so</li>
-<li>The declared effect of the contested extended action determines
-  what actions the opponent cannot take</li>
-<li>The opponent may instead choose, as their major action for that
-  turn, to "enter the contest"</li>
-<li>The opponent makes their own contested action against the
-  initiating character of the contested extended action</li>
-<li>This contested action must use the exact same skill that the
-  initiating character used</li>
-<li>The rules for resolving this contested action are the same as for
-  resolving an initiator's contested action</li>
+<li>
+<p><strong>On the Opponent's Turn:</strong></p>
+<ul>
+<li>
+<p>The opponent may take other actions during their turn if the type of contested action does not prevent them from doing so</p>
+</li>
+<li>
+<p>The declared effect of the contested extended action determines what actions the opponent cannot take</p>
+</li>
+<li>
+<p>The opponent may instead choose, as their major action for that turn, to "enter the contest"</p>
+</li>
+<li>
+<p>The opponent makes their own contested action against the initiating character of the contested extended action</p>
+</li>
+<li>
+<p>This contested action must use the exact same skill that the initiating character used</p>
+</li>
+<li>
+<p>The rules for resolving this contested action are the same as for resolving an initiator's contested action</p>
+</li>
 </ul>
 </li>
-<li><strong><em>*Resolving the Contested Action:</em></strong>*<ul>
-<li>If the initiating character wins, they maintain control of the
-  contested extended action and the declared effect continues</li>
-<li>If the opponent wins, the contested extended action ends and the
-  opponent gains <strong>Momentum</strong> as their upper hand</li>
-<li>Only the initiating character may choose to stop maintaining the
-  contested extended action at any time</li>
-<li>The contested extended action ends immediately when the initiating
-  character chooses to stop maintaining it</li>
-<li>The declared effect of the contested extended action only applies
-  while the action is maintained</li>
+<li>
+<p><strong>Resolving the Contested Action:</strong></p>
+<ul>
+<li>
+<p>If the initiating character wins, they maintain control of the contested extended action and the declared effect continues</p>
+</li>
+<li>
+<p>If the opponent wins, the contested extended action ends and the opponent gains <strong>Momentum</strong> as their upper hand</p>
+</li>
+<li>
+<p>Only the initiating character may choose to stop maintaining the contested extended action at any time</p>
+</li>
+<li>
+<p>The contested extended action ends immediately when the initiating character chooses to stop maintaining it</p>
+</li>
+<li>
+<p>The declared effect of the contested extended action only applies while the action is maintained</p>
+</li>
 </ul>
 </li>
 </ol>
-<p>This system represents the ongoing nature of physical struggles and
-mental contests that require continuous effort to maintain, while still
-allowing for clear resolution of who has the upper hand at any given
-moment. The non-consensual nature of the opponent's participation
-reflects that they are automatically considered to be resisting the
-initiating character's attempt to maintain control over them.</p>
-<h3 id="515-group-actions">5.1.5. Group Actions</h3>
-<p>When a group of characters works together on a task, the Game Master
-determines which character has the highest relevant skill. That
-character makes the primary skill check. Other characters may provide
-assistance, granting a +1 bonus to the primary character's roll for each
-assisting character, up to a maximum bonus of +3.</p>
-<p>If two or more characters have the same value in a skill relevant to the
-action (even if the skills themselves are not identical), and the first
-attempt does not go well, the group may attempt the action again in the
-same turn using a different character with the same value in a skill
-relevant to the action as the primary actor. The same bonuses for
-additional helpers still apply to this second attempt. This allows for a
-rapid second attempt by a different character, serving as an exception
-to the general restriction on repeating skill checks.</p>
-<p>Characters can also work independently on the same task. In this case,
-each character makes their own skill check. The Game Master determines
-how the individual results combine to affect the overall outcome.</p>
-<h3 id="516-extended-actions">5.1.6. Extended Actions</h3>
-<p>Some tasks require sustained effort over time rather than a single roll.
-For these extended actions, the Game Master sets a required number of
-turns based on the complexity and duration of the task. Characters must
-make skill checks on each turn until they have successfully completed
-the required number of turns.</p>
+<p>This system represents the ongoing nature of physical struggles and mental contests that require continuous effort to maintain, while still allowing for clear resolution of who has the upper hand at any given moment. The non-consensual nature of the opponent's participation reflects that they are automatically considered to be resisting the initiating character's attempt to maintain control over them.</p>
+<blockquote>
+<p>Kaelen saw his chance. The enemy soldier was reloading, exposing his flank. Rather than shoot, Kaelen lunged, initiating a grapple. He won the initial contested roll, and the fight became a close-quarters struggle. On the enemy's turn, trapped in the grapple, he used his Major Action to "enter the contest," trying to break free. He made a contested <strong>Combat (Melee)</strong> check against Kaelen and won. The GM described the sudden reversal: "The soldier twists violently in your grip, breaking your hold! He shoves you back, seizing the initiative and gaining <strong>Momentum</strong>."
+</p>
+<p>The air in the spaceport cantina was thick with engine fumes and cheap synth-ale. Kaelen found himself in an arm-wrestling match with a hulking docker. Kaelen's <strong>Physical (Strength)</strong> is 12, while the docker's is a mighty 14. They both roll. Kaelen gets an 8, a Standard Success. The docker rolls a 13, also a Standard Success. The GM narrates the outcome: "You both strain, muscles bulging, but with the degrees of success tied, the docker's higher skill value of 14 gives him the edge. His raw power is just too much, and he slowly forces your hand down to the table. He wins."
+</p>
+</blockquote>
+<h3 id="517-group-actions">5.1.7. Group Actions</h3>
+<p>When a group of characters works together on a task, the Game Master determines which character has the highest relevant skill. That character makes the primary skill check. Other characters may provide assistance, granting a +1 bonus to the primary character's roll for each assisting character, up to a maximum bonus of +3.</p>
+<p>If two or more characters have the same value in a skill relevant to the action (even if the skills themselves are not identical), and the first attempt does not go well, the group may attempt the action again in the same turn using a different character with the same value in a skill relevant to the action as the primary actor. The same bonuses for additional helpers still apply to this second attempt. This allows for a rapid second attempt by a different character, serving as an exception to the general restriction on repeating skill checks.</p>
+<p>Characters can also work independently on the same task. In this case, each character makes their own skill check. The Game Master determines how the individual results combine to affect the overall outcome.</p>
+<blockquote>
+<p>For example, a heavy blast door, dented and sparking, blocked the team's escape. Dr. Aris and two security guards put their shoulders to it. The guards both have a <strong>Physical (Strength)</strong> of 11, while Aris is a meager 8. The GM explained, "The guard with the best footing will be the primary actor, rolling against his skill of 11. The other guard and Dr. Aris provide assistance, granting a +2 bonus. Your total target number to force this door is 13."
+</p>
+</blockquote>
+<h3 id="518-extended-actions">5.1.8. Extended Actions</h3>
+<p>Some tasks require sustained effort over time rather than a single roll. For these extended actions, the Game Master sets a required number of turns based on the complexity and duration of the task. Characters must make skill checks on each turn until they have successfully completed the required number of turns.</p>
 <p>Extended actions can occur in two contexts:</p>
 <ol>
 <li>
-<p><strong>Planned Extended Actions</strong>: Tasks that are inherently complex or
-    time-consuming, such as crafting items, conducting research, or
-    performing complex repairs.</p>
+<p><strong>Planned Extended Actions</strong>: Tasks that are inherently complex or time-consuming, such as crafting items, conducting research, or performing complex repairs.</p>
 </li>
 <li>
-<p><strong>Gritted Retries</strong>: Tasks that were previously failed with a
-    marginal failure and are being retried with renewed determination.
-    In this case, the action requires two turns to succeed as the
-    character pushes themselves harder, and the player must accept a
-    consequence (taking harm, damaging an item, or granting an enemy
-    <strong>Momentum</strong> for their next action, of any kind) as the cost of this
-    extra effort.</p>
+<p><strong>Gritted Retries</strong>: Tasks that were previously failed with a marginal failure and are being retried with renewed determination. In this case, the action requires two turns to succeed as the character pushes themselves harder, and the player must accept a consequence (taking harm, damaging an item, or granting an enemy <strong>Momentum</strong> for their next action, of any kind) as the cost of this extra effort.</p>
 </li>
 </ol>
 <p>The outcome of each turn's check determines the progress:</p>
 <ul>
-<li><strong>Standard Success</strong> or <strong>Exceptional Success</strong>: The character
-  completes the turn's work and counts it toward the total required
-  turns</li>
-<li><strong>Critical Success</strong>: The character finishes the rest of the task all
-  in that one turn, immediately completing the entire extended action</li>
-<li><strong>Marginal Failure</strong>: The character doesn't make progress on this turn
-  but can continue the task on subsequent turns without penalty</li>
-<li><strong>Exceptional Failure</strong> or <strong>Critical Failure</strong>: The character fails
-  catastrophically and must attempt the task all over again (if the Game
-  Master will allow a retry)</li>
+<li>
+<p><strong>Standard Success</strong> or <strong>Exceptional Success</strong>: The character completes the turn's work and counts it toward the total required turns</p>
+</li>
+<li>
+<p><strong>Critical Success</strong>: The character finishes the rest of the task all in that one turn, immediately completing the entire extended action</p>
+</li>
+<li>
+<p><strong>Marginal Failure</strong>: The character doesn't make progress on this turn but can continue the task on subsequent turns without penalty</p>
+</li>
+<li>
+<p><strong>Exceptional Failure</strong> or <strong>Critical Failure</strong>: The character fails catastrophically and must attempt the task all over again (if the Game Master will allow a retry)</p>
+</li>
 </ul>
-<p>This system allows for dramatic moments where a character can suddenly
-overcome a long task with a single amazing roll, while also providing
-meaningful consequences for poor performance that don't necessarily end
-the action immediately.</p>
-<p>The time between checks and other consequences of failures are
-determined by the Game Master based on the narrative circumstances.</p>
-<h3 id="517-logic-of-action-examples">5.1.7. Logic of Action Examples</h3>
+<p>This system allows for dramatic moments where a character can suddenly overcome a long task with a single amazing roll, while also providing meaningful consequences for poor performance that don't necessarily end the action immediately.</p>
+<p>The time between checks and other consequences of failures are determined by the Game Master based on the narrative circumstances.</p>
+<blockquote>
+<p>Jax's fingers flew across the holographic interface of a corporate vault's mag-lock. The GM told him this was an Extended Action requiring 3 successful turns.</p>
+<ul>
+<li>
+<p><strong>Turn 1:</strong> He rolled a 7 against his skill of 11—a success. One down.</p>
+</li>
+<li>
+<p><strong>Turn 2:</strong> He hit a snag, rolling a 13—a Marginal Failure. He made no progress.</p>
+</li>
+<li>
+<p><strong>Turn 3:</strong> Undeterred, he tried a new approach and rolled a 4—a Critical Success! The GM grinned. "You're struggling, but then you spot a critical flaw in their logic. With a flurry of commands, you shatter the entire security suite in seconds. The lock clicks open. The job is done."</p>
+</li>
+</ul>
+</blockquote>
 <h2 id="52-consequences">5.2. Consequences</h2>
-<p><img src="static/consequences.svg" class="section-icon" /></p>
-<p>The outcomes of actions in OpenAxiom are determined by the degree of
-success or failure. Rolling under the target number results in success,
-while rolling over results in failure.</p>
+<p><img alt="" src="static/consequences.svg" /></p>
+<p>The outcomes of actions in OpenAxiom are determined by the degree of success or failure. Rolling under the target number results in success, while rolling over results in failure.</p>
 <h3 id="521-degrees-of-success-and-failure">5.2.1. Degrees of Success and Failure</h3>
-<p>Not all successes and failures are equal. OpenAxiom distinguishes
-between different degrees of success and failure based on how much the
-roll deviates from the target number.</p>
+<p>Not all successes and failures are equal. OpenAxiom distinguishes between different degrees of success and failure based on how much the roll deviates from the target number.</p>
 <table>
 <thead>
 <tr>
@@ -491,113 +641,88 @@ roll deviates from the target number.</p>
 </tbody>
 </table>
 <h3 id="522-probability-of-degrees-of-success-and-failure-at-different-difficulty-levels">5.2.2. Probability of Degrees of Success and Failure at Different Difficulty Levels</h3>
-<p>The 3d6 roll follows a bell curve distribution, with results near the
-middle (10-11) being most common and results at the extremes (3 and 18)
-being rare. The graph below shows the probability of achieving each
-degree of success or failure for a character with a skill of 9 at
-different difficulty levels:</p>
-<p><img src="static/probability_distribution.svg"
-class="probability-distribution-graph" /></p>
-<p>This visualization shows how the probabilities shift as the difficulty
-of a task changes. At easier difficulties (higher target numbers),
-success becomes more likely, while at harder difficulties (lower target
-numbers), failure becomes more likely. The graph makes it clear that
-characters with average skills (target 9) on medium difficulty tasks
-will most commonly experience either a standard success or a marginal
-failure.</p>
+<p>The 3d6 roll follows a bell curve distribution, with results near the middle (10-11) being most common and results at the extremes (3 and 18) being rare. The graph below shows the probability of achieving each degree of success or failure for a character with a skill of 9 at different difficulty levels:</p>
+<p><img alt="" src="static/probability_distribution.svg" /></p>
+<p>This visualization shows how the probabilities shift as the difficulty of a task changes. At easier difficulties (higher target numbers), success becomes more likely, while at harder difficulties (lower target numbers), failure becomes more likely. The graph makes it clear that characters with average skills (target 9) on medium difficulty tasks will most commonly experience either a standard success or a marginal failure.</p>
 <h3 id="523-critical-success">5.2.3. Critical Success</h3>
-<p>A critical success represents an exceptional performance that exceeds
-normal capabilities. When a character achieves a critical success, they
-not only accomplish their intended goal but often gain additional
-benefits or insights that weren't anticipated. These might include:</p>
+<p>A critical success represents an exceptional performance that exceeds normal capabilities. When a character achieves a critical success, they not only accomplish their intended goal but often gain additional benefits or insights that weren't anticipated. These might include:</p>
 <ul>
-<li>Gaining extra information beyond what was sought</li>
-<li>Completing the task with time to spare</li>
-<li>Creating an advantageous situation for future actions</li>
-<li>Impressing observers or gaining reputation benefits</li>
-<li>Avoiding potential complications or hazards</li>
+<li>
+<p>Gaining extra information beyond what was sought</p>
+</li>
+<li>
+<p>Completing the task with time to spare</p>
+</li>
+<li>
+<p>Creating an advantageous situation for future actions</p>
+</li>
+<li>
+<p>Impressing observers or gaining reputation benefits</p>
+</li>
+<li>
+<p>Avoiding potential complications or hazards</p>
+</li>
 </ul>
-<p>In terms of character advancement, critical successes have special
-significance:</p>
+<p>In terms of character advancement, critical successes have special significance:</p>
 <ol>
 <li>
-<p>When a critical success occurs at a pivotal story moment, it opens
-    the possibility for the player to spend story points to gain new
-    positive traits through the Crucible Roll process, as detailed in
-    the <a href="character_mechanics.html#gaining-positive-traits">Character Advancement section on Gaining Positive
-    Traits</a>. This
-    represents the character having a transformative experience that
-    could fundamentally change who they are.</p>
+<p>When a critical success occurs at a pivotal story moment, it opens the possibility for the player to spend story points to gain new positive traits through the Crucible Roll process, as detailed in the <a href="character_mechanics.html#gaining-positive-traits">Character Advancement section on Gaining Positive Traits</a>. This represents the character having a transformative experience that could fundamentally change who they are.</p>
 </li>
 <li>
-<p>Even if the critical success did not occur at a pivotal story
-    moment, the player is granted one story point that they can bank for
-    future use. This reward recognizes that exceptional performance,
-    even in routine circumstances, demonstrates the character's growing
-    capabilities and potential.</p>
+<p>Even if the critical success did not occur at a pivotal story moment, the player is granted one story point that they can bank for future use. This reward recognizes that exceptional performance, even in routine circumstances, demonstrates the character's growing capabilities and potential.</p>
 </li>
 </ol>
-<p>Critical successes should be celebrated as significant moments in a
-character's development, representing times when they exceed their
-normal limits and potentially glimpse new possibilities for growth.</p>
+<p>Critical successes should be celebrated as significant moments in a character's development, representing times when they exceed their normal limits and potentially glimpse new possibilities for growth.</p>
 <h3 id="524-exceptional-success">5.2.4. Exceptional Success</h3>
-<p>An exceptional success indicates above-average performance that goes
-beyond what was expected. Characters who achieve exceptional successes:</p>
+<p>An exceptional success indicates above-average performance that goes beyond what was expected. Characters who achieve exceptional successes:</p>
 <ul>
-<li>Accomplish their goals with notable skill</li>
-<li>May gain minor additional benefits</li>
-<li>Create positive ripple effects in the narrative</li>
-<li>Demonstrate expertise that might influence NPC reactions</li>
+<li>
+<p>Accomplish their goals with notable skill</p>
+</li>
+<li>
+<p>May gain minor additional benefits</p>
+</li>
+<li>
+<p>Create positive ripple effects in the narrative</p>
+</li>
+<li>
+<p>Demonstrate expertise that might influence NPC reactions</p>
+</li>
 </ul>
-<p>Exceptional successes represent the character operating at peak
-performance and can be used by the Game Master to highlight a
-character's expertise or specialties.</p>
-<p>In addition to these narrative benefits, exceptional successes grants
-characters <strong>Momentum</strong>, which provides a mechanical benefit for
-subsequent actions. The rules for how Momentum applies to future skill
-checks are detailed in the <a href="logic_of_action.html#momentum">Momentum
-section</a> under Actions. The logic for how
-it is gained is as follows:</p>
+<p>Exceptional successes represent the character operating at peak performance and can be used by the Game Master to highlight a character's expertise or specialties.</p>
+<p>In addition to these narrative benefits, exceptional successes grants characters <strong>Momentum</strong>, which provides a mechanical benefit for subsequent actions. The rules for how Momentum applies to future skill checks are detailed in the <a href="logic_of_action.html#momentum">Momentum section</a> under Actions. The logic for how it is gained is as follows:</p>
 <ul>
-<li>If the player didn't already have Momentum, then they gain it.</li>
-<li>If the player had Momentum for the skill check that resulted in the
-  current exceptional success, they gain Momentum again.</li>
-<li>If the player already had Momentum, and has "gained it again" even
-  without using it (which can happen if they roll an exceptional success
-  a second time within the same scene, before they've decided what to
-  use their existing Momentum on), it does not stack, they just keep the
-  existing Momentum.</li>
+<li>
+<p>If the player didn't already have Momentum, then they gain it.</p>
+</li>
+<li>
+<p>If the player had Momentum for the skill check that resulted in the current exceptional success, they gain Momentum again.</p>
+</li>
+<li>
+<p>If the player already had Momentum, and has "gained it again" even without using it (which can happen if they roll an exceptional success a second time within the same scene, before they've decided what to use their existing Momentum on), it does not stack, they just keep the existing Momentum.</p>
+</li>
 </ul>
-<p>This represents characters "getting into the flow" or "getting high on
-success," encouraging players to keep the actual momentum of play going,
-and giving them an interesting tatical advantage to play with, as they
-can act in more risky ways.</p>
+<p>This represents characters "getting into the flow" or "getting high on success," encouraging players to keep the actual momentum of play going, and giving them an interesting tatical advantage to play with, as they can act in more risky ways.</p>
 <h3 id="525-standard-success">5.2.5. Standard Success</h3>
-<p>A standard success represents competent performance - the character
-achieves their intended goal without complications but also without
-additional benefits. This is the most common outcome for characters with
-average skills attempting moderate difficulty tasks. Standard successes:</p>
+<p>A standard success represents competent performance - the character achieves their intended goal without complications but also without additional benefits. This is the most common outcome for characters with average skills attempting moderate difficulty tasks. Standard successes:</p>
 <ul>
-<li>Achieve the intended goal directly</li>
-<li>Proceed without narrative embellishment</li>
-<li>Represent reliable, everyday competence</li>
-<li>Form the backbone of routine character activities</li>
+<li>
+<p>Achieve the intended goal directly</p>
+</li>
+<li>
+<p>Proceed without narrative embellishment</p>
+</li>
+<li>
+<p>Represent reliable, everyday competence</p>
+</li>
+<li>
+<p>Form the backbone of routine character activities</p>
+</li>
 </ul>
-<p>Standard successes are important because they keep the game moving
-forward without bogging it down in constant exceptional outcomes. They
-represent the baseline of competent performance that players should
-expect from their characters.</p>
+<p>Standard successes are important because they keep the game moving forward without bogging it down in constant exceptional outcomes. They represent the baseline of competent performance that players should expect from their characters.</p>
 <h3 id="526-marginal-failure">5.2.6. Marginal Failure</h3>
-<p>A marginal failure indicates a near-success where the character almost
-achieved their goal. When a character suffers a marginal failure, they
-have one of two choices. They can <strong>accept the failure</strong> and move on, or
-they can <strong>retry with grit</strong>.</p>
-<p><strong>Retry With Grit</strong>: The character can retry the action with renewed
-determination, putting more effort into the attempt. This approach turns
-the desired action into an Extended Action that must last two turns, but
-it also comes with a cost. The player rolls 1d6 on the Marginal Failure
-Outcomes Table to determine the specific consequence that represents the
-toll of this extra effort.</p>
+<p>A marginal failure indicates a near-success where the character almost achieved their goal. When a character suffers a marginal failure, they have one of two choices. They can <strong>accept the failure</strong> and move on, or they can <strong>retry with grit</strong>.</p>
+<p><strong>Retry With Grit</strong>: The character can retry the action with renewed determination, putting more effort into the attempt. This approach turns the desired action into an Extended Action that must last two turns, but it also comes with a cost. The player rolls 1d6 on the Marginal Failure Outcomes Table to determine the specific consequence that represents the toll of this extra effort.</p>
 <table>
 <thead>
 <tr>
@@ -620,24 +745,29 @@ toll of this extra effort.</p>
 </tr>
 </tbody>
 </table>
-<p>While the retry takes longer for the player, the increased effort of an
-Extended Action makes it more likely to succeed.</p>
+<p>While the retry takes longer for the player, the increased effort of an Extended Action makes it more likely to succeed.</p>
+<blockquote>
+<p>Kaelen was halfway up a sheer, rain-slicked cliff when his handhold gave way. He rolled an 11 against his <strong>Physical (Climbing)</strong> of 10—a Marginal Failure. He dangled precariously. "I'm not giving up," his player said. "I'll <strong>Retry With Grit</strong>." The GM nodded. "Okay, this is now a two-turn Extended Action, but there's a cost. Roll on the Marginal Failure table." The player rolled a 3: <strong>Item Damage</strong>. "As you scramble for a new hold," the GM narrated, "the strap on your gear pack snags and rips. The pack, with your spare ammo, tumbles into the chasm below. It's gone. Now, make your first roll for the climb."
+</p>
+</blockquote>
 <h3 id="527-exceptional-failure">5.2.7. Exceptional Failure</h3>
-<p>An exceptional failure represents particularly poor performance that
-goes beyond simple failure. These outcomes:</p>
+<p>An exceptional failure represents particularly poor performance that goes beyond simple failure. These outcomes:</p>
 <ul>
-<li>Create additional negative consequences beyond simple failure</li>
-<li>May harm the character's position or resources</li>
-<li>Can damage reputation or relationships</li>
-<li>Often require additional recovery actions</li>
+<li>
+<p>Create additional negative consequences beyond simple failure</p>
+</li>
+<li>
+<p>May harm the character's position or resources</p>
+</li>
+<li>
+<p>Can damage reputation or relationships</p>
+</li>
+<li>
+<p>Often require additional recovery actions</p>
+</li>
 </ul>
-<p>Exceptional failures should have meaningful consequences that affect the
-narrative, but shouldn't be so punishing as to derail the game. They
-work best when they create interesting complications rather than simple
-setbacks.</p>
-<p>When a character suffers an exceptional failure, the player rolls 1d6 on
-the Exceptional Failure Outcomes Table to determine the specific
-consequence:</p>
+<p>Exceptional failures should have meaningful consequences that affect the narrative, but shouldn't be so punishing as to derail the game. They work best when they create interesting complications rather than simple setbacks.</p>
+<p>When a character suffers an exceptional failure, the player rolls 1d6 on the Exceptional Failure Outcomes Table to determine the specific consequence:</p>
 <table>
 <thead>
 <tr>
@@ -672,37 +802,30 @@ consequence:</p>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Dr. Aris stood before the Hyperion corporate board, his voice pleading for funding. His <strong>Social (Diplomacy)</strong> was 12, but he rolled a 17—an Exceptional Failure. "This is bad," the GM said. "Roll on the Exceptional Failure table." The result was a 6: <strong>Reputation Damage</strong>. "Your plea comes across as desperate and unhinged," the GM explained. "They not only reject your proposal, but your reputation with Hyperion Corporation drops by 1. For the rest of this meeting, they view you with disdain, giving you a -1 penalty to all Social checks."
+</p>
+</blockquote>
 <h3 id="528-critical-failure">5.2.8. Critical Failure</h3>
-<p>A critical failure indicates catastrophic performance that can have
-severe narrative consequences. These might include:</p>
+<p>A critical failure indicates catastrophic performance that can have severe narrative consequences. These might include:</p>
 <ul>
-<li>Creating dangerous situations for the character or allies</li>
-<li>Attracting unwanted attention from enemies</li>
-<li>Damaging equipment or resources</li>
-<li>Causing significant setbacks to plans</li>
+<li>
+<p>Creating dangerous situations for the character or allies</p>
+</li>
+<li>
+<p>Attracting unwanted attention from enemies</p>
+</li>
+<li>
+<p>Damaging equipment or resources</p>
+</li>
+<li>
+<p>Causing significant setbacks to plans</p>
+</li>
 </ul>
-<p>In addition to these narrative consequences, critical failures have
-specific mechanical effects. When a character suffers a critical
-failure, they move up one level on a harm tracker related to the skill
-that was being used when the skill check failed, as detailed in the
-<a href="character_mechanics.html#character-status-effects">Character Status Effects
-section</a>.</p>
-<p>If multiple harm trackers could apply, the Game Master should choose the
-one with the current lowest level, following the <a href="character_mechanics.html#least-harmed-principle">Least Harmed
-Principle</a>. This
-represents the character compensating for their wounds by leaning more
-heavily on their other capabilities.</p>
-<p>A critical failure can only push any harm tracker up to level 2
-(Impaired). Beyond that point, there may be narrative consequences to a
-critical failure, but no additional mechanical effects. This limitation
-prevents critical failures from being overly punitive while still
-providing meaningful consequences for catastrophic performance.
-Information about <a href="character_mechanics.html#harm-tracker-levels-and-penalties">Harm Tracker Levels and
-Penalties</a>
-can be found in the Character Mechanics section.</p>
-<p>Critical failures are dramatic moments that can shift the direction of a
-scene or even an entire campaign. They should be used sparingly and with
-consideration for their impact on the overall narrative.</p>
+<p>In addition to these narrative consequences, critical failures have specific mechanical effects. When a character suffers a critical failure, they move up one level on a harm tracker related to the skill that was being used when the skill check failed, as detailed in the <a href="character_mechanics.html#character-status-effects">Character Status Effects section</a>.</p>
+<p>If multiple harm trackers could apply, the Game Master should choose the one with the current lowest level, following the <a href="character_mechanics.html#least-harmed-principle">Least Harmed Principle</a>. This represents the character compensating for their wounds by leaning more heavily on their other capabilities.</p>
+<p>A critical failure can only push any harm tracker up to level 2 (Impaired). Beyond that point, there may be narrative consequences to a critical failure, but no additional mechanical effects. This limitation prevents critical failures from being overly punitive while still providing meaningful consequences for catastrophic performance. Information about <a href="character_mechanics.html#harm-tracker-levels-and-penalties">Harm Tracker Levels and Penalties</a> can be found in the Character Mechanics section.</p>
+<p>Critical failures are dramatic moments that can shift the direction of a scene or even an entire campaign. They should be used sparingly and with consideration for their impact on the overall narrative.</p>
               
             </div>
           </div><footer>
